@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--*
+    *
+    * Author: Kevin Hitt
+    * Date: May 2017 -
+    * Purpose: Sortable Titles
+    *
+    * TABLE OF CONTENTS
+    *
+    * HEAD
+    *   H1. Meta Tags
+    *   H2. Title
+    *   H3. Favicon
+    *   H4. CSS
+    *   H5. JavaScript
+    * BODY
+    *   B1.
+    *   B2.
+    *   B3.
+    *
+    *-->
+
+<head>
+
+<!-- H1. Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="html, table, sortable">
+  <meta name="description" content="An expirement in sortable tables">
+  <meta name="author" content="Kevin Hitt">
+
+<!-- H2. Title -->
+  <title>The_Sortable_Titles</title>
+
+<!-- H3. Favicon -->
+  <link rel="shortcut icon" href="http://placehold.it/150x150">
+
+<!-- H4. Cascading Style Sheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="../C55/website-responsive.css">
+  <link type="text/css" rel="stylesheet" href="../C55/The_Sortable_Titles.css">
+
+<!-- H5. Javascript -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="../J5/The_Sortable_Titles.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <script>
+    $( function() {
+      $( "#draggable" ).draggable();
+      $( "#draggable2" ).draggable();
+      $( "#draggable3" ).draggable();
+      $( "#draggable4" ).draggable();
+      $( "#draggable5" ).draggable();
+      $( "#draggable6" ).draggable();
+    } );
+    </script>
+
+</head>
+
+
+<body>
+
+  <div class="section">
+    <div class="container" style="height:750px;">
+
+<!-- B1. TOP BOX-->
+  <div id="draggable">
+
+        <table class="topTierTable" height="auto" width="auto">
+          <thead>
+            <tr>
+              <td class="topSearchTile" colspan="3"><input class="searchBox1" id="searchTopics" type="search" placeholder="search topics" onkeyup="myFunction()"></td>
+              <td class="topTextTile" colspan="8">SORTABLE TITLES</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="middleTileRow">
+              <td colspan="3"><input class="searchBox2" id="searchGeneral" type="search" placeholder="search general" onkeyup="myFunction2()"></td>
+
+              <!--B1-1. DROPDOWN MENU-->
+              <td colspan="8">
+                <select class="dropdown" align="center">
+                  <option value="">Anthropocene</option>
+                      <optgroup label="Energy Resources and Consumption">
+                        <option value="enterCustomReturnValueForSelection">Conservation</option>
+                        <option>Energy and Environment</option>
+                        <option>Policy</option>
+                        <option>Recycling</option>
+                        <option>Sustainability</option>
+                        <option>Veganism</option>
+                      </optgroup>
+                      <optgroup label="Global Change">
+                        <option>Ecological Humanities</option>
+                        <option>Endangered Species</option>
+                        <option>Extinction</option>
+                        <option>Justice</option>
+                        <option>Law</option>
+                      </optgroup>
+                      <optgroup label="Land and Water Use">
+                        <option>Compliance</option>
+                        <option>EPA</option>
+                        <option>FDEP</option>
+                        <option>Land Use</option>
+                        <option>Natural Resource Management</option>
+                      </optgroup>
+                      <optgroup label="Living World">
+                        <option>Deep Ecology</option>
+                        <option>Ecological Literacy</option>
+                        <option>Ecology</option>
+                        <option>Ecosystem</option>
+                      </optgroup>
+                      <optgroup label="Pollution">
+                        <option>Effects on Physiology</option>
+                        <option>Pollution</option>
+                        <option>Pollution Control</option>
+                        <option>Toxicology</option>
+                        <option>Impact Assessment</option>
+                      </optgroup>
+                  </select>
+              </td>
+            </tr>
+            <tr class="middleTileRow">
+              <td colspan="3"><input class="searchBox2" id="searchRandom" type="search" placeholder="search random" onkeyup="myFunction2()" /></td>
+              <td colspan="8">
+                <select class="dropdown">
+                  <option>Ecosphere</option>
+                  <optgroup label="Earth Systems and Resources">
+                    <option>Chemical Cycle</option>
+                    <option>Chemistry</option>
+                    <option>Climate</option>
+                    <option>Climatology</option>
+                    <option>Science</option>
+                  </optgroup>
+                  <optgroup label="Land and Water Use">
+                    <option>Erosion</option>
+                    <option>Hydrology</option>
+                    <option>Land Use</option>
+                    <option>Soil Science</option>
+                  </optgroup>
+                  <optgroup label="Living World">
+                    <option>Ecosystem</option>
+                    <option>Geography</option>
+                    <option>Geomatics</option>
+                    <option>Soundscape Ecology</option>
+                  </optgroup>
+                </select>
+              </td>
+            </tr>
+            <tr class="middleTileRow">
+              <td colspan="3"><input class="searchBox2" id="searchRandom2" type="search" placeholder="search universe" onkeyup="myFunction2()" /></td>
+              <td colspane="8">
+                <select class="dropdown">
+                  <option>General</option>
+                  <optgroup label="General">
+                    <option>Blog</option>
+                    <option>Calm</option>
+                    <option>Certificates</option>
+                    <option>Design</option>
+                    <option>Education</option>
+                    <option>Economics</option>
+                    <option>Ethics</option>
+                    <option>Florida</option>
+                    <option>Games</option>
+                    <option>History</option>
+                    <option>Idea</option>
+                    <option>Jobs</option>
+                    <option>Management</option>
+                    <option>Psychology</option>
+                    <option>Receipts</option>
+                    <option>Research</option>
+                    <option>Sociology</option>
+                    <option>Studio</option>
+                    <option>Subtle Energies</option>
+                    <option>Technology</option>
+                    <option>Traditional Environmental Knowledge</option>
+                    <option>Visual</option>
+                    <option>Volunteering</option>
+                  </optgroup>
+                </select>
+              </td>
+            </tr>
+            <tr class="topicsRow">
+              <td width="50px">CALM</td>
+              <td width="50px">ECO</td>
+              <td width="50px">SOUND</td>
+              <td>INDEX</td>
+            </tr>
+          </tbody>
+        </table>
+  </div>  <!--closes draggable-->
+
+  <div id="draggable2">
+        <table class="pendingTable" id="tablePending" height="auto" width="auto">
+          <thead>
+            <tr><td class="rowDraggable"></td><td class="rowDraggable"></td></tr>
+          </thead>
+          <thead>
+            <tr>
+              <th>
+                TITLE
+              </th>
+              <th>
+                SOURCE
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                pending items
+              </td>
+              <td>
+                <a href="../HTM7/topics/pending_items.html" target="_blank">link</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+  </div> <!--closes draggable2-->
+
+
+  <div id="draggable3">
+      <table class="myTable" id="myTable" align="center">
+
+          <thead>
+            <tr><th onclick="sortTable(0)">   TITLE</th><th onclick="sortTable(1)">   SOURCE</th></tr>
+          </thead>
+
+          <tbody>
+            <tr><td>chemistry</td><td><a href="../HTM7/topics/human/chemistry.html" target="_blank">link</a></td></tr>
+            <tr><td>climate</td><td><a href="../HTM7/topics/human/climate.html" target="_blank">link</a></td></tr>
+            <tr><td>compliance</td><td><a href="../HTM7/topics/human/compliance.html" target="_blank">link</a></td></tr>
+            <tr><td>conservation</td><td><a href="../HTM7/topics/human/conservation.html" target="_blank">link</a></td></tr>
+            <tr><td>deep ecology</td><td><a href="../HTM7/topics/human/deep_ecology.html" target="_blank">link</a></td></tr>
+            <tr><td>ecological humanities</td><td><a href="../HTM7/topics/human/ecological_humanities.html" target="_blank">link</a></td></tr>
+            <tr><td>ecological literacy</td><td><a href="../HTM7/topics/human/ecological_literacy.html" target="_blank">link</a></td></tr>
+            <tr><td>ecology</td><td><a href="../HTM7/topics/human/ecology.html" target="_blank">link</a></td></tr>
+            <tr><td>effects on physiology</td><td><a href="../HTM7/topics/human/effects_on_physiology.html" target="_blank">link</a></td></tr>
+            <tr><td>energy and environment</td><td><a href="../HTM7/topics/human/energy_and_environment.html" target="_blank">link</a></td></tr>
+            <tr><td>epa</td><td><a href="../HTM7/topics/human/epa.html" target="_blank">link</a></td></tr>
+            <tr><td>fdep</td><td><a href="../HTM7/topics/human/fdep.html" target="_blank">link</a></td></tr>
+            <tr><td>impace assessment</td><td><a href="../HTM7/topics/human/impact_assessment.html" target="_blank">link</a></td></tr>
+            <tr><td>justice</td><td><a href="../HTM7/topics/human/justice.html" target="_blank">link</a></td></tr>
+            <tr><td>law</td><td><a href="../HTM7/topics/human/law.html" target="_blank">link</a></td></tr>
+            <tr><td>natural resource management</td><td><a href="../HTM7/topics/human/natural_resource_management.html" target="_blank">link</a></td></tr>
+            <tr><td>policy</td><td><a href="../HTM7/topics/human/policy.html" target="_blank">link</a></td></tr>
+            <tr><td>pollution control</td><td><a href="../HTM7/topics/human/pollution_control.html" target="_blank">link</a></td></tr>
+            <tr><td>sustainability</td><td><a href="../HTM7/topics/human/sustainability.html" target="_blank">link</a></td></tr>
+            <tr><td>toxicology</td><td><a href="../HTM7/topics/human/toxicology.html" target="_blank">link</a></td></tr>
+            <tr><td>veganism</td><td><a href="../HTM7/topics/human/veganism.html" target="_blank">link</a></td></tr>
+          </tbody>
+
+        </table>
+  </div> <!--closes draggable3-->
+
+  <div id="draggable4">
+      <table class="myTable" id="myTable2" align="center">
+
+        <thead>
+          <tr><th onclick="sortTable2(0)">TITLE</th><th onclick="sortTable2(1)">SOURCE</th></tr>
+        </thead>
+
+        <tbody>
+          <tr><td>general</td><td></td> </tr>
+          <tr><td>blog</td><td><a href="../HTM7/topics/general/blog.html" target="_blank">link</a> </td></tr>
+          <tr><td>calm</td><td><a href="../HTM7/topics/general/calm.html" target="_blank">link</a> </td> </tr>
+          <tr><td>certs</td><td><a href="../HTM7/topics/general/certs.html" target="_blank">link</a> </td> </tr>
+          <tr><td>design</td><td><a href="../HTM7/topics/general/design.html" target="_blank">link</a> </td> </tr>
+          <tr><td>economics</td><td><a href="../HTM7/topics/general/economics.html" target="_blank">link</a> </td> </tr>
+          <tr><td>education</td><td><a href="../HTM7/topics/general/education.html" target="_blank">link</a> </td> </tr>
+          <tr><td>ethics</td><td><a href="../HTM7/topics/general/ethics.html" target="_blank">link</a> </td> </tr>
+          <tr><td>fl</td><td><a href="../HTM7/topics/general/fl.html" target="_blank">link</a> </td> </tr>
+          <tr><td>games</td><td><a href="../HTM7/topics/general/games.html" target="_blank">link</a> </td> </tr>
+          <tr><td>history</td><td><a href="../HTM7/topics/general/history.html" target="_blank">link</a> </td> </tr>
+          <tr><td>idea</td><td><a href="../HTM7/topics/general/idea.html" target="_blank">link</a> </td> </tr>
+          <tr><td>jobs</td><td><a href="../HTM7/topics/general/jobs.html" target="_blank">link</a> </td> </tr>
+          <tr><td>management</td><td><a href="../HTM7/topics/general/management.html" target="_blank">link</a> </td> </tr>
+          <tr><td>psychology</td><td><a href="../HTM7/topics/general/psychology.html" target="_blank">link</a> </td> </tr>
+          <tr><td>receipts</td><td><a href="../HTM7/topics/general/receipts.html" target="_blank">link</a> </td> </tr>
+          <tr><td>research</td><td><a href="../HTM7/topics/general/research.html" target="_blank">link</a> </td> </tr>
+          <tr><td>sociology</td><td><a href="../HTM7/topics/general/sociology.html" target="_blank">link</a> </td> </tr>
+          <tr><td>studio</td><td><a href="../HTM7/topics/general/studio.html" target="_blank">link</a></td> </tr>
+          <tr><td>subtle energies</td><td><a href="../HTM7/topics/general/subtle%20energies.html" target="_blank">link</a> </td> </tr>
+          <tr><td>technology</td><td><a href="../HTM7/topics/general/technology.html" target="_blank">link</a> </td> </tr>
+          <tr><td>trad env knowledge</td><td><a href="../HTM7/topics/general/traditional%20environmental%20knowledge.html" target="_blank">link</a> </td> </tr>
+          <tr><td>visual</td><td><a href="../HTM7/topics/general/visual.html" target="_blank">link</a> </td> </tr>
+          <tr><td>volunteering</td><td><a href="../HTM7/topics/general/volunteering.html" target="_blank">link</a></td> </tr>
+        </tbody>
+
+      </table>
+  </div>  <!--closes draggable4-->
+
+  <div id="draggable5">
+      <table class="myTable" id="myTable3" align="center">
+
+        <thead>
+          <tr><th onclick="sortTable2(0)">TITLE</th><th onclick="sortTable2(1)">SOURCE</th></tr>
+        </thead>
+
+        <tbody>
+          <tr><td>geography</td><td><a href="../HTM7/topics/eco/geography.html" target="_blank">link</a> </td></tr>
+          <tr><td>geomatics</td><td><a href="../HTM7/topics/eco/geomatics.html" target="_blank">link</a> </td> </tr>
+          <tr><td>hydrology</td><td><a href="../HTM7/topics/eco/hydrology.html" target="_blank">link</a> </td> </tr>
+          <tr><td>science</td><td><a href="../HTM7/topics/eco/science.html" target="_blank">link</a> </td> </tr>
+          <tr><td>soil science</td><td><a href="../HTM7/topics/eco/soil_science.html" target="_blank">link</a> </td> </tr>
+          <tr><td>soundscape ecology</td><td><a href="../HTM7/topics/eco/soundscape_ecology.html" target="_blank">link</a> </td> </tr>
+        </tbody>
+
+      </table>
+  </div> <!--closes draggable5-->
+
+  <div id="draggable6">
+      <table class="myTable" id="referenceTable" align="center">
+
+        <thead>
+          <tr><th>TITLE</th><th>SOURCE</th></tr>
+        </thead>
+
+        <tbody>
+          <tr><td>file listing</td><td><a href="file_listing.html" target="_blank">link</a></td></tr>
+          <tr><td>topic template</td><td><a href="topic_template.html" target="_blank">link</a></td></tr>
+        </tbody>
+      </table>
+  </div> <!--closes draggable6-->
+
+  </div> <!--closes container-->
+</div> <!--close section-->
+</body>
+</html>

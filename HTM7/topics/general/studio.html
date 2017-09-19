@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--*
+    *
+    * Author: Kevin Hitt
+    * Date:
+    * Purpose:
+    *
+    * TABLE OF CONTENTS
+    *
+    * HEAD
+    *   01. Meta Tags
+    *   02. Title
+    *   03. Favicon
+    *   04. CSS
+    *   05. JavaScript
+    * STYLE
+    * BODY
+    *   06.
+    *   07.
+    *   08.
+    *   09.
+    * SCRIPT
+    *-->
+
+<head>
+
+<!-- 01. Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="html, table, sortable">
+  <meta name="description" content="An expirement in sortable tables">
+  <meta name="author" content="Kevin Hitt">
+
+<!-- 02. Title -->
+  <title>Studio</title>
+
+<!-- 03. Favicon -->
+  <link rel="shortcut icon" href="http://placehold.it/150x150">
+
+<!-- 04. Cascading Style Sheets -->
+  <link type="text/css" rel="stylesheet" href="../../../C55/The_Sortable_Titles.css">
+  <link type="text/css" rel="stylesheet" href="../../../C55/website.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- 05. Javascript -->
+   <script type="text/javascript" src="../../../J5/The_Sortable_Titles.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<!--
+03. Individual Table Properties
+      table class methods
+          margin-top/bottom/etc.
+          font-weight/size
+          text-align
+-->
+
+
+<body>
+  <div id="table" class="section">
+    <div class="container">
+
+
+<table id="myTable" class="topTierTable">
+  <!--ROW 0-->
+    <thead>
+      <tr><th>   TAG</th><th onclick="sortTable(1)">   TITLE</th><th> LINK</th><th onclick="sortTable(1)">  COMMENT</th></tr>
+    </thead>
+  <!--ROWS-->
+    <tbody>
+          <tr><td class="linkCategory">studio</td><td class="linkName">chords and scales reference</td><td class="linkTitle"><a href="http://chords.jpglomot.com/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">studio</td><td class="linkName">keyfinder</td><td class="linkTitle"><a href="http://www.ibrahimshaath.co.uk/keyfinder/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">studio</td><td class="linkName">drumkits</td><td class="linkTitle"><a href="https://www.reddit.com/r/Drumkits/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">studio</td><td class="linkName">i0-808</td><td class="linkTitle"><a href="http://io808.com/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">studio</td><td class="linkName">waveformer</td><td class="linkTitle"><a href="http://mishaheesakkers.nl/waveformer/?ref=producthunt#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">studio</td><td class="linkName">knxwledge ama</td><td class="linkTitle"><a href="https://www.reddit.com/r/listentothis/comments/34zd42/ama_im_knxwledge_producer_beatmaker_ask_me/?st=J07B2IUH&sh=a3281f4f#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">studio</td><td class="linkName">cents to hz conversion chart</td><td class="linkTitle"><a href="http://home.broadpark.no/~rbrekne/referhtml/cents-hz.html#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">studio</td><td class="linkName">harmonic errors in equal tempered scales</td><td class="linkTitle"><a href="http://home.broadpark.no/~rbrekne/referhtml/equaltemperedmusicalscales.html#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">studio</td><td class="linkName">bpm tool</td><td class="linkTitle"><a href="https://songbpm.com/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">studio</td><td class="linkName">noiiz</td><td class="linkTitle"><a href="https://www.noiiz.com" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">studio</td><td class="linkName">loopmaster</td><td class="linkTitle"><a href="http://www.loopmasters.com" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">studio</td><td class="linkName">splice</td><td class="linkTitle"><a href="http://splice.com" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">studio</td><td class="linkName">q tip sampling</td><td class="linkTitle"><a href="https://www.facebook.com/FACTmagazine/videos/10155181644179687/" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">studio</td><td class="linkName">frank ocean interviews</td><td class="linkTitle"><a href="http://pigeonsandplanes.com/in-depth/2016/08/revisiting-frank-ocean-interviews-boys-dont-cry/the-guardian-the-most-talked-about-man-in-music" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+        </tbody>
+      </table>
+
+
+    </div> <!--close container-->
+  </div> <!--close section-->
+</body>
+</html>

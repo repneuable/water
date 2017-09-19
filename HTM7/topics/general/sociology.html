@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--*
+    *
+    * Author: Kevin Hitt
+    * Date:
+    * Purpose:
+    *
+    * TABLE OF CONTENTS
+    *
+    * HEAD
+    *   01. Meta Tags
+    *   02. Title
+    *   03. Favicon
+    *   04. CSS
+    *   05. JavaScript
+    * STYLE
+    * BODY
+    *   06.
+    *   07.
+    *   08.
+    *   09.
+    * SCRIPT
+    *-->
+
+<head>
+
+<!-- 01. Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="html, table, sortable">
+  <meta name="description" content="An expirement in sortable tables">
+  <meta name="author" content="Kevin Hitt">
+
+<!-- 02. Title -->
+  <title>Sociology</title>
+
+<!-- 03. Favicon -->
+  <link rel="shortcut icon" href="http://placehold.it/150x150">
+
+<!-- 04. Cascading Style Sheets -->
+  <link type="text/css" rel="stylesheet" href="../../../C55/The_Sortable_Titles.css">
+  <link type="text/css" rel="stylesheet" href="../../../C55/website.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- 05. Javascript -->
+   <script type="text/javascript" src="../../../J5/The_Sortable_Titles.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<!--
+03. Individual Table Properties
+      table class methods
+          margin-top/bottom/etc.
+          font-weight/size
+          text-align
+-->
+
+
+<body>
+  <div id="table" class="section">
+    <div class="container">
+
+
+<table id="myTable" class="topTierTable">
+  <!--ROW 0-->
+    <thead>
+      <tr><th>   TAG</th><th onclick="sortTable(1)">   TITLE</th><th> LINK</th><th onclick="sortTable(1)">  COMMENT</th></tr>
+    </thead>
+  <!--ROWS-->
+    <tbody>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">post truth</td><td class="linkTitle"><a href="https://thefederalist.com/2016/11/18/left-decries-post-truth-society-pushing-ideas-fuel%3Es20-post-truth#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">convincing when facts fail</td><td class="linkTitle"><a href="https://www.scientificamerican.com/article/how-to-convince-someone-when-facts-fail/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">udive - all society responsible</td><td class="linkTitle"><a href="http://www.wastedive.com/news/epas-mathy-stanislaus-all-of-society-has-a-waste-management-responsibili/432010#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">macroscope how you can help</td><td class="linkTitle"><a href="https://the-macroscope.org/so-what-can-i-do-bfd03e46974e#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">climate change - who cares</td><td class="linkTitle"><a href="http://www.newphilosopher.com/articles/who-cares/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">wetland environments perspective book</td><td class="linkTitle"><a href="http://onlinelibrary.wiley.com/book/10.1002/9781118349540#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">aeon - death of oak tree and mortality</td><td class="linkTitle"><a href="https://aeon.co/ideas/what-the-death-of-an-oak-tree-can-teach-us-about-mortality#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">anthropogenic apocalypse</td><td class="linkTitle"><a href="http://www.vice.com/read/philosophers-react-to-the-impending-anthropogenic-apocalypse#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">earth overshoot day</td><td class="linkTitle"><a href="http://sustainability.thomsonreuters.com/2016/08/08/earth-overshoot-day-no-winners-in-the-race-for-natural-resources/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">world war on climate</td><td class="linkTitle"><a href="https://newrepublic.com/article/135684/declare-war-climate-change-mobilize-wwii#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">future of natural history</td><td class="linkTitle"><a href="http://www.mammalsociety.org/uploads/Schmidly2005.pdf#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">naturalist education</td><td class="linkTitle"><a href="http://eec.islandwood.org/files/stanr/Pyle.pdf#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">UN sustainability</td><td class="linkTitle"><a href="https://sustainabledevelopment.un.org/sdgs#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">environmental racism</td><td class="linkTitle"><a href="http://www.vice.com/read/letter-to-president-obama-natural-gas-interview#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">email-a-tree</td><td class="linkTitle"><a href="http://www.theatlantic.com/technology/archive/2015/07/when-you-give-a-tree-an-email-address/398210/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">dewey and democracy</td><td class="linkTitle"><a href="https://aeon.co/essays/dewey-knew-how-to-teach-democracy-and-we-must-not-forget-it#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">s10-existential risk prevention as global priority</td><td class="linkTitle"><a href="http://www.existential-risk.org/concept.pdf#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">recyling is not yet norm</td><td class="linkTitle"><a href="http://www.wastedive.com/news/pew-survey-recycling-still-not-a-cultural-norm-for-nearly-13-of-us-reside/427857/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">fragility of parks</td><td class="linkTitle"><a href="https://aeon.co/ideas/why-breaking-the-rules-outdoors-is-an-irresponsible-thrill#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">innovation overvalued vs maintenance</td><td class="linkTitle"><a href="https://aeon.co/essays/innovation-is-overvalued-maintenance-often-matters-more#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">john muir in fl</td><td class="linkTitle"><a href="http://www.tampabay.com/news/perspective/perspective-what-john-muirs-walk-through-wild-florida-can-teach-us-today/2296021#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">sociology</td><td class="linkName">firehose of falsehood propoganda</td><td class="linkTitle"><a href="https://www.rand.org/content/dam/rand/pubs/perspectives/PE100/PE198/RAND_PE198.pdf" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+
+        </tbody>
+      </table>
+
+
+    </div> <!--close container-->
+  </div> <!--close section-->
+</body>
+</html>

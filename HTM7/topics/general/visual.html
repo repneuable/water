@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--*
+    *
+    * Author: Kevin Hitt
+    * Date:
+    * Purpose:
+    *
+    * TABLE OF CONTENTS
+    *
+    * HEAD
+    *   01. Meta Tags
+    *   02. Title
+    *   03. Favicon
+    *   04. CSS
+    *   05. JavaScript
+    * STYLE
+    * BODY
+    *   06.
+    *   07.
+    *   08.
+    *   09.
+    * SCRIPT
+    *-->
+
+<head>
+
+<!-- 01. Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="html, table, sortable">
+  <meta name="description" content="An expirement in sortable tables">
+  <meta name="author" content="Kevin Hitt">
+
+<!-- 02. Title -->
+  <title>Visual</title>
+
+<!-- 03. Favicon -->
+  <link rel="shortcut icon" href="http://placehold.it/150x150">
+
+<!-- 04. Cascading Style Sheets -->
+  <link type="text/css" rel="stylesheet" href="../../../C55/The_Sortable_Titles.css">
+  <link type="text/css" rel="stylesheet" href="../../../C55/website.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- 05. Javascript -->
+   <script type="text/javascript" src="../../../J5/The_Sortable_Titles.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<!--
+03. Individual Table Properties
+      table class methods
+          margin-top/bottom/etc.
+          font-weight/size
+          text-align
+-->
+
+
+<body>
+  <div id="table" class="section">
+    <div class="container">
+
+
+<table id="myTable" class="topTierTable">
+  <!--ROW 0-->
+    <thead>
+      <tr><th>   TAG</th><th onclick="sortTable(1)">   TITLE</th><th> LINK</th><th onclick="sortTable(1)">  COMMENT</th></tr>
+    </thead>
+  <!--ROWS-->
+    <tbody>
+          <tr><td class="linkCategory">visual</td><td class="linkName">ezra miller</td><td class="linkTitle"><a href="https://ezramiller.biz/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">colours</td><td class="linkTitle"><a href="http://colours.neilorangepeel.com/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">hacking for artists</td><td class="linkTitle"><a href="http://hackingforartists.com/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">five lessons of design</td><td class="linkTitle"><a href="http://abduzeedo.com/5-lessons-massimo-vignelli#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">ancient qigong</td><td class="linkTitle"><a href="https://commons.wikimedia.org/wiki/Category%253AXiuzhen_miyao?oldid=204471770#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">matt furie</td><td class="linkTitle"><a href="http://www.thefader.com/tag/matt-furie#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">memes in visual culture</td><td class="linkTitle"><a href="http://vcu.sagepub.com/content/current#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">internet ugly</td><td class="linkTitle"><a href="http://www.theatlantic.com/technology/archive/2014/12/internet-ugly-and-the-aesthetic-of-failing-on-purpose/384023/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">solange digital art</td><td class="linkTitle"><a href="http://www.solangemusic.com/digitalbook/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">accelerationist art</td><td class="linkTitle"><a href="http://furtherfield.org/features/articles/accelerationist-art#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">francis bacon</td><td class="linkTitle"><a href="https://www.artsy.net/artist/francis-bacon#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">kintsugi</td><td class="linkTitle"><a href="https://en.wikipedia.org/wiki/Kintsugi#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">kintsugi blog</td><td class="linkTitle"><a href="http://andrewbaseman.com/blog/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">paul klee</td><td class="linkTitle"><a href="https://monoskop.org/images/1/15/Paul_Klee_Notebooks_Vol_1_The_Thinking_Eye.pdf#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">paul klee perspective</td><td class="linkTitle"><a href="https://www.artsy.net/article/artsy-editorial-how-to-be-an-artist-according-to-paul-klee#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">photos in total darkness</td><td class="linkTitle"><a href="http://thecreatorsproject.vice.com/blog/rafael-herman-photographs-of-israel-in-total-darkness#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">paul ranson blue room</td><td class="linkTitle"><a href="http://www.the-athenaeum.org/art/detail.php?ID=66749#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">apolloniasaintclair</td><td class="linkTitle"><a href="https://www.behance.net/apolloniasaintclair#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">Paul Klee</td><td class="linkTitle"><a href="https://monoskop.org/images/4/4e/Paul_Klee_Notebooks_Vol_2_The_Nature_of_Nature.pdf#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">ishion hutchinson story</td><td class="linkTitle"><a href="http://www.latimes.com/books/jacketcopy/la-ca-jc-ishion-hutchinson-20170420-story.html" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">example blog - aries II</td><td class="linkTitle"><a href="https://dyske.com/paper/683" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">codex vitae template</td><td class="linkTitle"><a href="https://medium.com/@coachdotme/562e2a24d7d" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">books that made them writers</td><td class="linkTitle"><a href="http://www.omnivoracious.com/2017/04/the-books-that-made-them-writers-amazon-book-review.html" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">twitter - taolin</td><td class="linkTitle"><a href="https://twitter.com/tao_lin/status/832059442363408384" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">twitter - 70s scifi</td><td class="linkTitle"><a href="https://twitter.com/70sscifiart/status/832229541296926721" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">jess kanda</td><td class="linkTitle"><a href="http://www.jessekanda.com/" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">twitter - orz</td><td class="linkTitle"><a href="https://twitter.com/__orz/status/850560797897932801" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">twitter - spirit quartz</td><td class="linkTitle"><a href="https://twitter.com/spiritquartz_/status/853786509568114688" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">twitter - dalton108</td><td class="linkTitle"><a href="https://twitter.com/dalton108/status/854706151866327040" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">twitter - bryantgiles</td><td class="linkTitle"><a href="https://twitter.com/bryantgiles123/status/855232390326833152" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">twitter - nicosegal</td><td class="linkTitle"><a href="https://twitter.com/nicosegal/status/855819086537928704" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">twitter - teamfrank</td><td class="linkTitle"><a href="https://twitter.com/TeamFrankDaily/status/856596119144599554" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">twitter - fader</td><td class="linkTitle"><a href="https://twitter.com/thefader/status/856643923737022464" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">twitter - 730t</td><td class="linkTitle"><a href="https://twitter.com/730t__/status/862838826313449472" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">twitter - gqnyc</td><td class="linkTitle"><a href="https://twitter.com/GqNyc1/status/864097347042725888" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">youtube video</td><td class="linkTitle"><a href="https://www.youtube.com/watch?v=ysY4bFdY_JY" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">twitter - shintarokago</td><td class="linkTitle"><a href="https://twitter.com/shintarokago/status/865112823050813440" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">twitter - tim oconnell</td><td class="linkTitle"><a href="https://twitter.com/Tim_OConnell/status/866445580784074752" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">twitter - effies</td><td class="linkTitle"><a href="https://twitter.com/effies/status/867396248919134208" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">twitter - darienbruze</td><td class="linkTitle"><a href="https://twitter.com/darienbruze/status/867808270144221184" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">tao lin</td><td class="linkTitle"><a href="http://www.taolin.info/" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">muumuu house</td><td class="linkTitle"><a href="https://t.co/T5HqIbhTPT?ssr=true" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">twitter - daddykev</td><td class="linkTitle"><a href="https://twitter.com/daddykev/status/866328672193486849" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">fractal fantasy</td><td class="linkTitle"><a href="https://fractalfantasy.net/#/21/first_opus" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">twitter dublab</td><td class="linkTitle"><a href="https://twitter.com/dublab" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">visual</td><td class="linkName">visual waves</td><td class="linkTitle"><a href="http://armanddijcks.com/cinemagraphs-waves" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+        </tbody>
+      </table>
+
+
+    </div> <!--close container-->
+  </div> <!--close section-->
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--*
+    *
+    * Author: Kevin Hitt
+    * Date:
+    * Purpose:
+    *
+    * TABLE OF CONTENTS
+    *
+    * HEAD
+    *   01. Meta Tags
+    *   02. Title
+    *   03. Favicon
+    *   04. CSS
+    *   05. JavaScript
+    * STYLE
+    * BODY
+    *   06.
+    *   07.
+    *   08.
+    *   09.
+    * SCRIPT
+    *-->
+
+<head>
+
+<!-- 01. Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="html, table, sortable">
+  <meta name="description" content="An expirement in sortable tables">
+  <meta name="author" content="Kevin Hitt">
+
+<!-- 02. Title -->
+  <title>Design</title>
+
+<!-- 03. Favicon -->
+  <link rel="shortcut icon" href="http://placehold.it/150x150">
+
+<!-- 04. Cascading Style Sheets -->
+  <link type="text/css" rel="stylesheet" href="../../../C55/The_Sortable_Titles.css">
+  <link type="text/css" rel="stylesheet" href="../../../C55/website.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- 05. Javascript -->
+   <script type="text/javascript" src="../../../J5/The_Sortable_Titles.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<!--
+03. Individual Table Properties
+      table class methods
+          margin-top/bottom/etc.
+          font-weight/size
+          text-align
+-->
+
+
+<body>
+  <div id="table" class="section">
+    <div class="container">
+
+
+<table id="myTable" class="topTierTable">
+  <!--ROW 0-->
+    <thead>
+      <tr><th>   TAG</th><th onclick="sortTable(1)">   TITLE</th><th> LINK</th><th onclick="sortTable(1)">  COMMENT</th></tr>
+    </thead>
+  <!--ROWS-->
+    <tbody>
+          <tr><td class="linkCategory">design</td><td class="linkName">information is beautiful awards</td><td class="linkTitle"><a href="http://www.informationisbeautifulawards.com/news/188-2016-the-winners#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">apr design guide</td><td class="linkTitle"><a href="http://www.plasticsrecycling.org/apr-design-guide/apr-design-guide-home#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">inclusive design toolkit</td><td class="linkTitle"><a href="http://www.inclusivedesigntoolkit.com/betterdesign2#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">simpleicons</td><td class="linkTitle"><a href="https://simpleicons.org/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">jsomers</td><td class="linkTitle"><a href="http://jsomers.net/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">typeform</td><td class="linkTitle"><a href="https://www.typeform.com/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">liquid blackness</td><td class="linkTitle"><a href="http://liquidblackness.com/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">free optical character recognition tool</td><td class="linkTitle"><a href="http://www.free-online-ocr.com/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">web gradients</td><td class="linkTitle"><a href="https://webgradients.com/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">html5</td><td class="linkTitle"><a href="https://html5up.net/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">flex paper sculptures</td><td class="linkTitle"><a href="http://www.boredpanda.com/flexible-paper-sculptures-li-hongbo/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">6 subversive wall designs</td><td class="linkTitle"><a href="https://www.wired.com/2017/03/6-ways-sneak-subversive-design-trumps-border-wall/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">GSU physics publications index</td><td class="linkTitle"><a href="http://www.physics.gsu.edu/addis/publications/index.html" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">GSU physics Sarsour index</td><td class="linkTitle"><a href="http://www.physics.gsu.edu/Sarsour/index.html" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">GSU hyperphysics</td><td class="linkTitle"><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">GSU hyperphysics - biology</td><td class="linkTitle"><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/Biology/" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">GSU hyperphysics - chemistry</td><td class="linkTitle"><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/Chemical/chemcon.html#c1" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">GSU hyperphysics - geophysics</td><td class="linkTitle"><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/Geophys/geophys.html#c1" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">GSU wwwxxx</td><td class="linkTitle"><a href="http://www2.gsu.edu/~wwwxxx/" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">GSU wwwitr</td><td class="linkTitle"><a href="http://www2.gsu.edu/~wwwitr/docs/mjgames/" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">Umaine Misclab</td><td class="linkTitle"><a href="http://misclab.umeoce.maine.edu/boss/classes/" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">153 define please</td><td class="linkTitle"><a href="http://www.chm.bris.ac.uk/motm/motm.htm" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">richard taylor research</td><td class="linkTitle"><a href="https://blogs.uoregon.edu/richardtaylor/research/" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">geocraft</td><td class="linkTitle"><a href="http://www.geocraft.com/wgindex.html" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">old html</td><td class="linkTitle"><a href="http://www.404pagefound.com/category/original/" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">Uwisc Physics</td><td class="linkTitle"><a href="sprott.physics.wisc.edu/fractals.htm" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">php database</td><td class="linkTitle"><a href="http://www.phpkode.com/scripts/" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">design</td><td class="linkName">multiple nav pages</td><td class="linkTitle"><a href="https://www.w3.org/wiki/Creating_multiple_pages_with_navigation_menus" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+        </tbody>
+      </table>
+
+
+    </div> <!--close container-->
+  </div> <!--close section-->
+</body>
+</html>

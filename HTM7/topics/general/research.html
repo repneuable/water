@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--*
+    *
+    * Author: Kevin Hitt
+    * Date:
+    * Purpose:
+    *
+    * TABLE OF CONTENTS
+    *
+    * HEAD
+    *   01. Meta Tags
+    *   02. Title
+    *   03. Favicon
+    *   04. CSS
+    *   05. JavaScript
+    * STYLE
+    * BODY
+    *   06.
+    *   07.
+    *   08.
+    *   09.
+    * SCRIPT
+    *-->
+
+<head>
+
+<!-- 01. Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="html, table, sortable">
+  <meta name="description" content="An expirement in sortable tables">
+  <meta name="author" content="Kevin Hitt">
+
+<!-- 02. Title -->
+  <title>Research</title>
+
+<!-- 03. Favicon -->
+  <link rel="shortcut icon" href="http://placehold.it/150x150">
+
+<!-- 04. Cascading Style Sheets -->
+  <link type="text/css" rel="stylesheet" href="../../../C55/The_Sortable_Titles.css">
+  <link type="text/css" rel="stylesheet" href="../../../C55/website.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- 05. Javascript -->
+   <script type="text/javascript" src="../../../J5/The_Sortable_Titles.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<!--
+03. Individual Table Properties
+      table class methods
+          margin-top/bottom/etc.
+          font-weight/size
+          text-align
+-->
+
+
+<body>
+  <div id="table" class="section">
+    <div class="container">
+
+
+<table id="myTable" class="topTierTable">
+  <!--ROW 0-->
+    <thead>
+      <tr><th>   TAG</th><th onclick="sortTable(1)">   TITLE</th><th> LINK</th><th onclick="sortTable(1)">  COMMENT</th></tr>
+    </thead>
+  <!--ROWS-->
+    <tbody>
+          <tr><td class="linkCategory">research</td><td class="linkName">wikiverse</td><td class="linkTitle"><a href="http://wikiverse.io/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">environmental research letters</td><td class="linkTitle"><a href="http://iopscience.iop.org/issue/1748-9326/11/8#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">critical environmental justice studies</td><td class="linkTitle"><a href="http://www.csun.edu/cdsc/Readings/David_Pellow-TOWARD_A_CRITICAL_ENVIRONMENTAL_JUSTICE.pdf#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">global forest watch vs global forest resource assessment</td><td class="linkTitle"><a href="http://www.wri.org/blog/2016/08/insider-global-forest-watch-and-forest-resources-assessment-explained-5-graphics#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">drought classifications</td><td class="linkTitle"><a href="http://droughtmonitor.unl.edu/aboutus/classificationscheme.aspx#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">recycling program availability</td><td class="linkTitle"><a href="http://www.recyclingtoday.com/article/spc-pet-bottle-recycling-study/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">swfwmd publications</td><td class="linkTitle"><a href="http://www.swfwmd.state.fl.us/publications/type/all#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">US energy information administration</td><td class="linkTitle"><a href="https://www.eia.gov/environment/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">senate committee environmental and public works</td><td class="linkTitle"><a href="http://www.epw.senate.gov/public/index.cfm/fisheries-water-and-wildlife#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">office of science and technology policy</td><td class="linkTitle"><a href="https://www.whitehouse.gov/administration/eop/ostp/pcast/docsreports#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">usace national wetland plant list</td><td class="linkTitle"><a href="http://rsgisias.crrel.usace.army.mil/NWPL/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">southern fire exchange</td><td class="linkTitle"><a href="http://www.southernfireexchange.org/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">swfwmd pdf search</td><td class="linkTitle"><a href="https://www.yumpu.com/user/swfwmd.state.fl.us#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">suwannee river wmd resources</td><td class="linkTitle"><a href="http://www.mysuwanneeriver.com/index.aspx?nid=345#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">berkeley understanding evolution</td><td class="linkTitle"><a href="http://evolution.berkeley.edu/evolibrary/home.php#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">3d printing and the world</td><td class="linkTitle"><a href="http://3dprintingindustry.com/news/trend-evolution-3d-printing-trends-part-1-24008/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">role of computers in global sustainability</td><td class="linkTitle"><a href="http://earthzine.org/2008/11/17/some-computer-science-issues-in-creating-a-sustainable-world/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">computer science and environment list</td><td class="linkTitle"><a href="http://www.cs4fn.org/environment/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">esa computers in ecology</td><td class="linkTitle"><a href="http://esajournals.onlinelibrary.wiley.com/hub/search/?journal-doi=all&q=computer#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">umd ecology email archives</td><td class="linkTitle"><a href="https://listserv.umd.edu/archives/ecolog-l.html#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">usf ecohydrology</td><td class="linkTitle"><a href="http://sfrc.ufl.edu/ecohydrology/index.html#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">scistarter</td><td class="linkTitle"><a href="https://scistarter.com/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">ee news pdf</td><td class="linkTitle"><a href="https://www.eenews.net/assets/2017/04/20/document_gw_01.pdf#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">graphene oxide membranes for filtration</td><td class="linkTitle"><a href="http://ieeexplore.ieee.org/document/7388960/?reload=true#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">mdpi article</td><td class="linkTitle"><a href="http://www.mdpi.com/1424-8220/16/9/1461/htm#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">usafacts</td><td class="linkTitle"><a href="https://usafacts.org/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">berti index</td><td class="linkTitle"><a href="http://home.ufam.edu.br/berti/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">nano materials</td><td class="linkTitle"><a href="http://home.ufam.edu.br/berti/nanomateriais/test-1.html#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">intech open</td><td class="linkTitle"><a href="http://www.intechopen.com/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">global conservation theses engine</td><td class="linkTitle"><a href="http://opwall.com/research-library/phd-theses/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">#scholarsunday</td><td class="linkTitle"><a href="https://twitter.com/hashtag/ScholarSunday?src=hash#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">#icanhazpdf?</td><td class="linkTitle"><a href="https://twitter.com/hashtag/ICanHazPDF?src=hash#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">#acwri</td><td class="linkTitle"><a href="https://twitter.com/hashtag/AcWri#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">#ecrchat</td><td class="linkTitle"><a href="https://twitter.com/hashtag/ecrchat#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">cornell polymer additive</td><td class="linkTitle"><a href="http://www.news.cornell.edu/stories/2017/02/polymer-additive-could-revolutionize-plastics-recycling#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">nasa software</td><td class="linkTitle"><a href="https://software.nasa.gov/#" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+          <tr><td class="linkCategory">research</td><td class="linkName">uk env agency</td><td class="linkTitle"><a href="https://www.gov.uk/government/publications?departments%5B%5D=environment-agency" target="_blank">(x)</a> </td><td class="cellComment">none</td></tr>
+        </tbody>
+      </table>
+
+
+    </div> <!--close container-->
+  </div> <!--close section-->
+</body>
+</html>
