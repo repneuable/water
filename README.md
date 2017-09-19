@@ -1,2 +1,2 @@
 # water
-to let the world know
+stay for a while
