@@ -5,7 +5,7 @@
     *
     * Author: Kevin Hitt
     * Date: May 2017 -
-    * Purpose: Sortable Titles
+    * Purpose: Personal
     *
     * TABLE OF CONTENTS
     *
@@ -30,13 +30,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="keywords" content="html, table, sortable">
   <meta name="description" content="An expirement in sortable tables">
-  <meta name="author" content="Kevin Hitt">
+  <meta name="author" content="Kevin H">
 
 <!-- H2. Title -->
-  <title>The_Sortable_Titles</title>
+  <title>Sortable Draggable</title>
 
 <!-- H3. Favicon -->
-  <link rel="shortcut icon" href="http://placehold.it/150x150">
+  <link rel="shortcut icon" href="../favicon.ico">
 
 <!-- H4. Cascading Style Sheets -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -76,10 +76,9 @@
   <div id="draggable">
 
         <table class="topTierTable" height="auto" width="auto">
-          <thead>
             <tr>
               <td class="topSearchTile" colspan="3"><input class="searchBox1" id="searchTopics" type="search" placeholder="search topics" onkeyup="myFunction()"></td>
-              <td class="topTextTile" colspan="8">SORTABLE TITLES</td>
+              <td class="topTextTile" colspan="8">kevinh.work</td>
             </tr>
           </thead>
 
@@ -193,7 +192,7 @@
               <td width="50px">CALM</td>
               <td width="50px">ECO</td>
               <td width="50px">SOUND</td>
-              <td>INDEX</td>
+              <td><a href="../index.html" target="_blank">INDEX</a></td>
             </tr>
           </tbody>
         </table>
@@ -230,7 +229,9 @@
 
   <div id="draggable3">
       <table class="myTable" id="myTable" align="center">
-
+          <thead>
+            <tr><td class="rowDraggable"></td><td class="rowDraggable"></td></tr>
+          </thead>
           <thead>
             <tr><th onclick="sortTable(0)">   TITLE</th><th onclick="sortTable(1)">   SOURCE</th></tr>
           </thead>
@@ -264,7 +265,9 @@
 
   <div id="draggable4">
       <table class="myTable" id="myTable2" align="center">
-
+        <thead>
+          <tr><td class="rowDraggable"></td><td class="rowDraggable"></td></tr>
+        </thead>
         <thead>
           <tr><th onclick="sortTable2(0)">TITLE</th><th onclick="sortTable2(1)">SOURCE</th></tr>
         </thead>
@@ -301,9 +304,11 @@
 
   <div id="draggable5">
       <table class="myTable" id="myTable3" align="center">
-
         <thead>
-          <tr><th onclick="sortTable2(0)">TITLE</th><th onclick="sortTable2(1)">SOURCE</th></tr>
+          <tr><td class="rowDraggable"></td><td class="rowDraggable"></td></tr>
+        </thead>
+        <thead>
+          <tr><th onclick="sortTable3(0)">TITLE</th><th onclick="sortTable3(1)">SOURCE</th></tr>
         </thead>
 
         <tbody>
@@ -320,7 +325,9 @@
 
   <div id="draggable6">
       <table class="myTable" id="referenceTable" align="center">
-
+        <thead>
+          <tr><td class="rowDraggable"></td><td class="rowDraggable"></td></tr>
+        </thead>
         <thead>
           <tr><th>TITLE</th><th>SOURCE</th></tr>
         </thead>
