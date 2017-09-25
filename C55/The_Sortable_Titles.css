@@ -49,7 +49,15 @@ html, body {
     margin-bottom: 12px; /* Add some space below the input */
 }
 
-#draggable {
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#draggable1 {
   position: absolute;
   top: 12.5%;
   left: 12.5%;
@@ -187,7 +195,7 @@ td {
 /*TOPIC FILES*/
 .linkCategory{
   padding: 2px 8px 2px 8px;
-  font-size: 8px;
+  font-size: 7.5px;
   width: 10%;
 }
 .linkName{
@@ -204,7 +212,28 @@ td {
   width: 10%;
 }
 
-
+.topicHyperlink {
+  color: #e4a1b3;
+  visited: #a0a0a0;
+}
+a {
+    color: #e4a1b3;
+}
+p a {
+  color: #b4b4b4;
+}
+a:visited {
+    color: #000;
+}
+a:hover {
+    color: #a0a0a0;
+}
+a:focus {
+    color: #ffffff;
+}
+a:active {
+    color: #a2a2a3;
+}
 /*SORTING TABLES*/
 
 .tablePending {
