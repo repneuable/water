@@ -24,7 +24,7 @@
 
 <head>
 
-<!-- H1. Meta Tags -->
+<!-- Meta Tags -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -32,30 +32,28 @@
   <meta name="description" content="An expirement in sortable tables">
   <meta name="author" content="Kevin H">
 
-<!-- H2. Title -->
+<!-- Title -->
   <title>Sortable Draggable</title>
 
-<!-- H3. Favicon -->
+<!-- Favicon -->
   <link rel="shortcut icon" href="../favicon.ico">
 
-<!-- H4. Cascading Style Sheets -->
+<!-- Cascading Style Sheets -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link type="text/css" rel="stylesheet" href="../C55/website-responsive.css">
-  <link type="text/css" rel="stylesheet" href="../C55/The_Sortable_Titles.css">
+  <link type="text/css" rel="stylesheet" href="../C55/website-responsive.css">                    <!--FILEPATH-->
+  <link type="text/css" rel="stylesheet" href="../C55/The_Sortable_Titles.css">                   <!--FILEPATH-->
 
-<!-- H5. Javascript -->
+<!-- Javascript -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <script type="text/javascript" src="../J5/The_Sortable_Titles.js"></script>
-
+   <script type="text/javascript" src="../J5/The_Sortable_Titles.js"></script>                    <!--FILEPATH-->
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-
     <script>
     $( function() {
-      $( "#draggable" ).draggable();
+      $( "#draggable1" ).draggable();
       $( "#draggable2" ).draggable();
       $( "#draggable3" ).draggable();
       $( "#draggable4" ).draggable();
@@ -64,24 +62,43 @@
     } );
     </script>
 
+<div id="header">
+  <table width ="100%" style="margin: 0px;">
+    <tbody>
+      <tr>
+        <td>
+          kevinh.work
+        </td>
+        <td>
+          <input type="search" class="searchBox1" placeholder="GLOBAL" onkeyup="myFunction0()" id="search0">
+        </td>
+      </tr>
+      <tr>
+        <td>A</td><td>B</td><td>C</td><td>D</td><td>E</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
 </head>
-
-
+<!--END HEADER-->
+<!--BEGIN BODY-->
 <body>
 
   <div class="section">
     <div class="container" style="height:750px;">
 
-<!-- B1. TOP BOX-->
-  <div id="draggable">
+  <div id="draggable1">
 
-        <table class="topTierTable" height="auto" width="auto">
+              <!--SEARCHBOX1 and TITLE-->
+        <table class="topTierTable">
+          <thead>
             <tr>
               <td class="topSearchTile" colspan="3"><input class="searchBox1" id="searchTopics" type="search" placeholder="search topics" onkeyup="myFunction()"></td>
               <td class="topTextTile" colspan="8">kevinh.work</td>
             </tr>
           </thead>
-
           <tbody>
             <tr class="middleTileRow">
               <td colspan="3"><input class="searchBox2" id="searchGeneral" type="search" placeholder="search general" onkeyup="myFunction2()"></td>
@@ -91,7 +108,7 @@
                 <select class="dropdown" align="center">
                   <option value="">Anthropocene</option>
                       <optgroup label="Energy Resources and Consumption">
-                        <option value="enterCustomReturnValueForSelection">Conservation</option>
+                        <option value="conservation">Conservation</option>
                         <option>Energy and Environment</option>
                         <option>Policy</option>
                         <option>Recycling</option>
@@ -127,6 +144,7 @@
                       </optgroup>
                   </select>
               </td>
+            <!--SEARCHBOX RANDOM and DROPDOWN-->
             </tr>
             <tr class="middleTileRow">
               <td colspan="3"><input class="searchBox2" id="searchRandom" type="search" placeholder="search random" onkeyup="myFunction2()" /></td>
@@ -155,6 +173,7 @@
                 </select>
               </td>
             </tr>
+            <!--SEARCHBOX UNIVERSE and DROPDOWN-->
             <tr class="middleTileRow">
               <td colspan="3"><input class="searchBox2" id="searchRandom2" type="search" placeholder="search universe" onkeyup="myFunction2()" /></td>
               <td colspane="8">
@@ -188,6 +207,7 @@
                 </select>
               </td>
             </tr>
+            <!--TOPIC BOXES and INDEX LINK-->
             <tr class="topicsRow">
               <td width="50px">CALM</td>
               <td width="50px">ECO</td>
@@ -196,7 +216,8 @@
             </tr>
           </tbody>
         </table>
-  </div>  <!--closes draggable-->
+  </div>  <!--closes draggable1-->
+
 
   <div id="draggable2">
         <table class="pendingTable" id="tablePending" height="auto" width="auto">
@@ -228,7 +249,7 @@
 
 
   <div id="draggable3">
-      <table class="myTable" id="myTable" align="center">
+      <table class="myTable" id="myTable" align="center"> <!--Uses myFunction in J5-->
           <thead>
             <tr><td class="rowDraggable"></td><td class="rowDraggable"></td></tr>
           </thead>
@@ -338,6 +359,14 @@
         </tbody>
       </table>
   </div> <!--closes draggable6-->
+
+<p>
+ (<a href="" class="topicHyperlink">News Event 1</a>)
+ /
+ (<a href="" class="topicHyperlink">Event 2</a>)
+ /
+
+</p>
 
   </div> <!--closes container-->
 </div> <!--close section-->
