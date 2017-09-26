@@ -67,7 +67,7 @@
     <tbody>
       <tr>
         <td>
-          kevinh.work
+          <a href="The_Sortable_Titles.html">kevinh.work</a>
         </td>
         <td>
           <input type="search" class="searchBox1" placeholder="GLOBAL" onkeyup="myFunction0()" id="search0">
@@ -78,7 +78,6 @@
       </tr>
     </tbody>
   </table>
-
 </div>
 
 </head>
@@ -105,10 +104,10 @@
 
               <!--B1-1. DROPDOWN MENU-->
               <td colspan="8">
-                <select class="dropdown" align="center">
+                <select class="dropdown" align="center" onchange="location = this.options[this.selectedIndex].value;">
                   <option value="">Anthropocene</option>
                       <optgroup label="Energy Resources and Consumption">
-                        <option value="conservation">Conservation</option>
+                        <option value="../HTM7/topics/conservation.html">Conservation</option>
                         <option>Energy and Environment</option>
                         <option>Policy</option>
                         <option>Recycling</option>
@@ -149,7 +148,7 @@
             <tr class="middleTileRow">
               <td colspan="3"><input class="searchBox2" id="searchRandom" type="search" placeholder="search random" onkeyup="myFunction2()" /></td>
               <td colspan="8">
-                <select class="dropdown">
+                <select class="dropdown" onchange="location = this.options[this.selectedIndex].value;">
                   <option>Ecosphere</option>
                   <optgroup label="Earth Systems and Resources">
                     <option>Chemical Cycle</option>
@@ -177,7 +176,7 @@
             <tr class="middleTileRow">
               <td colspan="3"><input class="searchBox2" id="searchRandom2" type="search" placeholder="search universe" onkeyup="myFunction2()" /></td>
               <td colspane="8">
-                <select class="dropdown">
+                <select id ="searchBoxRandom" class="dropdown" onchange="displayReturn();">
                   <option>General</option>
                   <optgroup label="General">
                     <option>Blog</option>
