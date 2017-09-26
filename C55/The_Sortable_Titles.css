@@ -60,7 +60,7 @@ html, body {
 #draggable1 {
   position: absolute;
   top: 12.5%;
-  left: 12.5%;
+  left: 87.5%;
 }
 
 #draggable2 {
@@ -141,7 +141,7 @@ td {
 .topTierTable{
   position: relative;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
 }
 
