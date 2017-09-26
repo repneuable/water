@@ -313,3 +313,11 @@ function myFunction0() {
      }
    }
 }
+
+function displayReturn() {
+
+  var optionSelection = document.getElementById("searchBoxRandom");
+  var displaySelection = optionSelection.options[optionSelection.selectedIndex].text;
+  alert(displaySelection);
+  document.getElementById("searchRandom2").innerHTML = displaySelection;
+}
