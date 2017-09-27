@@ -59,8 +59,8 @@ html, body {
 
 #draggable1 {
  position: absolute;
- left: 83.3438px;
- top: 619.5px;
+ left: 50%;
+ top: 50%;
 }
 
 #draggable2 {
