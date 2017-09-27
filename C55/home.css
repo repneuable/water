@@ -44,11 +44,6 @@ html, body {
  border-collapse: separate;
 }
 
-#myInput {
-   width: 50%; /* Full-width */
-   margin-bottom: 12px; /* Add some space below the input */
-}
-
 #header {
  position: fixed;
  top: 0;
@@ -57,43 +52,19 @@ html, body {
  z-index: 1;
 }
 
-#draggable1 {
+#dragHome {
  position: absolute;
  left: 35%;
  top: 25%;
 }
 
-#draggable2 {
- position: absolute;
- left: 25%;
- top: 253.797px;
-}
-
-#draggable3 {
- position: absolute;
- left: 293.75px;
- top: 62.5938px;
-}
-
-#draggable4 {
- position: absolute;
- left: 568.188px;
- top: 64.5938px;
-}
-
-#draggable5 {
- position: absolute;
- left: 79.7969px;
- top: 63.5938px;
-}
-
-#draggable6 {
+#dragTemplate {
  position: absolute;
  left: 25%;
  top: 170.594px;
 }
 
-.rowDraggable{
+.rowDRAG {
  border: none;
  height: 20px;
  background-color: #e4a1b3;
@@ -127,95 +98,45 @@ td {
 03. Individual Table Properties
 *******************************/
 
-/*PENDING TABLE*/
 
-.pendingTable{
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
-
-}
-
-/*TOP TABLE*/
-
-.topTierTable{
+.tableHOME{
  position: relative;
  margin-top: 20px;
  margin-bottom: 15px;
 
 }
 
- /*TOP TILES and ELEMENTS*/
- .topSearchTile {
+ .searchBOX {
    vertical-align: central;
    text-align: center;
- }
-
- .topTextTile{
-   font-weight: bold;
-   font-size: 26px;
-   text-align: center;
- }
-
- .bottomSearchTile{
-   vertical-align: central;
-   text-align: center;
- }
-
- .searchBox1{
    font-size: 11px;
  }
 
- .searchBox2{
-   font-size: 11px;
- }
-
- .searchBox3{
-   font-size: 11px;
- }
-
- .searchBox4{
-   text-align: center;
- }
-
- .middleTileRow{
-   text-align: center;
- }
-
- .topicsRow{
-   text-align: center;
- }
-
-/*DOPDOWN*/
-
-.dropdown{
-
+.dropDOWN{
 }
 
+
 /*TOPIC FILES*/
-.linkCategory{
+.dataCAT{
  padding: 2px 8px 2px 8px;
  font-size: 7.5px;
  width: 10%;
 }
-.linkName{
+.dataTITLE{
  padding: 2px 20px 2px 8px;
  width: 50%;
 }
-.linkTitle {
+.dataPATH {
  padding: 2px 20px 2px 8px;
  text-align: center;
  width: 10%;
 }
-.cellComment {
+.dataCOMMENT {
  text-align: center;
  width: 10%;
 }
 
-.topicHyperlink {
- color: #b4b4b4;
- visited: #a0a0a0;
-}
+
 a {
    color: #000;
 }
@@ -234,21 +155,4 @@ a:focus {
 a:active {
    color: #a2a2a3;
 }
-/*SORTING TABLES*/
 
-.tablePending {
- position: relative;
- margin-bottom: 25px;
-}
-
-.myTable {
- position: relative;
- margin-bottom: 25px;
-
-}
-
-.cellComment{
- font-size: 8px;
- background-color: #a0a0a0;
- color: white;
-}
