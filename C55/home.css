@@ -59,14 +59,14 @@ html, body {
 
 #draggable1 {
  position: absolute;
- left: 50%;
- top: 50%;
+ left: 35%;
+ top: 25%;
 }
 
 #draggable2 {
  position: absolute;
  left: 81.75px;
- top: 353.797px;
+ top: 253.797px;
 }
 
 #draggable3 {
@@ -90,7 +90,7 @@ html, body {
 #draggable6 {
  position: absolute;
  left: 82.3906px;
- top: 270.594px;
+ top: 170.594px;
 }
 
 .rowDraggable{
