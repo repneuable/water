@@ -110,6 +110,7 @@ th {
 td {
  padding: 2px 8px 2px 8px;
  background-color: #d0d0e1;
+ text-align: center;
 }
 
 /******************************
@@ -157,6 +158,7 @@ td {
 .topicCALM {
   border-collapse: separate;
   background-color: #e4a1b3;
+  border: 1px solid black;
 }
 
 
