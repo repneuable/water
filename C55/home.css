@@ -70,6 +70,24 @@ html, body {
  background-color: #e4a1b3;
 }
 
+a {
+   color: #000;
+}
+p a {
+ color: #b4b4b4;
+}
+a:visited {
+   color: #88838A;
+}
+a:hover {
+   color: #a0a0a0;
+}
+a:focus {
+   color: #ffffff;
+}
+a:active {
+   color: #a2a2a3;
+}
 /******************************
 02. Global Table Properties
 *******************************/
@@ -136,23 +154,9 @@ td {
  width: 10%;
 }
 
+.topicCALM {
+  border-collapse: separate;
+  background-color: #e4a1b3;
+}
 
-a {
-   color: #000;
-}
-p a {
- color: #b4b4b4;
-}
-a:visited {
-   color: #88838A;
-}
-a:hover {
-   color: #a0a0a0;
-}
-a:focus {
-   color: #ffffff;
-}
-a:active {
-   color: #a2a2a3;
-}
 
