@@ -103,6 +103,7 @@ table{
 }
 
 th {
+   padding: 1px 5px 0.5px 5px;
    text-align: center;
    background-color: #d0d0d0;
 }
@@ -112,6 +113,8 @@ td {
  background-color: #d0d0e1;
  text-align: center;
 }
+
+
 
 /******************************
 03. Individual Table Properties
@@ -135,30 +138,42 @@ td {
 }
 
 
-/*TOPIC FILES*/
+.topicCALM {
+  border-collapse: collapse;
+  background-color: #e4a1b3;
+  width: 1px;
+  white-space: nowrap;
+}
+.topicCALM td {
+  text-align: left;
+}
+.topicCALM th {
+  padding: 1px 5px 1px 3px;
+}
+
+
+/**************************
+04. Topic Data
+**************************/
+
+
+.dataTITLE{
+ padding: 1px 5px 1px 5px;
+}
+.dataPATH {
+ padding: 1px 5px 1px 5px;
+ text-align: center;
+}
+.dataDATE {
+  width: 1px;
+  white-space: nowrap;
+}
 .dataCAT{
  padding: 2px 8px 2px 8px;
  font-size: 7.5px;
  width: 10%;
 }
-.dataTITLE{
- padding: 2px 20px 2px 8px;
- width: 50%;
-}
-.dataPATH {
- padding: 2px 20px 2px 8px;
- text-align: center;
- width: 10%;
-}
 .dataCOMMENT {
- text-align: center;
- width: 10%;
+padding: 1px 5px 1px 5px;
 }
-
-.topicCALM {
-  border-collapse: separate;
-  background-color: #e4a1b3;
-  border: 1px solid black;
-}
-
-
+ 
