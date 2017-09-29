@@ -300,7 +300,7 @@ function myFunction0() {
    var input, filter, table, tr, td, i;
    input = document.getElementById("searchGeneral");
    filter = input.value.toUpperCase();
-   table = document.getElementById("myTable2");
+   table = documelementById("myTable2");
    tr = table.getElementsByTagName("tr");
    for (i = 0; i < tr.length; i++) {
      td = tr[i].getElementsByTagName("td")[0];
