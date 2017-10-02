@@ -29,49 +29,58 @@
   <title>#!CHANGE TOPIC TITLE</title>
 
 <!-- 03. Favicon -->
-  <link rel="shortcut icon" href="http://placehold.it/150x150">
+  <link rel="shortcut icon" href="../favicon.ico">
 
 <!-- 04. Cascading Style Sheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link type="text/css" rel="stylesheet" href="../C55/home.css">
   <link type="text/css" rel="stylesheet" href="../C55/website.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- 05. Javascript -->
-   <script type="text/javascript" src="../J5/home.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../J5/home.js"></script>
+
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+   <script>
+   $( function() {
+     $( "#draggable1" ).draggable();
+   } );
+   </script>
 
   <!--HEADER-->
-   <div id="header">
-     <table width ="100%" style="margin: 0px;">
-       <tbody>
-         <tr>
-           <td>
-             <a href="home.html">kevinh.work</a>
-           </td>
-           <td>
-             <input type="search" class="searchBox1" placeholder="GLOBAL" onkeyup="myFunction0()" id="search0">
-           </td>
-         </tr>
-         <tr>
-            <td></td><td><a href="../index.html" target="_blank">INDEX</a></td>
-         </tr>
-       </tbody>
-     </table>
-   </div>
+  <div id="header">
+    <table width ="100%" style="margin: 0px;">
+      <tbody>
+        <tr>
+          <td>
+            <a href="home.html">kevinh.work</a>
+          </td>
+          <td>
+            <input type="search" class="searchBox1" placeholder="GLOBAL" onkeyup="myFunction0()" id="search0">
+          </td>
+        </tr>
+        <tr>
+           <td><a href="../Hydroponics.docx" target="_blank">HYDRO</a></td><td><a href="../index.html" target="_blank">INDEX</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </head>
 
 <body>
   <div id="section" class="section">
-    <div id="container" class="container">
+    <div id="container" class="container" style="height:750px;">
 
-
+<div id="draggable1">
    <table id="topictableCalm" class="topicCALM">
-         <caption>
-            calm
-         </caption>
+        <caption>
+          CALM
+        </caption>
          <thead>
-            <tr><th>   TITLE</th><th onclick="sort(0)">  </th><th> DATE</th><th onclick="sort(1)">  COMMENT</th></tr>
+            <tr><th>   TITLE</th><th onclick="sort(0)">  </th><th>DATE</th><th>TOPIC</th><th onclick="sort(1)">  COMMENT</th></tr>
           </thead>
           <tbody>
                     <tr>	<td class="dataTITLE">	calm over excitement	</td><td class="dataPATH"><a href="	http://www.calmdownmind.com/the-resistance-of-over-excitement/#	" target="_blank">	&UpperRightArrow; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	calm	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
@@ -83,164 +92,9 @@
                     <tr>	<td class="dataTITLE">	cognitive bias cheatsheet	</td><td class="dataPATH"><a href="	https://betterhumans.coach.me/cognitive-bias-cheat-sheet-55a472476b18#	" target="_blank">	&UpperRightArrow; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	calm	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
 </tbody>
       </table>
-
-   <table id="topictableSubtle" class="topicCALM">
-         <caption>
-            subtle energies
-         </caption>
-         <thead>
-            <tr><th>   TITLE</th><th onclick="sort(0)">   LINK</th><th> DATE</th><th onclick="sort(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-                     <tr>	<td class="linkName">	phylosymbiosis 	</td><td class="linkTitle">	<a href="	http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2000225#	" target="_blank">	(x)	</a> </td>	<td class="linkCategory">	E1	 - 	chemistry	</td>	<td class="cellComment">	none	</td>	</tr>
-          </tbody>
-         <tfoot>
-            <tr><td>Total:</td></tr>
-         </tfoot>
-      </table>
-   <table id="topictableDeep" class="topicCALM">
-         <caption>
-            deep ecology
-         </caption>
-         <thead>
-            <tr><th>   TITLE</th><th onclick="sort(0)">   LINK</th><th> DATE</th><th onclick="sort(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-                     <tr>	<td class="linkName">	phylosymbiosis 	</td><td class="linkTitle">	<a href="	http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2000225#	" target="_blank">	(x)	</a> </td>	<td class="linkCategory">	E1	 - 	chemistry	</td>	<td class="cellComment">	none	</td>	</tr>
-          </tbody>
-         <tfoot>
-            <tr><td>Total:</td></tr>
-         </tfoot>
-      </table>
-   <table id="topictableTraditional" class="topicCALM">
-         <caption>
-            traditional environmental knowledge
-         </caption>
-         <thead>
-             <tr><th>   TITLE</th><th onclick="sort(0)">   LINK</th><th> DATE</th><th onclick="sort(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-                     <tr>	<td class="linkName">	phylosymbiosis 	</td><td class="linkTitle">	<a href="	http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2000225#	" target="_blank">	(x)	</a> </td>	<td class="linkCategory">	E1	 - 	chemistry	</td>	<td class="cellComment">	none	</td>	</tr>
-          </tbody>
-         <tfoot>
-            <tr><td>Total:</td></tr>
-         </tfoot>
-      </table>
-   <table id="topictableHistory" class="topicCALM">
-         <caption>
-            history
-         </caption>
-         <thead>
-            <tr><th>   TITLE</th><th onclick="sort(0)">   LINK</th><th> DATE</th><th onclick="sort(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-                     <tr>	<td class="linkName">	phylosymbiosis 	</td><td class="linkTitle">	<a href="	http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2000225#	" target="_blank">	(x)	</a> </td>	<td class="linkCategory">	E1	 - 	chemistry	</td>	<td class="cellComment">	none	</td>	</tr>
-          </tbody>
-         <tfoot>
-            <tr><td>Total:</td></tr>
-         </tfoot>
-      </table>
-   <table id="topictableScience" class="topicCALM">
-         <caption>
-            science
-         </caption>
-         <thead>
-            <tr><th>   TITLE</th><th onclick="sortTableZ(0)">   LINK</th><th> DATE</th><th onclick="sortTableZ(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-                     <tr>	<td class="linkName">	phylosymbiosis 	</td><td class="linkTitle">	<a href="	http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2000225#	" target="_blank">	(x)	</a> </td>	<td class="linkCategory">	E1	 - 	chemistry	</td>	<td class="cellComment">	none	</td>	</tr>
-          </tbody>
-         <tfoot>
-            <tr><td>Total:</td></tr>
-         </tfoot>
-      </table>
-   <table id="topictableResearch" class="topicCALM">
-         <caption>
-            research
-         </caption>
-         <thead>
-            <tr><th>   TITLE</th><th onclick="sortTableZ(0)">   LINK</th><th> DATE</th><th onclick="sortTableZ(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-                     <tr>	<td class="linkName">	phylosymbiosis 	</td><td class="linkTitle">	<a href="	http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2000225#	" target="_blank">	(x)	</a> </td>	<td class="linkCategory">	E1	 - 	chemistry	</td>	<td class="cellComment">	none	</td>	</tr>
-          </tbody>
-         <tfoot>
-            <tr><td>Total:</td></tr>
-         </tfoot>
-      </table>
-      <table id="topictableTechnology" class="topicCALM">
-         <caption>
-            technology
-         </caption>
-         <thead>
-            <tr><th>   TITLE</th><th onclick="sortTableZ(0)">   LINK</th><th> DATE</th><th onclick="sortTableZ(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-                     <tr>	<td class="linkName">	phylosymbiosis 	</td><td class="linkTitle">	<a href="	http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2000225#	" target="_blank">	(x)	</a> </td>	<td class="linkCategory">	E1	 - 	chemistry	</td>	<td class="cellComment">	none	</td>	</tr>
-          </tbody>
-         <tfoot>
-            <tr><td>Total:</td></tr>
-         </tfoot>
-      </table>
-   <table id="topictableEducation" class="topicCALM">
-         <caption>
-            education
-         </caption>
-         <thead>
-            <tr><th>   TITLE</th><th onclick="sortTableZ(0)">   LINK</th><th> DATE</th><th onclick="sortTableZ(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-                     <tr>	<td class="linkName">	phylosymbiosis 	</td><td class="linkTitle">	<a href="	http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2000225#	" target="_blank">	(x)	</a> </td>	<td class="linkCategory">	E1	 - 	chemistry	</td>	<td class="cellComment">	none	</td>	</tr>
-          </tbody>
-         <tfoot>
-            <tr><td>Total:</td></tr>
-         </tfoot>
-      </table>
-   <table id="topictableIdea" class="topicCALM">
-         <caption>
-            idea
-         </caption>
-         <thead>
-            <tr><th>   TITLE</th><th onclick="sortTableZ(0)">   LINK</th><th> DATE</th><th onclick="sortTableZ(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-                     <tr>	<td class="linkName">	phylosymbiosis 	</td><td class="linkTitle">	<a href="	http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2000225#	" target="_blank">	(x)	</a> </td>	<td class="linkCategory">	E1	 - 	chemistry	</td>	<td class="cellComment">	none	</td>	</tr>
-          </tbody>
-         <tfoot>
-            <tr><td>Total:</td></tr>
-         </tfoot>
-      </table>
-   <table id="topictableBlog" class="topicCALM">
-         <caption>
-            blog
-         </caption>
-         <thead>
-            <tr><th>   TITLE</th><th onclick="sortTableZ(0)">   LINK</th><th> DATE</th><th onclick="sortTableZ(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-                     <tr>	<td class="linkName">	phylosymbiosis 	</td><td class="linkTitle">	<a href="	http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2000225#	" target="_blank">	(x)	</a> </td>	<td class="linkCategory">	E1	 - 	chemistry	</td>	<td class="cellComment">	none	</td>	</tr>
-          </tbody>
-         <tfoot>
-            <tr><td>Total:</td></tr>
-         </tfoot>
-      </table>
-   <table id="topictableEcological" class="topicCALM">
-         <caption>
-            ecological literacy
-         </caption>
-         <thead>
-            <tr><th>   TITLE</th><th onclick="sortTableZ(0)">   LINK</th><th> DATE</th><th onclick="sortTableZ(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-                     <tr>	<td class="linkName">	phylosymbiosis 	</td><td class="linkTitle">	<a href="	http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2000225#	" target="_blank">	(x)	</a> </td>	<td class="linkCategory">	E1	 - 	chemistry	</td>	<td class="cellComment">	none	</td>	</tr>
-          </tbody>
-         <tfoot>
-            <tr><td>Total:</td></tr>
-         </tfoot>
-      </table>
+</div>
 
     </div> <!--close container-->
   </div> <!--close section-->
 </body>
 </html>
- 
