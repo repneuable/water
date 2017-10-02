@@ -37,6 +37,11 @@ html, body {
  background-color: #d0d0d0;
 }
 
+.sectionSUB{
+  padding: 10px 0 50px 0;
+  background-color: #d0d0d0;
+}
+
 .container {
  overflow: auto;
  padding: 50px 0 50px 0;
@@ -47,6 +52,14 @@ html, body {
 #header {
  position: fixed;
  top: 0;
+ left: 0;
+ right: 0;
+ z-index: 1;
+}
+
+#headerSUB {
+ position: fixed;
+ bottom: 0;
  left: 0;
  right: 0;
  z-index: 1;
@@ -70,17 +83,15 @@ html, body {
  background-color: #e4a1b3;
 }
 
-a {
-   color: #000;
-}
-p a {
- color: #b4b4b4;
+a:link {
+ color: #7f7b81;
 }
 a:visited {
-   color: #88838A;
+   color: #6d6383;
 }
 a:hover {
-   color: #a0a0a0;
+   color: #848699;
+   text-decoration: overline;
 }
 a:focus {
    color: #ffffff;
@@ -100,12 +111,15 @@ table, th, td {
 table{
  margin-left: auto;
  margin-right: auto;
+ margin-bottom: 15px;
 }
 
 th {
    padding: 1px 5px 0.5px 5px;
    text-align: center;
    background-color: #d0d0d0;
+   border-top: hidden;
+   font-size: 11px;
 }
 
 td {
@@ -114,7 +128,20 @@ td {
  text-align: center;
 }
 
-
+caption {
+  padding: 3px 0 1px 0;
+  text-align: center;
+  background-color: #cacadd;
+  border-style: solid;
+  border-bottom: thick dotted;
+  border-width: 1px;
+  border-collapse: collapse;
+  border-color: gray;
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
 
 /******************************
 03. Individual Table Properties
@@ -151,7 +178,38 @@ td {
   padding: 1px 5px 1px 3px;
 }
 
+.topicECO {
+  width: 1px;
+  white-space: nowrap;
+}
 
+.topicECO td {
+  text-align: left;
+}
+.topicACTION {
+  width: 1px;
+  white-space: nowrap;
+}
+
+.topicACTION td {
+  text-align: left;
+}
+.topicSTUDY {
+  width: 1px;
+  white-space: nowrap;
+}
+
+.topicSTUDY td {
+  text-align: left;
+}
+.topicGEN {
+  width: 1px;
+  white-space: nowrap;
+}
+
+.topicGEN td {
+  text-align: left;
+}
 /**************************
 04. Topic Data
 **************************/
@@ -170,10 +228,11 @@ td {
 }
 .dataCAT{
  padding: 2px 8px 2px 8px;
- font-size: 7.5px;
+ font-size: 10px;
  width: 10%;
 }
 .dataCOMMENT {
 padding: 1px 5px 1px 5px;
+font-size: 10px;
+white-space: normal;
 }
- 
