@@ -38,3 +38,7 @@ these items / elements need to be added
 tbody tr:nth-child(even) {
 	background: #DCD1CE;	
 }
+
+site map 
+dropdown redirects
+welcome page w intro and how to use
