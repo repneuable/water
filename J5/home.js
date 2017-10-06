@@ -59,9 +59,9 @@ function displayReturn() {
 function convertPATH() {
   var title = document.getElementById('incomingTITLE').value;
   var path = document.getElementById('incomingPATH').value;
-  var product = title;
-
-  document.getElementById('outgoingSTRING').value = "<tr>	<td class\"dataTITLE\">" + title + "</td><td class=\"dataPATH\"><a href=\"" + path + "\" target=\"_blank\">	&UpperRightArrow; 	</a> </td>	<td class=\"dataDATE\">		</td>	<td class=\"dataCAT\">	unsorted	</td>	<td class=\"dataCOMMENT\">	none	</td>	</tr>";
+  var category = document.getElementByID('incomingCATEGORY').value;
+  
+  document.getElementById('outgoingSTRING').value = "<tr>	<td class\"dataTITLE\">" + title + "</td><td class=\"dataPATH\"><a href=\"" + path + "\" target=\"_blank\">	&UpperRightArrow; 	</a> </td>	<td class=\"dataDATE\">		</td>	<td class=\"dataCAT\">" + category	+ "</td>	<td class=\"dataCOMMENT\">	none	</td>	</tr>";
 }
 
 
