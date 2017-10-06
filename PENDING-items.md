@@ -39,6 +39,35 @@ tbody tr:nth-child(even) {
 	background: #DCD1CE;	
 }
 
-site map 
-dropdown redirects
-welcome page w intro and how to use
+env news timeline </br>
+mla/apa generator</br>
+pay.xslx </br>
+welcome page w intro and how to use </br>
+
+<p>
+PAGES
+<ul>
+	<li>
+		(img for homepage)
+	</li>
+	<li>
+		resume
+	</li>
+	<li>
+		research index
+	</li>
+	<li>
+		journal
+	</li>
+	<li>
+		soundcloud, twitter, instagram, facebook
+	</li>
+	<li>
+		contact / comment submission
+	</li>
+</ul>
+<ul>
+	<li>
+		rectangle sitemap visual 
+	</li>
+	
