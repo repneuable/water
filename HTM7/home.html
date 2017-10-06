@@ -187,6 +187,12 @@
                 </select>
               </td>
             </tr>
+            <tr>
+              <td colspan="8">
+
+              </td>
+
+            </tr>
             <!--TOPIC BOXES and INDEX LINK-->
             <tr>
                <td width="50px"><a href="../HTM7/topics/calm.html" target="_blank">CALM</a></td>
@@ -198,9 +204,26 @@
                <td width="50px"><a href="../HTM7/topics/gen.html" target="_blank">GEN</a></td>
               <td><a href="../index.html" target="_blank">INDEX</a></td>
              </tr>
+
           </tbody>
         </table>
   </div>  <!--closes draggable1-->
+
+  <form id="convertPATH">
+   <div class="converter">
+     <label><b>dataTITLE</b></label>
+     <input type="text" placeholder="enter dataTITLE" name="incomingTITLE" id="incomingTITLE" required>
+
+     <label><b>dataPATH</b></label>
+     <input type="text" placeholder="enter dataPATH" name="incomingPATH" id="incomingPATH" required>
+   </div>
+        <button type="button" onclick="convertPATH();">Convert</button>
+        <label><b>output</b></label>
+        <input type="text" placeholder="output" name="outgoingSTRING" id="outgoingSTRING">
+ </form>
+
+
+
 
 
   <div id="draggable2">
@@ -208,7 +231,7 @@
           <thead>
             <tr><td class="rowDraggable"></td><td class="rowDraggable"></td></tr>
           </thead>
-          <thead>
+          <thead>ß
             <tr>
               <th>
                 TITLE
