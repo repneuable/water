@@ -94,7 +94,7 @@ html, body {
   overflow: hidden;
  
  float: right;
- right: -50%;
+ right: 50%;
 }
 
 #dragTemplate {
