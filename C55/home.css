@@ -316,10 +316,3 @@ input[type=text]{
     z-index: 100;
 }
 
-
-iframe {
-   scrolling: no;
-   margin: 0;
-   padding: 0;
-   border: none;
-}
