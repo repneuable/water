@@ -145,6 +145,7 @@ table{
  margin-bottom: 15px;
  
  z-index: 0;
+ overflow: hidden;
 }
 
 th {
