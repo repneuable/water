@@ -34,8 +34,8 @@ html, body {
 .section {
 
  padding: 50px 0 100px 0;
- background-color: #d0d0d0;
-
+ background-color: #e4a1b3;
+ background-image: url("http://www.geocraft.com/WVFossils/PageMill_Images/background3.jpg");
 }
 
 .sectionSUB{
@@ -47,8 +47,11 @@ html, body {
  overflow: auto;
  padding: 50px 0 50px 0;
  background-color: #e4a1b3;
-  background: radial-gradient(circle, #bdcebe, #d6cbd3, #e4a1b3);
+ background: radial-gradient(circle, #f4e1d2, #d6cbd3, #d0d0d0);
  border-collapse: separate;
+ border-style: solid;
+ border-width: 1px;
+ border-color: black;
 }
 
 #header {
@@ -57,6 +60,10 @@ html, body {
  left: 0;
  right: 0;
  z-index: 1;
+}
+
+#header td {
+  padding: 0;
 }
 
 #headerSUB {
@@ -73,16 +80,29 @@ html, body {
  top: 25%;
 }
 
+#draggable1 {
+  z-index: 1;
+}
+
 #dragTemplate {
  position: absolute;
  left: 25%;
  top: 170.594px;
 }
 
+
 .rowDRAG {
  border: none;
  height: 20px;
  background-color: #e4a1b3;
+}
+
+a {
+  color: #7f7b81;
+}
+
+a img {
+  text-decoration: none;
 }
 
 a:link {
@@ -95,12 +115,17 @@ a:hover {
    color: #848699;
    text-decoration: overline;
 }
+a:hover img{
+  text-decoration: none;
+}
 a:focus {
    color: #ffffff;
 }
 a:active {
    color: #a2a2a3;
 }
+
+
 /******************************
 02. Global Table Properties
 *******************************/
@@ -158,9 +183,7 @@ caption {
 }
 
  .searchBOX {
-   vertical-align: central;
-   text-align: center;
-   font-size: 11px;
+   font-size: 9px;
  }
 
 .dropDOWN{
@@ -246,32 +269,43 @@ Converter
 
 /* Full-width input fields */
 input[type=text]{
-    width: 50%;
+    width: 80%;
     border: 1px solid #ccc;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin: 5px 5px 5px 5px;
 }
 
-/* Set a style for all buttons */
-button {
-    background-color: #C0C0F6;
-    color: white;
-    padding: 4px 10px;
-    margin-left: 25%;
-    border: none;
-    cursor: pointer;
-
-}
 
 
 
 /* Add padding to container elements */
 .converter {
-    height: 300px;
-    width: 200px;
+
+    height: auto;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
     font-size: 11px;
 
+}
 
+.converter table {
+  width: 300px;
+  margin-left: 23%;
+  margin-top: 5%;
+  position: relative;
+}
+.converter td{
+  text-align: left;
+  font-size: 8px;
+}
+
+
+.peekBOX {
+  display: none;
+  width: 100%;
+}
+  a:hover + .peekBOX,.peekBOX:hover{
+    display: block;
+    position: relative;
+    z-index: 100;
 }
