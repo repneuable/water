@@ -82,10 +82,14 @@ html, body {
  position: absolute;
  left: 35%;
  top: 25%;
+ 
+ overflow: hidden;
 }
 
 #draggable1 {
   z-index: 1;
+  
+ overflow: hidden;
 }
 
 #dragTemplate {
@@ -145,7 +149,7 @@ table{
  margin-bottom: 15px;
  
  z-index: 0;
- overflow: hidden;
+
 }
 
 th {
