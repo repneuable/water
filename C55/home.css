@@ -89,8 +89,8 @@ html, body {
 #draggable1 {
   z-index: 1;
   width: 225px;
- margin-left: 50%;
- margin-right: 50%;
+ margin-left: 0;
+ margin-right: 0;
   overflow: hidden;
 }
 
