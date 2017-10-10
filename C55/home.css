@@ -97,10 +97,9 @@ html, body {
  right: 50%;
 }
 
-#dragTemplate {
- position: absolute;
- left: 25%;
- top: 170.594px;
+#draggable2 {
+ float: right;
+ right: 50%;
 }
 
 
