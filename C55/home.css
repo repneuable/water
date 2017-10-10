@@ -36,6 +36,8 @@ html, body {
  padding: 50px 0 100px 0;
  background-color: #e4a1b3;
  background-image: url("http://www.geocraft.com/WVFossils/PageMill_Images/background3.jpg");
+ 
+ z-index: -2;
 }
 
 .sectionSUB{
@@ -52,6 +54,8 @@ html, body {
  border-style: solid;
  border-width: 1px;
  border-color: black;
+ 
+ z-index: -1;
 }
 
 #header {
