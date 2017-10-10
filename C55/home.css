@@ -143,6 +143,8 @@ table{
  margin-left: auto;
  margin-right: auto;
  margin-bottom: 15px;
+ 
+ z-index: 0;
 }
 
 th {
