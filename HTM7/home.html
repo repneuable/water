@@ -41,6 +41,7 @@
       $( "#draggable1" ).draggable();
       $( "#draggable2" ).draggable();
     } );
+
     </script>
 
 <div id="header">
@@ -51,11 +52,22 @@
           <a href="home.html">kevinh.work</a>
         </td>
         <td>
-          <input type="search" class="searchBox1" placeholder="GLOBAL" onkeyup="myFunction0()" id="search0">
+          <input type="search" class="searchBOX" placeholder="GLOBAL" onkeyup="myFunction0()" id="search0">
         </td>
       </tr>
       <tr>
-         <td><a href="file_listing.html" target="_blank">FILES</a></td><td><a href="../index.html" target="_blank">INDEX</a></td>
+         <td>
+             <a href="https://www.twitter.com/repneuable" target="_blank"><img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="20" height="20" /></a>
+             <a href="https://www.facebook.com/kevin.hitt.98" target="_blank"><img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="20" height="20" /></a>
+             <a href="https://www.linkedin.com/in/kevin-hitt-7aa93ab8/" target="_blank"><img title="LinkedIn" alt="LinkedIn" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin.png" width="20" height="20" /></a>
+             <a href="https://www.instagram.com/khitt7/" target="_blank"><img title="Instagram" alt="Instagram" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="20" height="20" /></a>
+             <a href="https://www.soundcloud.com/repneuable" target="_blank"><img title="Soundcloud" alt="Soundcloud" src="https://images.vexels.com/media/users/3/137412/isolated/lists/1802b9d8ce3c819eebe90a86bbb61077-soundcloud-icon-logo.png" width="20" height="20"</a>
+             <a href="file_listing.html" target="_blank"><img title="FIles" alt="Files" src="../resources/file-icon.png" width="20" height="20" /></a>
+
+
+
+          </td>
+         <td><a href="../index.html" target="_blank">INDEX</a></td>
       </tr>
     </tbody>
   </table>
@@ -75,53 +87,13 @@
         <table>
           <thead>
             <tr>
-              <td colspan="3"></td>
-              <td colspan="8">kevinh.work</td>
+              <td colspan="6"><a onclick="toggleCONVERTER();">kevinh.work</a></td>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td colspan="3"></td>
-
-              <!--B1-1. GEN DROPDOWN-->
-              <td colspan="8">
-                <select class="dropDOWN" align="center" onchange="window.open(location = this.options[this.selectedIndex].value);">
-                  <option value="">General</option>
-                      <optgroup label="General">
-                        <option value="../HTM7/topics/gen.html">studio</option>
-                        <option value="../HTM7/topics/gen.html">design</option>
-                        <option value="../HTM7/topics/gen.html">visual</option>
-                        <option value="../HTM7/topics/gen.html">web development</option>
-                        <option value="../HTM7/topics/gen.html">games</option>
-                        <option value="../HTM7/topics/gen.html">unsorted</option>
-                      </optgroup>
-                  </select>
-              </td>
-            <!--SEARCHBOX RANDOM and STUDY DROPDOWN-->
-            </tr>
-            <tr>
-              <td colspan="3"></td>
-              <td colspan="8">
-                <select class="dropdown" onchange="window.open(location = this.options[this.selectedIndex].value);">
-                  <option>Study</option>
-                  <optgroup label="Study">
-                    <option value="../HTM7/topics/study.html">chemistry</option>
-                    <option value="../HTM7/topics/study.html">climatology</option>
-                    <option value="../HTM7/topics/study.html">soil science</option>
-                    <option value="../HTM7/topics/study.html">geography</option>
-                    <option value="../HTM7/topics/study.html">gemoatics</option>
-                    <option value="../HTM7/topics/study.html">hydrology</option>
-                    <option value="../HTM7/topics/study.html">filtration</option>
-                    <option value="../HTM7/topics/study.html">ecology</option>
-                    <option value="../HTM7/topics/study.html">soundscape ecology</option>
-                  </optgroup>
-                </select>
-              </td>
-            </tr>
             <!--SEARCHBOX UNIVERSE and DROPDOWN-->
             <tr>
-              <td colspan="3"></td>
-              <td colspane="8">
+              <td colspan="6">
                 <select class="dropdown" onchange="window.open(location = this.options[this.selectedIndex].value);">
                   <option>Calm</option>
                   <optgroup label="Calm">
@@ -141,9 +113,31 @@
                 </select>
               </td>
             </tr>
+            <tr>
+             <td colspan="6">
+               <select class="dropdown" onchange="window.open(location = this.options[this.selectedIndex].value);">
+                 <option>Eco</option>
+                 <optgroup label="Eco">
+                    <option value="../HTM7/topics/eco.html#topictableEnergy">energy and environment</option>
+                    <option value="../HTM7/topics/eco.html#topictableSustainability">sustainability</option>
+                    <option value="../HTM7/topics/eco.html#topictableManagement">management</option>
+                    <option value="../HTM7/topics/eco.html#topictableConservation">conservation</option>
+                    <option value="../HTM7/topics/eco.html#topictableVeganism">veganism</option>
+                    <option value="../HTM7/topics/eco.html#topictableNatural">nat resource management</option>
+                    <option value="../HTM7/topics/eco.html#topictableEPA">EPA</option>
+                    <option value="../HTM7/topics/eco.html#topictableFDEP">FDEP</option>
+                    <option value="../HTM7/topics/eco.html#topictablePollution">pollution control</option>
+                    <option value="../HTM7/topics/eco.html#topictableImpact">impact assessment</option>
+                    <option value="../HTM7/topics/eco.html#topictableToxicology">toxicology</option>
+                    <option value="../HTM7/topics/eco.html#topictableEffects">effects on physiology</option>
+                    <option value="../HTM7/topics/eco.html#topictablePsychology">psychology</option>
+                    <option value="../HTM7/topics/eco.html#topictableSociology">sociology</option>
+                 </optgroup>
+               </select>
+             </td>
+           </tr>
              <tr>
-              <td colspan="3"></td>
-              <td colspane="8">
+              <td colspan="6">
                 <select class="dropdown" onchange="window.open(location = this.options[this.selectedIndex].value);">
                   <option>Action</option>
                   <optgroup label="Action">
@@ -163,152 +157,195 @@
                 </select>
               </td>
             </tr>
-             <tr>
-              <td colspan="3"></td>
-              <td colspane="8">
+            <tr>
+              <td colspan="6">
                 <select class="dropdown" onchange="window.open(location = this.options[this.selectedIndex].value);">
-                  <option>Eco</option>
-                  <optgroup label="Eco">
-                    <option value="../HTM7/topics/eco.html#topictableEnergy">energy and environment</option>
-                     <option value="../HTM7/topics/eco.html#topictableSustainability">sustainability</option>
-                     <option value="../HTM7/topics/eco.html#topictableManagement">management</option>
-                     <option value="../HTM7/topics/eco.html#topictableConservation">conservation</option>
-                     <option value="../HTM7/topics/eco.html#topictableVeganism">veganism</option>
-                     <option value="../HTM7/topics/eco.html#topictableNatural">nat resource management</option>
-                     <option value="../HTM7/topics/eco.html#topictableEPA">EPA</option>
-                     <option value="../HTM7/topics/eco.html#topictableFDEP">FDEP</option>
-                     <option value="../HTM7/topics/eco.html#topictablePollution">pollution control</option>
-                     <option value="../HTM7/topics/eco.html#topictableImpact">impact assessment</option>
-                     <option value="../HTM7/topics/eco.html#topictableToxicology">toxicology</option>
-                     <option value="../HTM7/topics/eco.html#topictableEffects">effects on physiology</option>
-                     <option value="../HTM7/topics/eco.html#topictablePsychology">psychology</option>
-                     <option value="../HTM7/topics/eco.html#topictableSociology">sociology</option>
+                  <option>Study</option>
+                  <optgroup label="Study">
+                    <option value="../HTM7/topics/study.html#topictableChemistry">chemistry</option>
+                    <option value="../HTM7/topics/study.html#topictableClimatology">climatology</option>
+                    <option value="../HTM7/topics/study.html#topictableSoil">soil science</option>
+                    <option value="../HTM7/topics/study.html#topictableGeography">geography</option>
+                    <option value="../HTM7/topics/study.html#topictableGeomatics">gemoatics</option>
+                    <option value="../HTM7/topics/study.html#topictableHydrology">hydrology</option>
+                    <option value="../HTM7/topics/study.html#topictableFiltration">filtration</option>
+                    <option value="../HTM7/topics/study.html#topictableEcology">ecology</option>
+                    <option value="../HTM7/topics/study.html#topictableSoundscape">soundscape ecology</option>
                   </optgroup>
                 </select>
               </td>
             </tr>
             <tr>
-              <td colspan="8">
-
+              <td colspan="6">
+                <select class="dropDOWN" align="center" onchange="window.open(location = this.options[this.selectedIndex].value);">
+                  <option value="">General</option>
+                      <optgroup label="General">
+                        <option value="../HTM7/topics/gen.html#topictableStudio">studio</option>
+                        <option value="../HTM7/topics/gen.html#topictableDesign">design</option>
+                        <option value="../HTM7/topics/gen.html#topictableVisual">visual</option>
+                        <option value="../HTM7/topics/gen.html#topictableWeb">web development</option>
+                        <option value="../HTM7/topics/gen.html#topictableGames">games</option>
+                        <option value="../HTM7/topics/gen.html#topictableUnsorted">unsorted</option>
+                      </optgroup>
+                  </select>
               </td>
-
             </tr>
+
             <!--TOPIC BOXES and INDEX LINK-->
             <tr>
-               <td width="50px"><a href="../HTM7/topics/calm.html" target="_blank">CALM</a></td>
-               <td width="50px"><a href="../HTM7/topics/eco.html" target="_blank">ECO</a></td>
-               <td width="50px"><a href="../HTM7/topics/action.html" target="_blank">ACTION</a></td>
+               <td colspan="2"><a href="../HTM7/topics/calm.html" target="_blank">CALM</a></td>
+               <td colspan="2"><a href="../HTM7/topics/eco.html" target="_blank">ECO</a></td>
+               <td colspan="2"><a href="../HTM7/topics/action.html" target="_blank">ACTION</a></td>
                </tr>
              <tr>
-               <td width="50px"><a href="../HTM7/topics/study.html" target="_blank">STUDY</a></td>
-               <td width="50px"><a href="../HTM7/topics/gen.html" target="_blank">GEN</a></td>
-              <td><a href="../index.html" target="_blank">INDEX</a></td>
+               <td colspan="2"><a href="../HTM7/topics/study.html" target="_blank">STUDY</a></td>
+               <td colspan="2"><a href="../HTM7/topics/gen.html" target="_blank">GEN</a></td>
+              <td colspan="2"><a href="../index.html" target="_blank">INDEX</a></td>
              </tr>
 
           </tbody>
         </table>
   </div>  <!--closes draggable1-->
 
+<div id="draggable2">
   <form id="convertPATH">
    <div class="converter">
-     <label><b>dataTITLE</b></label>
-     <input type="text" placeholder="enter dataTITLE" name="incomingTITLE" id="incomingTITLE" required>
-
-     <label><b>dataPATH</b></label>
-     <input type="text" placeholder="enter dataPATH" name="incomingPATH" id="incomingPATH" required>
-      
-      <label><b>dataCATEGORY</b></label>
-     <input type="text" placeholder="enter dataCATEGORY" name="incomingCATEGORY" id="incomingCATEGORY" required>
-      
-   </div>
-        <button type="button" onclick="convertPATH();">Convert</button>
-        <label><b>output</b></label>
-        <input type="text" placeholder="output" name="outgoingSTRING" id="outgoingSTRING">
+     <table>
+      <tr>
+       <td><label>dataTITLE</label></td>
+       <td><input type="text" placeholder="enter dataTITLE" name="incomingTITLE" id="incomingTITLE" required></td>
+     </tr>
+     <tr>
+       <td><label>dataPATH</label></td>
+       <td><input type="text" placeholder="enter dataPATH" name="incomingPATH" id="incomingPATH" required></td>
+      </tr>
+     <tr>
+       <td><label>dataCATEGORY</label></td>
+       <td>
+         <select class="dropdown" name="incomingCATEGORY" id="incomingCATEGORY">
+           <option>
+             --
+           </option>
+                  <optgroup label="Calm">
+                    <option value="">calm</option>
+                    <option value="">subtle energies</option>
+                    <option value="">deep ecology</option>
+                    <option value="">trad env knowledge</option>
+                    <option value="">history</option>
+                    <option value="">science</option>
+                    <option value="">research</option>
+                    <option value="">technology</option>
+                    <option value="">education</option>
+                    <option value="">idea</option>
+                    <option value="">blog</option>
+                    <option value="">ecological literacy</option>
+                  </optgroup>
+                  <optgroup label="Eco">
+                     <option value="">energy and environment</option>
+                     <option value="">sustainability</option>
+                     <option value="">management</option>
+                     <option value="">conservation</option>
+                     <option value="">veganism</option>
+                     <option value="">nat resource management</option>
+                     <option value="">EPA</option>
+                     <option value="">FDEP</option>
+                     <option value="">pollution control</option>
+                     <option value="">impact assessment</option>
+                     <option value="">toxicology</option>
+                     <option value="">effects on physiology</option>
+                     <option value="">psychology</option>
+                     <option value="">sociology</option>
+                   </optgroup>
+                  <optgroup label="Action">
+                    <option value="">receipts</option>
+                    <option value="">justice</option>
+                     <option value="">ecological humanities</option>
+                     <option value="">ethics</option>
+                     <option value="">law</option>
+                     <option value="">policy</option>
+                     <option value="">economics</option>
+                     <option value="">compliance</option>
+                     <option value="">fl</option>
+                     <option value="">certs</option>
+                     <option value="">jobs</option>
+                     <option value="">volunteering</option>
+                  </optgroup>
+                  <optgroup label="Study">
+                    <option value="">chemistry</option>
+                    <option value="">climatology</option>
+                    <option value="">soil science</option>
+                    <option value="">geography</option>
+                    <option value="">gemoatics</option>
+                    <option value="">hydrology</option>
+                    <option value="">filtration</option>
+                    <option value="">ecology</option>
+                    <option value="">soundscape ecology</option>
+                  </optgroup>
+                  <optgroup label="General">
+                        <option value="studio">studio</option>
+                        <option value="design">design</option>
+                        <option value="visual">visual</option>
+                        <option value="">web development</option>
+                        <option value="">games</option>
+                        <option value="">unsorted</option>
+                      </optgroup>
+          </select>
+       </td>
+      </tr>
+     <tr>
+       <td><label>dataCOMMENT</label></td>
+       <td><input type="text" placeholder="enter dataCOMMENT" name="incomingCOMMENT" id="incomingCOMMENT" onkeypress="convertPATH(event);" required></td>
+      </tr>
+     <tr>
+        <td colspan="2">
+          <input type="text" placeholder="output" name="outgoingSTRING" id="outgoingSTRING" style="width:20%;">
+        </td>
+       </tr>
+       <tr>
+         <td colspan="3">
+           <textarea id="outgoingLIST" placeholder="Add values here..."></textarea>
+         </td>
+       </tr>
+       </table>
+     </div>
  </form>
+ </div>
 
-
-
-
-
-  <div id="draggable2">
-        <table class="pendingTable" id="tablePending" height="auto" width="auto">
-          <thead>
-            <tr><td class="rowDraggable"></td><td class="rowDraggable"></td></tr>
-          </thead>
-          <thead>
-            <tr>
-              <th>
-                TITLE
-              </th>
-              <th>
-                SOURCE
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                pending items
-              </td>
-              <td>
-                <a href="../HTM7/topics/pending_items.html" target="_blank">link</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-  </div> <!--closes draggable2-->
-
-       <div id="pending">
-         these items / elements need to be added
-
-env news timeline </br>
-mla/apa generator</br>
-pay.xslx w transcript syllabi</br>
-welcome page w intro and how to use </br>
-
-<p>
-PAGES
-<ul>
-	<li>
-		school notes with class codes and syllabi
-	</li>
-	<li>
-		(img for homepage)
-	</li>
-	<li>
-		resume
-	</li>
-	<li>
-		research index
-	</li>
-	<li>
-		journal
-	</li>
-	<li>
-		soundcloud, twitter, instagram, facebook
-	</li>
-	<li>
-		contact / comment submission
-	</li>
-</ul>
-<ul>
-	<li>
-		rectangle sitemap visual 
-	</li>
-</br>
-<p>
-	domain ideas</br>
-namecheap</br>
-kevinh.work</br>
-kevinh.space</br>
-</br>
-ySlow</br>
-Firebug</br>
-subjective.space</br>
-approaching.space</br>
-       </div>
-
+ <table>
+   <tbody>
+   <tr>
+     <td>
+       <ul><li><a href="home.html" target="_blank">Home | kevinh.work</a></li>
+         <ul>
+           <ul>
+             <li>Index</li>
+             <li>Files</li></ul>
+             <li>CALM</li>
+             <li>ECO</li>
+             <li>ACTION</li>
+             <li>STUDY</li>
+             <li>GEN</li>
+           <ul>pending
+             <li>Welcome</li>
+             <li>MLA Citation</li>
+             <li>receipts - timeline</li>
+             <li>research - syllabi</li>
+             <li>journals</li>
+             <li>pay.xslx</li>
+             <li>resume</li>
+             <li>comment</li>
+             <li>sitemap and siteindex</li>
+       </ul>
+     </ul>
+   </ul>
+     </td>
+   </tr>
+   </tbody>
+ </table>
   </div> <!--closes container-->
 </div> <!--close section-->
 </body>
+
+
+
 </html>
