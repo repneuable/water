@@ -295,10 +295,8 @@ input[type=text]{
 /* Add padding to container elements */
 .converter {
 
-    height: auto;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
+    float: right;
+    right: 50%;
     font-size: 11px;
 
 }
