@@ -89,7 +89,9 @@ html, body {
 #draggable1 {
   z-index: 1;
   width: 225px;
- overflow: hidden;
+ margin-left: 50%;
+ margin-right: 50%;
+  overflow: hidden;
 }
 
 #dragTemplate {
