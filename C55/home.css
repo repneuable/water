@@ -36,8 +36,6 @@ html, body {
  padding: 50px 0 100px 0;
  background-color: #e4a1b3;
  background-image: url("http://www.geocraft.com/WVFossils/PageMill_Images/background3.jpg");
- 
- z-index: -2;
 }
 
 .sectionSUB{
@@ -54,8 +52,6 @@ html, body {
  border-style: solid;
  border-width: 1px;
  border-color: black;
- 
- z-index: -1;
 }
 
 #header {
@@ -63,7 +59,7 @@ html, body {
  top: 0;
  left: 0;
  right: 0;
- z-index: 2;
+ z-index: 1;
 }
 
 #header td {
@@ -82,25 +78,16 @@ html, body {
  position: absolute;
  left: 35%;
  top: 25%;
- 
- overflow: hidden;
 }
 
 #draggable1 {
   z-index: 1;
-  width: 225px;
- margin-left: 0;
- margin-right: 0;
-  overflow: hidden;
- 
- float: right;
- right: 50%;
 }
 
-#draggable2 {
- float: right;
- right: 50%;
- left: 50%;
+#dragTemplate {
+ position: absolute;
+ left: 25%;
+ top: 170.594px;
 }
 
 
@@ -152,9 +139,6 @@ table{
  margin-left: auto;
  margin-right: auto;
  margin-bottom: 15px;
- 
- z-index: 0;
-
 }
 
 th {
@@ -296,8 +280,10 @@ input[type=text]{
 /* Add padding to container elements */
 .converter {
 
-    float: right;
-    right: 50%;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 11px;
 
 }
@@ -323,4 +309,3 @@ input[type=text]{
     position: relative;
     z-index: 100;
 }
-
