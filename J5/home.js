@@ -69,7 +69,7 @@ function convertPATH(e) {
 
             var comment = document.getElementById('incomingCOMMENT').value;
 
-            var result = "<tr><td class\"dataTITLE\">"+title+"</td><td class=\"dataPATH\"><a href=\""+path+"\"target=\"_blank\">&UpperRightArrow;</a></td><td class=\"dataDATE\"></td><td class=\"dataCAT\">"+category+"</td><td class=\"dataCOMMENT\">"+comment+"</td></tr>";
+            var result = "<tr><td class=\"dataTITLE\">"+title+"</td><td class=\"dataPATH\"><a href=\""+path+"\" target=\"_blank\">&UpperRightArrow;</a></td><td class=\"dataDATE\"></td><td class=\"dataCAT\">"+category+"</td><td class=\"dataCOMMENT\">"+comment+"</td></tr>";
 
             document.getElementById('outgoingSTRING').value = result;
             document.getElementById('outgoingLIST').value += result;
@@ -2059,4 +2059,3 @@ function sortTableUnsorted(n) {
     }
   }
 }
- 
