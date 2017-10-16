@@ -274,18 +274,12 @@ input[type=text]{
     margin: 5px 5px 5px 5px;
 }
 
-
-
-
-/* Add padding to container elements */
 .converter {
-
     height: auto;
     width: auto;
     margin-left: auto;
     margin-right: auto;
     font-size: 11px;
-
 }
 
 .converter table {
@@ -294,6 +288,7 @@ input[type=text]{
   margin-top: 5%;
   position: relative;
 }
+
 .converter td{
   text-align: left;
   font-size: 8px;
@@ -304,6 +299,7 @@ input[type=text]{
   display: none;
   width: 100%;
 }
+
   a:hover + .peekBOX,.peekBOX:hover{
     display: block;
     position: relative;
