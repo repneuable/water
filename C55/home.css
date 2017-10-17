@@ -95,9 +95,20 @@ form {
   display: inline-block;
 }
 
-#draggable2, draggable3, draggable4, draggable5, draggable6, draggable7, draggable8, draggable9, draggable10, draggable11, draggable12, draggable13{
-  display: inline-block;
+#draggable2 {
+ display: inline-block;
 }
+#draggable3 {display: inline-block;}
+#draggable4 {display: inline-block;}
+#draggable5 {display: inline-block;}
+#draggable6 {display: inline-block;}
+#draggable7 {display: inline-block;}
+#draggable8 {display: inline-block;}
+#draggable9 {display: inline-block;}
+#draggable10 {display: inline-block;}
+#draggable11 {display: inline-block;}
+#draggable12 {display: inline-block;}
+#draggable13 {display: inline-block;}
 
 #dragTemplate {
  position: absolute;
