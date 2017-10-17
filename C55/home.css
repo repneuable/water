@@ -32,7 +32,7 @@ form {
 }
 
 div {
-  display: inline-block;
+
 }
 
 /******************************
@@ -212,6 +212,7 @@ caption {
   background-color: #e4a1b3;
   width: 1px;
   white-space: nowrap;
+   display: inline-block;
 }
 .topicCALM td {
   text-align: left;
@@ -223,6 +224,7 @@ caption {
 .topicECO {
   width: 1px;
   white-space: nowrap;
+   display: inline-block;
 }
 
 .topicECO td {
@@ -231,6 +233,7 @@ caption {
 .topicACTION {
   width: 1px;
   white-space: nowrap;
+   display: inline-block;
 }
 
 .topicACTION td {
@@ -239,6 +242,7 @@ caption {
 .topicSTUDY {
   width: 1px;
   white-space: nowrap;
+   display: inline-block;
 }
 
 .topicSTUDY td {
@@ -247,6 +251,7 @@ caption {
 .topicGEN {
   width: 1px;
   white-space: nowrap;
+   display: inline-block;
 }
 
 .topicGEN td {
