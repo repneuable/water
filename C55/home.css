@@ -308,6 +308,10 @@ input[type=text]{
     font-size: 11px;
 }
 
+#convertPATH {
+  display: inline-block;
+}
+
 .converter table {
   position: relative;
 }
