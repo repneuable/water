@@ -85,7 +85,6 @@ form {
 }
 
 #dragHome {
- position: absolute;
  left: 35%;
  top: 25%;
 }
@@ -111,7 +110,6 @@ form {
 #draggable13 {display: inline-block;}
 
 #dragTemplate {
- position: absolute;
  left: 25%;
  top: 170.594px;
 }
