@@ -85,9 +85,7 @@ form {
 }
 
 #dragHome {
- position: relative;
- left: 80%;
- top: 25%;
+
 }
 
 #draggable1 {
@@ -306,12 +304,14 @@ input[type=text]{
 #converter {
     display: inline-block;
     font-size: 11px;
-    position: relative;
-    top: 50%;
+
 }
 
 #convertPATH {
   display: inline-block;
+  position: relative;
+  left: 80%;
+  top: 25%;
 }
 
 .converter table {
