@@ -83,7 +83,7 @@ function convertPATH(e) {
 function toggleCONVERTER() {
     var x = document.getElementById("draggable2");
     if (x.style.display === "none") {
-        x.style.display = "block";
+        x.style.display = "inline-block";
     } else {
         x.style.display = "none";
     }
