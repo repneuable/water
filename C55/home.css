@@ -54,7 +54,8 @@ form {
 
 .container {
  overflow: auto;
- padding: 100px 0 50px 0;
+ padding-top: 7.5%;
+ padding-bottom: 7.5%;
  background-color: #e4a1b3;
  background: radial-gradient(circle, #f4e1d2, #d6cbd3, #d0d0d0);
  border-collapse: separate;
