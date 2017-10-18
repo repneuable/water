@@ -42,20 +42,21 @@ form {
  background-image: url("http://www.geocraft.com/WVFossils/PageMill_Images/background3.jpg");
  background-image: url("../resources/icons/background-alt.jpg");
  height: 100%;
+ padding-top: 7.5%;
+ padding-bottom: 7.5%;
 }
 
 .sectionSUB{
   padding: 10px 0 50px 0;
   background-color: #d0d0d0;
-  padding: 50px 0 100px 0;
+  padding-top: 7.5%;
+  padding-bottom: 7.5%;
   background-color: #e4a1b3;
   background-image: url("../resources/icons/background-alt.jpg");
 }
 
 .container {
  overflow: auto;
- padding-top: 7.5%;
- padding-bottom: 7.5%;
  background-color: #e4a1b3;
  background: radial-gradient(circle, #f4e1d2, #d6cbd3, #d0d0d0);
  border-collapse: separate;
