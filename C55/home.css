@@ -303,7 +303,7 @@ input[type=text]{
     margin: 5px 5px 5px 5px;
 }
 
-.converter {
+#converter {
     display: inline-block;
     font-size: 11px;
 }
