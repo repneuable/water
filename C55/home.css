@@ -309,7 +309,6 @@ input[type=text]{
 
 #convertPATH {
   display: inline-block;
-  position: relative;
   top: 25%;
 }
 
