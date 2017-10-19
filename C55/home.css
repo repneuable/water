@@ -61,7 +61,7 @@ form {
  padding-left: 4.5%;
  background-color: #e4a1b3;
  background: radial-gradient(circle, #f4e1d2, #d6cbd3, #d0d0d0);
- 
+
    background:
    radial-gradient(circle farthest-side at 0% 50%,#f4e1d2 23.5%,rgba(231,209,224,0) 0)21px 30px,
    radial-gradient(circle farthest-side at 0% 50%,#848699 28.6%,rgba(231,209,224,0) 0)19px 30px,
@@ -211,6 +211,10 @@ caption {
   font-style: italic;
   letter-spacing: 3px;
   text-transform: lowercase;
+}
+
+.topictableSWITCH {
+
 }
 
 /******************************
