@@ -84,6 +84,9 @@ function toggleCONVERTER() {
     var x = document.getElementById("draggable2");
     if (x.style.display === "none") {
         x.style.display = "inline-block";
+        x.style.position = "fixed";
+        x.style.left = "8%";
+        x.style.top = "20%";
     } else {
         x.style.display = "none";
     }
@@ -91,7 +94,19 @@ function toggleCONVERTER() {
 
 
 ////////////////////////////ALL TOGGLES/////////////////////////////////
-function toggleTABLES1() {var x = document.getElementById("draggable1"); if (x.style.display === "none") {x.style.display = "inline-block"; } else {  x.style.display = "none";}}
+function toggleTABLES1() {
+  var x = document.getElementById("draggable1");
+  var z = x.zIndex;
+
+
+  if (z >= "1") {x.style.display = "inline-block"; }
+  else {
+    x.style.opacity = 0.5;
+    x.style.zIndex = 2;
+
+  }}
+
+
 function toggleTABLES2() {var x = document.getElementById("draggable2"); if (x.style.display === "none") {x.style.display = "inline-block"; } else {  x.style.display = "none";}}
 function toggleTABLES3() {var x = document.getElementById("draggable3"); if (x.style.display === "none") {x.style.display = "inline-block"; } else {  x.style.display = "none";}}
 function toggleTABLES4() {var x = document.getElementById("draggable4"); if (x.style.display === "none") {x.style.display = "inline-block"; } else {  x.style.display = "none";}}
