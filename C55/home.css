@@ -31,53 +31,72 @@ form {
   display: inline-block;
 }
 
+iframe {
+  background-color: #e4a1b3;
+}
+
+head {
+  display: block;
+}
+
 /******************************
 01. Helper Classes
 *******************************/
 
 .section {
 
- padding: 50px 0 100px 0;
  background-color: #e4a1b3;
  background-image: url("http://www.geocraft.com/WVFossils/PageMill_Images/background3.jpg");
  background-image: url("../resources/icons/background-alt.jpg");
  height: 100%;
- padding-top: 7.5%;
+
+ padding-top: 7%;
  padding-bottom: 7.5%;
+ z-index: 99;
 }
 
 .sectionSUB{
-  padding: 10px 0 50px 0;
   background-color: #d0d0d0;
-  padding-top: 7.5%;
-  padding-bottom: 7.5%;
-  background-color: #e4a1b3;
+
   background-image: url("../resources/icons/background-alt.jpg");
+  padding-top: 7%;
+  padding-bottom: 7.5%;
+  height: 100%;
+
+  z-index: 99;
 }
 
-.container {
+.container, .containerHOME {
  overflow: auto;
  padding-top: 4.5%;
  padding-left: 4.5%;
+
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+
  background-color: #e4a1b3;
  background: radial-gradient(circle, #f4e1d2, #d6cbd3, #d0d0d0);
-
-   background:
-   radial-gradient(circle farthest-side at 0% 50%,#f4e1d2 23.5%,rgba(231,209,224,0) 0)21px 30px,
-   radial-gradient(circle farthest-side at 0% 50%,#848699 28.6%,rgba(231,209,224,0) 0)19px 30px,
-   linear-gradient(#f4e1d2 19%,rgba(231,209,224,0) 0, rgba(231,209,224,0) 85%,#f4e1d2 0)0 0,
-   linear-gradient(150deg,#f4e1d2 22.5%,#848699 0,#848699 26.5%,rgba(231,209,224,0) 0,rgba(231,209,224,0) 74%,#d6cbd3 0,#848699 76%,#f4e1d2 0)0 0,
-   linear-gradient(30deg,#f4e1d2 24%,#848699 0,#848699 26%,#f4e1d2 0,#f4e1d2 74%,#848699 0,#848699 76%,#f4e1d2 0)0 0,
-   linear-gradient(90deg,#B71 2%,#f4e1d2 0,#f4e1d2 98%,#b71 0%)0 0 #fb1;
-
- background-size:40px 60px;
- /**Adjust background size for variations**/
 
  border-collapse: separate;
  border-style: dotted;
  border-width: 1px;
  border-color: black;
  height: 100%;
+ z-index: 98;
+}
+
+.containerHOME {
+background:
+radial-gradient(circle farthest-side at 0% 50%,#f4e1d2 23.5%,rgba(231,209,224,0) 0)21px 30px,
+radial-gradient(circle farthest-side at 0% 50%,#848699 28.6%,rgba(231,209,224,0) 0)19px 30px,
+linear-gradient(#f4e1d2 19%,rgba(231,209,224,0) 0, rgba(231,209,224,0) 85%,#f4e1d2 0)0 0,
+linear-gradient(150deg,#f4e1d2 22.5%,#848699 0,#848699 26.5%,rgba(231,209,224,0) 0,rgba(231,209,224,0) 74%,#d6cbd3 0,#848699 76%,#f4e1d2 0)0 0,
+linear-gradient(30deg,#f4e1d2 24%,#848699 0,#848699 26%,#f4e1d2 0,#f4e1d2 74%,#848699 0,#848699 76%,#f4e1d2 0)0 0,
+linear-gradient(90deg,#B71 2%,#f4e1d2 0,#f4e1d2 98%,#b71 0%)0 0 #fb1;
+
+background-size:20px 60px;
+/**Adjust background size for variations**/
 }
 
 #header {
@@ -85,11 +104,18 @@ form {
  top: 0;
  left: 0;
  right: 0;
- z-index: 1;
+ z-index: 100;
+ max-height: 10%;
 }
 
-#header td {
+
+#header, #headerSUB a {
+  font-size: 10px;
+}
+
+#header, #headerSUB td {
   padding: 0;
+  white-space: nowrap;
 }
 
 #headerSUB {
@@ -97,8 +123,9 @@ form {
  top: 0;
  left: 0;
  right: 0;
- z-index: 1;
+ z-index: 100;
 }
+
 
 #dragHome {
 
@@ -222,14 +249,6 @@ caption {
 03. Individual Table Properties
 *******************************/
 
-
-.tableHOME{
- position: relative;
- margin-top: 20px;
- margin-bottom: 15px;
-
-}
-
  .searchBOX {
    font-size: 9px;
  }
@@ -244,7 +263,7 @@ caption {
   background-color: #e4a1b3;
   width: 1px;
   white-space: nowrap;
-   display: inline-block;
+   display: inline-table;
 }
 
 .topicCALM td {
@@ -257,7 +276,7 @@ caption {
 .topicECO {
   width: 1px;
   white-space: nowrap;
-   display: inline-block;
+   display: inline-table;
 }
 
 .topicECO td {
@@ -266,7 +285,7 @@ caption {
 .topicACTION {
   width: 1px;
   white-space: nowrap;
-   display: inline-block;
+   display: inline-table;
 }
 
 .topicACTION td {
@@ -275,7 +294,7 @@ caption {
 .topicSTUDY {
   width: 1px;
   white-space: nowrap;
-   display: inline-block;
+   display: inline-table;
 }
 
 .topicSTUDY td {
@@ -284,12 +303,16 @@ caption {
 .topicGEN {
   width: 1px;
   white-space: nowrap;
-   display: inline-block;
+   display: inline-table;
 }
 
 .topicGEN td {
   text-align: left;
 }
+
+
+
+
 /**************************
 04. Topic Data
 **************************/
@@ -350,13 +373,29 @@ input[type=text]{
 }
 
 
-.peekBOX {
-  display: none;
-  width: 100%;
+
+/**************************
+0. Minimized Tablets
+**************************/
+
+.draggableALT {
+  font-size: 4px;
+  display: inline-table;
 }
 
-  a:hover + .peekBOX,.peekBOX:hover{
-    display: block;
-    position: relative;
-    z-index: 100;
+.draggableALT table {
+  bottom: 0;
+}
+
+.draggableALT caption {
+  background-color: #cacadd;
+  border-style: solid;
+  border-bottom: thick dotted;
+  border-width: 1px;
+  border-collapse: collapse;
+  border-color: gray;
+  font-size: 10px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  display: table-cell;
 }
