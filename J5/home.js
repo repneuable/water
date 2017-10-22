@@ -94,66 +94,116 @@ function toggleCONVERTER() {
 
 
 ////////////////////////////ALL TOGGLES/////////////////////////////////
-function toggleTABLES1() {var x = document.getElementById("draggable1"); var z = x.zIndex; var alt = document.getElementById("draggable1-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES2() {var x = document.getElementById("draggable2"); var z = x.zIndex; var alt = document.getElementById("draggable2-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES3() {var x = document.getElementById("draggable3"); var z = x.zIndex; var alt = document.getElementById("draggable3-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES4() {var x = document.getElementById("draggable4"); var z = x.zIndex; var alt = document.getElementById("draggable4-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES5() {var x = document.getElementById("draggable5"); var z = x.zIndex; var alt = document.getElementById("draggable5-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES6() {var x = document.getElementById("draggable6"); var z = x.zIndex; var alt = document.getElementById("draggable6-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES7() {var x = document.getElementById("draggable7"); var z = x.zIndex; var alt = document.getElementById("draggable7-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES8() {var x = document.getElementById("draggable8"); var z = x.zIndex; var alt = document.getElementById("draggable8-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES9() {var x = document.getElementById("draggable9"); var z = x.zIndex; var alt = document.getElementById("draggable9-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES10() {var x = document.getElementById("draggable10"); var z = x.zIndex; var alt = document.getElementById("draggable10-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES11() {var x = document.getElementById("draggable11"); var z = x.zIndex; var alt = document.getElementById("draggable11-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES12() {var x = document.getElementById("draggable12"); var z = x.zIndex; var alt = document.getElementById("draggable12-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES13() {var x = document.getElementById("draggable13"); var z = x.zIndex; var alt = document.getElementById("draggable13-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES14() {var x = document.getElementById("draggable14"); var z = x.zIndex; var alt = document.getElementById("draggable14-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES15() {var x = document.getElementById("draggable15"); var z = x.zIndex; var alt = document.getElementById("draggable15-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES16() {var x = document.getElementById("draggable16"); var z = x.zIndex; var alt = document.getElementById("draggable16-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES17() {var x = document.getElementById("draggable17"); var z = x.zIndex; var alt = document.getElementById("draggable17-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES18() {var x = document.getElementById("draggable18"); var z = x.zIndex; var alt = document.getElementById("draggable18-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES19() {var x = document.getElementById("draggable19"); var z = x.zIndex; var alt = document.getElementById("draggable19-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
-function toggleTABLES20() {var x = document.getElementById("draggable20"); var z = x.zIndex; var alt = document.getElementById("draggable20-alt");
-  if (alt.style.display == "none") {x.style.display = "none"; alt.style.display = "inline-block";}
-  else {x.style.zIndex ++; x.style.display = "inline-block"; alt.style.display = "none"; }}
+
+function toggleTABLESALL() {
+  document.getElementById("draggable1-alt").style.display = "none";
+  document.getElementById("draggable2-alt").style.display = "none";
+  document.getElementById("draggable3-alt").style.display = "none";
+  document.getElementById("draggable4-alt").style.display = "none";
+  document.getElementById("draggable5-alt").style.display = "none";
+  document.getElementById("draggable6-alt").style.display = "none";
+  document.getElementById("draggable7-alt").style.display = "none";
+  document.getElementById("draggable8-alt").style.display = "none";
+  document.getElementById("draggable9-alt").style.display = "none";
+  document.getElementById("draggable10-alt").style.display = "none";
+  document.getElementById("draggable11-alt").style.display = "none";
+  document.getElementById("draggable12-alt").style.display = "none";
+  document.getElementById("draggable13-alt").style.display = "none";
+  document.getElementById("draggable14-alt").style.display = "none";
+  document.getElementById("draggable15-alt").style.display = "none";
+  document.getElementById("draggable16-alt").style.display = "none";
+  document.getElementById("draggable17-alt").style.display = "none";
+  document.getElementById("draggable18-alt").style.display = "none";
+  document.getElementById("draggable19-alt").style.display = "none";
+  document.getElementById("draggable20-alt").style.display = "none";
+}
+
+function toggleTABLES1() {
+  var x = document.getElementById("draggable1"); var z = x.zIndex;
+  var alt = document.getElementById("draggable1-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES2() {
+  var x = document.getElementById("draggable2"); var z = x.zIndex;
+  var alt = document.getElementById("draggable2-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES3() {
+  var x = document.getElementById("draggable3"); var z = x.zIndex;
+  var alt = document.getElementById("draggable3-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES4() {
+  var x = document.getElementById("draggable4"); var z = x.zIndex;
+  var alt = document.getElementById("draggable4-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES5() {
+  var x = document.getElementById("draggable5"); var z = x.zIndex;
+  var alt = document.getElementById("draggable5-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES6() {
+  var x = document.getElementById("draggable6"); var z = x.zIndex;
+  var alt = document.getElementById("draggable6-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES7() {
+  var x = document.getElementById("draggable7"); var z = x.zIndex;
+  var alt = document.getElementById("draggable7-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES8() {
+  var x = document.getElementById("draggable8"); var z = x.zIndex;
+  var alt = document.getElementById("draggable8-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES9() {
+  var x = document.getElementById("draggable9"); var z = x.zIndex;
+  var alt = document.getElementById("draggable9-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES10() {
+  var x = document.getElementById("draggable10"); var z = x.zIndex;
+  var alt = document.getElementById("draggable10-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+
+
+function toggleTABLES11() {
+  var x = document.getElementById("draggable11"); var z = x.zIndex;
+  var alt = document.getElementById("draggable11-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES12() {
+  var x = document.getElementById("draggable12"); var z = x.zIndex;
+  var alt = document.getElementById("draggable12-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES13() {
+  var x = document.getElementById("draggable13"); var z = x.zIndex;
+  var alt = document.getElementById("draggable13-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES14() {
+  var x = document.getElementById("draggable14"); var z = x.zIndex;
+  var alt = document.getElementById("draggable14-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES15() {
+  var x = document.getElementById("draggable15"); var z = x.zIndex;
+  var alt = document.getElementById("draggable15-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES16() {
+  var x = document.getElementById("draggable16"); var z = x.zIndex;
+  var alt = document.getElementById("draggable16-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES17() {
+  var x = document.getElementById("draggable17"); var z = x.zIndex;
+  var alt = document.getElementById("draggable17-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES18() {
+  var x = document.getElementById("draggable18"); var z = x.zIndex;
+  var alt = document.getElementById("draggable18-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES19() {
+  var x = document.getElementById("draggable19"); var z = x.zIndex;
+  var alt = document.getElementById("draggable19-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES20() {
+  var x = document.getElementById("draggable20"); var z = x.zIndex;
+  var alt = document.getElementById("draggable20-alt");
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+
+
+
+
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
