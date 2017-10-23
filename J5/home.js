@@ -119,7 +119,7 @@ function toggleTABLESALL() {
   document.getElementById("draggable20-alt").style.display = "none";
 }
 function toggleINDEX() {
-  document.getElementById("draggable1").style.display ="none";
+  document.getElementById("draggable1").style.display ="block";
   window.alert("You did it!");
 }
 function toggleTABLES1() {
