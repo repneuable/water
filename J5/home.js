@@ -96,7 +96,7 @@ function toggleCONVERTER() {
 ////////////////////////////ALL TOGGLES/////////////////////////////////
 
 function toggleTABLESALL() {
-  document.getElementById("draggableALL").style.display = "none";
+  document.getElementById("draggableCLEAR").style.display = "none";
   document.getElementById("draggable1-alt").style.display = "none";
   document.getElementById("draggable2-alt").style.display = "none";
   document.getElementById("draggable3-alt").style.display = "none";
