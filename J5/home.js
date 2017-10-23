@@ -118,7 +118,10 @@ function toggleTABLESALL() {
   document.getElementById("draggable19-alt").style.display = "none";
   document.getElementById("draggable20-alt").style.display = "none";
 }
-
+function toggleINDEX() {
+  document.getElementById("draggable1").style.display ="none";
+  window.alert("You did it!");
+}
 function toggleTABLES1() {
   var x = document.getElementById("draggable1"); var z = x.zIndex;
   var alt = document.getElementById("draggable1-alt");
