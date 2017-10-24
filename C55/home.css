@@ -396,6 +396,7 @@ input[type=text]{
   border-collapse: collapse;
   border-color: gray;
   font-size: 10px;
+  font-weight: thick;
   letter-spacing: 0px;
   text-transform: uppercase;
   display: table-cell;
