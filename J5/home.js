@@ -119,8 +119,9 @@ function toggleTABLESALL() {
   document.getElementById("draggable20-alt").style.display = "none";
 }
 function toggleINDEX() {
-  document.getElementById("draggable1").style.display ="block";
-  window.alert("You did it!");
+
+  if(document.getElementById("draggable1").style.display == "block") {document.getElementById("draggable1").style.display ="none";}
+  else if (document.getElementById("draggable1").style.display == "none") {document.getElementById("draggable1").style.display ="block";}
 }
 function toggleTABLES1() {
   var x = document.getElementById("draggable1"); var z = x.zIndex;
