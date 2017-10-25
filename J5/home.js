@@ -104,104 +104,104 @@ function toggleINDEX() {
 function toggleTABLES1() {
   var x = document.getElementById("draggable1"); var z = x.zIndex;
   var alt = document.getElementById("draggable1-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 function toggleTABLES2() {
   var x = document.getElementById("draggable2"); var z = x.zIndex;
   var alt = document.getElementById("draggable2-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 function toggleTABLES3() {
   var x = document.getElementById("draggable3"); var z = x.zIndex;
   var alt = document.getElementById("draggable3-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 function toggleTABLES4() {
   var x = document.getElementById("draggable4"); var z = x.zIndex;
   var alt = document.getElementById("draggable4-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 function toggleTABLES5() {
   var x = document.getElementById("draggable5"); var z = x.zIndex;
   var alt = document.getElementById("draggable5-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 function toggleTABLES6() {
   var x = document.getElementById("draggable6"); var z = x.zIndex;
   var alt = document.getElementById("draggable6-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 function toggleTABLES7() {
   var x = document.getElementById("draggable7"); var z = x.zIndex;
   var alt = document.getElementById("draggable7-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 function toggleTABLES8() {
   var x = document.getElementById("draggable8"); var z = x.zIndex;
   var alt = document.getElementById("draggable8-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 function toggleTABLES9() {
   var x = document.getElementById("draggable9"); var z = x.zIndex;
   var alt = document.getElementById("draggable9-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 function toggleTABLES10() {
   var x = document.getElementById("draggable10"); var z = x.zIndex;
   var alt = document.getElementById("draggable10-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 
 
 function toggleTABLES11() {
   var x = document.getElementById("draggable11"); var z = x.zIndex;
   var alt = document.getElementById("draggable11-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 function toggleTABLES12() {
   var x = document.getElementById("draggable12"); var z = x.zIndex;
   var alt = document.getElementById("draggable12-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 function toggleTABLES13() {
   var x = document.getElementById("draggable13"); var z = x.zIndex;
   var alt = document.getElementById("draggable13-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 function toggleTABLES14() {
   var x = document.getElementById("draggable14"); var z = x.zIndex;
   var alt = document.getElementById("draggable14-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 function toggleTABLES15() {
   var x = document.getElementById("draggable15"); var z = x.zIndex;
   var alt = document.getElementById("draggable15-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 function toggleTABLES16() {
   var x = document.getElementById("draggable16"); var z = x.zIndex;
   var alt = document.getElementById("draggable16-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 function toggleTABLES17() {
   var x = document.getElementById("draggable17"); var z = x.zIndex;
   var alt = document.getElementById("draggable17-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 function toggleTABLES18() {
   var x = document.getElementById("draggable18"); var z = x.zIndex;
   var alt = document.getElementById("draggable18-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 function toggleTABLES19() {
   var x = document.getElementById("draggable19"); var z = x.zIndex;
   var alt = document.getElementById("draggable19-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 function toggleTABLES20() {
   var x = document.getElementById("draggable20"); var z = x.zIndex;
   var alt = document.getElementById("draggable20-alt");
-  document.getElementById("draggableCLEAR").style.display = "inline-block";
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 
 
