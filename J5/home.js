@@ -95,29 +95,7 @@ function toggleCONVERTER() {
 
 ////////////////////////////ALL TOGGLES/////////////////////////////////
 
-function toggleTABLESALL() {
-  document.getElementById("draggableCLEAR").style.display = "none";
-  document.getElementById("draggable1-alt").style.display = "none";
-  document.getElementById("draggable2-alt").style.display = "none";
-  document.getElementById("draggable3-alt").style.display = "none";
-  document.getElementById("draggable4-alt").style.display = "none";
-  document.getElementById("draggable5-alt").style.display = "none";
-  document.getElementById("draggable6-alt").style.display = "none";
-  document.getElementById("draggable7-alt").style.display = "none";
-  document.getElementById("draggable8-alt").style.display = "none";
-  document.getElementById("draggable9-alt").style.display = "none";
-  document.getElementById("draggable10-alt").style.display = "none";
-  document.getElementById("draggable11-alt").style.display = "none";
-  document.getElementById("draggable12-alt").style.display = "none";
-  document.getElementById("draggable13-alt").style.display = "none";
-  document.getElementById("draggable14-alt").style.display = "none";
-  document.getElementById("draggable15-alt").style.display = "none";
-  document.getElementById("draggable16-alt").style.display = "none";
-  document.getElementById("draggable17-alt").style.display = "none";
-  document.getElementById("draggable18-alt").style.display = "none";
-  document.getElementById("draggable19-alt").style.display = "none";
-  document.getElementById("draggable20-alt").style.display = "none";
-}
+
 function toggleINDEX() {
 
   if(document.getElementById("draggable1").style.display == "block") {document.getElementById("draggable1").style.display ="none";}
