@@ -18,89 +18,48 @@
  * ==================================================================================================
  */
 
-
-//SEARCH BOX 1
-
-function myFunctionZ() {
-  var input, filter, table, tr, td, i;
-  input = document.getElementById("searchZ");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTableZ");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }
-  }
-}
-
-function displayReturn() {
-
-  var optionSelection = document.getElementById("searchBoxRandom");
-  var displaySelection = optionSelection.options[optionSelection.selectedIndex].text;
-  alert(displaySelection);
-  document.getElementById("searchRandom2").innerHTML = displaySelection;
-}
-
-
-
-
-
-
-
-
-//PATH CONVERTER
-
+//CONVERTER - dataPATH modifier
 function convertPATH(e) {
-
   if(e.keyCode === 13){
             e.preventDefault(); // Ensure it is only this code that rusn
-
 
             var title = document.getElementById('incomingTITLE').value;
             var path = document.getElementById('incomingPATH').value;
             var category = document.getElementById('incomingCATEGORY').value;
-
-
             var comment = document.getElementById('incomingCOMMENT').value;
 
             var result = "<tr><td class=\"dataTITLE\">"+title+"</td><td class=\"dataPATH\"><a href=\""+path+"\" target=\"_blank\">&UpperRightArrow;</a></td><td class=\"dataDATE\"></td><td class=\"dataCAT\">"+category+"</td><td class=\"dataCOMMENT\">"+comment+"</td></tr>";
 
             document.getElementById('outgoingSTRING').value = result;
             document.getElementById('outgoingLIST').value += result;
-
             alert("Conversion done.");
         }
-
-
 }
 
+//CONVERTER - toggle display
 function toggleCONVERTER() {
-    var x = document.getElementById("draggable2");
-    if (x.style.display === "none") {
-        x.style.display = "inline-block";
-        x.style.position = "fixed";
-        x.style.left = "8%";
-        x.style.top = "20%";
-    } else {
-        x.style.display = "none";
-    }
+    document.getElementById("draggable1-alt").style.display = "inline-table";
+    document.getElementById("draggable2-alt").style.display = "inline-table";
 }
 
 
-////////////////////////////ALL TOGGLES/////////////////////////////////
-
-
+////////////////////////////ALL TOGGLES for topic table displays/////////////////////////////////
 function toggleINDEX() {
+  var x = document.getElementById("draggable1"); var z = x.zIndex;
+  x.style.display = "block";}
 
-  if(document.getElementById("draggable1").style.display == "block") {document.getElementById("draggable1").style.display ="none";}
-  else if (document.getElementById("draggable1").style.display == "none") {document.getElementById("draggable1").style.display ="block";}
-}
+function toggleTABLEShome() {
+  var x = document.getElementById("draggable1"); var z = x.zIndex;
+  var alt = document.getElementById("draggable1-alt");
+  document.getElementById("draggable2-alt").style.display = "inline-table";
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+
+function toggleTABLESconverter() {
+  var x = document.getElementById("draggable2"); var z = x.zIndex;
+  var alt = document.getElementById("draggable2-alt");
+
+  if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.display = "block"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+
 function toggleTABLES1() {
   var x = document.getElementById("draggable1"); var z = x.zIndex;
   var alt = document.getElementById("draggable1-alt");
@@ -152,7 +111,6 @@ function toggleTABLES10() {
 
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 
-
 function toggleTABLES11() {
   var x = document.getElementById("draggable11"); var z = x.zIndex;
   var alt = document.getElementById("draggable11-alt");
@@ -202,15 +160,25 @@ function toggleTABLES20() {
   var x = document.getElementById("draggable20"); var z = x.zIndex;
   var alt = document.getElementById("draggable20-alt");
 
+if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES21() {
+  var x = document.getElementById("draggable21"); var z = x.zIndex;
+  var alt = document.getElementById("draggable21-alt");
+
+if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
+function toggleTABLES22() {
+  var x = document.getElementById("draggable22"); var z = x.zIndex;
+  var alt = document.getElementById("draggable22-alt");
+
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+///////////////////////////end display toggles//////////////////////////
+////////////////////////////////////////////////////////////////////////
 
 
 
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
 
 function sortTableCalm(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
@@ -474,6 +442,117 @@ function sortTableResearch(n) {
 function sortTableTechnology(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   table = document.getElementById("topictableTechnology");
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("td")[n];
+      y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;
+    } else {
+      if (switchcount === 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+function sortTableWeb(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("topictableWeb");
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("td")[n];
+      y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;
+    } else {
+      if (switchcount === 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+function sortTableInfoSec(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("topictableInfoSec");
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("td")[n];
+      y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;
+    } else {
+      if (switchcount === 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+function sortTableComics(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("topictableComics");
   switching = true;
   dir = "asc";
   while (switching) {
@@ -1844,6 +1923,43 @@ function sortTableHydrology(n) {
   }
 }
 
+function sortTableWastewater(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("topictableWastewater");
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("td")[n];
+      y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;
+    } else {
+      if (switchcount === 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
 function sortTableFiltration(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   table = document.getElementById("topictableFiltration");
@@ -1991,7 +2107,42 @@ function sortTableHydroponics(n) {
     }
   }
 }
-
+function sortTableSolid(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("topictableSolidWasteManagement");
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("td")[n];
+      y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;
+    } else {
+      if (switchcount === 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
 function sortTableStudio(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   table = document.getElementById("topictableStudio");
