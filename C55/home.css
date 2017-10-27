@@ -543,6 +543,7 @@ MOBILE
          bottom: 0;
          left: 0;
          right: 0;
+         margin-top: 5px;
        }
        #footer table{ width: 100%; }
        #draggable1 {
@@ -640,7 +641,7 @@ MOBILE
       }
       .dataPATH {
        text-align: center;
-       font-size: 7px;
+       font-size: 10px;
       }
  
       .dataDATE {
