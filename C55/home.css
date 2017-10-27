@@ -516,7 +516,7 @@ MOBILE
        z-index: 98;
        margin-left: 10px;
        margin-right: 10px;
-
+       
        padding-bottom: 20px;
       }
       .containerHOME {
@@ -539,11 +539,10 @@ MOBILE
        white-space: normal;
        }
        #footer {
-         position: fixed;
+         position: absolute;
          bottom: 0;
          left: 0;
          right: 0;
-         margin-top: 5px;
        }
        #footer table{ width: 100%; }
        #draggable1 {
