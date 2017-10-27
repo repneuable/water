@@ -501,6 +501,7 @@ MOBILE
        left: 0;
        right: 0;
        z-index: 100;
+       overflow: auto;
        }
        #footer {
          position: fixed;
