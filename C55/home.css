@@ -505,6 +505,7 @@ MOBILE
          background-image: url("../resources/icons/background-alt.jpg");
          z-index: 99;
          height: 100%;
+         overflow:auto; 
       }
       .container, .containerHOME {
        overflow: auto;
