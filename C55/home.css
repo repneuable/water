@@ -273,11 +273,10 @@ caption {
  width: 150px;
 }
 
+
 .tableHOME {
-   style="left:37%;"
+   left:33%;
 }
-
-
 .topicCALM {
   border-collapse: collapse;
   background-color: #e4a1b3;
@@ -580,7 +579,7 @@ MOBILE
         margin-bottom: 10px;
       }
       .tableHOME {
-         style="left:17%;"
+         left:27%;
       }
       .topicCALM td {
         text-align: left;
