@@ -504,6 +504,7 @@ MOBILE
       .section, .sectionSUB {
          background-image: url("../resources/icons/background-alt.jpg");
          z-index: 99;
+         height: 100%;
       }
       .container, .containerHOME {
        overflow: auto;
