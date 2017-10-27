@@ -515,9 +515,9 @@ MOBILE
        border-width: 1px;
        border-color: black;
        z-index: 98;
-       margin-left: 10px;
-       margin-right: 10px;
-       margin-bottom: 80px;
+       margin-left: 10%;
+       margin-right: 10%;
+       margin-bottom: 10%;
        height: 100%;
       }
       .containerHOME {
