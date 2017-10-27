@@ -640,7 +640,7 @@ MOBILE
       .dataPATH {
        text-align: center;
       }
-      .dataPATH img { width: 7px; height: 7px;}
+      .dataPATH img { width: 7px; height: 7px; font-size: 3px;}
  
       .dataDATE {
         width: 1px;
