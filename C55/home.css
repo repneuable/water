@@ -640,15 +640,16 @@ MOBILE
       }
       .dataPATH {
        text-align: center;
-       font-size: 5px;
+       font-size: 7px;
       }
  
       .dataDATE {
         width: 1px;
         white-space: nowrap;
+       
       }
       .dataCAT{
-       width: 10%;
+       white-space: normal;
       }
       .dataCOMMENT {
       white-space: normal;
@@ -683,7 +684,7 @@ MOBILE
         background: linear-gradient(90deg, #f4e1d2, #d6cbd3, #d0d0d0);
         margin-bottom: 5px;
         min-height: 5%;
-        padding-top: 48px;
+        margin-top: 48px;
         font-size: 3px;
       }
 
