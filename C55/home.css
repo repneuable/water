@@ -513,6 +513,8 @@ MOBILE
        border-width: 1px;
        border-color: black;
        z-index: 98;
+       margin-left: 10px;
+       margin-right: 10px;
       }
       .containerHOME {
       background:
