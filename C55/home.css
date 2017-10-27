@@ -471,6 +471,36 @@ MOBILE
        a:active {
           color: #a2a2a3;}
 
+                 table, th, td {
+                    border: 1px solid gray;
+                    border-collapse: collapse;
+                 }
+                 table{
+                 }
+                 th {
+                    padding: 1px 5px 0.5px 5px;
+                    text-align: center;
+                    background-color: #d0d0d0;
+                    border-top: hidden;
+                 }
+                 td {
+                  background-color: #d0d0e1;
+                  text-align: center;
+                  font-size: 6px;
+                 }
+                 caption {
+                   text-align: center;
+                   background-color: #cacadd;
+                   border-style: solid;
+                   border-bottom: thick dotted;
+                   border-width: 1px;
+                   border-collapse: collapse;
+                   border-color: gray;
+                   font-style: italic;
+                   letter-spacing: 3px;
+                   text-transform: lowercase;
+                 }
+
       .section, .sectionSUB {
          background-image: url("../resources/icons/background-alt.jpg");
          z-index: 99;
@@ -483,6 +513,7 @@ MOBILE
        border-width: 1px;
        border-color: black;
        z-index: 98;
+       margin-bottom: 50px;
       }
       .containerHOME {
       background:
@@ -502,7 +533,6 @@ MOBILE
        right: 0;
        z-index: 100;
        white-space: normal;
-       margin-bottom: 10%;
        }
        #footer {
          position: fixed;
@@ -541,36 +571,6 @@ MOBILE
        }
 
 
-       table, th, td {
-          border: 1px solid gray;
-          border-collapse: collapse;
-       }
-       table{
-       }
-       th {
-          padding: 1px 5px 0.5px 5px;
-          text-align: center;
-          background-color: #d0d0d0;
-          border-top: hidden;
-       }
-       td {
-        background-color: #d0d0e1;
-        text-align: center;
-       }
-       caption {
-         text-align: center;
-         background-color: #cacadd;
-         border-style: solid;
-         border-bottom: thick dotted;
-         border-width: 1px;
-         border-collapse: collapse;
-         border-color: gray;
-         font-style: italic;
-         letter-spacing: 3px;
-         text-transform: lowercase;
-       }
-
-
       /**TOPIC TABLES**/
       topicCALM {
         border-collapse: collapse;
@@ -581,7 +581,7 @@ MOBILE
         margin-bottom: 10px;
       }
       .tableHOME {
-         left:27%;
+         left:20%;
       }
       .topicCALM td {
         text-align: left;
@@ -677,13 +677,15 @@ MOBILE
         background: linear-gradient(90deg, #f4e1d2, #d6cbd3, #d0d0d0);
         margin-bottom: 5px;
         min-height: 5%;
+        padding-top: 48px;
+        font-size: 3px;
       }
 
       .draggableALT {
-        font-size: 4px;
+        font-size: 3px;
         display: inline-table;
-        padding-bottom: 5px;
-        padding-top: 5px;
+        padding-bottom: 2px;
+        padding-top: 2px;
       }
 
       .draggableALT table {
@@ -697,7 +699,7 @@ MOBILE
         border-width: 1px;
         border-collapse: collapse;
         border-color: gray;
-        font-size: 10px;
+        font-size: 8px;
         letter-spacing: 0px;
         text-transform: uppercase;
         display: table-cell;
