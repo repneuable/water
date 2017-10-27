@@ -427,3 +427,24 @@ input[type=text]{
   text-transform: uppercase;
   display: table-cell;
 }
+
+
+/**************************
+MOBILE
+**************************/
+
+@media only screen and (max-device-width: 480px){
+
+
+img{
+  width: 500px;
+  height: 500px;
+}
+
+
+
+
+
+
+
+}
