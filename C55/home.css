@@ -640,7 +640,9 @@ MOBILE
       }
       .dataPATH {
        text-align: center;
-       font-family: 'Zapf Dingbats';
+       content: '\25B8';
+  display: inline;
+  text-decoration: none;
       }
  
       .dataDATE {
