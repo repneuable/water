@@ -98,7 +98,7 @@ background-size:20px 60px;
 }
 
 #header {
- position: fixed;
+ position: absolute;
  top: 0;
  left: 0;
  right: 0;
@@ -106,8 +106,10 @@ background-size:20px 60px;
  padding: 2px 8px 2px 8px;
 }
 
+
+
 #footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
@@ -269,6 +271,10 @@ caption {
 
 .dropDOWN{
  width: 150px;
+}
+
+.tableHOME {
+   style="left:37%;"
 }
 
 
@@ -572,7 +578,9 @@ topicCALM {
    display: inline-table;
   margin-bottom: 10px;
 }
-
+.tableHOME {
+   style="left:17%;"
+}
 .topicCALM td {
   text-align: left;
 }
