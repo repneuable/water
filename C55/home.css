@@ -654,7 +654,7 @@ MOBILE
 
       }
       .dataCAT{
-       white-space: normal;
+       white-space: nowrap;
       }
       .dataCOMMENT {
       white-space: normal;
