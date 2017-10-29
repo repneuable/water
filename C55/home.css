@@ -345,6 +345,9 @@ caption {
 .dataTITLE{
  padding: 1px 5px 1px 5px;
 }
+.dataTITLEhot{
+  background-color: rgb(218,165,32);
+}
 .dataPATH {
  padding: 1px 5px 1px 5px;
  text-align: center;
@@ -505,7 +508,7 @@ MOBILE
          background-image: url("../resources/icons/background-alt.jpg");
          z-index: 99;
          height: 100%;
-         overflow:auto; 
+         overflow:auto;
       }
       .container, .containerHOME {
        overflow: auto;
@@ -586,7 +589,7 @@ MOBILE
         margin-bottom: 10px;
       }
       .tableHOME {
-         left:10%;
+         left:20%;
       }
       .topicCALM td {
         text-align: left;
@@ -643,11 +646,11 @@ MOBILE
        text-align: center;
        font-size: 10px;
       }
- 
+
       .dataDATE {
         width: 1px;
         white-space: nowrap;
-       
+
       }
       .dataCAT{
        white-space: normal;
