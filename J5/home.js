@@ -172,6 +172,22 @@ function toggleTABLES22() {
 
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; alt.style.display = "none"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 
+
+
+
+
+
+function toggleRANDOM() {
+  var rambo = Math.floor(Math.random()*100);
+
+  document.getElementById('search0').value += rambo;
+
+}
+
+
+
+
+
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 ///////////////////////////end display toggles//////////////////////////
