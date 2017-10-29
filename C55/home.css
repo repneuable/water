@@ -641,7 +641,7 @@ MOBILE
 
       /*REST*/
       .dataTITLE{
-        width: 100px;
+        white-space: nowrap;
       }
       .dataPATH {
        text-align: center;
