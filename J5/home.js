@@ -198,7 +198,7 @@ function toggleOFF() {
   document.getElementById("draggable17").style.display = "none";
   document.getElementById("draggable18").style.display = "none";
   document.getElementById("draggable19").style.display = "none";
-  document.getElementById("draggable20").style.display = "none"
+  document.getElementById("draggable20").style.display = "none";
 
 }
 
