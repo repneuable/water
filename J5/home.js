@@ -177,6 +177,41 @@ function toggleTABLES22() {
 
 
 
+
+function toggleOFF() {
+  document.getElementById("draggable1").style.display = "none";
+  document.getElementById("draggable2").style.display = "none";
+  document.getElementById("draggable3").style.display = "none";
+  document.getElementById("draggable4").style.display = "none";
+  document.getElementById("draggable5").style.display = "none";
+  document.getElementById("draggable6").style.display = "none";
+  document.getElementById("draggable7").style.display = "none";
+  document.getElementById("draggable8").style.display = "none";
+  document.getElementById("draggable9").style.display = "none";
+  document.getElementById("draggable10").style.display = "none";
+  document.getElementById("draggable11").style.display = "none";
+  document.getElementById("draggable12").style.display = "none";
+  document.getElementById("draggable13").style.display = "none";
+  document.getElementById("draggable14").style.display = "none";
+  document.getElementById("draggable15").style.display = "none";
+  document.getElementById("draggable16").style.display = "none";
+  document.getElementById("draggable17").style.display = "none";
+  document.getElementById("draggable18").style.display = "none";
+  document.getElementById("draggable19").style.display = "none";
+  document.getElementById("draggable20").style.display = "none"
+
+}
+
+
+
+
+
+
+
+
+
+
+
 function toggleRANDOM() {
   var rambo = Math.floor(Math.random()*100);
 
