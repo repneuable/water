@@ -13,6 +13,40 @@
  *
  */
 
+
+
+
+
+ .square {
+   height: 150px;
+   width: 150px;
+   background-color: #e4a1b3;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+   color: white;
+   padding: 20px;
+   margin-bottom: 50px;
+   margin-left: 8px;
+   animation: polaroidShaker 3s infinite;
+   animation-direction: alternate;
+ }
+
+ @keyframes polaroidShaker {
+   0% {
+     transform: translate(0, 0);
+   }
+   100% {
+     transform: translate(20px, 50px) skew(-20deg);
+   }
+ }
+
+
+
+
+
+
 /******************************
 00. Elements
 *******************************/
@@ -260,6 +294,9 @@ caption {
 .topictableSWITCH {
 
 }
+
+
+
 
 /******************************
 03. Individual Table Properties
@@ -669,7 +706,6 @@ MOBILE
       #convertPATH {
         display: inline-block;
       }
-
       .converter table {
         position: relative;
       }
@@ -677,6 +713,8 @@ MOBILE
       .converter td{
         text-align: left;
       }
+
+
 
 
 
