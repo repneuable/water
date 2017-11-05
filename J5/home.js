@@ -19,19 +19,21 @@
  */
 
 //CONVERTER - dataPATH modifier
-function convertPATH(e) {
-  if(e.keyCode === 13){
+  function convertPATH(e) {
+
+  if(e.keyCode === 13 && document.getElementById('incomingHOTNESS').value.isSelected()){
             e.preventDefault(); // Ensure it is only this code that rusn
 
             var title = document.getElementById('incomingTITLE').value;
             var path = document.getElementById('incomingPATH').value;
             var category = document.getElementById('incomingCATEGORY').value;
             var comment = document.getElementById('incomingCOMMENT').value;
+            var hotness = document.getElementById('incomingHOTNESS').value;
 
-            var result = "<tr><td class=\"dataTITLE\">"+title+"</td><td class=\"dataPATH\"><a href=\""+path+"\" target=\"_blank\">&#8599;&#xFE0E;</a></td><td class=\"dataDATE\"></td><td class=\"dataCAT\">"+category+"</td><td class=\"dataCOMMENT\">"+comment+"</td></tr>";
+            var result2 = "<tr><td class=\"dataTITLE\">"+title+"</td><td class=\"dataPATH\"><a href=\""+path+"\" target=\"_blank\">&#8599;&#xFE0E;</a></td><td class=\"dataDATE\"></td><td class=\"dataCAT\">"+category+"</td><td class=\"dataCOMMENT\">"+comment+"</td></tr>";
 
-            document.getElementById('outgoingSTRING').value = result;
-            document.getElementById('outgoingLIST').value += result;
+            document.getElementById('outgoingSTRING').value = result2;
+            document.getElementById('outgoingLIST').value += result2;
             alert("Conversion done.");
         }
 }
@@ -40,6 +42,7 @@ function convertPATH(e) {
 function toggleCONVERTER() {
     document.getElementById("draggable1-alt").style.display = "inline-table";
     document.getElementById("draggable2-alt").style.display = "inline-table";
+    document.getElementById("draggable3-alt").style.display = "inline-table";
 }
 
 
@@ -223,6 +226,93 @@ function toggleRANDOM() {
 
 
 
+
+////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////
+/////////////////// text input from local file /////////////////////////
+////////////////////////////////////////////////////////////////////////
+/*
+$(document).ready(function() {
+    //$('#output').load('http://kevinh.work/resources/journal_entries.txt');
+    alert("ok");
+    $.get("http://kevinh.work/resources/journal_entries.txt", function(response) {
+     var logfile = response;
+     $('#output').html(logfile);
+     //alert(logfile);
+    });
+});
+
+$(document).ready(function() {
+    $.ajax({
+        type: "GET",
+        url: "http://kevinh.work/resources/journal_entries.txt",
+        dataType: "text",
+        success: function(data) {processData(data);}
+     });
+});
+
+function processData(allText) {
+    var allTextLines = allText.split(/\r\n|\n/);
+    var headers = allTextLines[0].split(',');
+    var lines = [];
+
+    for (var i=1; i<allTextLines.length; i++) {
+        var data = allTextLines[i].split(',');
+        if (data.length == headers.length) {
+
+            var tarr = [];
+            for (var j=0; j<headers.length; j++) {
+                tarr.push(headers[j]+":"+data[j]);
+            }
+            lines.push(tarr);
+        }
+    }
+    alert(lines);
+}
+/////
+
+
+function importRequest()
+{
+
+  jQuery.get('journal_entries.txt', function(txt) {
+    $('#output').text(txt);
+  });
+}
+*/
+//document.getElementById("openFile").addEventListener('change', function() {})
+
+
+  /*  var fileContents;
+      if (window.XMLHttpRequest){
+        fileContents = new XMLHttpRequest();
+      }
+      else {
+        fileContents = new ActiveXObject('Microsoft.XMLHTPP');
+      }
+}
+    function importRequest() {
+      window.alert("HELP");
+      if (fileContents.readyState == 0 || fileContents.readyState == 4){ //broser has started request (0), or server retrieved data (4)
+        fileContents.open('GET', 'file:///journal_entries.txt', true);
+        fileContents.onreadystatechange = handleResponse;
+        fileContents.send(null);
+      }
+
+
+    function handleResponse(){
+      if(fileContents.readyState == 4 || fileContents.status == 200)
+      {
+        var fileContentsResponse = fileContents.responseText;
+        document.getElementById('fileContents').innerHTML= fileContentsResponse;
+      }
+    }
+
+    document.getElementById('fileInput').addEventListener('click'), function() {
+    importRequest();  }
+
+**/
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 ///////////////////////////end display toggles//////////////////////////
