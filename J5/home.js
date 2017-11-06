@@ -1060,6 +1060,7 @@ function sortTableVeganism(n) {
       }
     }
   }
+}
 
   function sortTableNatural(n) {
     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
@@ -1096,7 +1097,6 @@ function sortTableVeganism(n) {
         }
       }
     }
-  }
 }
 
 function sortTableEPA(n) {
