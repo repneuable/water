@@ -21,7 +21,7 @@
 //CONVERTER - dataPATH modifier
   function convertPATH(e) {
 
-  if(e.keyCode === 13 && document.getElementById('incomingHOTNESS').value.isSelected()){
+  if(e.keyCode === 13 && document.getElementById("incomingHOTNESS").checked == false){
             e.preventDefault(); // Ensure it is only this code that rusn
 
             var title = document.getElementById('incomingTITLE').value;
@@ -30,12 +30,27 @@
             var comment = document.getElementById('incomingCOMMENT').value;
             var hotness = document.getElementById('incomingHOTNESS').value;
 
-            var result2 = "<tr><td class=\"dataTITLE\">"+title+"</td><td class=\"dataPATH\"><a href=\""+path+"\" target=\"_blank\">&#8599;&#xFE0E;</a></td><td class=\"dataDATE\"></td><td class=\"dataCAT\">"+category+"</td><td class=\"dataCOMMENT\">"+comment+"</td></tr>";
+            var result = "<tr><td class=\"dataTITLE\">"+title+"</td><td class=\"dataPATH\"><a href=\""+path+"\" target=\"_blank\">&#8599;&#xFE0E;</a></td><td class=\"dataDATE\"></td><td class=\"dataCAT\">"+category+"</td><td class=\"dataCOMMENT\">"+comment+"</td></tr>";
+
+            document.getElementById('outgoingSTRING').value = result;
+            document.getElementById('outgoingLIST').value += result;
+            alert("Conversion done.");
+        }
+      else if(e.keyCode === 13 && document.getElementById('incomingHOTNESS').checked){
+        e.preventDefault(); // Ensure it is only this code that rusn
+
+            var title2 = document.getElementById('incomingTITLE').value;
+            var path2 = document.getElementById('incomingPATH').value;
+            var category2 = document.getElementById('incomingCATEGORY').value;
+            var comment2 = document.getElementById('incomingCOMMENT').value;
+            var hotness2 = document.getElementById('incomingHOTNESS').value;
+
+            var result2 = "<tr><td class=\"dataTITLEhot\">"+title2+"</td><td class=\"dataPATH\"><a href=\""+path2+"\" target=\"_blank\">&#8599;&#xFE0E;</a></td><td class=\"dataDATE\"></td><td class=\"dataCAT\">"+category2+"</td><td class=\"dataCOMMENT\">"+comment2+"</td></tr>";
 
             document.getElementById('outgoingSTRING').value = result2;
             document.getElementById('outgoingLIST').value += result2;
             alert("Conversion done.");
-        }
+      }
 }
 
 //CONVERTER - toggle display
@@ -177,10 +192,6 @@ function toggleTABLES22() {
 
 
 
-
-
-
-
 function toggleOFF() {
   document.getElementById("draggable1").style.display = "none";
   document.getElementById("draggable2").style.display = "none";
@@ -205,27 +216,12 @@ function toggleOFF() {
 
 }
 
-
-
-
-
-
-
-
-
-
-
 function toggleRANDOM() {
   var rambo = Math.floor(Math.random()*100);
 
   document.getElementById('search0').value += rambo;
 
 }
-
-
-
-
-
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -323,2185 +319,531 @@ function importRequest()
 
 function sortTableCalm(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableCalm");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableCalm");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableSubtle(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableSubtle");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableSubtle");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableDeep(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableDeep");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableDeep");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableTraditional(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableTraditional");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableTraditional");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableHistory(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableHistory");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableHistory");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableScience(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableScience");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableScience");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableResearch(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableResearch");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableResearch");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
 
 function sortTableTechnology(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableTechnology");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableTechnology");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableWeb(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableWeb");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableWeb");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
 
 function sortTableInfoSec(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableInfoSec");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableInfoSec");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableComics(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableComics");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableComics");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableEducation(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableEducation");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableEducation");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
 
 
 function sortTableIdea(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableIdea");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableIdea");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableBlog(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableBlog");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableBlog");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableEcological(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableEcological");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableEcological");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableEnergy(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableEnergy");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableEnergy");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableSustainability(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableSustainability");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableSustainability");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableManagement(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableManagement");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableManagement");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableConservation(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableConservation");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableConservation");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableVeganism(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableVeganism");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableVeganism");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
   function sortTableNatural(n) {
     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-    table = document.getElementById("topictableNatural");
-    switching = true;
-    dir = "asc";
-    while (switching) {
-      switching = false;
-      rows = table.getElementsByTagName("tr");
-      for (i = 1; i < (rows.length - 1); i++) {
-        shouldSwitch = false;
-        x = rows[i].getElementsByTagName("td")[n];
-        y = rows[i + 1].getElementsByTagName("td")[n];
-        if (dir == "asc") {
-          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-            shouldSwitch= true;
-            break;
-          }
-        } else if (dir == "desc") {
-          if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-            shouldSwitch= true;
-            break;
-          }
-        }
-      }
-      if (shouldSwitch) {
-        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-        switching = true;
-        switchcount ++;
-      } else {
-        if (switchcount === 0 && dir == "asc") {
-          dir = "desc";
-          switching = true;
-        }
-      }
-    }
-}
+    table = document.getElementById("topictableNatural");switching = true;  dir = "asc";
+    while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+      for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+        if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+      if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableEPA(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableEPA");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableEPA");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableFDEP(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableFDEP");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableFDEP");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTablePollution(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictablePollution");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictablePollution");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableImpact(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableImpact");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableImpact");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableToxicology(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableToxicology");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableToxicology");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 
 function sortTableEffects(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableEffects");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableEffects");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTablePsychology(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictablePsychology");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictablePsychology");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableSociology(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableSociology");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableSociology");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableReceipts(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableReceipts");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableReceipts");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableJustice(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableJustice");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableJustice");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableHumanities(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableHumanities");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableHumanities");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableEthics(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableEthics");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableEthics");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableLaw(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableLaw");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableLaw");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTablePolicy(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictablePolicy");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictablePolicy");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableEconomics(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableEconomics");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableEconomics");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableCompliance(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableCompliance");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableCompliance");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableFl(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableFl");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableFl");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableCerts(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableCerts");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableCerts");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableJobs(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableJobs");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableJobs");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableVolunteering(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableVolunteering");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableVolunteering");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
 
 function sortTableChemistry(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableChemistry");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableChemistry");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableClimatology(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableClimatology");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableClimatology");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableSoil(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableSoil");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableSoil");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableGeography(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableGeography");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableGeography");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 
 function sortTableGeomatics(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableGeomatics");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableGeomatics");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 
 function sortTableHydrology(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableHydrology");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableHydrology");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableWastewater(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableWastewater");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableWastewater");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableFiltration(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableFiltration");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableFiltration");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 
 function sortTableEcology(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableEcology");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableEcology");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableSoundscape(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableSoundscape");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableSoundscape");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
+
 function sortTableHydroponics(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableHydroponics");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableHydroponics");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
+
 function sortTableSolid(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableSolidWasteManagement");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableSolidWasteManagement");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
+
 function sortTableStudio(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableStudio");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableStudio");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableDesign(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableDesign");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableDesign");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableVisual(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableVisual");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableVisual");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableWeb(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableWeb");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableWeb");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableGames(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableGames");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableGames");switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
+
 
 function sortTableUnsorted(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("topictableUnsorted");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("tr");
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount === 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+  table = document.getElementById("topictableUnsorted"); switching = true;  dir = "asc";
+  while (switching) {switching = false;  rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false; x = rows[i].getElementsByTagName("td")[n];y = rows[i + 1].getElementsByTagName("td")[n];
+      if (dir == "asc") { if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { shouldSwitch= true; break; }} else if (dir == "desc") {  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {  shouldSwitch= true;  break; }}}
+    if (shouldSwitch) { rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); switching = true; switchcount ++;  } else { if (switchcount === 0 && dir == "asc") { dir = "desc";  switching = true;}}}}
