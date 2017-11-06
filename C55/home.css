@@ -157,7 +157,7 @@ background-size:20px 60px;
 
 
 #header, #headerSUB a {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 #header, #headerSUB td {
@@ -274,6 +274,7 @@ td {
  padding: 2px 8px 2px 8px;
  background-color: #d0d0e1;
  text-align: center;
+
 }
 
 caption {
@@ -630,6 +631,7 @@ MOBILE
       }
       .topicCALM td {
         text-align: left;
+        font-size: 12px;
       }
       .topicCALM th {
         padding: 1px 5px 1px 3px;
@@ -644,6 +646,7 @@ MOBILE
 
       .topicECO td {
         text-align: left;
+        font-size: 12px;
       }
       .topicACTION {
         width: 1px;
@@ -654,6 +657,7 @@ MOBILE
 
       .topicACTION td {
         text-align: left;
+        font-size: 12px;
       }
       .topicSTUDY {
         width: 1px;
@@ -664,6 +668,7 @@ MOBILE
 
       .topicSTUDY td {
         text-align: left;
+        font-size: 12px;
       }
       .topicGEN {
         width: 1px;
@@ -674,6 +679,7 @@ MOBILE
 
       .topicGEN td {
         text-align: left;
+        font-size: 12px;
       }
 
       /*REST*/
@@ -728,11 +734,11 @@ MOBILE
         margin-bottom: 5px;
         min-height: 5%;
         margin-top: 48px;
-        font-size: 3px;
+        font-size: 5px;
       }
 
       .draggableALT {
-        font-size: 3px;
+        font-size: 5px;
         display: inline-table;
         padding-bottom: 2px;
         padding-top: 2px;
