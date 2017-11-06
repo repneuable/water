@@ -702,7 +702,9 @@ MOBILE
       .dataCOMMENT {
       white-space: normal;
       }
-
+      .searchBOX {
+        display: none;
+      }
 
       #converter {
           display: inline-block;
