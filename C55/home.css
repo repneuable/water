@@ -556,10 +556,10 @@ MOBILE
        border-width: 1px;
        border-color: black;
        z-index: 98;
-       margin-left: 10%;
-       margin-right: 10%;
+       margin-left: 5%;
+       margin-right: 5%;
        margin-bottom: 10%;
-       height: 80%;
+       height: 75%;
       }
       .containerHOME {
       background:
