@@ -256,6 +256,11 @@ caption {
 
 }
 
+
+button {
+  font-size: 10px;
+}
+
 /******************************
   ANIMATIONS
 *******************************/
@@ -422,7 +427,6 @@ input[type=text]{
   text-align: left;
   font-size: 8px;
 }
-
 
 
 /**************************
@@ -691,6 +695,7 @@ MOBILE
       .searchBOX {
         display: none;
       }
+
 
       #converter {
           display: inline-block;
