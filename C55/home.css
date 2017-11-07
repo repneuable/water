@@ -27,8 +27,9 @@ form {
 
 iframe {
   background-color: #e4a1b3;
- height: 300px;
- width: 300px;
+  margin-left: 30%;
+  height: 700px;
+  width: 400px;
 }
 
 head {
