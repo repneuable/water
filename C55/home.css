@@ -31,6 +31,10 @@ iframe {
   right: 10%;
   height: 700px;
 }
+#draggableR {
+ margin-left: 20%;
+ margin-right: 20%;
+}
 
 head {
   display: block;
