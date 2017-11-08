@@ -30,7 +30,7 @@
             var comment = document.getElementById('incomingCOMMENT').value;
             var hotness = document.getElementById('incomingHOTNESS').value;
 
-            var result = "<tr><td class=\"dataTITLE\">"+title+"</td><td class=\"dataPATH\"><a href=\""+path+"\" target=\"_blank\">&#8599;&#xFE0E;</a></td><td class=\"dataDATE\"></td><td class=\"dataCAT\">"+category+"</td><td class=\"dataCOMMENT\">"+comment+"</td></tr>";
+            var result = "\n" + "<tr><td class=\"dataTITLE\">"+title+"</td><td class=\"dataPATH\"><a href=\""+path+"\" target=\"_blank\">&#8599;&#xFE0E;</a></td><td class=\"dataDATE\"></td><td class=\"dataCAT\">"+category+"</td><td class=\"dataCOMMENT\">"+comment+"</td></tr>";
 
             document.getElementById('outgoingSTRING').value = result;
             document.getElementById('outgoingLIST').value += result;
