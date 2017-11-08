@@ -119,7 +119,11 @@ background-size:20px 60px;
   left: 0;
   right: 0;
   padding: 2px 8px 2px 8px;
+
+
 }
+
+
 
 
 #footer table {
@@ -475,7 +479,19 @@ input[type=text]{
   display: table-cell;
 }
 
-
+.submitFORM {
+  top: 50%;
+  left: 30%;
+}
+.submitBUTTON {
+  border-radius: 50%;
+  border: 1px grey;
+  height: 100%;
+  width: 6.500em;
+  height: 6.500em;
+  background-color: black;
+  color: #cacadd;
+}
 /**************************
 MOBILE
 **************************/
