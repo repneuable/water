@@ -45,7 +45,7 @@
             var comment2 = document.getElementById('incomingCOMMENT').value;
             var hotness2 = document.getElementById('incomingHOTNESS').value;
 
-            var result2 = "<tr><td class=\"dataTITLEhot\">"+title2+"</td><td class=\"dataPATH\"><a href=\""+path2+"\" target=\"_blank\">&#8599;&#xFE0E;</a></td><td class=\"dataDATE\"></td><td class=\"dataCAT\">"+category2+"</td><td class=\"dataCOMMENT\">"+comment2+"</td></tr>";
+            var result2 = "\n" + "<tr><td class=\"dataTITLEhot\">"+title2+"</td><td class=\"dataPATH\"><a href=\""+path2+"\" target=\"_blank\">&#8599;&#xFE0E;</a></td><td class=\"dataDATE\"></td><td class=\"dataCAT\">"+category2+"</td><td class=\"dataCOMMENT\">"+comment2+"</td></tr>";
 
             document.getElementById('outgoingSTRING').value = result2;
             document.getElementById('outgoingLIST').value += result2;
