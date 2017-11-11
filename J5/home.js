@@ -229,9 +229,9 @@ function expandFOOTER() {
   var allFootImgs = document.getElementById("footer").getElementsByTagName("img");
 
   for(var i = 0; i < allFootImgs.length; i++){
-      var td = allFootImgs[i];
-      td.style.height = "300px;";
-      td.style.width = "300px";
+      var imgz = allFootImgs[i];
+      imgz.style.height = "30px;";
+      imgz.style.width = "30px";
     }
 }
 
