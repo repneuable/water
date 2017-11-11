@@ -63,7 +63,7 @@ function toggleCONVERTER() {
 
 ////////////////////////////ALL TOGGLES for topic table displays/////////////////////////////////
 function toggleINDEX() {
-  var x = document.getElementById("draggable1"); var z = x.zIndex;
+  var x = document.getElementById("draggableJ"); var z = x.zIndex;
   x.style.display = "block";}
 
 function toggleTABLEShome() {
