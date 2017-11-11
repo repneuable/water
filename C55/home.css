@@ -25,13 +25,15 @@ form {
   display: inline-block;
 }
 
-iframe {
+iframe{
   background-color: #e4a1b3;
   left: 10%;
   right: 10%;
   height: 100%;
   width: 100%;
 }
+
+
 #draggableR {
  margin-left: 5%;
  margin-right: 5%;
