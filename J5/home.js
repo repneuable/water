@@ -230,9 +230,12 @@ function expandFOOTER() {
 
   for(var i = 0; i < allFootImgs.length; i++){
       var imgz = allFootImgs[i];
-      imgz.style.height = "30px;";
-      imgz.style.width = "30px";
+      imgz.style.height = "40px";
+      imgz.style.width = "40px";
+
     }
+
+  document.getElementById("expandFOOTER").style.display = "none";
 }
 
 ////////////////////////////////////////////////////////////////////////
