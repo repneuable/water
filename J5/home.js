@@ -1,20 +1,20 @@
 /**
  * ==================================================================================================
  * This document contains material which is the proprietary property of and
- * confidential to [company name].
+ * confidential to kevinh.work.
  *
- * Disclosure outside [company name] is prohibited except by license agreement or other
+ * Disclosure outside kevinh.work is prohibited except by license agreement or other
  * confidentiality agreement.
  * ==================================================================================================
- * File Name: File name goes here
- * Purpose  : Purpose of the file goes here
+ * File Name: home.js
+ * Purpose  : Host javascript source code for kevinh.work HTML files.
  * Version  : 0.1.0
  * --------------------------------------------------------------------------------------------------
- * Revision History
+ * Revision History: Nearly infinite
  * --------------------------------------------------------------------------------------------------
  * Date          Revision Description                                                     Modified By
  * --------------------------------------------------------------------------------------------------
- * 00/00/0000 - Your description here                                                             MJH
+ * 00/00/0000 - Your description here                                                             KH
  * ==================================================================================================
  */
 
