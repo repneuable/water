@@ -226,16 +226,35 @@ function toggleRANDOM() {
 
 function expandFOOTER() {
 
-  var allFootImgs = document.getElementById("footer").getElementsByTagName("img");
+    var imgCHECK = document.getElementById("expandICON");
 
-  for(var i = 0; i < allFootImgs.length; i++){
-      var imgz = allFootImgs[i];
-      imgz.style.height = "30px";
-      imgz.style.width = "30px";
+    if (imgCHECK.src.indexOf('resources/icons/expand-icon.png')!=-1 ){
+    var allFootImgs = document.getElementById("footer").getElementsByTagName("img");
+      for(var i = 0; i < allFootImgs.length; i++){
+          var imgz = allFootImgs[i];
+          imgz.style.height = "30px";
+          imgz.style.width = "30px";
 
+        }
+    imgCHECK.src = "resources/icons/collapse-icon.png";
     }
 
-  document.getElementById("expandFOOTER").style.display = "none";
+    else {
+      var allFootImgs2 = document.getElementById("footer").getElementsByTagName("img");
+        for(var i2 = 0; i2 < allFootImgs2.length; i2++){
+            var imgz2 = allFootImgs2[i2];
+            imgz2.style.height = "15px";
+            imgz2.style.width = "15px";
+
+          }
+      imgCHECK.src = "resources/icons/expand-icon.png";
+    }
+    if (button.value == "OFF") {
+    button.value = "ON";
+  } else {
+    button.value = "OFF";
+  }
+
 }
 
 ////////////////////////////////////////////////////////////////////////
