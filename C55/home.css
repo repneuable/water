@@ -600,6 +600,7 @@ MOBILE
        right: 0;
        z-index: 100;
        white-space: normal;
+       font-size: 12px;
        }
        #footer {
          position: fixed;
