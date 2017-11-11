@@ -216,12 +216,7 @@ function toggleOFF() {
 
 }
 
-function toggleRANDOM() {
-  var rambo = Math.floor(Math.random()*100);
 
-  document.getElementById('search0').value += rambo;
-
-}
 
 
 function expandFOOTER() {
