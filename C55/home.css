@@ -588,6 +588,7 @@ MOBILE
        border-width: 1px;
        border-color: black;
        z-index: 98;
+       margin-top: 40px;
        margin-left: 5%;
        margin-right: 5%;
        margin-bottom: 10%;
