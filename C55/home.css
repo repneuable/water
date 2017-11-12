@@ -626,12 +626,11 @@ MOBILE
        }
        #footer table{ width: 100%; }
        #draggable0 {
-        margin-left: 5%;
+        
         margin-right: 5%;
         height: 90%;
         width: 90%;
-        padding-right: 4.5%;
-        display: block;
+        display: inline-block;
        }
        #draggable1 {
          z-index: 0;
