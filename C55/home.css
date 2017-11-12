@@ -626,7 +626,7 @@ MOBILE
        }
        #footer table{ width: 100%; }
        #draggable0 {
-        
+
         margin-right: 5%;
         height: 90%;
         width: 90%;
@@ -782,7 +782,7 @@ MOBILE
         background: linear-gradient(90deg, #f4e1d2, #d6cbd3, #d0d0d0);
         margin-bottom: 5px;
         min-height: 5%;
-        margin-top: 48px;
+        margin-top: 0px;
         font-size: 9px;
       }
 
