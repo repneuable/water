@@ -496,7 +496,13 @@ input[type=text]{
   color: #cacadd;
 }
 /**************************
+**************************
+**************************
+**************************
 MOBILE
+**************************
+**************************
+**************************
 **************************/
 
 @media only screen and (max-device-width: 480px){
@@ -506,7 +512,10 @@ MOBILE
         font: bold 300 1em/1.5em "Helvetica Neue", "Raleway", Arial, sans-serif;
         -webkit-font-smoothing: antialiased; }
       form { display: inline-block; }
-      iframe { background-color: #e4a1b3; }
+      iframe { background-color: #e4a1b3;
+          height: 300px;
+          width: 200px;
+      }
       head { display: block; }
 
        a { color: #7f7b81; }
