@@ -34,15 +34,6 @@ iframe{
 }
 
 
-#draggable0 {
- margin-left: 5%;
- margin-right: 5%;
- height: 90%;
- width: 90%;
- padding-right: 4.5%;
- display: inline-block;
-}
-
 head {
   display: block;
 }
@@ -158,6 +149,15 @@ box-shadow: inset 0 0 5em 0em #848699;
 
 #dragHome {
 
+}
+
+#draggable0 {
+ margin-left: 5%;
+ margin-right: 5%;
+ height: 90%;
+ width: 90%;
+ padding-right: 4.5%;
+ display: inline-block;
 }
 
 #draggable1 {
@@ -512,7 +512,9 @@ MOBILE
       html, body{
         font: bold 300 1em/1.5em "Helvetica Neue", "Raleway", Arial, sans-serif;
         -webkit-font-smoothing: antialiased; }
-      form { display: inline-block; }
+      form { display: inline-block;
+              margin-left: 5%;
+            }
       iframe { background-color: #e4a1b3;
           height: 300px;
           width: 200px;
@@ -623,6 +625,14 @@ MOBILE
        #footer img {
        }
        #footer table{ width: 100%; }
+       #draggable0 {
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 90%;
+        width: 90%;
+        padding-right: 4.5%;
+        display: inline-block;
+       }
        #draggable1 {
          z-index: 0;
          display: inline-block;
