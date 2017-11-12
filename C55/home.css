@@ -69,7 +69,7 @@ head {
 
 .container, .containerHOME {
  overflow: auto;
- padding-top: 4.5%;
+ padding-top: 2.5%;
  padding-left: 4.5%;
 
   margin-bottom: 30px;
@@ -152,10 +152,10 @@ box-shadow: inset 0 0 5em 0em #848699;
 }
 
 #draggable0 {
- margin-left: 5%;
- margin-right: 5%;
- height: 90%;
- width: 90%;
+ margin-left: 2%;
+ margin-right: 2%;
+ height: 95%;
+ width: 95%;
  padding-right: 4.5%;
  display: inline-block;
 }
@@ -588,7 +588,6 @@ MOBILE
        border-width: 1px;
        border-color: black;
        z-index: 98;
-       margin-top: 50px;
        margin-left: 5%;
        margin-right: 5%;
        margin-bottom: 10%;
@@ -628,7 +627,7 @@ MOBILE
        #draggable0 {
 
         margin-right: 5%;
-        height: 90%;
+        height: 95%;
         width: 90%;
         display: inline-block;
        }
@@ -782,7 +781,7 @@ MOBILE
         background: linear-gradient(90deg, #f4e1d2, #d6cbd3, #d0d0d0);
         margin-bottom: 5px;
         min-height: 5%;
-        margin-top: 0px;
+        margin-top: 48px;
         font-size: 9px;
       }
 
