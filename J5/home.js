@@ -223,7 +223,7 @@ function expandFOOTER() {
 
     var imgCHECK = document.getElementById("expandICON");
 
-    if (imgCHECK.src.indexOf('resources/icons/expand-icon.png')!=-1 ){
+    if (imgCHECK.src.indexOf('expand-icon.png')!=-1 ){
     var allFootImgs = document.getElementById("footer").getElementsByTagName("img");
       for(var i = 0; i < allFootImgs.length; i++){
           var imgz = allFootImgs[i];
@@ -231,7 +231,7 @@ function expandFOOTER() {
           imgz.style.width = "30px";
 
         }
-    imgCHECK.src = "resources/icons/collapse-icon.png";
+    imgCHECK.src = "collapse-icon.png";
     }
 
     else {
@@ -242,7 +242,7 @@ function expandFOOTER() {
             imgz2.style.width = "15px";
 
           }
-      imgCHECK.src = "resources/icons/expand-icon.png";
+      imgCHECK.src = "expand-icon.png";
     }
     if (button.value == "OFF") {
     button.value = "ON";
