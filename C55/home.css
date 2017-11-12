@@ -636,6 +636,7 @@ MOBILE
        #draggable18 {display: inline-block;}
        #draggable19 {display: inline-block;}
        #draggable20 {display: inline-block;}
+       #draggableR {margin-left: 20px; margin-top: 20px;}
 
        .rowDRAG {
         border: none;
