@@ -78,6 +78,10 @@ function toggleTABLESconverter() {
 
   if (alt.style.display != "none" && x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.display = "block"; } else { alt.style.display = "inline-table"; x.style.display = "none";}}
 
+function toggleTABLE() {
+  var x = document.getElementById("draggable0"); var z = x.zIndex;
+  if (x.style.display != "none") { x.style.display = "none"; } else if (x.style.display == "none") { x.style.zIndex ++; x.style.display = "block"; } else { x.style.display = "none";}}
+
 function toggleTABLES1() {
   var x = document.getElementById("draggable1"); var z = x.zIndex;
   var alt = document.getElementById("draggable1-alt");
