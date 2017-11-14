@@ -645,8 +645,7 @@ MOBILE
         display: inline-block;
 
         position: relative;
-        height: 0;
-        overflow: hidden;
+        height: 80%;
 
 
        }
