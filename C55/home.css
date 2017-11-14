@@ -526,8 +526,11 @@ MOBILE
               margin-left: 5%;
             }
       iframe { background-color: #e4a1b3;
-          height: 80%;
-          width: 50%;
+          position: absolute;
+          top:0;
+          left: 0;
+          width: 100%;
+          height: 100%;
       }
       head { display: block; }
 
@@ -640,6 +643,14 @@ MOBILE
         height: 95%;
         width: inherit;
         display: inline-block;
+
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 35px;
+        height: 0;
+        overflow: hidden;
+        
+
        }
        #draggable1 {
          z-index: 0;
