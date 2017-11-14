@@ -18,6 +18,7 @@ html, body {
  color: #000000;
  background: #a0a0a0;
  font: bold 300 1em/1.5em "Helvetica Neue", "Raleway", Arial, sans-serif;
+ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
  -webkit-font-smoothing: antialiased;
 }
 
@@ -27,10 +28,9 @@ form {
 
 iframe{
   background-color: #e4a1b3;
-  left: 10%;
   right: 10%;
   height: 100%;
-  width: 100%;
+  width: 97.5%;
 }
 
 
@@ -70,7 +70,6 @@ head {
 .container, .containerHOME {
  overflow: auto;
  padding-top: 2.5%;
- padding-left: 4.5%;
 
   margin-bottom: 30px;
 
@@ -125,9 +124,13 @@ box-shadow: inset 0 0 5em 0em #848699;
   width: 100%;
 }
 
+#footer img {
+  height: 25px;
+  width: 25px;
+}
 
 #header, #headerSUB a {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 #header, #headerSUB td {
@@ -323,7 +326,7 @@ button {
 
 
 .tableHOME {
-   left:35%;
+   left:40%;
 }
 .topicCALM {
   border-collapse: collapse;
@@ -464,6 +467,7 @@ input[type=text]{
   display: inline-table;
   padding-bottom: 5px;
   padding-top: 5px;
+
 }
 
 .draggableALT table {
@@ -481,6 +485,8 @@ input[type=text]{
   letter-spacing: 0px;
   text-transform: uppercase;
   display: table-cell;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .submitFORM {
