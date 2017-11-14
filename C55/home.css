@@ -530,8 +530,6 @@ MOBILE
           position: absolute;
           top:0;
           left: 0;
-          width: 500px;
-          height: 350px;
           overflow: hidden;
       }
       head { display: block; }
