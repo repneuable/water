@@ -525,7 +525,8 @@ MOBILE
       form { display: inline-block;
               margin-left: 5%;
             }
-      iframe { background-color: #e4a1b3;
+      iframe {
+          background-color: #e4a1b3;
           position: absolute;
           top:0;
           left: 0;
@@ -641,15 +642,12 @@ MOBILE
 
         margin-right: 5%;
         height: 95%;
-        width: inherit;
         display: inline-block;
 
         position: relative;
-        padding-bottom: 56.25%;
-        padding-top: 35px;
         height: 0;
         overflow: hidden;
-        
+
 
        }
        #draggable1 {
@@ -693,7 +691,7 @@ MOBILE
         margin-bottom: 10px;
       }
       .tableHOME {
-         left:14%;
+         left:20%;
       }
       .topicCALM td {
         text-align: left;
