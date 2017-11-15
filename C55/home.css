@@ -101,7 +101,7 @@ box-shadow: inset 0 0 5em 0em #848699;
 }
 
 .containerINDEX {
-  margin-left:47%; 
+  margin-left:47%;
   margin-top: 8%;
 }
 
@@ -541,21 +541,7 @@ MOBILE
           overflow: hidden;
           display: block;
       }
-          .intrinsic-container {
-            position: relative;
-            height: 0;
-            overflow: hidden;
-            padding-bottom: 100%;
-          }
-
-
-          .intrinsic-container iframe {
-            position: absolute;
-            top:0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-          }
+      
       head { display: block; }
 
        a { color: #7f7b81; }
