@@ -136,7 +136,7 @@ box-shadow: inset 0 0 5em 0em #848699;
 }
 
 #header, #headerSUB a {
-  font-size: 13px;
+  font-size: 14.5px;
 }
 
 #header, #headerSUB td {
@@ -325,6 +325,7 @@ button {
 
  .searchBOX {
    font-size: 9px;
+   margin-bottom: 2px;
  }
 
 .dropDOWN{
@@ -489,7 +490,7 @@ input[type=text]{
   border-width: 1px;
   border-collapse: collapse;
   border-color: gray;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0px;
   text-transform: uppercase;
   display: table-cell;
