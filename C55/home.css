@@ -775,9 +775,9 @@ MOBILE
       .topicGEN td {
         text-align: left;
         font-size: 12px;
-         width: 5%; 
-        word-break: break-all;
-        word-wrap: break-word; 
+         width: 5% !important; 
+        word-break: break-all !important;
+        word-wrap: break-word !important; 
       }
 
       /*REST*/
@@ -857,7 +857,7 @@ MOBILE
         border-width: 1px;
         border-collapse: collapse;
         border-color: gray;
-        font-size: 9px;
+        font-size: 11px;
         letter-spacing: 0px;
         text-transform: uppercase;
         display: table-cell;
