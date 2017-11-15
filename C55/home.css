@@ -832,6 +832,7 @@ MOBILE
         margin-bottom: 5px;
         margin-top: 38px;
         font-size: 10px;
+        overflow: scroll;
       }
 
       .draggableALT {
