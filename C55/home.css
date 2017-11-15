@@ -775,6 +775,7 @@ MOBILE
       .topicGEN td {
         text-align: left;
         font-size: 12px;
+        max-width: 100px:
       }
 
       /*REST*/
