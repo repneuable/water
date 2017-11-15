@@ -829,9 +829,8 @@ MOBILE
         border: solid 1px #969696;
         background: linear-gradient(90deg, #f4e1d2, #d6cbd3, #d0d0d0);
         margin-bottom: 5px;
-        min-height: 5%;
-        margin-top: 48px;
-        font-size: 9px;
+        margin-top: 38px;
+        font-size: 10px;
       }
 
       .draggableALT {
