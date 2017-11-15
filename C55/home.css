@@ -832,7 +832,7 @@ MOBILE
         margin-bottom: 5px;
         margin-top: 38px;
         font-size: 10px;
-        max-height: 8%;
+        max-height: 12%;;
         overflow: scroll;
       }
 
@@ -858,6 +858,7 @@ MOBILE
         letter-spacing: 0px;
         text-transform: uppercase;
         display: table-cell;
+       font-color: black;
       }
  }
 
