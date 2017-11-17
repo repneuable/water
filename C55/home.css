@@ -553,7 +553,7 @@ MOBILE
           .intrinsic-container {
             position: relative;
             height: 0;
-            overflow: hidden;
+            overflow: scroll;
             padding-bottom: 100%;
           }
 
