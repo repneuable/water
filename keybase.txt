@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/repneuable
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://kevinh.work
+  * I am repneuable (https://keybase.io/repneuable) on keybase.
+  * I have a public key with fingerprint 7DFF 59E0 1703 EBB9 8D3C  BEFF 46A4 B065 931B 24BC
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101851eeb63c9821dedc3b84cec00e55bd2ec65fe52b8b8bbe3f3c3c4b6820f86a10a",
+      "fingerprint": "7dff59e01703ebb98d3cbeff46a4b065931b24bc",
+      "host": "keybase.io",
+      "key_id": "46a4b065931b24bc",
+      "kid": "0101851eeb63c9821dedc3b84cec00e55bd2ec65fe52b8b8bbe3f3c3c4b6820f86a10a",
+      "uid": "2be95f169f04af133dbba72eba95b119",
+      "username": "repneuable"
+    },
+    "service": {
+      "hostname": "kevinh.work",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1510944392,
+  "expire_in": 157680000,
+  "prev": "d0337eb12eebe48e1124927694ab590048db4da9e1d51db6443e60f694ea7939",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMIqAnicrZJdSBRRFMdXK6UlUSt6iFCawoJsu3e+dmaJYImgyOqheii0be7MGR13
+m1lnZ3cTW19S2Nq+8CHL9CUKSosIpA8qK/uwDwIpA5OKMmnpwyR6qKCV7ki99di9
+D5d7zv//u+cc7t2iaR5v3plz5WkhcOBV3uPbx+Ke7cW+dBNDLK2RCTQxYZg6IKJB
+zAmFDY0JMAgjLAkYgIicKkss1kBTOSLxKqgIgSAQjQVVFHQQWCLRTYDTOZVTeSJK
+LNIlUcFIYSoZ3TBrwY7ahulQrF/TdUEGhP2IA0JkSeNUArrOiwpPkCjIHCYsT1Rq
+rLNiroMWR5QY+AyLxuglNFXeP/T/ue74FI4lIAs6FmUd8YqOOU4jRPGzQBRZIBjL
+rjAGtqnsAqq2IWpCXCERYFKVDI0nDBXc0bq9/NGEIWGYdb6kZYepOWpbjqVaEZqo
+c5xowPU5jVFXmAQS+oMIEcPU6BypIQF2zLBMJoCpUnUMl4kFjGSe52S2koHdUcOG
+kOEqBL8oIbrcZyBBkRriOD8QzNLxAC8Bxiwvs35R5hUiyAjxkkZ4TZEBawLWiEiZ
+ICKd5kHxy5zbbQwaTIuyKdRRaikzZtSaihO3acv9t6qne/K8noIZ+e4H83hnlvz9
+djeXFP4qPn/8YrBC5bPz347M+tnXOrphYLiv81FPy6Iqvbmkb8+zBQ/aL/v6Bo9+
+uX19ZlcLU3I5fb7geu2OF6nT5ct+BL+JnonJ/Jrk/Xvp56WRsc2KdmrnXF8hu+mE
+whnDQ90Z7/Jp60aa9f4uPjdxp7uirHrftYaXp27cqz/c2vZ5hTla/wItXXO1Y+Wj
+T5e4Lcn9F97kekrPPvw4JzVatWQ83HEkNP4j15GtWdxbj6TvV8YOro/U9QcbblS9
+XpWMBbtL257kfyiczLR0ZlN7ByPhgWxm6Jqx8OzWQE37l7HTZYeenmxcWrR/4N1k
+atvG1e+TEanJM+9KUa73c/jc7MzXp2vJb0inSlY=
+=zQ/y
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/repneuable
+
+==================================================================
