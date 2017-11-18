@@ -34,25 +34,46 @@
  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-   <script>
-   $( function() {
-     $( "#draggable1" ).draggable();
-     $( "#draggable2" ).draggable();
-     $( "#draggable3" ).draggable();
-     $( "#draggable4" ).draggable();
-     $( "#draggable5" ).draggable();
-     $( "#draggable6" ).draggable();
-     $( "#draggable7" ).draggable();
-     $( "#draggable8" ).draggable();
-     $( "#draggable9" ).draggable();
-     $( "#draggable10" ).draggable();
-     $( "#draggable11" ).draggable();
-     $( "#draggable12" ).draggable();
-   } );
-   </script>
+ <script>
+ $( function() {
+   $( "#draggable1" ).draggable();
+   $( "#draggable2" ).draggable();
+   $( "#draggable3" ).draggable();
+   $( "#draggable4" ).draggable();
+   $( "#draggable5" ).draggable();
+   $( "#draggable6" ).draggable();
+   $( "#draggable7" ).draggable();
+   $( "#draggable8" ).draggable();
+   $( "#draggable9" ).draggable();
+   $( "#draggable10" ).draggable();
+   $( "#draggable11" ).draggable();
+   $( "#draggable12" ).draggable();
+ } );
+ </script>
+ <script src="../../J5/tsorter.min.js" type="text/javascript"></script>
+ <script>
+ function init()
+ {
+     var sorter1 = tsorter.create('topictableCalm');
+     var sorter2 = tsorter.create('topictableSubtle');
+     var sorter3 = tsorter.create('topictableDeep');
+     var sorter4 = tsorter.create('topictableIdea');
+     var sorter5 = tsorter.create('topictableBlog');
+     var sorter6 = tsorter.create('topictableEcological');
+
+ }
+
+ window.onload = init;
+ </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109143936-1"></script>
 <script>
+<div id="draggable1-alt" class="draggableALT"><table><caption onclick="toggleTABLES1()">CALM</caption></table></div>
+<div id="draggable2-alt" class="draggableALT"><table><caption onclick="toggleTABLES2()">SUBTLE</caption></table></div>
+<div id="draggable3-alt" class="draggableALT"><table><caption onclick="toggleTABLES3()">DEEP ECOLOGY</caption></table></div>
+<div id="draggable4-alt" class="draggableALT"><table><caption onclick="toggleTABLES4()">IDEA</caption></table></div>
+<div id="draggable5-alt" class="draggableALT"><table><caption onclick="toggleTABLES5()">BLOG</caption></table></div>
+<div id="draggable6-alt" class="draggableALT"><table><caption onclick="toggleTABLES6()">ECO LITERACY</caption></table></div>
  window.dataLayer = window.dataLayer || [];
  function gtag(){dataLayer.push(arguments);}
  gtag('js', new Date());
