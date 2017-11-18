@@ -44,6 +44,28 @@
      $( "#draggable6" ).draggable();
    } );
    </script>
+
+   <script src="../../J5/tsorter.min.js" type="text/javascript"></script>
+   <script>
+   function init()
+   {
+       var sorter1 = tsorter.create('topictableStudio');
+       var sorter2 = tsorter.create('topictableDesign');
+       var sorter3 = tsorter.create('topictableVisual');
+       var sorter4 = tsorter.create('topictableTechnology');
+       var sorter5 = tsorter.create('topictableWeb');
+       var sorter6 = tsorter.create('topictableInfoSec');
+       var sorter7 = tsorter.create('topictableManagement');
+       var sorter8 = tsorter.create('topictablePsychology');
+       var sorter9 = tsorter.create('topictableSociology');
+       var sorter10 = tsorter.create('topictableGames');
+       var sorter11 = tsorter.create('topictableComics');
+       var sorter12 = tsorter.create('topictableUnsorted');
+
+   }
+
+   window.onload = init;
+   </script>
  <!-- Global site tag (gtag.js) - Google Analytics -->
  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109143936-1"></script>
  <script>
@@ -52,6 +74,8 @@
   gtag('js', new Date());
   gtag('config', 'UA-109143936-1');
  </script>
+
+
 
   <!--HEADER-->
   <div id="header" class="header">
@@ -497,7 +521,7 @@
             unsorted
          </caption>
          <thead>
-           <tr><th onclick="sortTableUnsorted(0)">TITLE</th><th></th><th>DATE</th><th onclick="sortTableUnsorted(1)">TOPIC</th><th>  COMMENT</th></tr>
+           <tr><th >TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th>  COMMENT</th></tr>
           </thead>
           <tbody>
 
@@ -627,7 +651,7 @@
             <tr><td class="dataTITLE">live bitcoin stats</td><td class="dataPATH"><a href="https://cash.coin.dance" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
             <tr><td class="dataTITLE">why bitcoin is better</td><td class="dataPATH"><a href="https://hackernoon.com/money-is-a-social-construct-and-thats-why-you-should-run-a-bitcoin-full-node-ea0330cb69a5" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
             <tr><td class="dataTITLE">supervise learning algorithms</td><td class="dataPATH"><a href="www.kdnuggets.com/2017/10/top-10-machine-learning-algorithms-beginners.html" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">hacking navigation systems</td><td class="dataPATH"><a href="https://0daylego.wordpress.com" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT"></td></tr>            
+            <tr><td class="dataTITLE">hacking navigation systems</td><td class="dataPATH"><a href="https://0daylego.wordpress.com" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT"></td></tr>
             <tr><td class="dataTITLE">china new recycling standard 2018</td><td class="dataPATH"><a href="https://www.wastedive.com/news/china-proposes-new-05-contamination-standard-with-march-2018-enforcement/511122/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">solid waste management</td><td class="dataCOMMENT"></td></tr>
             <tr><td class="dataTITLE">colorado lowest recycling rate</td><td class="dataPATH"><a href="https://www.wastedive.com/news/report-colorado-lacks-recycling-access-and-the-data-to-track-where-its-wo/511161/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">solid waste management</td><td class="dataCOMMENT"></td></tr>
             <tr><td class="dataTITLE">house of reps approves wild horse slaughter</td><td class="dataPATH"><a href="http://www.denverpost.com/2017/07/19/wild-horse-destruction-vote-passes/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">conservation</td><td class="dataCOMMENT"></td></tr>
@@ -669,5 +693,7 @@
     </div> <!--close container-->
   </div> <!--close section-->
 </body>
+
+
 
 </html>
