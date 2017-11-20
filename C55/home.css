@@ -673,10 +673,6 @@ MOBILE
        white-space: normal;
        font-size: 12px;
        }
-       #header, #headerSUB img {
-         height: 8px;
-         width: 8px;
-       }
        #footer {
          position: fixed;
          bottom: 0;
