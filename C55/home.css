@@ -735,7 +735,7 @@ MOBILE
         border-collapse: collapse;
         background-color: #e4a1b3;
         width: 1px;
-        /**white-space: nowrap;**/
+        white-space: nowrap;
          display: inline-table;
         margin-bottom: 10px;
       }
@@ -746,7 +746,6 @@ MOBILE
       .topicCALM td {
         text-align: left;
         font-size: 12px;
-        max-width: 30px;
       }
       .topicCALM th {
         padding: 1px 5px 1px 3px;
