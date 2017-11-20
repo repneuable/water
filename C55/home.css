@@ -580,6 +580,7 @@ MOBILE
    width: 100%;
    height: 135%;
    overflow: scroll;
+   z-index: 100;
  }
 
           .intrinsic-container {
