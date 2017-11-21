@@ -759,6 +759,7 @@ MOBILE
         /**white-space: nowrap;**/
          display: inline-table;
         margin-bottom: 10px;
+       word-wrap: break-word;
       }
       .tableHOME {
          left:17%;
@@ -767,7 +768,7 @@ MOBILE
       .topicCALM td {
         text-align: left;
         font-size: 12px;
-        max-width: 15px;
+        max-width: 25px;
       }
       .topicCALM th {
         padding: 1px 5px 1px 3px;
