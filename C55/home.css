@@ -759,7 +759,7 @@ MOBILE
         /**white-space: nowrap;**/
          display: inline-table;
         margin-bottom: 10px;
-       word-wrap: break-word;
+       word-wrap: word-break;
       }
       .tableHOME {
          left:17%;
