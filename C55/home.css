@@ -756,7 +756,7 @@ MOBILE
         border-collapse: collapse;
         background-color: #e4a1b3;
         width: 1px;
-        /**white-space: nowrap;**/
+        white-space: normal;
          display: inline-table;
         margin-bottom: 10px;
        table-layout: fixed;
