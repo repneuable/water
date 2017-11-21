@@ -756,11 +756,9 @@ MOBILE
         border-collapse: collapse;
         background-color: #e4a1b3;
         width: 1px;
-        white-space: normal;
          display: inline-table;
         margin-bottom: 10px;
        table-layout: fixed;
-       word-break: break-word;
        
       }
       .tableHOME {
@@ -771,6 +769,8 @@ MOBILE
         text-align: left;
         font-size: 12px;
         max-width: 25px;
+       word-break: break-word;
+       white-space: normal;
       }
       .topicCALM th {
         padding: 1px 5px 1px 3px;
