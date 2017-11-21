@@ -760,7 +760,7 @@ MOBILE
          display: inline-table;
         margin-bottom: 10px;
        table-layout: fixed;
-       word-break:break-all;
+       word-break: break-word;
        
       }
       .tableHOME {
