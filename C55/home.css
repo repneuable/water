@@ -759,7 +759,9 @@ MOBILE
         /**white-space: nowrap;**/
          display: inline-table;
         margin-bottom: 10px;
+       table-layout: fixed;
        word-wrap: word-break;
+       
       }
       .tableHOME {
          left:17%;
