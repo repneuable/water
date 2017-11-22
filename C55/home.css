@@ -325,7 +325,7 @@ button {
   align-content: center;
   color: black;
   padding: 8px;
-  
+
   margin-bottom: 50px;
   margin-left: 8px;
   animation: polaroidShaker 3s infinite;
@@ -371,6 +371,11 @@ button {
 .topicCALM td {
   text-align: left;
 }
+.topicCALM td:first-child, .topicCALM th:first-child {
+  border-right: double;
+  border-width: 1px 4px 1px 1px;
+  border-color: gray;
+}
 .topicCALM th {
   padding: 1px 5px 1px 3px;
 }
@@ -384,6 +389,11 @@ button {
 .topicECO td {
   text-align: left;
 }
+.topicECO td:first-child, .topicCALM th:first-child {
+  border-right: double;
+  border-width: 1px 4px 1px 1px;
+  border-color: gray;
+}
 .topicACTION {
   width: 1px;
   white-space: nowrap;
@@ -393,6 +403,11 @@ button {
 
 .topicACTION td {
   text-align: left;
+}
+.topicACTION td:first-child, .topicCALM th:first-child {
+  border-right: double;
+  border-width: 1px 4px 1px 1px;
+  border-color: gray;
 }
 .topicSTUDY {
   width: 1px;
@@ -404,6 +419,11 @@ button {
 .topicSTUDY td {
   text-align: left;
 }
+.topicSTUDY td:first-child, .topicCALM th:first-child {
+  border-right: double;
+  border-width: 1px 4px 1px 1px;
+  border-color: gray;
+}
 .topicGEN {
   width: 1px;
   white-space: nowrap;
@@ -414,7 +434,11 @@ button {
 .topicGEN td {
   text-align: left;
 }
-
+.topicGEN td:first-child, .topicCALM th:first-child {
+  border-right: double;
+  border-width: 1px 4px 1px 1px;
+  border-color: gray;
+}
 
 
 
