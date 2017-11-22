@@ -777,7 +777,6 @@ MOBILE
           }
           .topicCALM td:nth-child(4){
             width: 1%;
-            text-align: right;
             word-break: break-word;
             white-space: nowrap;
           }
@@ -803,7 +802,6 @@ MOBILE
       }
       .topicECO td:nth-child(4){
         width: 1%;
-        text-align: right;
         word-break: break-word;
         white-space: nowrap;
       }
@@ -826,7 +824,6 @@ MOBILE
       }
       .topicACTION td:nth-child(4){
         width: 1%;
-        text-align: right;
         word-break: break-word;
         white-space: nowrap;
       }
@@ -848,7 +845,6 @@ MOBILE
       }
       .topicSTUDY td:nth-child(4){
         width: 1%;
-        text-align: right;
         word-break: break-word;
         white-space: nowrap;
       }
@@ -871,7 +867,6 @@ MOBILE
       }
       .topicGEN td:nth-child(4){
         width: 1%;
-        text-align: right;
         word-break: break-word;
         white-space: nowrap;
       }
