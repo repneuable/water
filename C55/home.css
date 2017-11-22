@@ -266,7 +266,6 @@ table, th, td {
 }
 
 table{
-
 }
 
 th {
@@ -317,15 +316,16 @@ button {
 *******************************/
 
 .square {
-  height: 150px;
-  width: 150px;
-  background-color: #e4a1b3;
+  height: 12%;
+  width: 12%;
+  background-color: #e7d1e0;
   display: flex;
   text-align: center;
   justify-content: center;
   align-content: center;
-  color: white;
-  padding: 20px;
+  color: black;
+  padding: 8px;
+  
   margin-bottom: 50px;
   margin-left: 8px;
   animation: polaroidShaker 3s infinite;
@@ -374,7 +374,6 @@ button {
 .topicCALM th {
   padding: 1px 5px 1px 3px;
 }
-
 .topicECO {
   width: 1px;
   white-space: nowrap;
