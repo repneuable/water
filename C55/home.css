@@ -371,14 +371,15 @@ button {
 .topicCALM td {
   text-align: left;
 }
-.topicCALM td:first-child, .topicCALM th:first-child {
-  border-right: dotted;
-  border-width: 1px 2px 1px 1px;
+.topicCALM td:first-child {
+  font-style: italic;
+  font-weight: 310;
   border-color: gray;
 }
 .topicCALM th {
   padding: 1px 5px 1px 3px;
 }
+
 .topicECO {
   width: 1px;
   white-space: nowrap;
@@ -389,9 +390,9 @@ button {
 .topicECO td {
   text-align: left;
 }
-.topicECO td:first-child, .topicCALM th:first-child {
-  border-right: dotted;
-  border-width: 1px 2px 1px 1px;
+.topicECO td:first-child{
+  font-style: italic;
+  font-weight: 310;
   border-color: gray;
 }
 .topicACTION {
@@ -404,9 +405,9 @@ button {
 .topicACTION td {
   text-align: left;
 }
-.topicACTION td:first-child, .topicCALM th:first-child {
-  border-right: dotted;
-  border-width: 1px 2px 1px 1px;
+.topicACTION td:first-child{
+  font-style: italic;
+  font-weight: 310;
   border-color: gray;
 }
 .topicSTUDY {
@@ -419,9 +420,9 @@ button {
 .topicSTUDY td {
   text-align: left;
 }
-.topicSTUDY td:first-child, .topicCALM th:first-child {
-  border-right: dotted;
-  border-width: 1px 2px 1px 1px;
+.topicSTUDY td:first-child{
+  font-style: italic;
+  font-weight: 310;
   border-color: gray;
 }
 .topicGEN {
@@ -434,9 +435,9 @@ button {
 .topicGEN td {
   text-align: left;
 }
-.topicGEN td:first-child, .topicCALM th:first-child {
-  border-right: dotted;
-  border-width: 1px 2px 1px 1px;
+.topicGEN td:first-child{
+  font-style: italic;
+  font-weight: 310;
   border-color: gray;
 }
 
