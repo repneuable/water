@@ -759,7 +759,7 @@ MOBILE
          display: inline-table;
         margin-bottom: 10px;
        table-layout: fixed;
-       
+
       }
       .tableHOME {
          left:17%;
@@ -768,10 +768,14 @@ MOBILE
       .topicCALM td {
         text-align: left;
         font-size: 12px;
-        max-width: 25px;
-       word-break: break-word;
-       white-space: normal;
+
       }
+      .topicCALM td:first-child {
+        max-width: 25px;
+        word-break: break-word;
+        white-space: normal;
+      }
+
       .topicCALM th {
         padding: 1px 5px 1px 3px;
       }
