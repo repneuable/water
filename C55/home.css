@@ -373,7 +373,7 @@ button {
 }
 .topicCALM td:first-child, .topicCALM th:first-child {
   border-right: dotted;
-  border-width: 1px 4px 1px 1px;
+  border-width: 1px 2px 1px 1px;
   border-color: gray;
 }
 .topicCALM th {
@@ -391,7 +391,7 @@ button {
 }
 .topicECO td:first-child, .topicCALM th:first-child {
   border-right: dotted;
-  border-width: 1px 4px 1px 1px;
+  border-width: 1px 2px 1px 1px;
   border-color: gray;
 }
 .topicACTION {
@@ -406,7 +406,7 @@ button {
 }
 .topicACTION td:first-child, .topicCALM th:first-child {
   border-right: dotted;
-  border-width: 1px 4px 1px 1px;
+  border-width: 1px 2px 1px 1px;
   border-color: gray;
 }
 .topicSTUDY {
@@ -421,7 +421,7 @@ button {
 }
 .topicSTUDY td:first-child, .topicCALM th:first-child {
   border-right: dotted;
-  border-width: 1px 4px 1px 1px;
+  border-width: 1px 2px 1px 1px;
   border-color: gray;
 }
 .topicGEN {
@@ -436,7 +436,7 @@ button {
 }
 .topicGEN td:first-child, .topicCALM th:first-child {
   border-right: dotted;
-  border-width: 1px 4px 1px 1px;
+  border-width: 1px 2px 1px 1px;
   border-color: gray;
 }
 
