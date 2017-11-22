@@ -771,7 +771,7 @@ MOBILE
 
       }
       .topicCALM td:first-child {
-        width: 75px;
+        width: 75px !important;
         word-break: break-word;
         white-space: normal;
       }
