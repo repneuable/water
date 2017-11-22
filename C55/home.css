@@ -750,6 +750,10 @@ MOBILE
         background-color: #e4a1b3;
        }
 
+       .tableHOME {
+          left:17%;
+          margin-top: 10px;
+       }
 
       /**TOPIC TABLES**/
       topicCALM {
@@ -760,10 +764,6 @@ MOBILE
         margin-bottom: 10px;
        table-layout: fixed;
 
-      }
-      .tableHOME {
-         left:17%;
-         margin-top: 10px;
       }
       .topicCALM td {
         text-align: left;
@@ -776,10 +776,10 @@ MOBILE
         white-space: normal;
       }
       .topicCALM td:nth-child(4){
-        min-width: 75px !important;
+        width: 1%;
         text-align: right;
         word-break: break-word;
-        white-space: normal;
+        white-space: nowrap;
       }
       .topicCALM th {
         padding: 1px 5px 1px 3px;
@@ -832,7 +832,9 @@ MOBILE
         word-break: break-all !important;
         word-wrap: break-word !important;
       }
-
+      /*REST*/
+      /*REST*/
+      /*REST*/
       /*REST*/
       .dataTITLE{
         white-space: nowrap;
