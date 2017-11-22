@@ -824,6 +824,7 @@ MOBILE
         min-width: 134px !important;
         word-break: break-word;
         white-space: normal;
+        font-size: 15px !important;
       }
       .topicECO td:nth-child(4){
         width: 1%;
@@ -846,6 +847,7 @@ MOBILE
         min-width: 134px !important;
         word-break: break-word;
         white-space: normal;
+        font-size: 15px !important;
       }
       .topicACTION td:nth-child(4){
         width: 1%;
@@ -867,6 +869,7 @@ MOBILE
         min-width: 134px !important;
         word-break: break-word;
         white-space: normal;
+        font-size: 15px !important;
       }
       .topicSTUDY td:nth-child(4){
         width: 1%;
@@ -889,6 +892,7 @@ MOBILE
         min-width: 134px !important;
         word-break: break-word;
         white-space: normal;
+        font-size: 15px !important;
       }
       .topicGEN td:nth-child(4){
         width: 1%;
@@ -956,6 +960,7 @@ MOBILE
         font-size: 10px;
         max-height: 12%;;
         overflow: scroll;
+        font-weight: normal;
       }
 
       .draggableALT {
