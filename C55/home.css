@@ -765,25 +765,25 @@ MOBILE
        table-layout: fixed;
 
       }
-      .topicCALM td {
-        text-align: left;
-        font-size: 12px;
+          .topicCALM td {
+            text-align: left;
+            font-size: 12px;
 
-      }
-      .topicCALM td:first-child {
-        min-width: 135px !important;
-        word-break: break-word;
-        white-space: normal;
-      }
-      .topicCALM td:nth-child(4){
-        width: 1%;
-        text-align: right;
-        word-break: break-word;
-        white-space: nowrap;
-      }
-      .topicCALM th {
-        padding: 1px 5px 1px 3px;
-      }
+          }
+          .topicCALM td:first-child {
+            min-width: 134px !important;
+            word-break: break-word;
+            white-space: normal;
+          }
+          .topicCALM td:nth-child(4){
+            width: 1%;
+            text-align: right;
+            word-break: break-word;
+            white-space: nowrap;
+          }
+          .topicCALM th {
+            padding: 1px 5px 1px 3px;
+          }
 
       .topicECO {
         width: 1px;
@@ -796,6 +796,18 @@ MOBILE
         text-align: left;
         font-size: 12px;
       }
+      .topicECO td:first-child {
+        min-width: 134px !important;
+        word-break: break-word;
+        white-space: normal;
+      }
+      .topicECO td:nth-child(4){
+        width: 1%;
+        text-align: right;
+        word-break: break-word;
+        white-space: nowrap;
+      }
+
       .topicACTION {
         width: 1px;
         white-space: nowrap;
@@ -806,6 +818,17 @@ MOBILE
       .topicACTION td {
         text-align: left;
         font-size: 12px;
+      }
+      .topicACTION td:first-child {
+        min-width: 134px !important;
+        word-break: break-word;
+        white-space: normal;
+      }
+      .topicACTION td:nth-child(4){
+        width: 1%;
+        text-align: right;
+        word-break: break-word;
+        white-space: nowrap;
       }
       .topicSTUDY {
         width: 1px;
@@ -818,6 +841,17 @@ MOBILE
         text-align: left;
         font-size: 12px;
       }
+      .topicSTUDY td:first-child {
+        min-width: 134px !important;
+        word-break: break-word;
+        white-space: normal;
+      }
+      .topicSTUDY td:nth-child(4){
+        width: 1%;
+        text-align: right;
+        word-break: break-word;
+        white-space: nowrap;
+      }
       .topicGEN {
         width: 1px;
         white-space: nowrap;
@@ -828,9 +862,18 @@ MOBILE
       .topicGEN td {
         text-align: left;
         font-size: 12px;
-         width: 5% !important;
-        word-break: break-all !important;
-        word-wrap: break-word !important;
+         width: 1%;
+      }
+      .topicGEN td:first-child {
+        min-width: 134px !important;
+        word-break: break-word;
+        white-space: normal;
+      }
+      .topicGEN td:nth-child(4){
+        width: 1%;
+        text-align: right;
+        word-break: break-word;
+        white-space: nowrap;
       }
       /*REST*/
       /*REST*/
