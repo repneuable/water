@@ -372,7 +372,7 @@ button {
   text-align: left;
 }
 .topicCALM td:first-child, .topicCALM th:first-child {
-  border-right: double;
+  border-right: dotted;
   border-width: 1px 4px 1px 1px;
   border-color: gray;
 }
@@ -390,7 +390,7 @@ button {
   text-align: left;
 }
 .topicECO td:first-child, .topicCALM th:first-child {
-  border-right: double;
+  border-right: dotted;
   border-width: 1px 4px 1px 1px;
   border-color: gray;
 }
@@ -405,7 +405,7 @@ button {
   text-align: left;
 }
 .topicACTION td:first-child, .topicCALM th:first-child {
-  border-right: double;
+  border-right: dotted;
   border-width: 1px 4px 1px 1px;
   border-color: gray;
 }
@@ -420,7 +420,7 @@ button {
   text-align: left;
 }
 .topicSTUDY td:first-child, .topicCALM th:first-child {
-  border-right: double;
+  border-right: dotted;
   border-width: 1px 4px 1px 1px;
   border-color: gray;
 }
@@ -435,7 +435,7 @@ button {
   text-align: left;
 }
 .topicGEN td:first-child, .topicCALM th:first-child {
-  border-right: double;
+  border-right: dotted;
   border-width: 1px 4px 1px 1px;
   border-color: gray;
 }
