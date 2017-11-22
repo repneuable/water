@@ -771,16 +771,16 @@ MOBILE
 
       }
       .topicCALM td:first-child {
-        min-width: 100px !important;
+        min-width: 115px !important;
         word-break: break-word;
         white-space: normal;
       }
       .topicCALM td:nth-child(4){
         min-width: 75px !important;
+        text-align: right;
         word-break: break-word;
         white-space: normal;
       }
-
       .topicCALM th {
         padding: 1px 5px 1px 3px;
       }
