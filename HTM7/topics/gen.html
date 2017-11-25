@@ -1,362 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--*
-    * Author: Kevin Hitt
-    *
-    *-->
+  <head>
+    <!-- 01. Meta Tags -->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="keywords" content="html, table, sortable"/>
+    <meta name="description" content="An open-source collection of research for the enrichment of thought, organization of ideas, and recording of progress."/>
+    <meta name="author" content="Kevin Hitt"/>
+    <link rel="author" href="https://plus.google.com/u/0/103231175529072372519"/>
+    <meta name="keywords" content="research, open knowledge, environmental, explicit knowledge, information, sustainability, open content, redistribute, informal network, repository, dissemination"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="revisit-after" content="7 days"/>
 
-<head>
-<!-- 01. Meta Tags -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="html, table, sortable">
-  <meta name="description" content="An expirement in sortable tables">
-  <meta name="author" content="Kevin Hitt">
+    <title>kevinh.work | General</title>
 
-<!-- 02. Title -->
-  <title>kevinh.work | General</title>
+    <!-- Media Share Tages -->
+    <meta property="og:title" content="Open Research and Data"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:image" content="https://github.com/repneuable/water/blob/master/resources/icons/background3.jpg"/>
+    <meta property="og:url" content="https://kevinh.work"/>
+    <meta property="og:description" content="Explore these sortable tables and stay for a while. Please submit a comment, question, or suggestion at kevinh.work/HTM7/comments.html"/>
+    <meta property="fb:admins" content="100000138827986"/>
+    <meta name="twitter:url" content="https://kevinh.work"/>
+    <meta name="twitter:title" content="A collection of sortable tables. Topic subpage of kevinh.work"/>
+    <meta name="twitter:description" content="An open-source collection of research for the enrichment of thought, organization of ideas, and recording of progress. Submit a suggestion!"/>
+    <meta name="twitter:image" content="https://github.com/repneuable/water/blob/master/resources/icons/background3.jpg"/>
 
-<!-- 03. Favicon -->
-  <link rel="shortcut icon" href="../../favicon.ico">
+    <!-- 03. Favicon -->
+    <link rel="shortcut icon" href="../../favicon.ico">
 
-<!-- 04. Cascading Style Sheets -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link type="text/css" rel="stylesheet" href="../../C55/home.css">
-  <link type="text/css" rel="stylesheet" href="../../C55/website.css">
+    <!-- 04. Cascading Style Sheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../../C55/home.css">
+    <link type="text/css" rel="stylesheet" href="../../C55/website.css">
 
+    <!-- 05. Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../J5/home.js"></script>
 
-<!-- 05. Javascript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../../J5/home.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $( function() {
+      $( "#draggable1" ).draggable();
+      $( "#draggable2" ).draggable();
+      $( "#draggable3" ).draggable();
+      $( "#draggable4" ).draggable();
+      $( "#draggable5" ).draggable();
+      $( "#draggable6" ).draggable();
+      } );
+    </script>
 
-   <script>
-   $( function() {
-     $( "#draggable1" ).draggable();
-     $( "#draggable2" ).draggable();
-     $( "#draggable3" ).draggable();
-     $( "#draggable4" ).draggable();
-     $( "#draggable5" ).draggable();
-     $( "#draggable6" ).draggable();
-   } );
-   </script>
+    <script src="../../J5/tsorter.min.js" type="text/javascript"></script>
+    <script>
+      function init()
+      {
+      var sorter1 = tsorter.create('topictableStudio');
+      var sorter2 = tsorter.create('topictableDesign');
+      var sorter3 = tsorter.create('topictableVisual');
+      var sorter4 = tsorter.create('topictableTechnology');
+      var sorter5 = tsorter.create('topictableWeb');
+      var sorter6 = tsorter.create('topictableInfoSec');
+      var sorter7 = tsorter.create('topictableManagement');
+      var sorter8 = tsorter.create('topictablePsychology');
+      var sorter9 = tsorter.create('topictableSociology');
+      var sorter10 = tsorter.create('topictableGames');
+      var sorter11 = tsorter.create('topictableComics');
+      var sorter12 = tsorter.create('topictableUnsorted');
 
-   <script src="../../J5/tsorter.min.js" type="text/javascript"></script>
-   <script>
-   function init()
-   {
-       var sorter1 = tsorter.create('topictableStudio');
-       var sorter2 = tsorter.create('topictableDesign');
-       var sorter3 = tsorter.create('topictableVisual');
-       var sorter4 = tsorter.create('topictableTechnology');
-       var sorter5 = tsorter.create('topictableWeb');
-       var sorter6 = tsorter.create('topictableInfoSec');
-       var sorter7 = tsorter.create('topictableManagement');
-       var sorter8 = tsorter.create('topictablePsychology');
-       var sorter9 = tsorter.create('topictableSociology');
-       var sorter10 = tsorter.create('topictableGames');
-       var sorter11 = tsorter.create('topictableComics');
-       var sorter12 = tsorter.create('topictableUnsorted');
+      }
+      window.onload = init;
 
-   }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109143936-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-109143936-1');
+    </script>
 
-   window.onload = init;
-   </script>
- <!-- Global site tag (gtag.js) - Google Analytics -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109143936-1"></script>
- <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-109143936-1');
- </script>
+    <!--HEADER-->
+    <div id="header" class="header">
+      <table width ="100%" style="margin: 0px;">
+        <tbody>
+          <tr>
+            <td>
+              <a href="../home.html"><img title="Home" alt="Home" src="../../resources/icons/home-icon.svg" width="10" height="10" />  kevinh.work</a>
+              <a href="https://keybase.io/repneuable" target="_blank"><img title="Keybase" alt="Keybase" src="../../resources/icons/keybase-icon.png" width="15" height="15" /></a>
+            </td>
+            <td>
+              <a href="calm.html" >CALM |</a>
+              <a href="eco.html" >ECO |</a>
+              <a href="action.html" >ACTION |</a>
+              <a href="study.html" >STUDY |</a>
+              <a href="gen.html" >GEN |</a>
+              <a href="../../index.html" >INDEX</a>
+              <input type="search" class="searchBOX" placeholder="coming soon..." onkeyup="myFunction0()" id="search0">
+              <img title="Source Code" alt="Source Code" src="../../resources/icons/source-icon.png" width="15" height="15" onclick="viewSource()"/>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </head>
 
+  <body>
+    <div id="section" class="sectionSUB">
 
+      <div style="padding-left: 5%;" class="draggableALTContainer">
+          <div id="draggable0-alt" class="draggableALT"><table><caption onclick="toggleOFF()">0/0</caption></table></div>
+          <div id="draggable1-alt" class="draggableALT"><table><caption onclick="toggleTABLES1()">STUDIO</caption></table></div>
+          <div id="draggable2-alt" class="draggableALT"><table><caption onclick="toggleTABLES2()">DESIGN</caption></table></div>
+          <div id="draggable3-alt" class="draggableALT"><table><caption onclick="toggleTABLES3()">VISUAL</caption></table></div>
+          <div id="draggable7-alt" class="draggableALT"><table><caption onclick="toggleTABLES7()">TECHNOLOGY</caption></table></div>
+          <div id="draggable4-alt" class="draggableALT"><table><caption onclick="toggleTABLES4()">WEB DEV</caption></table></div>
+          <div id="draggable8-alt" class="draggableALT"><table><caption onclick="toggleTABLES8()">INFO SEC</caption></table></div>
+          <div id="draggable10-alt" class="draggableALT"><table><caption onclick="toggleTABLES10()">MANAGEMENT</caption></table></div>
+          <div id="draggable11-alt" class="draggableALT"><table><caption onclick="toggleTABLES11()">PSYCHOLOGY</caption></table></div>
+          <div id="draggable12-alt" class="draggableALT"><table><caption onclick="toggleTABLES12()">SOCIOLOGY</caption></table></div>
+          <div id="draggable5-alt" class="draggableALT"><table><caption onclick="toggleTABLES5()">GAMES</caption></table></div>
+          <div id="draggable9-alt" class="draggableALT"><table><caption onclick="toggleTABLES9()">COMICS</caption></table></div>
+          <div id="draggable6-alt" class="draggableALT"><table><caption onclick="toggleTABLES6()">UNSORTED</caption></table></div>
+      </div>
 
-  <!--HEADER-->
-  <div id="header" class="header">
-    <table width ="100%" style="margin: 0px;">
-      <tbody>
-        <tr>
-          <td>
-            <a href="../home.html"><img title="Home" alt="Home" src="../../resources/icons/home-icon.svg" width="10" height="10" />  kevinh.work</a>
-            <a href="https://keybase.io/repneuable" target="_blank"><img title="Keybase" alt="Keybase" src="../../resources/icons/keybase-icon.png" width="15" height="15" /></a>
-          </td>
-          <td>
-
-            <a href="calm.html" >CALM |</a>
-            <a href="eco.html" >ECO |</a>
-            <a href="action.html" >ACTION |</a>
-            <a href="study.html" >STUDY |</a>
-            <a href="gen.html" >GEN |</a>
-            <a href="../../index.html" >INDEX</a>
-
-            <input type="search" class="searchBOX" placeholder="coming soon..." onkeyup="myFunction0()" id="search0">
-            <img title="Source Code" alt="Source Code" src="../../resources/icons/source-icon.png" width="15" height="15" onclick="viewSource()"/>
-          </td>
-        </tr>
-
-      </tbody>
-    </table>
-  </div>
-</head>
-
-<body>
-  <div id="section" class="sectionSUB">
-
-    <div style="padding-left: 5%;" class="draggableALTContainer"> <!--open toggles-->
-
-<div id="draggable0-alt" class="draggableALT"><table><caption onclick="toggleOFF()">0/0</caption></table></div>
- <div id="draggable1-alt" class="draggableALT"><table><caption onclick="toggleTABLES1()">STUDIO</caption></table></div>
- <div id="draggable2-alt" class="draggableALT"><table><caption onclick="toggleTABLES2()">DESIGN</caption></table></div>
- <div id="draggable3-alt" class="draggableALT"><table><caption onclick="toggleTABLES3()">VISUAL</caption></table></div>
- <div id="draggable7-alt" class="draggableALT"><table><caption onclick="toggleTABLES7()">TECHNOLOGY</caption></table></div>
- <div id="draggable4-alt" class="draggableALT"><table><caption onclick="toggleTABLES4()">WEB DEV</caption></table></div>
- <div id="draggable8-alt" class="draggableALT"><table><caption onclick="toggleTABLES8()">INFO SEC</caption></table></div>
- <div id="draggable10-alt" class="draggableALT"><table><caption onclick="toggleTABLES10()">MANAGEMENT</caption></table></div>
- <div id="draggable11-alt" class="draggableALT"><table><caption onclick="toggleTABLES11()">PSYCHOLOGY</caption></table></div>
- <div id="draggable12-alt" class="draggableALT"><table><caption onclick="toggleTABLES12()">SOCIOLOGY</caption></table></div>
- <div id="draggable5-alt" class="draggableALT"><table><caption onclick="toggleTABLES5()">GAMES</caption></table></div>
- <div id="draggable9-alt" class="draggableALT"><table><caption onclick="toggleTABLES9()">COMICS</caption></table></div>
- <div id="draggable6-alt" class="draggableALT"><table><caption onclick="toggleTABLES6()">UNSORTED</caption></table></div>
-
-      </div> <!--close toggles-->
-
-    <div id="container" class="container">
-
-<div id="draggable1">
-         <table id="topictableStudio" class="topicGEN">
-              <caption onclick="toggleTABLES1();">
-                studio
-              </caption>
-               <thead>
-                  <tr><th onclick="sortTableStudio(0)">TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th onclick="sortTableStudio(1)">  COMMENT</th></tr>
-                </thead>
-                <tbody>
-                  <tr>	<td class="dataTITLE">	chords and scales reference	</td><td class="dataPATH"><a href="	http://chords.jpglomot.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	keyfinder	</td><td class="dataPATH"><a href="	http://www.ibrahimshaath.co.uk/keyfinder/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	drumkits	</td><td class="dataPATH"><a href="	https://www.reddit.com/r/Drumkits/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	i0-808	</td><td class="dataPATH"><a href="	http://io808.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	waveformer	</td><td class="dataPATH"><a href="	http://mishaheesakkers.nl/waveformer/?ref=producthunt#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	knxwledge ama	</td><td class="dataPATH"><a href="	https://www.reddit.com/r/listentothis/comments/34zd42/ama_im_knxwledge_producer_beatmaker_ask_me/?st=J07B2IUH&sh=a3281f4f#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	cents to hz conversion chart	</td><td class="dataPATH"><a href="	http://home.broadpark.no/~rbrekne/referhtml/cents-hz.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	harmonic errors in equal tempered scales	</td><td class="dataPATH"><a href="	http://home.broadpark.no/~rbrekne/referhtml/equaltemperedmusicalscales.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	bpm tool	</td><td class="dataPATH"><a href="	https://songbpm.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	noiiz	</td><td class="dataPATH"><a href="	https://www.noiiz.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	loopmaster	</td><td class="dataPATH"><a href="	http://www.loopmasters.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	splice	</td><td class="dataPATH"><a href="	http://splice.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	q tip sampling	</td><td class="dataPATH"><a href="	https://www.facebook.com/FACTmagazine/videos/10155181644179687/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	frank ocean interviews	</td><td class="dataPATH"><a href="	http://pigeonsandplanes.com/in-depth/2016/08/revisiting-frank-ocean-interviews-boys-dont-cry/the-guardian-the-most-talked-about-man-in-music	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Wiki - Golden vinyl in space	</td><td class="dataPATH"><a href="	https://en.wikipedia.org/wiki/Voyager_Golden_Record	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>  <td class="dataTITLE">  EQ cheat sheet</td><td class="dataPATH"><a href="https://www.cheatography.com/fredv/cheat-sheets/eq-tips/pdf/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">studio</td><td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	diy ejuice	</td><td class="dataPATH"><a href="	https://www.reddit.com/r/DIY_eJuice/comments/3njw3u/diy_like_you_mean_it_a_beginners_guide_to/?st=J7ZLTUQ5&sh=c50c9284	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Frank Ocean	</td><td class="dataPATH"><a href="	https://blonded.co	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Uncle Nearest Whiskey	</td><td class="dataPATH"><a href="	https://unclenearest.passionspirits.com/unclenearest/premium-aged-whiskey.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Interview - Kdot	</td><td class="dataPATH"><a href="	http://www.interviewmagazine.com/music/kendrick-lamar-cover#_	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Kamasi Washington	</td><td class="dataPATH"><a href="	http://www.kamasiwashington.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr><td class="dataTITLE">songism</td><td class="dataPATH"><a href="https://colinmorris.github.io/SongSim/#/about" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">studio</td><td class="dataCOMMENT"></td></tr>
-                  <tr><td class="dataTITLEhot">larry levan dj</td><td class="dataPATH"><a href="http://daily.redbullmusicacademy.com/2014/04/larry-levan-feature?linkId=44432837" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">studio</td><td class="dataCOMMENT"></td></tr>
-                  <tr><td class="dataTITLEhot">andre 3k gq interview</td><td class="dataPATH"><a href="https://www.gq.com/story/andre-3000-outkast-gq-style-interview" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">studio</td><td class="dataCOMMENT"></td></tr>
-               </tbody>
+      <div id="container" class="container">
+        <div id="draggable1">
+          <table id="topictableStudio" class="topicGEN">
+            <caption onclick="toggleTABLES1();">studio</caption>
+            <thead>
+              <tr><th onclick="sortTableStudio(0)">TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th onclick="sortTableStudio(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">chords and scales reference	</td><td class="dataPATH"><a href="	http://chords.jpglomot.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">keyfinder	</td><td class="dataPATH"><a href="	http://www.ibrahimshaath.co.uk/keyfinder/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">drumkits	</td><td class="dataPATH"><a href="	https://www.reddit.com/r/Drumkits/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">i0-808	</td><td class="dataPATH"><a href="	http://io808.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">waveformer	</td><td class="dataPATH"><a href="	http://mishaheesakkers.nl/waveformer/?ref=producthunt#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">knxwledge ama	</td><td class="dataPATH"><a href="	https://www.reddit.com/r/listentothis/comments/34zd42/ama_im_knxwledge_producer_beatmaker_ask_me/?st=J07B2IUH&sh=a3281f4f#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">cents to hz conversion chart	</td><td class="dataPATH"><a href="	http://home.broadpark.no/~rbrekne/referhtml/cents-hz.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">harmonic errors in equal tempered scales	</td><td class="dataPATH"><a href="	http://home.broadpark.no/~rbrekne/referhtml/equaltemperedmusicalscales.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">bpm tool	</td><td class="dataPATH"><a href="	https://songbpm.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">noiiz	</td><td class="dataPATH"><a href="	https://www.noiiz.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">loopmaster	</td><td class="dataPATH"><a href="	http://www.loopmasters.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">splice	</td><td class="dataPATH"><a href="	http://splice.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">q tip sampling	</td><td class="dataPATH"><a href="	https://www.facebook.com/FACTmagazine/videos/10155181644179687/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">frank ocean interviews	</td><td class="dataPATH"><a href="	http://pigeonsandplanes.com/in-depth/2016/08/revisiting-frank-ocean-interviews-boys-dont-cry/the-guardian-the-most-talked-about-man-in-music	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">wiki - Golden vinyl in space	</td><td class="dataPATH"><a href="	https://en.wikipedia.org/wiki/Voyager_Golden_Record	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr> <td class="dataTITLE"> eq cheat sheet</td><td class="dataPATH"><a href="https://www.cheatography.com/fredv/cheat-sheets/eq-tips/pdf/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">studio</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">diy ejuice	</td><td class="dataPATH"><a href="	https://www.reddit.com/r/DIY_eJuice/comments/3njw3u/diy_like_you_mean_it_a_beginners_guide_to/?st=J7ZLTUQ5&sh=c50c9284	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">frank Ocean	</td><td class="dataPATH"><a href="	https://blonded.co	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">uncle nearest whiskey	</td><td class="dataPATH"><a href="	https://unclenearest.passionspirits.com/unclenearest/premium-aged-whiskey.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">interview - Kdot	</td><td class="dataPATH"><a href="	http://www.interviewmagazine.com/music/kendrick-lamar-cover#_	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">kamasi washington	</td><td class="dataPATH"><a href="	http://www.kamasiwashington.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">songism</td><td class="dataPATH"><a href="https://colinmorris.github.io/SongSim/#/about" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">studio</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLEhot">larry levan dj</td><td class="dataPATH"><a href="http://daily.redbullmusicacademy.com/2014/04/larry-levan-feature?linkId=44432837" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">studio</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLEhot">andre 3k gq interview</td><td class="dataPATH"><a href="https://www.gq.com/story/andre-3000-outkast-gq-style-interview" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">studio</td><td class="dataCOMMENT"></td></tr>
+            </tbody>
           </table>
-</div>
-<div id="draggable2">
-   <table id="topictableDesign" class="topicGEN">
-         <caption onclick="toggleTABLES2();">
-            design
-         </caption>
-         <thead>
-            <tr><th onclick="sortTableDesign(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableDesign(1)">  COMMENT</th></tr>
+        </div>
+        <div id="draggable2">
+          <table id="topictableDesign" class="topicGEN">
+            <caption onclick="toggleTABLES2();">design</caption>
+            <thead>
+              <tr><th onclick="sortTableDesign(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableDesign(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">information is beautiful awards	</td><td class="dataPATH"><a href="	http://www.informationisbeautifulawards.com/news/188-2016-the-winners#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">apr design guide	</td><td class="dataPATH"><a href="	http://www.plasticsrecycling.org/apr-design-guide/apr-design-guide-home#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">inclusive design toolkit	</td><td class="dataPATH"><a href="	http://www.inclusivedesigntoolkit.com/betterdesign2#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">simpleicons	</td><td class="dataPATH"><a href="	https://simpleicons.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">jsomers	</td><td class="dataPATH"><a href="	http://jsomers.net/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">typeform	</td><td class="dataPATH"><a href="	https://www.typeform.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">liquid blackness	</td><td class="dataPATH"><a href="	http://liquidblackness.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">free optical character recognition tool	</td><td class="dataPATH"><a href="	http://www.free-online-ocr.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">web gradients	</td><td class="dataPATH"><a href="	https://webgradients.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">html5	</td><td class="dataPATH"><a href="	https://html5up.net/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">flex paper sculptures	</td><td class="dataPATH"><a href="	http://www.boredpanda.com/flexible-paper-sculptures-li-hongbo/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">six subversive wall designs	</td><td class="dataPATH"><a href="	https://www.wired.com/2017/03/6-ways-sneak-subversive-design-trumps-border-wall/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">gsu physics publications index	</td><td class="dataPATH"><a href="	http://www.physics.gsu.edu/addis/publications/index.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">gsu physics Sarsour index	</td><td class="dataPATH"><a href="	http://www.physics.gsu.edu/Sarsour/index.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">gsu hyperphysics	</td><td class="dataPATH"><a href="	http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">gsu hyperphysics - biology	</td><td class="dataPATH"><a href="	http://hyperphysics.phy-astr.gsu.edu/hbase/Biology/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">gsu hyperphysics - chemistry	</td><td class="dataPATH"><a href="	http://hyperphysics.phy-astr.gsu.edu/hbase/Chemical/chemcon.html#c1	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">gsu hyperphysics - geophysics	</td><td class="dataPATH"><a href="	http://hyperphysics.phy-astr.gsu.edu/hbase/Geophys/geophys.html#c1	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">gsu wwwxxx	</td><td class="dataPATH"><a href="	http://www2.gsu.edu/~wwwxxx/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">gsu wwwitr	</td><td class="dataPATH"><a href="	http://www2.gsu.edu/~wwwitr/docs/mjgames/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">umaine Misclab	</td><td class="dataPATH"><a href="	http://misclab.umeoce.maine.edu/boss/classes/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">153 define please	</td><td class="dataPATH"><a href="	http://www.chm.bris.ac.uk/motm/motm.htm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">richard taylor research	</td><td class="dataPATH"><a href="	https://blogs.uoregon.edu/richardtaylor/research/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">geocraft	</td><td class="dataPATH"><a href="	http://www.geocraft.com/wgindex.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">old html	</td><td class="dataPATH"><a href="	http://www.404pagefound.com/category/original/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">uwisc Physics	</td><td class="dataPATH"><a href="	sprott.physics.wisc.edu/fractals.htm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">php database	</td><td class="dataPATH"><a href="	http://www.phpkode.com/scripts/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">multiple nav pages	</td><td class="dataPATH"><a href="	https://www.w3.org/wiki/Creating_multiple_pages_with_navigation_menus	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">example portfolio</td><td class="dataPATH"><a href="http://www.kevinhadams.com/contact/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">design</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">levlalz example site</td><td class="dataPATH"><a href="https://levlaz.org" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">design</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">bryant giles</td><td class="dataPATH"><a href="http://www.bryantgiles.com" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">design</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLEhot">triangulate low poly images</td><td class="dataPATH"><a href="https://snorpey.github.io/triangulation/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">design</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">algorthmic geodes</td><td class="dataPATH"><a href="https://n-e-r-v-o-u-s.com/blog/?p=7821" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">design</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">creative coding portfolio</td><td class="dataPATH"><a href="https://matthewlein.com" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">design</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLEhot">yoyo goodies html site</td><td class="dataPATH"><a href="http://pgl.yoyo.org/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">design</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">ronin graphic design console</td><td class="dataPATH"><a href="https://hundredrabbits.itch.io/ronin" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">design</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLEhot">root ventures hardware</td><td class="dataPATH"><a href="https://www.root.vc" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">design</td><td class="dataCOMMENT"></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable3">
+          <table id="topictableVisual" class="topicGEN">
+            <caption onclick="toggleTABLES3();">visual</caption>
+            <thead>
+              <tr><th onclick="sortTableVisual(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableVisual(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">ezra miller	</td><td class="dataPATH"><a href="	https://ezramiller.biz/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">colours	</td><td class="dataPATH"><a href="	http://colours.neilorangepeel.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">hacking for artists	</td><td class="dataPATH"><a href="	http://hackingforartists.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">five lessons of design	</td><td class="dataPATH"><a href="	http://abduzeedo.com/5-lessons-massimo-vignelli#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">ancient qigong	</td><td class="dataPATH"><a href="	https://commons.wikimedia.org/wiki/Category%253AXiuzhen_miyao?oldid=204471770#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">matt furie	</td><td class="dataPATH"><a href="	http://www.thefader.com/tag/matt-furie#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">memes in visual culture	</td><td class="dataPATH"><a href="	http://vcu.sagepub.com/content/current#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">internet ugly	</td><td class="dataPATH"><a href="	http://www.theatlantic.com/technology/archive/2014/12/internet-ugly-and-the-aesthetic-of-failing-on-purpose/384023/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">solange digital art	</td><td class="dataPATH"><a href="	http://www.solangemusic.com/digitalbook/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">accelerationist art	</td><td class="dataPATH"><a href="	http://furtherfield.org/features/articles/accelerationist-art#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">francis bacon	</td><td class="dataPATH"><a href="	https://www.artsy.net/artist/francis-bacon#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">kintsugi	</td><td class="dataPATH"><a href="	https://en.wikipedia.org/wiki/Kintsugi#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">kintsugi blog	</td><td class="dataPATH"><a href="	http://andrewbaseman.com/blog/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">paul klee	</td><td class="dataPATH"><a href="	https://monoskop.org/images/1/15/Paul_Klee_Notebooks_Vol_1_The_Thinking_Eye.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">paul klee perspective	</td><td class="dataPATH"><a href="	https://www.artsy.net/article/artsy-editorial-how-to-be-an-artist-according-to-paul-klee#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">photos in total darkness	</td><td class="dataPATH"><a href="	http://thecreatorsproject.vice.com/blog/rafael-herman-photographs-of-israel-in-total-darkness#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">paul ranson blue room	</td><td class="dataPATH"><a href="	http://www.the-athenaeum.org/art/detail.php?ID=66749#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">apolloniasaintclair	</td><td class="dataPATH"><a href="	https://www.behance.net/apolloniasaintclair#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">paul Klee	</td><td class="dataPATH"><a href="	https://monoskop.org/images/4/4e/Paul_Klee_Notebooks_Vol_2_The_Nature_of_Nature.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">ishion hutchinson story	</td><td class="dataPATH"><a href="	http://www.latimes.com/books/jacketcopy/la-ca-jc-ishion-hutchinson-20170420-story.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">example blog - aries II	</td><td class="dataPATH"><a href="	https://dyske.com/paper/683	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">codex vitae template	</td><td class="dataPATH"><a href="	https://medium.com/@coachdotme/562e2a24d7d	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">books that made them writers	</td><td class="dataPATH"><a href="	http://www.omnivoracious.com/2017/04/the-books-that-made-them-writers-amazon-book-review.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - taolin	</td><td class="dataPATH"><a href="	https://twitter.com/tao_lin/status/832059442363408384	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - 70s scifi	</td><td class="dataPATH"><a href="	https://twitter.com/70sscifiart/status/832229541296926721	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">jess kanda	</td><td class="dataPATH"><a href="	http://www.jessekanda.com/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - orz	</td><td class="dataPATH"><a href="	https://twitter.com/__orz/status/850560797897932801	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - spirit quartz	</td><td class="dataPATH"><a href="	https://twitter.com/spiritquartz_/status/853786509568114688	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - dalton108	</td><td class="dataPATH"><a href="	https://twitter.com/dalton108/status/854706151866327040	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - bryantgiles	</td><td class="dataPATH"><a href="	https://twitter.com/bryantgiles123/status/855232390326833152	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - nicosegal	</td><td class="dataPATH"><a href="	https://twitter.com/nicosegal/status/855819086537928704	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - teamfrank	</td><td class="dataPATH"><a href="	https://twitter.com/TeamFrankDaily/status/856596119144599554	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - fader	</td><td class="dataPATH"><a href="	https://twitter.com/thefader/status/856643923737022464	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - 730t	</td><td class="dataPATH"><a href="	https://twitter.com/730t__/status/862838826313449472	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - gqnyc	</td><td class="dataPATH"><a href="	https://twitter.com/GqNyc1/status/864097347042725888	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">youtube video	</td><td class="dataPATH"><a href="	https://www.youtube.com/watch?v=ysY4bFdY_JY	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - shintarokago	</td><td class="dataPATH"><a href="	https://twitter.com/shintarokago/status/865112823050813440	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - tim oconnell	</td><td class="dataPATH"><a href="	https://twitter.com/Tim_OConnell/status/866445580784074752	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - effies	</td><td class="dataPATH"><a href="	https://twitter.com/effies/status/867396248919134208	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - darienbruze	</td><td class="dataPATH"><a href="	https://twitter.com/darienbruze/status/867808270144221184	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">tao lin	</td><td class="dataPATH"><a href="	http://www.taolin.info/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">muumuu house	</td><td class="dataPATH"><a href="	https://t.co/T5HqIbhTPT?ssr=true	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - daddykev	</td><td class="dataPATH"><a href="	https://twitter.com/daddykev/status/866328672193486849	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fractal fantasy	</td><td class="dataPATH"><a href="	https://fractalfantasy.net/#/21/first_opus	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter dublab	</td><td class="dataPATH"><a href="	https://twitter.com/dublab	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">visual waves	</td><td class="dataPATH"><a href="	http://armanddijcks.com/cinemagraphs-waves	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">journalism Top Ten Data Vis	</td><td class="dataPATH"><a href="	https://gijn.org/2017/09/13/data-journalisms-top-ten-7/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">graphic Representation of Data	</td><td class="dataPATH"><a href="	https://storify.com/mcchadlich/open-access-and-e-scholarship	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">wiki - Mammatus Cloud	</td><td class="dataPATH"><a href="	https://en.wikipedia.org/wiki/Mammatus_cloud	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">examples of land art	</td><td class="dataPATH"><a href="	http://www.theworldgeography.com/2013/02/land-art.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">largest image of Milky Way	</td><td class="dataPATH"><a href="	http://www.eso.org/public/images/eso1242a/zoomable/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">kayla Arias artist highlight	</td><td class="dataPATH"><a href="	https://vimeo.com/227226590	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">manhole covers as art	</td><td class="dataPATH"><a href="	www.euronews.com/2016/09/01/the-raubdruckerin-turn-berlin-s-unique-streets-into-wearable-art	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">jackie morris illustrations	</td><td class="dataPATH"><a href="	http://www.jackiemorris.co.uk/blog/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">graphical index of fractal sites	</td><td class="dataPATH"><a href="	https://www.fractalus.com/cgi-bin/glist	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">visual generative artworks</td><td class="dataPATH"><a href="http://inconvergent.net" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">actual hologram</td><td class="dataPATH"><a href="http://joanielemercier.com/no-logram/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">arabic geometry</td><td class="dataPATH"><a href="http://www.engare.design" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">pixel art tutorials</td><td class="dataPATH"><a href="https://www.patreon.com/saint11/posts?tag=tutorial" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">generative system to make jigsaw</td><td class="dataPATH"><a href="https://n-e-r-v-o-u-s.com/blog/?p=7821#maze" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">codepen of raindrops</td><td class="dataPATH"><a href="https://codepen.io/stefanweck/pen/Vbgeax" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">tom thomson jack pine painting</td><td class="dataPATH"><a href="https://en.wikipedia.org/wiki/The_Jack_Pine" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLEhot">eagle pov</td><td class="dataPATH"><a href="https://www.youtube.com/channel/UC661JhZW_AVZXQKhb0qYynA" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">visual honey simulation paper</td><td class="dataPATH"><a href="http://www.gmrv.es/Publications/2017/BGAO17/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">loop generator</td><td class="dataPATH"><a href="https://loopalo.com" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">wood cutout memes</td><td class="dataPATH"><a href="https://aeon.co/essays/here-be-woodcuts-science-mysticism-and-early-modern-memes" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">epa graphics standards manual</td><td class="dataPATH"><a href="https://standardsmanual.com/products/epa" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">multimodal simulation lab</td><td class="dataPATH"><a href="multimodal simulation lab" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">motion grahics</td><td class="dataPATH"><a href="http://www.estebandiacono.com" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable7">
+          <table id="topictableTechnology" class="topicGEN">
+            <caption onclick="toggleTABLES7();">technology</caption>
+            <thead>
+              <tr><th onclick="sortTableTechnology(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableTechnology(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">water from air mechanism	</td><td class="dataPATH"><a href="	http://waterseer.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">tree boring technology	</td><td class="dataPATH"><a href="	http://www.rinntech.de/content/view/7/35/lang,english/index.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">tree boring technology	</td><td class="dataPATH"><a href="	https://nootrobox.com/biohacker-guide#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">medals earth day every day	</td><td class="dataPATH"><a href="	https://www.nationalmedals.org/timeline/earthdayeveryday#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">big data and trump brexit	</td><td class="dataPATH"><a href="	https://motherboard.vice.com/en_us/article/big-data-cambridge-analytica-brexit-trump#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">end of term web archive	</td><td class="dataPATH"><a href="	http://eotarchive.cdlib.org/2016.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">URL harvest nomination tool	</td><td class="dataPATH"><a href="	http://digital2.library.unt.edu/nomination/eth2016/about#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">presidential URL harvest results	</td><td class="dataPATH"><a href="	http://digital2.library.unt.edu/nomination/eth2016/reports/urls#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">government climate change data backups	</td><td class="dataPATH"><a href="	http://grist.org/briefly/totally-chill-scientists-try-to-download-government-climate-data-before-it-disappears-forever#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">top utility decision of 2016	</td><td class="dataPATH"><a href="	http://blog.aee.net/year-in-review-top-10-utility-commission-actions-of-2016#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">infrast mag	</td><td class="dataPATH"><a href="	https://www.roadsbridges.com/compensatory-damages#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">Uncertainty of AI Communication	</td><td class="dataPATH"><a href="	https://www.fastcompany.com/3064368/we-dont-always-know-what-ai-is-thinking-and-that-can-be-scary	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">Drill manual @ CA Lifewater	</td><td class="dataPATH"><a href="	http://www.lifewater.ca/drill_manual/Section_5.htm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">InfoSec Festival	</td><td class="dataPATH"><a href="	https://toorcon.net	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">Dragonfly 2.0 Energy Sector Hackers	</td><td class="dataPATH"><a href="	https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">gps hacking	</td><td class="dataPATH"><a href="	http://thehackernews.com/2017/09/hacker-track-car.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">armis bluetooth vulnerability	</td><td class="dataPATH"><a href="	https://www.armis.com/blueborne/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">github skimmer scanner	</td><td class="dataPATH"><a href="	https://github.com/sparkfunX/Skimmer_Scanner	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">DEFCon Presentations	</td><td class="dataPATH"><a href="	https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20presentations/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">open source social network</td><td class="dataPATH"><a href="https://twitter.com/louiscenter/status/920076147475431424" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">open source social network</td><td class="dataPATH"><a href="https://datproject.org" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">project home</td></tr>
+              <tr><td class="dataTITLE">open source social network</td><td class="dataPATH"><a href="https://twitter.com/louiscenter" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">user tutorial</td></tr>
+              <tr><td class="dataTITLE">hackernews</td><td class="dataPATH"><a href="https://news.ycombinator.com" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">csv attack vectors</td><td class="dataPATH"><a href="http://georgemauer.net/2017/10/07/csv-injection.html" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">politifact cryptomining</td><td class="dataPATH"><a href="https://www.washingtonpost.com/news/the-switch/wp/2017/10/13/hackers-have-turned-politifacts-website-into-a-trap-for-your-pc/?wpisrc=nl_az_most&wpmk=1" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">hacking email	</td><td class="dataPATH"><a href="	http://noxxi.de/research/breaking-dkim-on-purpose-and-by-chance.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">x0rz from twitter	</td><td class="dataPATH"><a href="	http://noxxi.de/research/breaking-dkim-on-purpose-and-by-chance.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">robot hacking research</td><td class="dataPATH"><a href="https://securitycafe.ro/2017/09/22/robot-hacking-research/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">bluetooth low energy hack</td><td class="dataPATH"><a href="https://www.evilsocket.net/2017/09/23/This-is-not-a-post-about-BLE-introducing-BLEAH" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">securing a hidden service</td><td class="dataPATH"><a href="https://blog.0day.rocks/securing-a-web-hidden-service-89d935ba1c1d" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">obfuscated qr code</td><td class="dataPATH"><a href="https://medium.com/@SassanoM/lets-enhance-how-we-found-rogerkver-s-1000-wallet-obfuscated-private-key-8514e74a5433" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">backup software</td><td class="dataPATH"><a href="https://github.com/n1trux/awesome-sysadmin#backups" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">hacking navigation systems</td><td class="dataPATH"><a href="https://0daylego.wordpress.com" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">supervise learning algorithms</td><td class="dataPATH"><a href="www.kdnuggets.com/2017/10/top-10-machine-learning-algorithms-beginners.html" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">making your own internet</td><td class="dataPATH"><a href="http://blog.thelifeofkenneth.com/2017/11/creating-autonomous-system-for-fun-and.html?m=1" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">two phase immersion cooling</td><td class="dataPATH"><a href="https://submer.com/two-phase-immersion-cooling/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">change dns to google</td><td class="dataPATH"><a href="https://twitter.com/tempestchasing/status/923271896199770113" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLEhot">cloud products in four words or less</td><td class="dataPATH"><a href="https://medium.com/google-cloud/gcp-products-described-in-4-words-or-less-f3056550e595" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT"></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable4">
+        <table id="topictableWeb" class="topicGEN">
+          <caption onclick="toggleTABLES4();">web development</caption>
+          <thead>
+            <tr><th onclick="sortTableWeb(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableWeb(1)">  COMMENT</th></tr>
           </thead>
           <tbody>
-            <tr>	<td class="dataTITLE">	information is beautiful awards	</td><td class="dataPATH"><a href="	http://www.informationisbeautifulawards.com/news/188-2016-the-winners#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	apr design guide	</td><td class="dataPATH"><a href="	http://www.plasticsrecycling.org/apr-design-guide/apr-design-guide-home#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	inclusive design toolkit	</td><td class="dataPATH"><a href="	http://www.inclusivedesigntoolkit.com/betterdesign2#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	simpleicons	</td><td class="dataPATH"><a href="	https://simpleicons.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	jsomers	</td><td class="dataPATH"><a href="	http://jsomers.net/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	typeform	</td><td class="dataPATH"><a href="	https://www.typeform.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	liquid blackness	</td><td class="dataPATH"><a href="	http://liquidblackness.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	free optical character recognition tool	</td><td class="dataPATH"><a href="	http://www.free-online-ocr.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	web gradients	</td><td class="dataPATH"><a href="	https://webgradients.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	html5	</td><td class="dataPATH"><a href="	https://html5up.net/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	flex paper sculptures	</td><td class="dataPATH"><a href="	http://www.boredpanda.com/flexible-paper-sculptures-li-hongbo/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	6 subversive wall designs	</td><td class="dataPATH"><a href="	https://www.wired.com/2017/03/6-ways-sneak-subversive-design-trumps-border-wall/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	GSU physics publications index	</td><td class="dataPATH"><a href="	http://www.physics.gsu.edu/addis/publications/index.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	GSU physics Sarsour index	</td><td class="dataPATH"><a href="	http://www.physics.gsu.edu/Sarsour/index.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	GSU hyperphysics	</td><td class="dataPATH"><a href="	http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	GSU hyperphysics - biology	</td><td class="dataPATH"><a href="	http://hyperphysics.phy-astr.gsu.edu/hbase/Biology/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	GSU hyperphysics - chemistry	</td><td class="dataPATH"><a href="	http://hyperphysics.phy-astr.gsu.edu/hbase/Chemical/chemcon.html#c1	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	GSU hyperphysics - geophysics	</td><td class="dataPATH"><a href="	http://hyperphysics.phy-astr.gsu.edu/hbase/Geophys/geophys.html#c1	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	GSU wwwxxx	</td><td class="dataPATH"><a href="	http://www2.gsu.edu/~wwwxxx/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	GSU wwwitr	</td><td class="dataPATH"><a href="	http://www2.gsu.edu/~wwwitr/docs/mjgames/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	Umaine Misclab	</td><td class="dataPATH"><a href="	http://misclab.umeoce.maine.edu/boss/classes/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	153 define please	</td><td class="dataPATH"><a href="	http://www.chm.bris.ac.uk/motm/motm.htm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	richard taylor research	</td><td class="dataPATH"><a href="	https://blogs.uoregon.edu/richardtaylor/research/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	geocraft	</td><td class="dataPATH"><a href="	http://www.geocraft.com/wgindex.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	old html	</td><td class="dataPATH"><a href="	http://www.404pagefound.com/category/original/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	Uwisc Physics	</td><td class="dataPATH"><a href="	sprott.physics.wisc.edu/fractals.htm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	php database	</td><td class="dataPATH"><a href="	http://www.phpkode.com/scripts/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	multiple nav pages	</td><td class="dataPATH"><a href="	https://www.w3.org/wiki/Creating_multiple_pages_with_navigation_menus	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	design	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr><td class="dataTITLE">example portfolio</td><td class="dataPATH"><a href="http://www.kevinhadams.com/contact/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">design</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">levlalz example site</td><td class="dataPATH"><a href="https://levlaz.org" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">design</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">bryant giles</td><td class="dataPATH"><a href="http://www.bryantgiles.com" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">design</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLEhot">triangulate low poly images</td><td class="dataPATH"><a href="https://snorpey.github.io/triangulation/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">design</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">algorthmic geodes</td><td class="dataPATH"><a href="https://n-e-r-v-o-u-s.com/blog/?p=7821" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">design</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">creative coding portfolio</td><td class="dataPATH"><a href="https://matthewlein.com" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">design</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLEhot">yoyo goodies html site</td><td class="dataPATH"><a href="http://pgl.yoyo.org/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">design</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">ronin graphic design console</td><td class="dataPATH"><a href="https://hundredrabbits.itch.io/ronin" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">design</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLEhot">root ventures hardware</td><td class="dataPATH"><a href="https://www.root.vc" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">design</td><td class="dataCOMMENT"></td></tr>
-          </tbody>
-      </table>
-    </div>
-<div id="draggable3">
-   <table id="topictableVisual" class="topicGEN">
-         <caption onclick="toggleTABLES3();">
-            visual
-         </caption>
-         <thead>
-            <tr><th onclick="sortTableVisual(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableVisual(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-            <tr>	<td class="dataTITLE">	ezra miller	</td><td class="dataPATH"><a href="	https://ezramiller.biz/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	colours	</td><td class="dataPATH"><a href="	http://colours.neilorangepeel.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	hacking for artists	</td><td class="dataPATH"><a href="	http://hackingforartists.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	five lessons of design	</td><td class="dataPATH"><a href="	http://abduzeedo.com/5-lessons-massimo-vignelli#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	ancient qigong	</td><td class="dataPATH"><a href="	https://commons.wikimedia.org/wiki/Category%253AXiuzhen_miyao?oldid=204471770#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	matt furie	</td><td class="dataPATH"><a href="	http://www.thefader.com/tag/matt-furie#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	memes in visual culture	</td><td class="dataPATH"><a href="	http://vcu.sagepub.com/content/current#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	internet ugly	</td><td class="dataPATH"><a href="	http://www.theatlantic.com/technology/archive/2014/12/internet-ugly-and-the-aesthetic-of-failing-on-purpose/384023/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	solange digital art	</td><td class="dataPATH"><a href="	http://www.solangemusic.com/digitalbook/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	accelerationist art	</td><td class="dataPATH"><a href="	http://furtherfield.org/features/articles/accelerationist-art#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	francis bacon	</td><td class="dataPATH"><a href="	https://www.artsy.net/artist/francis-bacon#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	kintsugi	</td><td class="dataPATH"><a href="	https://en.wikipedia.org/wiki/Kintsugi#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	kintsugi blog	</td><td class="dataPATH"><a href="	http://andrewbaseman.com/blog/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	paul klee	</td><td class="dataPATH"><a href="	https://monoskop.org/images/1/15/Paul_Klee_Notebooks_Vol_1_The_Thinking_Eye.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	paul klee perspective	</td><td class="dataPATH"><a href="	https://www.artsy.net/article/artsy-editorial-how-to-be-an-artist-according-to-paul-klee#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	photos in total darkness	</td><td class="dataPATH"><a href="	http://thecreatorsproject.vice.com/blog/rafael-herman-photographs-of-israel-in-total-darkness#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	paul ranson blue room	</td><td class="dataPATH"><a href="	http://www.the-athenaeum.org/art/detail.php?ID=66749#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	apolloniasaintclair	</td><td class="dataPATH"><a href="	https://www.behance.net/apolloniasaintclair#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	Paul Klee	</td><td class="dataPATH"><a href="	https://monoskop.org/images/4/4e/Paul_Klee_Notebooks_Vol_2_The_Nature_of_Nature.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	ishion hutchinson story	</td><td class="dataPATH"><a href="	http://www.latimes.com/books/jacketcopy/la-ca-jc-ishion-hutchinson-20170420-story.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	example blog - aries II	</td><td class="dataPATH"><a href="	https://dyske.com/paper/683	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	codex vitae template	</td><td class="dataPATH"><a href="	https://medium.com/@coachdotme/562e2a24d7d	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	books that made them writers	</td><td class="dataPATH"><a href="	http://www.omnivoracious.com/2017/04/the-books-that-made-them-writers-amazon-book-review.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	twitter - taolin	</td><td class="dataPATH"><a href="	https://twitter.com/tao_lin/status/832059442363408384	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	twitter - 70s scifi	</td><td class="dataPATH"><a href="	https://twitter.com/70sscifiart/status/832229541296926721	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	jess kanda	</td><td class="dataPATH"><a href="	http://www.jessekanda.com/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	twitter - orz	</td><td class="dataPATH"><a href="	https://twitter.com/__orz/status/850560797897932801	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	twitter - spirit quartz	</td><td class="dataPATH"><a href="	https://twitter.com/spiritquartz_/status/853786509568114688	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	twitter - dalton108	</td><td class="dataPATH"><a href="	https://twitter.com/dalton108/status/854706151866327040	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	twitter - bryantgiles	</td><td class="dataPATH"><a href="	https://twitter.com/bryantgiles123/status/855232390326833152	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	twitter - nicosegal	</td><td class="dataPATH"><a href="	https://twitter.com/nicosegal/status/855819086537928704	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	twitter - teamfrank	</td><td class="dataPATH"><a href="	https://twitter.com/TeamFrankDaily/status/856596119144599554	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	twitter - fader	</td><td class="dataPATH"><a href="	https://twitter.com/thefader/status/856643923737022464	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	twitter - 730t	</td><td class="dataPATH"><a href="	https://twitter.com/730t__/status/862838826313449472	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	twitter - gqnyc	</td><td class="dataPATH"><a href="	https://twitter.com/GqNyc1/status/864097347042725888	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	youtube video	</td><td class="dataPATH"><a href="	https://www.youtube.com/watch?v=ysY4bFdY_JY	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	twitter - shintarokago	</td><td class="dataPATH"><a href="	https://twitter.com/shintarokago/status/865112823050813440	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	twitter - tim oconnell	</td><td class="dataPATH"><a href="	https://twitter.com/Tim_OConnell/status/866445580784074752	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	twitter - effies	</td><td class="dataPATH"><a href="	https://twitter.com/effies/status/867396248919134208	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	twitter - darienbruze	</td><td class="dataPATH"><a href="	https://twitter.com/darienbruze/status/867808270144221184	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	tao lin	</td><td class="dataPATH"><a href="	http://www.taolin.info/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	muumuu house	</td><td class="dataPATH"><a href="	https://t.co/T5HqIbhTPT?ssr=true	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	twitter - daddykev	</td><td class="dataPATH"><a href="	https://twitter.com/daddykev/status/866328672193486849	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	fractal fantasy	</td><td class="dataPATH"><a href="	https://fractalfantasy.net/#/21/first_opus	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	twitter dublab	</td><td class="dataPATH"><a href="	https://twitter.com/dublab	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	visual waves	</td><td class="dataPATH"><a href="	http://armanddijcks.com/cinemagraphs-waves	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	Journalism Top Ten Data Vis	</td><td class="dataPATH"><a href="	https://gijn.org/2017/09/13/data-journalisms-top-ten-7/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	Graphic Representation of Data	</td><td class="dataPATH"><a href="	https://storify.com/mcchadlich/open-access-and-e-scholarship	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	Wiki - Mammatus Cloud	</td><td class="dataPATH"><a href="	https://en.wikipedia.org/wiki/Mammatus_cloud	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	Examples of land art	</td><td class="dataPATH"><a href="	http://www.theworldgeography.com/2013/02/land-art.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	Largest image of Milky Way	</td><td class="dataPATH"><a href="	http://www.eso.org/public/images/eso1242a/zoomable/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	Kayla Arias artist highlight	</td><td class="dataPATH"><a href="	https://vimeo.com/227226590	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	manhole covers as art	</td><td class="dataPATH"><a href="	www.euronews.com/2016/09/01/the-raubdruckerin-turn-berlin-s-unique-streets-into-wearable-art	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	jackie morris illustrations	</td><td class="dataPATH"><a href="	http://www.jackiemorris.co.uk/blog/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	graphical index of fractal sites	</td><td class="dataPATH"><a href="	https://www.fractalus.com/cgi-bin/glist	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	visual	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>  <td class="dataTITLE">visual generative artworks</td><td class="dataPATH"><a href="http://inconvergent.net" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT">	none	</td>	</tr>
-            <tr><td class="dataTITLE">actual hologram</td><td class="dataPATH"><a href="http://joanielemercier.com/no-logram/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT">	none	</td>	</tr>
-            <tr><td class="dataTITLE">arabic geometry</td><td class="dataPATH"><a href="http://www.engare.design" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT">	none	</td>	</tr>
-            <tr><td class="dataTITLE">pixel art tutorials</td><td class="dataPATH"><a href="https://www.patreon.com/saint11/posts?tag=tutorial" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">generative system to make jigsaw</td><td class="dataPATH"><a href="https://n-e-r-v-o-u-s.com/blog/?p=7821#maze" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">codepen of raindrops</td><td class="dataPATH"><a href="https://codepen.io/stefanweck/pen/Vbgeax" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">tom thomson jack pine painting</td><td class="dataPATH"><a href="https://en.wikipedia.org/wiki/The_Jack_Pine" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLEhot">eagle pov</td><td class="dataPATH"><a href="https://www.youtube.com/channel/UC661JhZW_AVZXQKhb0qYynA" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">visual honey simulation paper</td><td class="dataPATH"><a href="http://www.gmrv.es/Publications/2017/BGAO17/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">loop generator</td><td class="dataPATH"><a href="https://loopalo.com" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">wood cutout memes</td><td class="dataPATH"><a href="https://aeon.co/essays/here-be-woodcuts-science-mysticism-and-early-modern-memes" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">epa graphics standards manual</td><td class="dataPATH"><a href="https://standardsmanual.com/products/epa" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">multimodal simulation lab</td><td class="dataPATH"><a href="multimodal simulation lab" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">motion grahics</td><td class="dataPATH"><a href="http://www.estebandiacono.com" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">visual</td><td class="dataCOMMENT"></td></tr>
-         </tbody>
-      </table>
-    </div>
-
-<div id="draggable7">
-      <table id="topictableTechnology" class="topicGEN">
-         <caption onclick="toggleTABLES7();">
-            technology
-         </caption>
-         <thead>
-            <tr><th onclick="sortTableTechnology(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableTechnology(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-                  <tr>	<td class="dataTITLE">water from air mechanism	</td><td class="dataPATH"><a href="	http://waterseer.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">tree boring technology	</td><td class="dataPATH"><a href="	http://www.rinntech.de/content/view/7/35/lang,english/index.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">tree boring technology	</td><td class="dataPATH"><a href="	https://nootrobox.com/biohacker-guide#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">medals earth day every day	</td><td class="dataPATH"><a href="	https://www.nationalmedals.org/timeline/earthdayeveryday#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">big data and trump brexit	</td><td class="dataPATH"><a href="	https://motherboard.vice.com/en_us/article/big-data-cambridge-analytica-brexit-trump#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">end of term web archive	</td><td class="dataPATH"><a href="	http://eotarchive.cdlib.org/2016.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">URL harvest nomination tool	</td><td class="dataPATH"><a href="	http://digital2.library.unt.edu/nomination/eth2016/about#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">presidential URL harvest results	</td><td class="dataPATH"><a href="	http://digital2.library.unt.edu/nomination/eth2016/reports/urls#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">government climate change data backups	</td><td class="dataPATH"><a href="	http://grist.org/briefly/totally-chill-scientists-try-to-download-government-climate-data-before-it-disappears-forever#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">top utility decision of 2016	</td><td class="dataPATH"><a href="	http://blog.aee.net/year-in-review-top-10-utility-commission-actions-of-2016#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">infrast mag	</td><td class="dataPATH"><a href="	https://www.roadsbridges.com/compensatory-damages#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">Uncertainty of AI Communication	</td><td class="dataPATH"><a href="	https://www.fastcompany.com/3064368/we-dont-always-know-what-ai-is-thinking-and-that-can-be-scary	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">Drill manual @ CA Lifewater	</td><td class="dataPATH"><a href="	http://www.lifewater.ca/drill_manual/Section_5.htm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">InfoSec Festival	</td><td class="dataPATH"><a href="	https://toorcon.net	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">Dragonfly 2.0 Energy Sector Hackers	</td><td class="dataPATH"><a href="	https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">gps hacking	</td><td class="dataPATH"><a href="	http://thehackernews.com/2017/09/hacker-track-car.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">armis bluetooth vulnerability	</td><td class="dataPATH"><a href="	https://www.armis.com/blueborne/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">github skimmer scanner	</td><td class="dataPATH"><a href="	https://github.com/sparkfunX/Skimmer_Scanner	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">DEFCon Presentations	</td><td class="dataPATH"><a href="	https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20presentations/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr> <td class="dataTITLE">open source social network</td><td class="dataPATH"><a href="https://twitter.com/louiscenter/status/920076147475431424" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr> <td class="dataTITLE">open source social network</td><td class="dataPATH"><a href="https://datproject.org" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">project home</td></tr>
-                  <tr> <td class="dataTITLE">open source social network</td><td class="dataPATH"><a href="https://twitter.com/louiscenter" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">user tutorial</td></tr>
-                  <tr>  <td class="dataTITLE">hackernews</td><td class="dataPATH"><a href="https://news.ycombinator.com" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>  <td class="dataTITLE">csv attack vectors</td><td class="dataPATH"><a href="http://georgemauer.net/2017/10/07/csv-injection.html" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>  <td class="dataTITLE">politifact cryptomining</td><td class="dataPATH"><a href="https://www.washingtonpost.com/news/the-switch/wp/2017/10/13/hackers-have-turned-politifacts-website-into-a-trap-for-your-pc/?wpisrc=nl_az_most&wpmk=1" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">hacking email	</td><td class="dataPATH"><a href="	http://noxxi.de/research/breaking-dkim-on-purpose-and-by-chance.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">x0rz from twitter	</td><td class="dataPATH"><a href="	http://noxxi.de/research/breaking-dkim-on-purpose-and-by-chance.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	technology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>  <td class="dataTITLE">robot hacking research</td><td class="dataPATH"><a href="https://securitycafe.ro/2017/09/22/robot-hacking-research/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>  <td class="dataTITLE">bluetooth low energy hack</td><td class="dataPATH"><a href="https://www.evilsocket.net/2017/09/23/This-is-not-a-post-about-BLE-introducing-BLEAH" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr> <td class="dataTITLE">securing a hidden service</td><td class="dataPATH"><a href="https://blog.0day.rocks/securing-a-web-hidden-service-89d935ba1c1d" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr> <td class="dataTITLE">obfuscated qr code</td><td class="dataPATH"><a href="https://medium.com/@SassanoM/lets-enhance-how-we-found-rogerkver-s-1000-wallet-obfuscated-private-key-8514e74a5433" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr><td class="dataTITLE">backup software</td><td class="dataPATH"><a href="https://github.com/n1trux/awesome-sysadmin#backups" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT"></td></tr>
-                  <tr><td class="dataTITLE">hacking navigation systems</td><td class="dataPATH"><a href="https://0daylego.wordpress.com" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT"></td></tr>
-                  <tr><td class="dataTITLE">supervise learning algorithms</td><td class="dataPATH"><a href="www.kdnuggets.com/2017/10/top-10-machine-learning-algorithms-beginners.html" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT"></td></tr>
-                  <tr><td class="dataTITLE">making your own internet</td><td class="dataPATH"><a href="http://blog.thelifeofkenneth.com/2017/11/creating-autonomous-system-for-fun-and.html?m=1" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT"></td></tr>
-                  <tr><td class="dataTITLE">two phase immersion cooling</td><td class="dataPATH"><a href="https://submer.com/two-phase-immersion-cooling/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT"></td></tr>
-                  <tr><td class="dataTITLE">change dns to google</td><td class="dataPATH"><a href="https://twitter.com/tempestchasing/status/923271896199770113" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT"></td></tr>
-                  <tr><td class="dataTITLEhot">cloud products in four words or less</td><td class="dataPATH"><a href="https://medium.com/google-cloud/gcp-products-described-in-4-words-or-less-f3056550e595" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">technology</td><td class="dataCOMMENT"></td></tr>
-          </tbody>
-      </table>
-    </div>
-
-<div id="draggable4">
-   <table id="topictableWeb" class="topicGEN">
-         <caption onclick="toggleTABLES4();">
-            web development
-         </caption>
-         <thead>
-             <tr><th onclick="sortTableWeb(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableWeb(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-            <tr>	<td class="dataTITLE">	Examples of web indexes	</td><td class="dataPATH"><a href="	http://digital-publications-indexing.org/web-index-examples.htm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	web development	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	Indexing the web	</td><td class="dataPATH"><a href="	https://www.asindexing.org/reference-shelf/indexing-the-web/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	web development	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">examples of web indexes	</td><td class="dataPATH"><a href="	http://digital-publications-indexing.org/web-index-examples.htm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	web development	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">indexing the web	</td><td class="dataPATH"><a href="	https://www.asindexing.org/reference-shelf/indexing-the-web/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	web development	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
             <tr><td class="dataTITLE">css button hovers</td><td class="dataPATH"><a href="https://freebiesupply.com/blog/css-button-hover-effects/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT">	none	</td>	</tr>
             <tr><td class="dataTITLE">xp inspo</td><td class="dataPATH"><a href="https://wordmvp.com/FAQs/MailMerge/MMergeIfFields.htm" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT">	none	</td>	</tr>
             <tr><td class="dataTITLE">redteam pivoting guide</td><td class="dataPATH"><a href="https://artkond.com/2017/03/23/pivoting-guide/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT">	none	</td>	</tr>
@@ -370,16 +359,16 @@
             <tr><td class="dataTITLE">htaccess for directory view</td><td class="dataPATH"><a href="https://perishablepress.com/better-default-directory-views-with-htaccess/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT">	none	</td>	</tr>
             <tr><td class="dataTITLE">honeycomb background</td><td class="dataPATH"><a href="http://lea.verou.me/css3patterns/#honeycomb" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT">	none	</td>	</tr>
             <tr><td class="dataTITLE">open source portfolio</td><td class="dataPATH"><a href="https://twitter.com/KrauseFx/status/920344403893473283" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>  <td class="dataTITLE">interactive live site</td><td class="dataPATH"><a href="http://strml.net" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>  <td class="dataTITLE">cloakify</td><td class="dataPATH"><a href="https://github.com/TryCatchHCF/Cloakify" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>  <td class="dataTITLE">javascript gauges</td><td class="dataPATH"><a href="http://bernii.github.io/gauge.js/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>  <td class="dataTITLE">url fuzzer</td><td class="dataPATH"><a href="https://pentest-tools.com/website-vulnerability-scanning/discover-hidden-directories-and-files" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">generative writing	</td><td class="dataPATH"><a href="	http://inconvergent.net/spline-script/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	web development	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">WordMVP webdesign example	</td><td class="dataPATH"><a href="	http://wordmvp.com/FAQs/TblsFldsFms/index.htm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	web development	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">CSS dropdown alternatives	</td><td class="dataPATH"><a href="	https://medium.com/@kollinz/dropdown-alternatives-for-better-mobile-forms-53e40d641b53	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	web development	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">MediaWiki	</td><td class="dataPATH"><a href="	https://www.mediawiki.org/wiki/Sites_using_MediaWiki/by_size	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	web development	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">Javascript framework	</td><td class="dataPATH"><a href="	http://uize.com/directory.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	web development	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">Javascript framework color convertor	</td><td class="dataPATH"><a href="	http://uize.com/examples/color-format-converter.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	web development	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">interactive live site</td><td class="dataPATH"><a href="http://strml.net" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">cloakify</td><td class="dataPATH"><a href="https://github.com/TryCatchHCF/Cloakify" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">javascript gauges</td><td class="dataPATH"><a href="http://bernii.github.io/gauge.js/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">url fuzzer</td><td class="dataPATH"><a href="https://pentest-tools.com/website-vulnerability-scanning/discover-hidden-directories-and-files" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">generative writing	</td><td class="dataPATH"><a href="	http://inconvergent.net/spline-script/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	web development	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">wordMVP webdesign example	</td><td class="dataPATH"><a href="	http://wordmvp.com/FAQs/TblsFldsFms/index.htm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	web development	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">css dropdown alternatives	</td><td class="dataPATH"><a href="	https://medium.com/@kollinz/dropdown-alternatives-for-better-mobile-forms-53e40d641b53	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	web development	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">mediaWiki	</td><td class="dataPATH"><a href="	https://www.mediawiki.org/wiki/Sites_using_MediaWiki/by_size	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	web development	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">javascript framework	</td><td class="dataPATH"><a href="	http://uize.com/directory.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	web development	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">javascript framework color convertor	</td><td class="dataPATH"><a href="	http://uize.com/examples/color-format-converter.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	web development	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
             <tr><td class="dataTITLE">Traffic spider graphs</td><td class="dataPATH"><a href="https://github.com/tomchop/malcom" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT">	none	</td>	</tr>
             <tr><td class="dataTITLE">Link download screenshots</td><td class="dataPATH"><a href="https://www.gnu.org/software/wget/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT">	none	</td>	</tr>
             <tr><td class="dataTITLE">Web directory screenshots</td><td class="dataPATH"><a href="http://lynx.browser.org/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT">	none	</td>	</tr>
@@ -412,217 +401,195 @@
             <tr><td class="dataTITLE">animated websites</td><td class="dataPATH"><a href="https://www.awwwards.com/websites/animation/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT"></td></tr>
             <tr><td class="dataTITLE">more animated websites</td><td class="dataPATH"><a href="http://www.creativebloq.com/css3/animation-with-css3-712437" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT"></td></tr>
             <tr><td class="dataTITLE">problem and solution</td><td class="dataPATH"><a href="http://mkje.se/b6" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">web development</td><td class="dataCOMMENT"></td></tr>
-         </tbody>
-      </table>
-    </div>
-
-<div id="draggable8">
-   <table id="topictableInfoSec" class="topicGEN">
-         <caption onclick="toggleTABLES8();">
-            information security
-         </caption>
-         <thead>
-             <tr><th onclick="sortTableInfoSec(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableInfoSec(1)">  COMMENT</th></tr>
-
-          </thead>
-          <tbody>
-            <tr><td class="dataTITLE">apple id phishing</td><td class="dataPATH"><a href="https://github.com/anthonya1999/iCloud-Phishing/blob/master/README.md" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">maltego for network recon</td><td class="dataPATH"><a href="https://null-byte.wonderhowto.com/how-to/hack-like-pro-use-maltego-do-network-reconnaissance-0158464/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">exploitable index listing</td><td class="dataPATH"><a href="https://www.slggroup.com.ng" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">infocon</td><td class="dataPATH"><a href="https://infocon.org" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">bad rabbit ransomware breakdown</td><td class="dataPATH"><a href="https://securelist.com/bad-rabbit-ransomware/82851/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">cia uses amazon cloud</td><td class="dataPATH"><a href="https://www.theatlantic.com/technology/archive/2014/07/the-details-about-the-cias-deal-with-amazon/374632/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
-            <tr>  <td class="dataTITLE"> bypassing WPA2 protocol</td><td class="dataPATH"><a href="https://www.krackattacks.com" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT">vulnerability overview</td></tr>
-           <tr>  <td class="dataTITLE"> bypassing WPA2 protocol video</td><td class="dataPATH"><a href="https://www.youtube.com/watch?time_continue=2&v=Oh4WURZoR98" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT">vulnerability video</td></tr>
-           <tr><td class="dataTITLE">browsing anonymously online</td><td class="dataPATH"><a href="https://twitter.com/keepbackups/status/929037975345909760" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
-           <tr><td class="dataTITLE">iphone exploitation summary</td><td class="dataPATH"><a href="https://krausefx.com/privacy" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
-           <tr><td class="dataTITLE">credential reuse penetration</td><td class="dataPATH"><a href="https://github.com/D4Vinci/Cr3dOv3r" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
-           <tr><td class="dataTITLE">malware testing environment</td><td class="dataPATH"><a href="https://app.any.run/tasks/6f7066dc-80d7-439e-9093-263ced3944a8" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
-           <tr><td class="dataTITLE">farm drones</td><td class="dataPATH"><a href="uncaptcha tricked" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
-           <tr><td class="dataTITLE">threat search engine</td><td class="dataPATH"><a href="https://www.threatcrowd.org" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
-           <tr><td class="dataTITLE">beginners guide to pgp</td><td class="dataPATH"><a href="http://www.bitcoinnotbombs.com/beginners-guide-to-pgp/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
-           <tr><td class="dataTITLE">reverse engineering android malware</td><td class="dataPATH"><a href="https://github.com/tuftsdev/DefenseAgainstTheDarkArts/blob/gh-pages/labs/lab12-malware.md" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
-           <tr><td class="dataTITLE">consumer hardware infiltration plant</td><td class="dataPATH"><a href="https://ha.cking.ch/s8_data_line_locator/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
-           <tr><td class="dataTITLE">definition of sql injection</td><td class="dataPATH"><a href="http://searchsoftwarequality.techtarget.com/definition/SQL-injection" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
           </tbody>
-       </table>
-     </div>
-
-<div id="draggable10" >
-  <table id="topictableManagement" class="topicGEN">
-        <caption onclick="toggleTABLES10();">
-           management
-        </caption>
-        <thead>
-           <tr><th onclick="sortTableManagement(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableManagement(1)">  COMMENT</th></tr>
-         </thead>
-         <tbody>
-           <tr>	<td class="dataTITLE">society for decision making under deep uncertainty	</td><td class="dataPATH"><a href="	http://www.deepuncertainty.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	management	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">global risks 2017	</td><td class="dataPATH"><a href="	http://reports.weforum.org/global-risks-2017/press-releases/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	management	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">Influence Map - Apple company profile	</td><td class="dataPATH"><a href="	https://influencemap.org/company/Apple-385f398538b2e6145dcb8afdc945c263	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	management	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr><td class="dataTITLE">kobayashi maru</td><td class="dataPATH"><a href="https://en.wikipedia.org/wiki/Kobayashi_Maru" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">management</td><td class="dataCOMMENT"></td></tr>
-           <tr><td class="dataTITLE">kaizen l6s</td><td class="dataPATH"><a href="https://www.isixsigma.com/methodology/kaizen/kaizen-six-sigma-ensures-continuous-improvement/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">management</td><td class="dataCOMMENT"></td></tr>
-           <tr><td class="dataTITLE">environmental SCADA</td><td class="dataPATH"><a href="https://www.scadalink.com/support/knowledge-base/an-introduction-to-scada/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">management</td><td class="dataCOMMENT"></td></tr>
-        </tbody>
-     </table>
-   </div>
-<div id="draggable11" >
-<table id="topictablePsychology" class="topicGEN">
-      <caption onclick="toggleTABLES11();">
-         psychology
-      </caption>
-      <thead>
-         <tr><th onclick="sortTablePsychology(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTablePsychology(1)">  COMMENT</th></tr>
-       </thead>
-       <tbody>
-           <tr>	<td class="dataTITLE">mental models	</td><td class="dataPATH"><a href="	https://medium.com/@yegg/mental-models-i-find-repeatedly-useful-936f1cc405d#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">cognitive behavior in domestic chicken	</td><td class="dataPATH"><a href="	http://link.springer.com/article/10.1007%2Fs10071-016-1064-4#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">brain and love	</td><td class="dataPATH"><a href="	http://neuro.hms.harvard.edu/harvard-mahoney-neuroscience-institute/brain-newsletter/and-brain-series/love-and-brain#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">aeon - why no critical thinking skills	</td><td class="dataPATH"><a href="	https://aeon.co/ideas/why-schools-should-not-teach-general-critical-thinking-skills#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">aeon - addiction	</td><td class="dataPATH"><a href="	https://aeon.co/essays/why-its-high-time-that-attitudes-to-addiction-changed#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">why people don't care	</td><td class="dataPATH"><a href="	http://www.vice.com/read/a-psychologist-explains-why-people-dont-really-give-a-shit-about-climate-change-608#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">fox news polls	</td><td class="dataPATH"><a href="	http://nation.foxnews.com/poll/index.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">aeon - no cellphone	</td><td class="dataPATH"><a href="	https://aeon.co/ideas/why-i-am-not-going-to-buy-a-cellphone#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">yale climate change and trump voters	</td><td class="dataPATH"><a href="	http://climatecommunication.yale.edu/wp-content/uploads/2017/02/Trump-Voters-and-Global-Warming.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">buffets affecting donation of food	</td><td class="dataPATH"><a href="	http://www.wastedive.com/news/all-you-can-waste-how-buffet-style-food-is-causing-donation-hesitation/432894/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">aeon no passion in school	</td><td class="dataPATH"><a href="	https://aeon.co/ideas/why-the-most-successful-students-have-no-passion-for-school#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">intelligent machines missing body	</td><td class="dataPATH"><a href="	https://aeon.co/ideas/the-body-is-the-missing-link-for-truly-intelligent-machines#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">x0rz cognitive biases	</td><td class="dataPATH"><a href="	https://twitter.com/NomalySec/status/864789248909742080/photo/1	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">facebook little red book	</td><td class="dataPATH"><a href="	http://benbarry.com/project/facebooks-little-red-book	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">Scare tactics of climate change	</td><td class="dataPATH"><a href="	http://grist.org/climate-energy/stop-scaring-people-about-climate-change-it-doesnt-work/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">Endangered Species Condoms	</td><td class="dataPATH"><a href="	http://endangeredspeciescondoms.com/old_packages.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">Vice - Female Gaze	</td><td class="dataPATH"><a href="	https://creators.vice.com/en_us/topic/nsfw-female-gaze	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr><td class="dataTITLE">ocd action</td><td class="dataPATH"><a href="http://www.ocdaction.org.uk/forum/obsessive-compulsive-disorder-ocd/memory-hoarding-and-note-taking" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">psychology</td><td class="dataCOMMENT"></td></tr>
-           <tr><td class="dataTITLE">drug effects venn diagram</td><td class="dataPATH"><a href="https://img.fireden.net/tg/image/1448/22/1448229157023.jpg" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">psychology</td><td class="dataCOMMENT"></td></tr>
-       </tbody>
-   </table>
- </div>
-<div id="draggable12">
-  <table id="topictableSociology" class="topicGEN">
-        <caption onclick="toggleTABLES12();">
-           sociology
-        </caption>
-        <thead>
-           <tr><th onclick="sortTableSociology(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableSociology(1)">  COMMENT</th></tr>
-         </thead>
-         <tbody>
-           <tr>	<td class="dataTITLE">post truth	</td><td class="dataPATH"><a href="	https://thefederalist.com/2016/11/18/left-decries-post-truth-society-pushing-ideas-fuel%3Es20-post-truth#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">convincing when facts fail	</td><td class="dataPATH"><a href="	https://www.scientificamerican.com/article/how-to-convince-someone-when-facts-fail/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">udive - all society responsible	</td><td class="dataPATH"><a href="	http://www.wastedive.com/news/epas-mathy-stanislaus-all-of-society-has-a-waste-management-responsibili/432010#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">macroscope how you can help	</td><td class="dataPATH"><a href="	https://the-macroscope.org/so-what-can-i-do-bfd03e46974e#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">climate change - who cares	</td><td class="dataPATH"><a href="	http://www.newphilosopher.com/articles/who-cares/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">wetland environments perspective book	</td><td class="dataPATH"><a href="	http://onlinelibrary.wiley.com/book/10.1002/9781118349540#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">aeon - death of oak tree and mortality	</td><td class="dataPATH"><a href="	https://aeon.co/ideas/what-the-death-of-an-oak-tree-can-teach-us-about-mortality#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">anthropogenic apocalypse	</td><td class="dataPATH"><a href="	http://www.vice.com/read/philosophers-react-to-the-impending-anthropogenic-apocalypse#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">earth overshoot day	</td><td class="dataPATH"><a href="	http://sustainability.thomsonreuters.com/2016/08/08/earth-overshoot-day-no-winners-in-the-race-for-natural-resources/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">world war on climate	</td><td class="dataPATH"><a href="	https://newrepublic.com/article/135684/declare-war-climate-change-mobilize-wwii#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">future of natural history	</td><td class="dataPATH"><a href="	http://www.mammalsociety.org/uploads/Schmidly2005.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">naturalist education	</td><td class="dataPATH"><a href="	http://eec.islandwood.org/files/stanr/Pyle.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">UN sustainability	</td><td class="dataPATH"><a href="	https://sustainabledevelopment.un.org/sdgs#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">environmental racism	</td><td class="dataPATH"><a href="	http://www.vice.com/read/letter-to-president-obama-natural-gas-interview#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">email-a-tree	</td><td class="dataPATH"><a href="	http://www.theatlantic.com/technology/archive/2015/07/when-you-give-a-tree-an-email-address/398210/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">dewey and democracy	</td><td class="dataPATH"><a href="	https://aeon.co/essays/dewey-knew-how-to-teach-democracy-and-we-must-not-forget-it#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">s10-existential risk prevention as global priority	</td><td class="dataPATH"><a href="	http://www.existential-risk.org/concept.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">recyling is not yet norm	</td><td class="dataPATH"><a href="	http://www.wastedive.com/news/pew-survey-recycling-still-not-a-cultural-norm-for-nearly-13-of-us-reside/427857/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">fragility of parks	</td><td class="dataPATH"><a href="	https://aeon.co/ideas/why-breaking-the-rules-outdoors-is-an-irresponsible-thrill#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">innovation overvalued vs maintenance	</td><td class="dataPATH"><a href="	https://aeon.co/essays/innovation-is-overvalued-maintenance-often-matters-more#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">john muir in fl	</td><td class="dataPATH"><a href="	http://www.tampabay.com/news/perspective/perspective-what-john-muirs-walk-through-wild-florida-can-teach-us-today/2296021#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">firehose of falsehood propoganda	</td><td class="dataPATH"><a href="	https://www.rand.org/content/dam/rand/pubs/perspectives/PE100/PE198/RAND_PE198.pdf	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">Jcurry - Red teaming	</td><td class="dataPATH"><a href="	https://judithcurry.com/2017/07/03/what-is-red-teaming/?utm_content=buffer93985&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer#more-23173	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">Jcurry - Framing red team challenges	</td><td class="dataPATH"><a href="	https://judithcurry.com/2017/07/09/framing-the-challenge-for-the-climate-red-team/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">Convincing evangelicals about climate change	</td><td class="dataPATH"><a href="	https://www.theguardian.com/environment/climate-consensus-97-per-cent/2017/aug/28/study-katharine-hayhoe-is-successfully-convincing-doubtful-evangelicals-about-climate-change	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>  <td class="dataTITLE">epoch of anthropoene</td><td class="dataPATH"><a href="https://www.ecowatch.com/scientists-anthropocene-holocene-2492398140.html" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">sociology</td><td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">badger or bulbasaur?	</td><td class="dataPATH"><a href="	https://www.theguardian.com/books/2017/sep/30/robert-macfarlane-lost-words-children-nature	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr>	<td class="dataTITLE">people too busy to worry about food waste	</td><td class="dataPATH"><a href="	http://journals.plos.org/plosone/article?id=info:doi/10.1371/journal.pone.0159250	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-           <tr><td class="dataTITLE">political views matrix</td><td class="dataPATH"><a href="https://files.mastodon.social/media_attachments/files/001/762/289/original/e5506c16512261ab.jpg" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">sociology</td><td class="dataCOMMENT"></td></tr>
-           <tr><td class="dataTITLE">chinese social credit score</td><td class="dataPATH"><a href="http://www.wired.co.uk/article/chinese-government-social-credit-score-privacy-invasion" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">sociology</td><td class="dataCOMMENT"></td></tr>
-        </tbody>
-     </table>
-   </div>
-
-<div id="draggable5">
-   <table id="topictableGames" class="topicGEN">
-         <caption onclick="toggleTABLES5();">
-            games
-         </caption>
-         <thead>
-           <tr><th onclick="sortTableGames(0)">TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th onclick="sortTableGames(1)">  COMMENT</th></tr>
-         </thead>
-          <tbody>
-            <tr>	<td class="dataTITLE">time tossed google forms	</td><td class="dataPATH"><a href="	http://slimedaughter.com/games/twine/timetossed/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	games	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">drowning	</td><td class="dataPATH"><a href="	http://game.notch.net/drowning/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	games	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">uni title generator	</td><td class="dataPATH"><a href="	http://universitytitlegenerator.com/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	games	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">Wikiventure	</td><td class="dataPATH"><a href="	https://arstechnica.com/gaming/2017/07/a-programmer-turned-wikipedia-into-a-classic-text-adventure/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	games	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr><td class="dataTITLE">hell</td><td class="dataPATH"><a href="https://ahintoflime.itch.io/hell" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">games</td><td class="dataCOMMENT">	none	</td>	</tr>
-            <tr><td class="dataTITLE">judgemental maps</td><td class="dataPATH"><a href="http://judgmentalmaps.com" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">games</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">sierra death generator</td><td class="dataPATH"><a href="https://foone.github.io/SierraDeathGenerator/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">games</td><td class="dataCOMMENT"></td></tr>
-         </tbody>
-      </table>
-    </div>
-<div id="draggable9">
- <table id="topictableComics" class="topicGEN">
-       <caption onclick="toggleTABLES9();">
-          comics
-       </caption>
-       <thead>
-           <tr><th onclick="sortTableComics(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableComics(1)">  COMMENT</th></tr>
-
-        </thead>
-        <tbody>
-                <tr>  <td class="dataTITLE">commitstrips comics</td><td class="dataPATH"><a href="http://www.commitstrip.com/en/?" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">comics</td><td class="dataCOMMENT">	none	</td>	</tr>
-                <tr>	<td class="dataTITLE">Other comics	</td><td class="dataPATH"><a href="	Three Word Phrase, SMBC,Dinosaur Comics, Oglaf (nsfw), A Softer World, Buttersafe, Perry Bible Fellowship, Questionable Content, Buttercup Festival,Homestuck, Junior Scientist Power Hour,	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	comics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                <tr>	<td class="dataTITLE">Explain xkcd	</td><td class="dataPATH"><a href="	http://www.explainxkcd.com/wiki/index.php/Main_Page	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	comics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                <tr>	<td class="dataTITLE">false knees comics	</td><td class="dataPATH"><a href="	http://falseknees.com/273.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	comics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                <tr><td class="dataTITLE">darkweb comics</td><td class="dataPATH"><a href="https://twitter.com/campuscodi/status/924341495909568512" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">comics</td><td class="dataCOMMENT"></td></tr>
-        </tbody>
-     </table>
-   </div>
-<div id="draggable6" style="display:none">
-   <table id="topictableUnsorted" class="topicGEN">
-         <caption onclick="toggleTABLES6();">
-            unsorted
-         </caption>
-         <thead>
-           <tr><th >TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th>  COMMENT</th></tr>
-          </thead>
-          <tbody>
+          </table>
+        </div>
+        <div id="draggable8">
+          <table id="topictableInfoSec" class="topicGEN">
+            <caption onclick="toggleTABLES8();">information security</caption>
+            <thead>
+              <tr><th onclick="sortTableInfoSec(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableInfoSec(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">apple id phishing</td><td class="dataPATH"><a href="https://github.com/anthonya1999/iCloud-Phishing/blob/master/README.md" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">maltego for network recon</td><td class="dataPATH"><a href="https://null-byte.wonderhowto.com/how-to/hack-like-pro-use-maltego-do-network-reconnaissance-0158464/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">exploitable index listing</td><td class="dataPATH"><a href="https://www.slggroup.com.ng" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">infocon</td><td class="dataPATH"><a href="https://infocon.org" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">bad rabbit ransomware breakdown</td><td class="dataPATH"><a href="https://securelist.com/bad-rabbit-ransomware/82851/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">cia uses amazon cloud</td><td class="dataPATH"><a href="https://www.theatlantic.com/technology/archive/2014/07/the-details-about-the-cias-deal-with-amazon/374632/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">bypassing WPA2 protocol</td><td class="dataPATH"><a href="https://www.krackattacks.com" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT">vulnerability overview</td></tr>
+              <tr><td class="dataTITLE">bypassing WPA2 protocol video</td><td class="dataPATH"><a href="https://www.youtube.com/watch?time_continue=2&v=Oh4WURZoR98" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT">vulnerability video</td></tr>
+              <tr><td class="dataTITLE">browsing anonymously online</td><td class="dataPATH"><a href="https://twitter.com/keepbackups/status/929037975345909760" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">iphone exploitation summary</td><td class="dataPATH"><a href="https://krausefx.com/privacy" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">credential reuse penetration</td><td class="dataPATH"><a href="https://github.com/D4Vinci/Cr3dOv3r" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">malware testing environment</td><td class="dataPATH"><a href="https://app.any.run/tasks/6f7066dc-80d7-439e-9093-263ced3944a8" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">farm drones</td><td class="dataPATH"><a href="uncaptcha tricked" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">threat search engine</td><td class="dataPATH"><a href="https://www.threatcrowd.org" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">beginners guide to pgp</td><td class="dataPATH"><a href="http://www.bitcoinnotbombs.com/beginners-guide-to-pgp/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">reverse engineering android malware</td><td class="dataPATH"><a href="https://github.com/tuftsdev/DefenseAgainstTheDarkArts/blob/gh-pages/labs/lab12-malware.md" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">consumer hardware infiltration plant</td><td class="dataPATH"><a href="https://ha.cking.ch/s8_data_line_locator/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">definition of sql injection</td><td class="dataPATH"><a href="http://searchsoftwarequality.techtarget.com/definition/SQL-injection" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">info sec</td><td class="dataCOMMENT"></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable10" >
+          <table id="topictableManagement" class="topicGEN">
+            <caption onclick="toggleTABLES10();">management</caption>
+            <thead>
+              <tr><th onclick="sortTableManagement(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableManagement(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">society for decision making under deep uncertainty	</td><td class="dataPATH"><a href="	http://www.deepuncertainty.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	management	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">global risks 2017	</td><td class="dataPATH"><a href="	http://reports.weforum.org/global-risks-2017/press-releases/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	management	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">influence Map - Apple company profile	</td><td class="dataPATH"><a href="	https://influencemap.org/company/Apple-385f398538b2e6145dcb8afdc945c263	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	management	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">kobayashi maru</td><td class="dataPATH"><a href="https://en.wikipedia.org/wiki/Kobayashi_Maru" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">management</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">kaizen l6s</td><td class="dataPATH"><a href="https://www.isixsigma.com/methodology/kaizen/kaizen-six-sigma-ensures-continuous-improvement/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">management</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">environmental SCADA</td><td class="dataPATH"><a href="https://www.scadalink.com/support/knowledge-base/an-introduction-to-scada/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">management</td><td class="dataCOMMENT"></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable11" >
+          <table id="topictablePsychology" class="topicGEN">
+            <caption onclick="toggleTABLES11();">psychology</caption>
+            <thead>
+              <tr><th onclick="sortTablePsychology(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTablePsychology(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">mental models	</td><td class="dataPATH"><a href="	https://medium.com/@yegg/mental-models-i-find-repeatedly-useful-936f1cc405d#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">cognitive behavior in domestic chicken	</td><td class="dataPATH"><a href="	http://link.springer.com/article/10.1007%2Fs10071-016-1064-4#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">brain and love	</td><td class="dataPATH"><a href="	http://neuro.hms.harvard.edu/harvard-mahoney-neuroscience-institute/brain-newsletter/and-brain-series/love-and-brain#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">aeon - why no critical thinking skills	</td><td class="dataPATH"><a href="	https://aeon.co/ideas/why-schools-should-not-teach-general-critical-thinking-skills#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">aeon - addiction	</td><td class="dataPATH"><a href="	https://aeon.co/essays/why-its-high-time-that-attitudes-to-addiction-changed#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">why people don't care	</td><td class="dataPATH"><a href="	http://www.vice.com/read/a-psychologist-explains-why-people-dont-really-give-a-shit-about-climate-change-608#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fox news polls	</td><td class="dataPATH"><a href="	http://nation.foxnews.com/poll/index.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">aeon - no cellphone	</td><td class="dataPATH"><a href="	https://aeon.co/ideas/why-i-am-not-going-to-buy-a-cellphone#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">yale climate change and trump voters	</td><td class="dataPATH"><a href="	http://climatecommunication.yale.edu/wp-content/uploads/2017/02/Trump-Voters-and-Global-Warming.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">buffets affecting donation of food	</td><td class="dataPATH"><a href="	http://www.wastedive.com/news/all-you-can-waste-how-buffet-style-food-is-causing-donation-hesitation/432894/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">aeon no passion in school	</td><td class="dataPATH"><a href="	https://aeon.co/ideas/why-the-most-successful-students-have-no-passion-for-school#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">intelligent machines missing body	</td><td class="dataPATH"><a href="	https://aeon.co/ideas/the-body-is-the-missing-link-for-truly-intelligent-machines#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">x0rz cognitive biases	</td><td class="dataPATH"><a href="	https://twitter.com/NomalySec/status/864789248909742080/photo/1	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">facebook little red book	</td><td class="dataPATH"><a href="	http://benbarry.com/project/facebooks-little-red-book	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">Scare tactics of climate change	</td><td class="dataPATH"><a href="	http://grist.org/climate-energy/stop-scaring-people-about-climate-change-it-doesnt-work/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">Endangered Species Condoms	</td><td class="dataPATH"><a href="	http://endangeredspeciescondoms.com/old_packages.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">Vice - Female Gaze	</td><td class="dataPATH"><a href="	https://creators.vice.com/en_us/topic/nsfw-female-gaze	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	psychology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">ocd action</td><td class="dataPATH"><a href="http://www.ocdaction.org.uk/forum/obsessive-compulsive-disorder-ocd/memory-hoarding-and-note-taking" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">psychology</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">drug effects venn diagram</td><td class="dataPATH"><a href="https://img.fireden.net/tg/image/1448/22/1448229157023.jpg" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">psychology</td><td class="dataCOMMENT"></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable12">
+          <table id="topictableSociology" class="topicGEN">
+            <caption onclick="toggleTABLES12();">sociology</caption>
+            <thead>
+              <tr><th onclick="sortTableSociology(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableSociology(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">post truth	</td><td class="dataPATH"><a href="	https://thefederalist.com/2016/11/18/left-decries-post-truth-society-pushing-ideas-fuel%3Es20-post-truth#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">convincing when facts fail	</td><td class="dataPATH"><a href="	https://www.scientificamerican.com/article/how-to-convince-someone-when-facts-fail/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">udive - all society responsible	</td><td class="dataPATH"><a href="	http://www.wastedive.com/news/epas-mathy-stanislaus-all-of-society-has-a-waste-management-responsibili/432010#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">macroscope how you can help	</td><td class="dataPATH"><a href="	https://the-macroscope.org/so-what-can-i-do-bfd03e46974e#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">climate change - who cares	</td><td class="dataPATH"><a href="	http://www.newphilosopher.com/articles/who-cares/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">wetland environments perspective book	</td><td class="dataPATH"><a href="	http://onlinelibrary.wiley.com/book/10.1002/9781118349540#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">aeon - death of oak tree and mortality	</td><td class="dataPATH"><a href="	https://aeon.co/ideas/what-the-death-of-an-oak-tree-can-teach-us-about-mortality#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">anthropogenic apocalypse	</td><td class="dataPATH"><a href="	http://www.vice.com/read/philosophers-react-to-the-impending-anthropogenic-apocalypse#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">earth overshoot day	</td><td class="dataPATH"><a href="	http://sustainability.thomsonreuters.com/2016/08/08/earth-overshoot-day-no-winners-in-the-race-for-natural-resources/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">world war on climate	</td><td class="dataPATH"><a href="	https://newrepublic.com/article/135684/declare-war-climate-change-mobilize-wwii#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">future of natural history	</td><td class="dataPATH"><a href="	http://www.mammalsociety.org/uploads/Schmidly2005.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">naturalist education	</td><td class="dataPATH"><a href="	http://eec.islandwood.org/files/stanr/Pyle.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">UN sustainability	</td><td class="dataPATH"><a href="	https://sustainabledevelopment.un.org/sdgs#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">environmental racism	</td><td class="dataPATH"><a href="	http://www.vice.com/read/letter-to-president-obama-natural-gas-interview#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">email-a-tree	</td><td class="dataPATH"><a href="	http://www.theatlantic.com/technology/archive/2015/07/when-you-give-a-tree-an-email-address/398210/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">dewey and democracy	</td><td class="dataPATH"><a href="	https://aeon.co/essays/dewey-knew-how-to-teach-democracy-and-we-must-not-forget-it#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">s10-existential risk prevention as global priority	</td><td class="dataPATH"><a href="	http://www.existential-risk.org/concept.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">recyling is not yet norm	</td><td class="dataPATH"><a href="	http://www.wastedive.com/news/pew-survey-recycling-still-not-a-cultural-norm-for-nearly-13-of-us-reside/427857/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fragility of parks	</td><td class="dataPATH"><a href="	https://aeon.co/ideas/why-breaking-the-rules-outdoors-is-an-irresponsible-thrill#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">innovation overvalued vs maintenance	</td><td class="dataPATH"><a href="	https://aeon.co/essays/innovation-is-overvalued-maintenance-often-matters-more#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">john muir in fl	</td><td class="dataPATH"><a href="	http://www.tampabay.com/news/perspective/perspective-what-john-muirs-walk-through-wild-florida-can-teach-us-today/2296021#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">firehose of falsehood propoganda	</td><td class="dataPATH"><a href="	https://www.rand.org/content/dam/rand/pubs/perspectives/PE100/PE198/RAND_PE198.pdf	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">jcurry - Red teaming	</td><td class="dataPATH"><a href="	https://judithcurry.com/2017/07/03/what-is-red-teaming/?utm_content=buffer93985&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer#more-23173	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">jcurry - Framing red team challenges	</td><td class="dataPATH"><a href="	https://judithcurry.com/2017/07/09/framing-the-challenge-for-the-climate-red-team/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">convincing evangelicals about climate change	</td><td class="dataPATH"><a href="	https://www.theguardian.com/environment/climate-consensus-97-per-cent/2017/aug/28/study-katharine-hayhoe-is-successfully-convincing-doubtful-evangelicals-about-climate-change	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">epoch of anthropoene</td><td class="dataPATH"><a href="https://www.ecowatch.com/scientists-anthropocene-holocene-2492398140.html" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">sociology</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">badger or bulbasaur?	</td><td class="dataPATH"><a href="	https://www.theguardian.com/books/2017/sep/30/robert-macfarlane-lost-words-children-nature	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">people too busy to worry about food waste	</td><td class="dataPATH"><a href="	http://journals.plos.org/plosone/article?id=info:doi/10.1371/journal.pone.0159250	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	sociology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">political views matrix</td><td class="dataPATH"><a href="https://files.mastodon.social/media_attachments/files/001/762/289/original/e5506c16512261ab.jpg" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">sociology</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">chinese social credit score</td><td class="dataPATH"><a href="http://www.wired.co.uk/article/chinese-government-social-credit-score-privacy-invasion" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">sociology</td><td class="dataCOMMENT"></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable5">
+          <table id="topictableGames" class="topicGEN">
+            <caption onclick="toggleTABLES5();">games</caption>
+            <thead>
+              <tr><th onclick="sortTableGames(0)">TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th onclick="sortTableGames(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">time tossed google forms	</td><td class="dataPATH"><a href="	http://slimedaughter.com/games/twine/timetossed/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	games	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">drowning	</td><td class="dataPATH"><a href="	http://game.notch.net/drowning/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	games	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">uni title generator	</td><td class="dataPATH"><a href="	http://universitytitlegenerator.com/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	games	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">Wikiventure	</td><td class="dataPATH"><a href="	https://arstechnica.com/gaming/2017/07/a-programmer-turned-wikipedia-into-a-classic-text-adventure/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	games	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">hell</td><td class="dataPATH"><a href="https://ahintoflime.itch.io/hell" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">games</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">judgemental maps</td><td class="dataPATH"><a href="http://judgmentalmaps.com" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">games</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">sierra death generator</td><td class="dataPATH"><a href="https://foone.github.io/SierraDeathGenerator/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">games</td><td class="dataCOMMENT"></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable9">
+          <table id="topictableComics" class="topicGEN">
+            <caption onclick="toggleTABLES9();">comics</caption>
+            <thead>
+              <tr><th onclick="sortTableComics(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableComics(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr> <td class="dataTITLE">commitstrips comics</td><td class="dataPATH"><a href="http://www.commitstrip.com/en/?" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">comics</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">other comics	</td><td class="dataPATH"><a href="	Three Word Phrase, SMBC,Dinosaur Comics, Oglaf (nsfw), A Softer World, Buttersafe, Perry Bible Fellowship, Questionable Content, Buttercup Festival,Homestuck, Junior Scientist Power Hour,	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	comics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">explain xkcd	</td><td class="dataPATH"><a href="	http://www.explainxkcd.com/wiki/index.php/Main_Page	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	comics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">false knees comics	</td><td class="dataPATH"><a href="	http://falseknees.com/273.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	comics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">darkweb comics</td><td class="dataPATH"><a href="https://twitter.com/campuscodi/status/924341495909568512" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">comics</td><td class="dataCOMMENT"></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable6" style="display:none">
+          <table id="topictableUnsorted" class="topicGEN">
+            <caption onclick="toggleTABLES6();">unsorted</caption>
+            <thead>
+              <tr><th >TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th>  COMMENT</th></tr>
+            </thead>
+            <tbody>
               <tr><td class="dataTITLE">shop mira gonzalez</td><td class="dataPATH"><a href="https://society6.com/miragonz" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">unsorted</td><td class="dataCOMMENT"></td></tr>
               <tr><td class="dataTITLE">4562 FRC team</td><td class="dataPATH"><a href="https://www.firstinspires.org/team-event-search/team?program=FRC&amp;year=2017&amp;number=4562" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">unsorted</td><td class="dataCOMMENT"></td></tr>
               <tr><td class="dataTITLE">attrition box of shit</td><td class="dataPATH"><a href="http://attrition.org/news/boxofshit.html" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">unsorted</td><td class="dataCOMMENT"></td></tr>
-          </tbody>
-      </table>
-    </div>
+            </tbody>
+          </table>
+        </div>
 
-<div id="footer" class="headerSUB">
-  <table>
-   <tr>
-     <td style="width:50%;">
-      <a href="https://www.twitter.com/repneuable" target="_blank"><img title="Twitter" alt="Twitter" src="../../resources/icons/twitter-icon.png" width="15" height="15" /></a>
-      <a href="https://www.instagram.com/khitt7/" target="_blank"><img title="Instagram" alt="Instagram" src="../../resources/icons/instagram-icon.png" width="15" height="15" /></a>
-      <a href="https://www.facebook.com/kevin.hitt.98" target="_blank"><img title="Facebook" alt="Facebook" src="../../resources/icons/facebook-icon.png" width="15" height="15" /></a>
-      <a href="https://www.linkedin.com/in/kevin-hitt-7aa93ab8/" target="_blank"><img title="LinkedIn" alt="LinkedIn" src="../../resources/icons/linkedin-icon.png" width="15" height="15" /></a>
-      <a href="https://www.reddit.com/user/hittww/" target="_blank"><img title="Reddit" alt="Reddit" src="../../resources/icons/reddit-icon.png" width="15" height="15" /></a>
-      <a href="https://www.soundcloud.com/repneuable" target="_blank"><img title="Soundcloud" alt="Soundcloud" src="../../resources/icons/soundcloud-icon.png" width="15" height="15"/></a>
-      <a href="https://github.com/repneuable" target="_blank"><img title="GitHub" alt="GitHub" src="../../resources/icons/github-icon.png" width="15" height="15" /></a>
-   </td>
-      <td>
-          <div style="float:left; margin-left: 10px;">
-
-          <a href="../comments.html"><img title="Comments" alt="Comments" src="../../resources/icons/comment-icon.png" width="17" height="17" /></a>
-          <a href="../resume.html"><img title="Resume" alt="Resume" src="../../resources/icons/resume-icon.png" width="17" height="17" /></a>
-          <a href="../file_listing.html"><img title="Files" alt="Files" src="../../resources/icons/file-icon.png" width="17" height="17" /></a>
-          <a href="../../index.html"><img title="Site Index" alt="Site Index" src="../../resources/icons/tree-icon.png" width="17" height="17" /></a>
-
-          </div><div style="float:right; margin-right: 10px;" id="expandFOOTER">
-            <a><img onclick="expandFOOTER()" src="../../resources/icons/expand-icon.png" width="20" height="20" id="expandICON"/></a></div>
-      </td>
-    </tr>
-  </table>
-    </div>
-    </div> <!--close container-->
-  </div> <!--close section-->
-</body>
-
-
-
+        <div id="footer" class="headerSUB">
+          <table>
+            <tr>
+              <td style="width:50%;">
+                <a href="https://www.twitter.com/repneuable" target="_blank"><img title="Twitter" alt="Twitter" src="../../resources/icons/twitter-icon.png" width="15" height="15" /></a>
+                <a href="https://www.instagram.com/khitt7/" target="_blank"><img title="Instagram" alt="Instagram" src="../../resources/icons/instagram-icon.png" width="15" height="15" /></a>
+                <a href="https://www.facebook.com/kevin.hitt.98" target="_blank"><img title="Facebook" alt="Facebook" src="../../resources/icons/facebook-icon.png" width="15" height="15" /></a>
+                <a href="https://www.linkedin.com/in/kevin-hitt-7aa93ab8/" target="_blank"><img title="LinkedIn" alt="LinkedIn" src="../../resources/icons/linkedin-icon.png" width="15" height="15" /></a>
+                <a href="https://www.reddit.com/user/hittww/" target="_blank"><img title="Reddit" alt="Reddit" src="../../resources/icons/reddit-icon.png" width="15" height="15" /></a>
+                <a href="https://www.soundcloud.com/repneuable" target="_blank"><img title="Soundcloud" alt="Soundcloud" src="../../resources/icons/soundcloud-icon.png" width="15" height="15"/></a>
+                <a href="https://github.com/repneuable/water/blob/master/HTM7/topics/gen.html" target="_blank"><img title="GitHub" alt="GitHub" src="../../resources/icons/github-icon.png" width="15" height="15" /></a>
+              </td>
+              <td>
+                <div style="float:left; margin-left: 10px;">
+                  <a href="../comments.html"><img title="Comments" alt="Comments" src="../../resources/icons/comment-icon.png" width="17" height="17" /></a>
+                  <a href="../resume.html"><img title="Resume" alt="Resume" src="../../resources/icons/resume-icon.png" width="17" height="17" /></a>
+                  <a href="../file_listing.html"><img title="Files" alt="Files" src="../../resources/icons/file-icon.png" width="17" height="17" /></a>
+                  <a href="../../index.html"><img title="Site Index" alt="Site Index" src="../../resources/icons/tree-icon.png" width="17" height="17" /></a>
+                  </div>
+                <div style="float:right; margin-right: 10px;" id="expandFOOTER">
+                  <a><img onclick="expandFOOTER()" src="../../resources/icons/expand-icon.png" width="20" height="20" id="expandICON"/></a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div> <!--close container-->
+    </div> <!--close section-->
+  </body>
 </html>
