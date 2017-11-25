@@ -1,452 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--*
-    * Author: Kevin Hitt
-    *
-    *-->
+  <head>
+    <!-- 01. Meta Tags -->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="keywords" content="html, table, sortable"/>
+    <meta name="description" content="An open-source collection of research for the enrichment of thought, organization of ideas, and recording of progress."/>
+    <meta name="author" content="Kevin Hitt"/>
+    <link rel="author" href="https://plus.google.com/u/0/103231175529072372519"/>
+    <meta name="keywords" content="research, open knowledge, environmental, explicit knowledge, information, sustainability, open content, redistribute, informal network, repository, dissemination"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="revisit-after" content="7 days"/>
 
-<head>
-<!-- 01. Meta Tags -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="html, table, sortable">
-  <meta name="description" content="An expirement in sortable tables">
-  <meta name="author" content="Kevin Hitt">
+    <title>kevinh.work | Calm</title>
 
-<!-- 02. Title -->
-  <title>kevinh.work | Calm</title>
+    <!-- Media Share Tages -->
+    <meta property="og:title" content="Open Research and Data"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:image" content="https://github.com/repneuable/water/blob/master/resources/icons/background3.jpg"/>
+    <meta property="og:url" content="https://kevinh.work"/>
+    <meta property="og:description" content="Explore these sortable tables and stay for a while. Please submit a comment, question, or suggestion at kevinh.work/HTM7/comments.html"/>
+    <meta property="fb:admins" content="100000138827986"/>
+    <meta name="twitter:url" content="https://kevinh.work"/>
+    <meta name="twitter:title" content="A collection of sortable tables. Topic subpage of kevinh.work"/>
+    <meta name="twitter:description" content="An open-source collection of research for the enrichment of thought, organization of ideas, and recording of progress. Submit a suggestion!"/>
+    <meta name="twitter:image" content="https://github.com/repneuable/water/blob/master/resources/icons/background3.jpg"/>
 
-<!-- 03. Favicon -->
-  <link rel="shortcut icon" href="../../favicon.ico">
+    <!-- 03. Favicon -->
+    <link rel="shortcut icon" href="../../favicon.ico">
 
-<!-- 04. Cascading Style Sheets -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link type="text/css" rel="stylesheet" href="../../C55/home.css">
-  <link type="text/css" rel="stylesheet" href="../../C55/website.css">
+    <!-- 04. CSS Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../../C55/home.css">
+    <link type="text/css" rel="stylesheet" href="../../C55/website.css">
 
+    <!-- 05. JS Links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../J5/home.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-<!-- 05. Javascript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../../J5/home.js"></script>
+    <script>
+      $( function() {
+      $( "#draggable1" ).draggable();
+      $( "#draggable2" ).draggable();
+      $( "#draggable3" ).draggable();
+      $( "#draggable4" ).draggable();
+      $( "#draggable5" ).draggable();
+      $( "#draggable6" ).draggable();
+      $( "#draggable7" ).draggable();
+      $( "#draggable8" ).draggable();
+      $( "#draggable9" ).draggable();
+      $( "#draggable10" ).draggable();
+      $( "#draggable11" ).draggable();
+      $( "#draggable12" ).draggable();
+      } );
+    </script>
 
- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../../J5/tsorter.min.js" type="text/javascript"></script>
+    <script>
+    function init()
+      {
+      var sorter1 = tsorter.create('topictableCalm');
+      var sorter2 = tsorter.create('topictableSubtle');
+      var sorter3 = tsorter.create('topictableDeep');
+      var sorter4 = tsorter.create('topictableIdea');
+      var sorter5 = tsorter.create('topictableBlog');
+      var sorter6 = tsorter.create('topictableEcological');
 
- <script>
- $( function() {
-   $( "#draggable1" ).draggable();
-   $( "#draggable2" ).draggable();
-   $( "#draggable3" ).draggable();
-   $( "#draggable4" ).draggable();
-   $( "#draggable5" ).draggable();
-   $( "#draggable6" ).draggable();
-   $( "#draggable7" ).draggable();
-   $( "#draggable8" ).draggable();
-   $( "#draggable9" ).draggable();
-   $( "#draggable10" ).draggable();
-   $( "#draggable11" ).draggable();
-   $( "#draggable12" ).draggable();
- } );
- </script>
- <script src="../../J5/tsorter.min.js" type="text/javascript"></script>
- <script>
- function init()
- {
-     var sorter1 = tsorter.create('topictableCalm');
-     var sorter2 = tsorter.create('topictableSubtle');
-     var sorter3 = tsorter.create('topictableDeep');
-     var sorter4 = tsorter.create('topictableIdea');
-     var sorter5 = tsorter.create('topictableBlog');
-     var sorter6 = tsorter.create('topictableEcological');
+      }
+    window.onload = init;
+    </script>
 
- }
+    <!--Global site tag (gtag.js) Google Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109143936-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-109143936-1');
+    </script>
 
- window.onload = init;
- </script>
- <script>
- $(document)
-  .ready(function(){
-    setTimeout(function(){
-      $("#container").fadeIn(400);
-    }, 5000);
-  });
-  </script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109143936-1"></script>
-<script>
-<div id="draggable1-alt" class="draggableALT"><table><caption onclick="toggleTABLES1()">CALM</caption></table></div>
-<div id="draggable2-alt" class="draggableALT"><table><caption onclick="toggleTABLES2()">SUBTLE</caption></table></div>
-<div id="draggable3-alt" class="draggableALT"><table><caption onclick="toggleTABLES3()">DEEP ECOLOGY</caption></table></div>
-<div id="draggable4-alt" class="draggableALT"><table><caption onclick="toggleTABLES4()">IDEA</caption></table></div>
-<div id="draggable5-alt" class="draggableALT"><table><caption onclick="toggleTABLES5()">BLOG</caption></table></div>
-<div id="draggable6-alt" class="draggableALT"><table><caption onclick="toggleTABLES6()">ECO LITERACY</caption></table></div>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
- gtag('config', 'UA-109143936-1');
-</script>
+    <!--HEADER-->
+    <div id="header" class="header">
+      <table width ="100%" style="margin: 0px;">
+        <tbody>
+          <tr>
+            <td>
+              <a href="../home.html"><img title="Home" alt="Home" src="../../resources/icons/home-icon.svg" width="10" height="10" />  kevinh.work</a>
+              <a href="https://keybase.io/repneuable" target="_blank"><img title="Keybase" alt="Keybase" src="../../resources/icons/keybase-icon.png" width="15" height="15" /></a>
+            </td>
+            <td>
+              <a href="calm.html" >CALM |</a>
+              <a href="eco.html" >ECO |</a>
+              <a href="action.html" >ACTION |</a>
+              <a href="study.html" >STUDY |</a>
+              <a href="gen.html" >GEN |</a>
+              <a href="../../index.html" >INDEX</a>
+              <input type="search" class="searchBOX" placeholder="coming soon..." onkeyup="myFunction0()" id="search0">
+              <img title="Source Code" alt="Source Code" src="../../resources/icons/source-icon.png" width="15" height="15" onclick="viewSource()"/>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </head>
 
-  <!--HEADER-->
-  <div id="header" class="header">
-    <table width ="100%" style="margin: 0px;">
-      <tbody>
-        <tr>
-          <td>
-            <a href="../home.html"><img title="Home" alt="Home" src="../../resources/icons/home-icon.svg" width="10" height="10" />  kevinh.work</a>
-            <a href="https://keybase.io/repneuable" target="_blank"><img title="Keybase" alt="Keybase" src="../../resources/icons/keybase-icon.png" width="15" height="15" /></a>
-          </td>
-          <td>
-
-            <a href="calm.html" >CALM |</a>
-            <a href="eco.html" >ECO |</a>
-            <a href="action.html" >ACTION |</a>
-            <a href="study.html" >STUDY |</a>
-            <a href="gen.html" >GEN |</a>
-            <a href="../../index.html" >INDEX</a>
-
-            <input type="search" class="searchBOX" placeholder="coming soon..." onkeyup="myFunction0()" id="search0">
-            <img title="Source Code" alt="Source Code" src="../../resources/icons/source-icon.png" width="15" height="15" onclick="viewSource()"/>
-          </td>
-        </tr>
-
-      </tbody>
-    </table>
-  </div>
-</head>
-
-<body>
-  <div id="section" class="sectionSUB">
-
-    <div style="padding-left: 5%;" class="draggableALTContainer"> <!--open toggles-->
-
-<div id="draggable0-alt" class="draggableALT"><table><caption onclick="toggleOFF()">0/0</caption></table></div>
- <div id="draggable1-alt" class="draggableALT"><table><caption onclick="toggleTABLES1()">CALM</caption></table></div>
- <div id="draggable2-alt" class="draggableALT"><table><caption onclick="toggleTABLES2()">SUBTLE</caption></table></div>
- <div id="draggable3-alt" class="draggableALT"><table><caption onclick="toggleTABLES3()">DEEP ECOLOGY</caption></table></div>
- <div id="draggable4-alt" class="draggableALT"><table><caption onclick="toggleTABLES4()">IDEA</caption></table></div>
- <div id="draggable5-alt" class="draggableALT"><table><caption onclick="toggleTABLES5()">BLOG</caption></table></div>
- <div id="draggable6-alt" class="draggableALT"><table><caption onclick="toggleTABLES6()">ECO LITERACY</caption></table></div>
-      </div> <!--close toggles-->
-
-    <div id="container" class="container">
-
-
-
-
-
-
-
-
-      <div class="square">Colors Extracted</div>
-
-
-      <div id="dynamic"><div id="colorChartHeading"></div><div style="padding: 2px; background:#000000;"><span class="light">#000000</span></div><div style="padding: 2px; background:#6d6383;"><span class="light">#6d6383</span></div><div style="padding: 2px; background:#7f7b81;"><span class="light">#7f7b81</span></div>
-      <div style="padding: 2px; background:#848699;"><span class="dark">#848699</span></div><div style="padding: 2px; background:#969696;"><span class="dark">#969696</span></div><div style="padding: 2px; background:#bb7711;"><span class="dark">#bb7711</span></div><div style="padding: 2px; background:#a0a0a0;"><span class="dark">#a0a0a0</span></div>
-      <div style="padding: 2px; background:#a2a2a3;"><span class="dark">#a2a2a3</span></div><div style="padding: 2px; background:#bb7711;"><span class="dark">#bb7711</span></div><div style="padding: 2px; background:#cacadd;"><span class="dark">#cacadd</span></div><div style="padding: 2px; background:#cccccc;"><span class="dark">#cccccc</span></div>
-      <div style="padding: 2px; background:#d0d0d0;"><span class="dark">#d0d0d0</span></div><div style="padding: 2px; background:#d0d0e1;"><span class="dark">#d0d0e1</span></div><div style="padding: 2px; background:#d6cbd3;"><span class="dark">#d6cbd3</span></div><div style="padding: 2px; background:#e4a1b3;"><span class="dark">#e4a1b3</span></div>
-      <div style="padding: 2px; background:#f4e1d2;"><span class="dark">#f4e1d2</span></div><div style="padding: 2px; background:#ffbb11;"><span class="dark">#ffbb11</span></div><div style="padding: 2px; background:#ffffff;"><span class="dark">#ffffff</span></div><div style="padding: 2px; background:#000000;"><span class="light">#000000</span></div>
-      <div style="padding: 2px; background:#808080;"><span class="light">#808080</span></div><div style="padding: 2px; background:#daa520;"><span class="dark">#daa520</span></div><div style="padding: 2px; background:#e7d1e0;"><span class="dark">#e7d1e0</span></div><div style="padding: 2px; background:#ffffff;"><span class="dark">#ffffff</span></div>
+  <body>
+    <div id="section" class="sectionSUB">
+      <div style="padding-left: 5%;" class="draggableALTContainer">
+        <div id="draggable0-alt" class="draggableALT"><table><caption onclick="toggleOFF()">0/0</caption></table></div>
+        <div id="draggable1-alt" class="draggableALT"><table><caption onclick="toggleTABLES1()">CALM</caption></table></div>
+        <div id="draggable2-alt" class="draggableALT"><table><caption onclick="toggleTABLES2()">SUBTLE</caption></table></div>
+        <div id="draggable3-alt" class="draggableALT"><table><caption onclick="toggleTABLES3()">DEEP ECOLOGY</caption></table></div>
+        <div id="draggable4-alt" class="draggableALT"><table><caption onclick="toggleTABLES4()">IDEA</caption></table></div>
+        <div id="draggable5-alt" class="draggableALT"><table><caption onclick="toggleTABLES5()">BLOG</caption></table></div>
+        <div id="draggable6-alt" class="draggableALT"><table><caption onclick="toggleTABLES6()">ECO LITERACY</caption></table></div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="draggable1">
-         <table id="topictableCalm" class="topicCALM">
-              <caption onclick="toggleTABLES1();">
-                CALM
-              </caption>
-               <thead>
-                  <tr><th onclick="sortTableCalm(0)">TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th onclick="sortTableCalm(1)">  COMMENT</th></tr>
-                </thead>
-                <tbody>
-                          <tr>	<td class="dataTITLE">	calm over excitement	</td><td class="dataPATH"><a href="	http://www.calmdownmind.com/the-resistance-of-over-excitement/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	calm	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                          <tr>	<td class="dataTITLE">	wabi sabi	</td><td class="dataPATH"><a href="	https://en.wikipedia.org/wiki/Wabi-sabi#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	calm	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                          <tr>	<td class="dataTITLE">	cause of addiction	</td><td class="dataPATH"><a href="	http://www.huffingtonpost.com/johann-hari/the-real-cause-of-addicti_b_6506936.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	calm	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                          <tr>	<td class="dataTITLE">	smoking mutations	</td><td class="dataPATH"><a href="	http://www.theverge.com/2016/11/4/13518016/smoking-damage-cancer-risk-dna-cell-mutations#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	calm	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                          <tr>	<td class="dataTITLE">	emotional intelligence	</td><td class="dataPATH"><a href="	http://www.maetrix.com.au/ei.asp#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	calm	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                          <tr>	<td class="dataTITLE">	issa poems	</td><td class="dataPATH"><a href="	http://hellopoetry.com/kobayashi-issa/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	calm	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                          <tr>	<td class="dataTITLE">	cognitive bias cheatsheet	</td><td class="dataPATH"><a href="	https://betterhumans.coach.me/cognitive-bias-cheat-sheet-55a472476b18#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	calm	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                          <tr>	<td class="dataTITLE">	Station by Ishion Hutchinson	</td><td class="dataPATH"><a href="	https://granta.com/station/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	calm	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                          <tr><td class="dataTITLE">trees and origin of life</td><td class="dataPATH"><a href="https://aeon.co/essays/does-the-flow-of-heat-help-us-understand-the-origin-of-life" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">calm</td><td class="dataCOMMENT"></td></tr>
-                          <tr><td class="dataTITLE">kaizen principle</td><td class="dataPATH"><a href="https://www.kanbanchi.com/what-is-kaizen" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">calm</td><td class="dataCOMMENT"></td></tr>
-                          <tr><td class="dataTITLE">list of cognitive biases</td><td class="dataPATH"><a href="https://en.wikipedia.org/wiki/List_of_cognitive_biases" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">calm</td><td class="dataCOMMENT"></td></tr>
+      <div id="container" class="container">
+        <div id="draggable1">
+          <table id="topictableCalm" class="topicCALM">
+            <caption onclick="toggleTABLES1();">CALM</caption>
+            <thead>
+              <tr><th onclick="sortTableCalm(0)">TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th onclick="sortTableCalm(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">calm over excitement</td><td class="dataPATH"><a href="http://www.calmdownmind.com/the-resistance-of-over-excitement" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	calm	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">wabi sabi</td><td class="dataPATH"><a href="https://en.wikipedia.org/wiki/Wabi-sabi" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	calm	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">cause of addiction</td><td class="dataPATH"><a href="http://www.huffingtonpost.com/johann-hari/the-real-cause-of-addicti_b_6506936.html" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	calm	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">smoking mutations</td><td class="dataPATH"><a href="http://www.theverge.com/2016/11/4/13518016/smoking-damage-cancer-risk-dna-cell-mutations" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	calm	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">emotional intelligence</td><td class="dataPATH"><a href="http://www.maetrix.com.au/ei.asp" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	calm	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">issa poems</td><td class="dataPATH"><a href="http://hellopoetry.com/kobayashi-issa" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	calm	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">cognitive bias cheatsheet</td><td class="dataPATH"><a href="https://betterhumans.coach.me/cognitive-bias-cheat-sheet-55a472476b18" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	calm	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">Station by Ishion Hutchinson</td><td class="dataPATH"><a href="https://granta.com/station" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	calm	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">trees and origin of life</td><td class="dataPATH"><a href="https://aeon.co/essays/does-the-flow-of-heat-help-us-understand-the-origin-of-life" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">calm</td><td class="dataCOMMENT">none</td></tr>
+              <tr><td class="dataTITLE">kaizen principle</td><td class="dataPATH"><a href="https://www.kanbanchi.com/what-is-kaizen" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">calm</td><td class="dataCOMMENT">none</td></tr>
+              <tr><td class="dataTITLE">list of cognitive biases</td><td class="dataPATH"><a href="https://en.wikipedia.org/wiki/List_of_cognitive_biases" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">calm</td><td class="dataCOMMENT">none</td></tr>
             </tbody>
           </table>
-</div>
-<div id="draggable2">
-   <table id="topictableSubtle" class="topicCALM">
-         <caption onclick="toggleTABLES2();">
-            subtle energies
-         </caption>
-         <thead>
-            <tr><th onclick="sortTableSubtle(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableSubtle(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-                  <tr>	<td class="dataTITLE">	institute of noetic sciences	</td><td class="dataPATH"><a href="	http://www.noetic.org/research/projects#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	toward a culture of awakening	</td><td class="dataPATH"><a href="	http://www.sklatch.net/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twenty cognitive biases	</td><td class="dataPATH"><a href="	http://www.ritholtz.com/wp-content/uploads/2015/09/20-cognitive.png#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	deoxy philosophos	</td><td class="dataPATH"><a href="	http://deoxy.org/philo.htm#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	deoxy psychopathology of work	</td><td class="dataPATH"><a href="	http://deoxy.org/psychowork.htm#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	meridian programme	</td><td class="dataPATH"><a href="	http://www.meridian.org.uk/Resources.htm#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	mind uploading	</td><td class="dataPATH"><a href="	http://www.ibiblio.org/jstrout/uploading/MUHomePage.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	interactive neural network	</td><td class="dataPATH"><a href="	http://playground.tensorflow.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	lucid dreaming	</td><td class="dataPATH"><a href="	http://www.lucidity.com/SleepAndCognition.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	cloud appreciation society	</td><td class="dataPATH"><a href="	https://cloudappreciationsociety.org/asperitas-world-met-day/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	aeon amnesia and memories	</td><td class="dataPATH"><a href="	https://aeon.co/essays/what-amnesiac-patients-can-tell-us-about-how-memories-are-made#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-          </tbody>
-      </table>
-    </div>
-<div id="draggable3">
-   <table id="topictableDeep" class="topicCALM">
-         <caption onclick="toggleTABLES3();">
-            deep ecology
-         </caption>
-         <thead>
-            <tr><th onclick="sortTableDeep(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableDeep(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-                  <tr>	<td class="dataTITLE">	ecosophy 	</td><td class="dataPATH"><a href="	https://en.wikipedia.org/wiki/Ecosophy#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	deep ecology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	deep ecology movement	</td><td class="dataPATH"><a href="	http://www.deepecology.org/deepecology.htm#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	deep ecology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	ecophilosophy	</td><td class="dataPATH"><a href="	http://www.joannamacy.net/deepecology.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	deep ecology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	diverse ecologies	</td><td class="dataPATH"><a href="	http://trumpeter.athabascau.ca/index.php/trumpet/article/view/213/294#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	deep ecology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	ecological artist	</td><td class="dataPATH"><a href="	http://www.ghostnets.com/index.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	deep ecology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-          </tbody>
-      </table>
-    </div>
-
-
-
-
-
-<div id="draggable4">
-   <table id="topictableIdea" class="topicCALM">
-         <caption onclick="toggleTABLES4();">
-            idea
-         </caption>
-         <thead>
+        </div>
+        <div id="draggable2">
+          <table id="topictableSubtle" class="topicCALM">
+            <caption onclick="toggleTABLES2();">subtle energies</caption>
+            <thead>
+              <tr><th onclick="sortTableSubtle(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableSubtle(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">institute of noetic sciences	</td><td class="dataPATH"><a href="	http://www.noetic.org/research/projects#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">toward a culture of awakening	</td><td class="dataPATH"><a href="	http://www.sklatch.net/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twenty cognitive biases	</td><td class="dataPATH"><a href="	http://www.ritholtz.com/wp-content/uploads/2015/09/20-cognitive.png#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">deoxy philosophos	</td><td class="dataPATH"><a href="	http://deoxy.org/philo.htm#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">deoxy psychopathology of work	</td><td class="dataPATH"><a href="	http://deoxy.org/psychowork.htm#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">meridian programme	</td><td class="dataPATH"><a href="	http://www.meridian.org.uk/Resources.htm#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">mind uploading	</td><td class="dataPATH"><a href="	http://www.ibiblio.org/jstrout/uploading/MUHomePage.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">interactive neural network	</td><td class="dataPATH"><a href="	http://playground.tensorflow.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">lucid dreaming	</td><td class="dataPATH"><a href="	http://www.lucidity.com/SleepAndCognition.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">cloud appreciation society	</td><td class="dataPATH"><a href="	https://cloudappreciationsociety.org/asperitas-world-met-day/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">aeon amnesia and memories	</td><td class="dataPATH"><a href="	https://aeon.co/essays/what-amnesiac-patients-can-tell-us-about-how-memories-are-made#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	subtle energies	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable3">
+          <table id="topictableDeep" class="topicCALM">
+            <caption onclick="toggleTABLES3();">deep ecology</caption>
+            <thead>
+              <tr><th onclick="sortTableDeep(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableDeep(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">ecosophy 	</td><td class="dataPATH"><a href="	https://en.wikipedia.org/wiki/Ecosophy#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	deep ecology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">deep ecology movement	</td><td class="dataPATH"><a href="	http://www.deepecology.org/deepecology.htm#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	deep ecology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">ecophilosophy	</td><td class="dataPATH"><a href="	http://www.joannamacy.net/deepecology.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	deep ecology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">diverse ecologies	</td><td class="dataPATH"><a href="	http://trumpeter.athabascau.ca/index.php/trumpet/article/view/213/294#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	deep ecology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">ecological artist	</td><td class="dataPATH"><a href="	http://www.ghostnets.com/index.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	deep ecology	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable4">
+        <table id="topictableIdea" class="topicCALM">
+          <caption onclick="toggleTABLES4();">idea</caption>
+          <thead>
             <tr><th onclick="sortTableIdea(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableIdea(1)">  COMMENT</th></tr>
           </thead>
           <tbody>
-                  <tr>	<td class="dataTITLE">	bioclimatic architecture	</td><td class="dataPATH"><a href="	http://www.geocities.ws/ResearchTriangle/Facility/8776/Pag01I.htm#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	aquaponics	</td><td class="dataPATH"><a href="	https://www.nal.usda.gov/afsic/aquaponics#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	regenerative cultures	</td><td class="dataPATH"><a href="	https://www.permaculture.co.uk/articles/designing-regenerative-cultures#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	mycoremediation	</td><td class="dataPATH"><a href="	https://fungiforthepeople.org/mushroom-info/myco-remediation/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	extreme water repellency	</td><td class="dataPATH"><a href="	https://www.sciencedaily.com/releases/2016/05/160517120506.htm?utm_source=dlvr.it&utm_medium=twitter#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	problem with greening	</td><td class="dataPATH"><a href="	http://grist.org/climate-energy/earth-is-getting-greener-heres-why-thats-a-problem/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	reinventing the greenhouse	</td><td class="dataPATH"><a href="	http://www.lowtechmagazine.com/2015/12/reinventing-the-greenhouse.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	lasers for beach cleanup	</td><td class="dataPATH"><a href="	http://www.theatlantic.com/science/archive/2016/07/how-lasers-can-help-clean-up-beach-trash/490952/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	seismic thumping	</td><td class="dataPATH"><a href="	https://energyindepth.org/mtn-states/much-ado-about-thumping/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	ecological metadata	</td><td class="dataPATH"><a href="	http://lits.bio.ic.ac.uk:8080/litsproject/Micheneretal1997.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	maximizing biodiversity with climate change	</td><td class="dataPATH"><a href="	http://www.nature.com/nclimate/journal/v1/n7/full/nclimate1227.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	earthship systems	</td><td class="dataPATH"><a href="	http://earthship.com/Systems/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	make adidas parley	</td><td class="dataPATH"><a href="	http://www.core77.com/posts/54222/How-to-Make-Sneakers-Out-of-Trash-Designing-the-Adidas-x-Parley-Ocean-Shoe#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	six maps that will make you rethink	</td><td class="dataPATH"><a href="	https://www.washingtonpost.com/news/wonk/wp/2016/04/29/six-maps-that-will-make-you-rethink-the-world/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	geohack	</td><td class="dataPATH"><a href="	https://tools.wmflabs.org/geohack/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	vocal photoshop	</td><td class="dataPATH"><a href="	http://www.theverge.com/2016/11/3/13514088/adobe-photoshop-audio-project-voco#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	arduino shield list	</td><td class="dataPATH"><a href="	http://shieldlist.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	github blob master	</td><td class="dataPATH"><a href="	https://github.com/x0rz/EQGRP/blob/master/README.md#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	shadowbrokers release	</td><td class="dataPATH"><a href="	https://arstechnica.com/security/2017/04/nsa-leaking-shadow-brokers-just-dumped-its-most-damaging-release-yet/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	ee cummings intro	</td><td class="dataPATH"><a href="	http://dwipf.tripod.com/cummings.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	what it means to be a human	</td><td class="dataPATH"><a href="	https://ratical.org/many_worlds/JohnTrudell/HumanBeing.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	ee cummings	</td><td class="dataPATH"><a href="	http://www.mrbauld.com/ee.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	shaviro accelerationism publications	</td><td class="dataPATH"><a href="	http://www.shaviro.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	google spanner	</td><td class="dataPATH"><a href="	https://research.google.com/archive/spanner.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	google globally distributed database	</td><td class="dataPATH"><a href="	http://www.cubrid.org/blog/dev-platform/spanner-globally-distributed-database-by-google/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	resistance manual	</td><td class="dataPATH"><a href="	https://www.resistancemanual.org/Resistance_Manual_Home#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	mit transparent solar cells	</td><td class="dataPATH"><a href="	http://energy.mit.edu/news/transparent-solar-cells/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	evolution of the web	</td><td class="dataPATH"><a href="	http://www.evolutionoftheweb.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	wbw neural links	</td><td class="dataPATH"><a href="	http://waitbutwhy.com/2017/04/neuralink	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - human pog	</td><td class="dataPATH"><a href="	https://twitter.com/HumanPog/status/376490789045805056	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - earl sweat	</td><td class="dataPATH"><a href="	https://twitter.com/earlxsweat/status/693154646097985536	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - blackthought	</td><td class="dataPATH"><a href="	https://twitter.com/blackthought/status/769579687727071232	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - isaiah rashad	</td><td class="dataPATH"><a href="	https://twitter.com/isaiahrashad/status/814751802222669824	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - dailyzen	</td><td class="dataPATH"><a href="	https://twitter.com/dailyzen/status/848307493797326849	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - phakehawaii	</td><td class="dataPATH"><a href="	https://twitter.com/phakehawaii/status/849684744468123650	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - phakehawaii 2	</td><td class="dataPATH"><a href="	https://twitter.com/phakehawaii/status/849731148951498754	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - stylesp	</td><td class="dataPATH"><a href="	https://twitter.com/therealstylesp/status/860516997863530496	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - oldsoulsalaam	</td><td class="dataPATH"><a href="	https://twitter.com/OLDSOULSALAAM/status/860983706504368128	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - taolin	</td><td class="dataPATH"><a href="	https://twitter.com/tao_lin/status/861659688114499584	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - lucient	</td><td class="dataPATH"><a href="	https://twitter.com/lucient_/status/861968014480224257	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - smb922	</td><td class="dataPATH"><a href="	https://twitter.com/smb922/status/864175030091079682	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - dailyzen 2	</td><td class="dataPATH"><a href="	https://twitter.com/dailyzen/status/864512768875143168	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - taolin 2	</td><td class="dataPATH"><a href="	https://twitter.com/tao_lin/status/866407002788028417	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - djackson	</td><td class="dataPATH"><a href="	https://twitter.com/itsJustDjackson/status/866701591876861958	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - brian bilston	</td><td class="dataPATH"><a href="	https://twitter.com/brian_bilston/status/832518915146260481	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - campaign book	</td><td class="dataPATH"><a href="	https://twitter.com/thecampaignbook/status/834719475832385536	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	genius lyric	</td><td class="dataPATH"><a href="	https://genius.com/11407808	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - muumuuhouse	</td><td class="dataPATH"><a href="	https://twitter.com/muumuuhouse/status/866670907858857985	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - zenhabits	</td><td class="dataPATH"><a href="	https://twitter.com/zen_habits/status/867387575597543425	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	muumuu house excerpt	</td><td class="dataPATH"><a href="	http://muumuuhouse.com/wp.twitter1.2012.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	wiki censorship worldwide	</td><td class="dataPATH"><a href="	https://dash.harvard.edu/bitstream/handle/1/32741922/Wikipedia_Censorship_final.pdf?sequence=1	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	vice hacking video	</td><td class="dataPATH"><a href="	https://motherboard.vice.com/en_us/article/famous-iphone-hacker-geohot-shows-us-how-easy-it-is-to-hack-a-computer?utm_source=vicefbus	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                   <tr>	<td class="dataTITLE">	Aeon - Banyan Knowledge Tree	</td><td class="dataPATH"><a href="	https://aeon.co/ideas/the-tree-of-knowledge-is-not-an-apple-or-an-oak-but-a-banyan	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Death as Part of Natural Selection	</td><td class="dataPATH"><a href="	http://www.necsi.edu/research/evoeco/programmed.pdf	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Death as Part of Natural Selection 2	</td><td class="dataPATH"><a href="	http://www.necsi.edu/research/evoeco/programmeddeath.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Death as Part of Natural Selection 3	</td><td class="dataPATH"><a href="	http://www.necsi.edu/research/evoeco/longevityPR.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Visualization of Algorithms	</td><td class="dataPATH"><a href="	https://www.fastcodesign.com/3032536/what-do-algorithms-look-like	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Can we hear shapes?	</td><td class="dataPATH"><a href="	http://www.uh.edu/engines/epi2613.htm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Data	</td><td class="dataPATH"><a href="	https://arxiv.org	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Useless hacks	</td><td class="dataPATH"><a href="	http://www.stupidhackathon.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Spinoza matters	</td><td class="dataPATH"><a href="	https://aeon.co/essays/at-a-time-of-zealotry-spinoza-matters-more-than-ever	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr><td class="dataTITLE">justdeleteme</td><td class="dataPATH"><a href="http://backgroundchecks.org/justdeleteme/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr><td class="dataTITLE">circuitology</td><td class="dataPATH"><a href="http://blog.dragonsector.pl/2017/10/pwn2win-2017-shift-register.html" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr><td class="dataTITLE">darknet markets</td><td class="dataPATH"><a href="https://www.reddit.com/r/DarkNetMarkets/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	aeon - memory from physical rooms	</td><td class="dataPATH"><a href="	https://aeon.co/ideas/this-ancient-mnemonic-technique-builds-a-palace-of-memory	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	aeon - evolution of the self	</td><td class="dataPATH"><a href="	https://aeon.co/essays/to-be-true-to-ones-self-means-changing-to-become-that-self	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	coulter smith forum	</td><td class="dataPATH"><a href="	http://www.coultersmithing.com/forums/viewforum.php?f=2&sid=d83dd0008b23afcc8154aa4086d6b625	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Wiki - Constrained writing	</td><td class="dataPATH"><a href="	https://en.wikipedia.org/wiki/Constrained_writing	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Ctenophore to Intelligence	</td><td class="dataPATH"><a href="	https://aeon.co/amp/essays/what-the-ctenophore-says-about-the-evolution-of-intelligence	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr><td class="dataTITLE">farm drones</td><td class="dataPATH"><a href="http://www.asme.org/engineering-topics/articles/robotics/drone-on-the-farm" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT"></td></tr>
-                  <tr><td class="dataTITLE">personal ipo</td><td class="dataPATH"><a href="kmikeym.com" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT">as metaphor for corporate responsibility</td></tr>
-                  <tr><td class="dataTITLE">fusiform face area</td><td class="dataPATH"><a href="https://en.wikipedia.org/wiki/Fusiform_face_area#Function_and_controversy" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT"></td></tr>
-                  <tr><td class="dataTITLE">temporal aspects of cyber operations</td><td class="dataPATH"><a href="https://www.recordedfuture.com/cyber-operations-time/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT"></td></tr>
-                  <tr><td class="dataTITLE">custom time format</td><td class="dataPATH"><a href="http://wiki.xxiivv.com/Desamber" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT"></td></tr>
-                  <tr><td class="dataTITLE">apophenia</td><td class="dataPATH"><a href="https://en.wikipedia.org/wiki/Apophenia" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT"></td></tr>
-                  <tr><td class="dataTITLEhot">academic strength open source license</td><td class="dataPATH"><a href="http://matt.might.net/articles/crapl/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT"></td></tr>
-                  <tr><td class="dataTITLEhot">artificial intelligence, a modern approach</td><td class="dataPATH"><a href="http://aima.cs.berkeley.edu" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT"></td></tr>
-                  <tr><td class="dataTITLEhot">open knowledge practices</td><td class="dataPATH"><a href="http://xolotl.org/okp/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT"></td></tr>
-                  <tr><td class="dataTITLE">maggie nelson bluets</td><td class="dataPATH"><a href="http://thecheapestuniversity.org/wp-content/themes/TCU/j/pdfjs/web/viewer.html" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT"></td></tr>
-               </tbody>
-      </table>
-    </div>
-<div id="draggable5">
-   <table id="topictableBlog" class="topicCALM">
-         <caption onclick="toggleTABLES5();">
-            blog
-         </caption>
-         <thead>
-            <tr><th onclick="sortTableBlog(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableBlog(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-                  <tr>	<td class="dataTITLE">	climate change denial skepticism	</td><td class="dataPATH"><a href="	https://www.skepticalscience.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	yale climate connection	</td><td class="dataPATH"><a href="	http://www.yaleclimateconnections.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	quanturb publications	</td><td class="dataPATH"><a href="	http://www.quanturb.com/publications.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	nature and forest medicine articles	</td><td class="dataPATH"><a href="	http://infom.org/paperandbooks/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	ecoterrorism	</td><td class="dataPATH"><a href="	http://earthfirstjournal.org/newswire/2012/12/28/happy-birthday-panagioti-stay-wild-stay-weird/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	aeon ecology and environmental sciences	</td><td class="dataPATH"><a href="	https://aeon.co/science/ecology-environmental-sciences#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	mycology resources	</td><td class="dataPATH"><a href="	http://mycology.cornell.edu/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	nyt environment	</td><td class="dataPATH"><a href="	http://www.nytimes.com/section/science/earth#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	watershed coalition	</td><td class="dataPATH"><a href="	http://www.wwals.net/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	florida clean water network	</td><td class="dataPATH"><a href="	http://floridacleanwaternetwork.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	fusion articles	</td><td class="dataPATH"><a href="	http://fusionanomaly.net/WordsNode.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	polygraph visual articles	</td><td class="dataPATH"><a href="	http://poly-graph.co/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	free republic global warming search	</td><td class="dataPATH"><a href="	http://www.freerepublic.com/focus/search?q=quick&m=all&o=time&s=global+warming&find=Find#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	craig pittman	</td><td class="dataPATH"><a href="	http://www.tampabay.com/writers/craig-pittman#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	one hundred percent	</td><td class="dataPATH"><a href="	http://boards.4chan.org/pol/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	unpublished notebooks	</td><td class="dataPATH"><a href="	https://jmkorhonen.net/category/energy/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	green wire	</td><td class="dataPATH"><a href="	https://www.eenews.net/gw#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	the knowledge	</td><td class="dataPATH"><a href="	http://the-knowledge.org/en-gb/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	huff - seth abramson	</td><td class="dataPATH"><a href="	http://www.huffingtonpost.com/author/sethabramson3-455#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	blog daring fireball	</td><td class="dataPATH"><a href="	http://daringfireball.net/linked/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	blog aesops anthropology	</td><td class="dataPATH"><a href="	http://www.aesopsanthropology.com/blog#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	reddit out of the loop	</td><td class="dataPATH"><a href="	https://www.reddit.com/r/OutOfTheLoop#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	creative nonfiction	</td><td class="dataPATH"><a href="	https://www.creativenonfiction.org/issue/61#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	personal story peter von	</td><td class="dataPATH"><a href="	https://preservethebeartoothfront.com/2014/06/18/a-personal-story-peter-von-tiesenhausen-demmitt-alberta#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	boredom, a creative space	</td><td class="dataPATH"><a href="	http://fallowmedia.com/2016/jun/boredom/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	a jaw, ajar, a creative space	</td><td class="dataPATH"><a href="	http://fallowmedia.com/2016/apr/ajawajar/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	yoursri hannah and julie	</td><td class="dataPATH"><a href="	https://yoursri.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	blog - hannah and julie	</td><td class="dataPATH"><a href="	http://www.hannahandjulie.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	sustainable sunrise	</td><td class="dataPATH"><a href="	http://sustainablesunrise.blogspot.com/?expref=next-blog#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	applied mythology	</td><td class="dataPATH"><a href="	http://appliedmythology.blogspot.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	raul pacheco acwri blog	</td><td class="dataPATH"><a href="	http://www.raulpacheco.org/resources/academic-writing-acwri#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	climate desk	</td><td class="dataPATH"><a href="	http://www.climatedesk.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - climate hawk	</td><td class="dataPATH"><a href="	https://twitter.com/climatehawk1/status/860289515990208512	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	bret stephens comment column	</td><td class="dataPATH"><a href="	https://www.nytimes.com/2017/05/01/opinion/answering-your-climate-questions.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - mostly mammoths	</td><td class="dataPATH"><a href="	https://twitter.com/MostlyMammoths/status/762730442428678144	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - khanoisseur	</td><td class="dataPATH"><a href="	https://twitter.com/Khanoisseur/status/780863455549018112	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - sifill_LDF	</td><td class="dataPATH"><a href="	https://twitter.com/Sifill_LDF/status/819010992923430912	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - denormalize	</td><td class="dataPATH"><a href="	https://twitter.com/denormalize/status/831581871230193664	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - denormalize 2	</td><td class="dataPATH"><a href="	https://twitter.com/denormalize/status/831615938243895296	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - ed hawkins	</td><td class="dataPATH"><a href="	https://twitter.com/ed_hawkins/status/832215899432169472	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - climate of gavin	</td><td class="dataPATH"><a href="	https://twitter.com/ClimateOfGavin/status/852841621326516225	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - blkahn	</td><td class="dataPATH"><a href="	https://twitter.com/blkahn/status/834436594148990976	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - blkahn 2	</td><td class="dataPATH"><a href="	https://twitter.com/blkahn/status/838819952337506305	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - planet3org	</td><td class="dataPATH"><a href="	https://twitter.com/planet3org/status/832365020545691649	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - ungagged EPA	</td><td class="dataPATH"><a href="	https://twitter.com/ungaggedEPA/status/832380497439363073	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - wyoweed	</td><td class="dataPATH"><a href="	https://twitter.com/WyoWeeds/status/840334547904520192	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - ungagged EPA 2	</td><td class="dataPATH"><a href="	https://twitter.com/ungaggedEPA/status/867723684638863360	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - jmkorhonen	</td><td class="dataPATH"><a href="	https://twitter.com/jmkorhonen/status/841701767763120128	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - social brains	</td><td class="dataPATH"><a href="	https://twitter.com/social_brains/status/842238631683096576	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - jmkorhonen 2	</td><td class="dataPATH"><a href="	https://twitter.com/jmkorhonen/status/844819198308069377	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - gavin bade	</td><td class="dataPATH"><a href="	https://twitter.com/GavinBade/status/846798134084878337	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - john dp morgan	</td><td class="dataPATH"><a href="	https://twitter.com/JohnDPMorgan/status/848653128098381824	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - write that phd	</td><td class="dataPATH"><a href="	https://twitter.com/WriteThatPhD/status/847016458718793728	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - write that phd 2	</td><td class="dataPATH"><a href="	https://twitter.com/WriteThatPhD/status/848859929498841088	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - write that phd 3	</td><td class="dataPATH"><a href="	https://twitter.com/WriteThatPhD/status/848923050041016322	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - ronald vanloon	</td><td class="dataPATH"><a href="	https://twitter.com/Ronald_vanLoon/status/852059236125343744	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - neelaeast	</td><td class="dataPATH"><a href="	https://twitter.com/neelaeast/status/857291520105467912	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	twitter - stevebrown	</td><td class="dataPATH"><a href="	https://twitter.com/SteveBrownBC/status/858331547539263488	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	tumblr - quantum displacement	</td><td class="dataPATH"><a href="	http://quantum-displacement.tumblr.com/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	vanishing earth	</td><td class="dataPATH"><a href="	https://vanishingearth.org	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	climate interactive	</td><td class="dataPATH"><a href="	https://www.climateinteractive.org/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	desmog blog	</td><td class="dataPATH"><a href="	https://www.desmogblog.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	google environment	</td><td class="dataPATH"><a href="	https://environment.google/?ddlx=1	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Data Scientist Blog	</td><td class="dataPATH"><a href="	http://www.randalolson.com/blog/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	ProScience Blog	</td><td class="dataPATH"><a href="	http://www.crediblehulk.org	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                 <tr>	<td class="dataTITLE">	seinfeld scripts	</td><td class="dataPATH"><a href="	http://www.seinfeldscripts.com/ThePoolGuy.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                 <tr><td class="dataTITLE">cool reddit user</td><td class="dataPATH"><a href="https://www.reddit.com/user/zero404cool" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">blog</td><td class="dataCOMMENT"></td></tr>
-                 <tr><td class="dataTITLE">hacker news</td><td class="dataPATH"><a href="https://www.2600.com" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">blog</td><td class="dataCOMMENT"></td></tr>
-                 <tr><td class="dataTITLE">separating art from the artist</td><td class="dataPATH"><a href="https://medium.com/@dyske/louis-c-k-and-the-debate-over-art-and-artist-3d0348cb7879" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">blog</td><td class="dataCOMMENT"></td></tr>
-                 <tr><td class="dataTITLE">darkweb nyt</td><td class="dataPATH"><a href="https://twitter.com/x0rz/status/924221316642869248" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">blog</td><td class="dataCOMMENT"></td></tr>
-                 <tr><td class="dataTITLE">virtual journal hundred rabbits</td><td class="dataPATH"><a href="http://100r.co/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">blog</td><td class="dataCOMMENT"></td></tr>
-         </tbody>
-      </table>
-    </div>
-<div id="draggable6">
-   <table id="topictableEcological" class="topicCALM">
-         <caption onclick="toggleTABLES6();">
-            ecological literacy
-         </caption>
-         <thead>
-            <tr><th onclick="sortTableEcological(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableEcological(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-                  <tr>	<td class="dataTITLE">	talk to a scientist	</td><td class="dataPATH"><a href="	http://backreaction.blogspot.com.au/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ecological literacy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">bioclimatic architecture	</td><td class="dataPATH"><a href="	http://www.geocities.ws/ResearchTriangle/Facility/8776/Pag01I.htm#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">aquaponics	</td><td class="dataPATH"><a href="	https://www.nal.usda.gov/afsic/aquaponics#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">regenerative cultures	</td><td class="dataPATH"><a href="	https://www.permaculture.co.uk/articles/designing-regenerative-cultures#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">mycoremediation	</td><td class="dataPATH"><a href="	https://fungiforthepeople.org/mushroom-info/myco-remediation/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">extreme water repellency	</td><td class="dataPATH"><a href="	https://www.sciencedaily.com/releases/2016/05/160517120506.htm?utm_source=dlvr.it&utm_medium=twitter#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">problem with greening	</td><td class="dataPATH"><a href="	http://grist.org/climate-energy/earth-is-getting-greener-heres-why-thats-a-problem/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">reinventing the greenhouse	</td><td class="dataPATH"><a href="	http://www.lowtechmagazine.com/2015/12/reinventing-the-greenhouse.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">lasers for beach cleanup	</td><td class="dataPATH"><a href="	http://www.theatlantic.com/science/archive/2016/07/how-lasers-can-help-clean-up-beach-trash/490952/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">seismic thumping	</td><td class="dataPATH"><a href="	https://energyindepth.org/mtn-states/much-ado-about-thumping/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">ecological metadata	</td><td class="dataPATH"><a href="	http://lits.bio.ic.ac.uk:8080/litsproject/Micheneretal1997.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">maximizing biodiversity with climate change	</td><td class="dataPATH"><a href="	http://www.nature.com/nclimate/journal/v1/n7/full/nclimate1227.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">earthship systems	</td><td class="dataPATH"><a href="	http://earthship.com/Systems/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">make adidas parley	</td><td class="dataPATH"><a href="	http://www.core77.com/posts/54222/How-to-Make-Sneakers-Out-of-Trash-Designing-the-Adidas-x-Parley-Ocean-Shoe#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">six maps that will make you rethink	</td><td class="dataPATH"><a href="	https://www.washingtonpost.com/news/wonk/wp/2016/04/29/six-maps-that-will-make-you-rethink-the-world/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">geohack	</td><td class="dataPATH"><a href="	https://tools.wmflabs.org/geohack/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">vocal photoshop	</td><td class="dataPATH"><a href="	http://www.theverge.com/2016/11/3/13514088/adobe-photoshop-audio-project-voco#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">arduino shield list	</td><td class="dataPATH"><a href="	http://shieldlist.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">github blob master	</td><td class="dataPATH"><a href="	https://github.com/x0rz/EQGRP/blob/master/README.md#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">shadowbrokers release	</td><td class="dataPATH"><a href="	https://arstechnica.com/security/2017/04/nsa-leaking-shadow-brokers-just-dumped-its-most-damaging-release-yet/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">ee cummings intro	</td><td class="dataPATH"><a href="	http://dwipf.tripod.com/cummings.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">what it means to be a human	</td><td class="dataPATH"><a href="	https://ratical.org/many_worlds/JohnTrudell/HumanBeing.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">ee cummings	</td><td class="dataPATH"><a href="	http://www.mrbauld.com/ee.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">shaviro accelerationism publications	</td><td class="dataPATH"><a href="	http://www.shaviro.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">google spanner	</td><td class="dataPATH"><a href="	https://research.google.com/archive/spanner.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">google globally distributed database	</td><td class="dataPATH"><a href="	http://www.cubrid.org/blog/dev-platform/spanner-globally-distributed-database-by-google/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">resistance manual	</td><td class="dataPATH"><a href="	https://www.resistancemanual.org/Resistance_Manual_Home#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">mit transparent solar cells	</td><td class="dataPATH"><a href="	http://energy.mit.edu/news/transparent-solar-cells/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">evolution of the web	</td><td class="dataPATH"><a href="	http://www.evolutionoftheweb.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">wbw neural links	</td><td class="dataPATH"><a href="	http://waitbutwhy.com/2017/04/neuralink	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - human pog	</td><td class="dataPATH"><a href="	https://twitter.com/HumanPog/status/376490789045805056	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - earl sweat	</td><td class="dataPATH"><a href="	https://twitter.com/earlxsweat/status/693154646097985536	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - blackthought	</td><td class="dataPATH"><a href="	https://twitter.com/blackthought/status/769579687727071232	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - isaiah rashad	</td><td class="dataPATH"><a href="	https://twitter.com/isaiahrashad/status/814751802222669824	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - dailyzen	</td><td class="dataPATH"><a href="	https://twitter.com/dailyzen/status/848307493797326849	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - phakehawaii	</td><td class="dataPATH"><a href="	https://twitter.com/phakehawaii/status/849684744468123650	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - phakehawaii 2	</td><td class="dataPATH"><a href="	https://twitter.com/phakehawaii/status/849731148951498754	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - stylesp	</td><td class="dataPATH"><a href="	https://twitter.com/therealstylesp/status/860516997863530496	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - oldsoulsalaam	</td><td class="dataPATH"><a href="	https://twitter.com/OLDSOULSALAAM/status/860983706504368128	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - taolin	</td><td class="dataPATH"><a href="	https://twitter.com/tao_lin/status/861659688114499584	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - lucient	</td><td class="dataPATH"><a href="	https://twitter.com/lucient_/status/861968014480224257	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - smb922	</td><td class="dataPATH"><a href="	https://twitter.com/smb922/status/864175030091079682	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - dailyzen 2	</td><td class="dataPATH"><a href="	https://twitter.com/dailyzen/status/864512768875143168	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - taolin 2	</td><td class="dataPATH"><a href="	https://twitter.com/tao_lin/status/866407002788028417	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - djackson	</td><td class="dataPATH"><a href="	https://twitter.com/itsJustDjackson/status/866701591876861958	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - brian bilston	</td><td class="dataPATH"><a href="	https://twitter.com/brian_bilston/status/832518915146260481	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - campaign book	</td><td class="dataPATH"><a href="	https://twitter.com/thecampaignbook/status/834719475832385536	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">genius lyric	</td><td class="dataPATH"><a href="	https://genius.com/11407808	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - muumuuhouse	</td><td class="dataPATH"><a href="	https://twitter.com/muumuuhouse/status/866670907858857985	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">twitter - zenhabits	</td><td class="dataPATH"><a href="	https://twitter.com/zen_habits/status/867387575597543425	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">muumuu house excerpt	</td><td class="dataPATH"><a href="	http://muumuuhouse.com/wp.twitter1.2012.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">wiki censorship worldwide	</td><td class="dataPATH"><a href="	https://dash.harvard.edu/bitstream/handle/1/32741922/Wikipedia_Censorship_final.pdf?sequence=1	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">vice hacking video	</td><td class="dataPATH"><a href="	https://motherboard.vice.com/en_us/article/famous-iphone-hacker-geohot-shows-us-how-easy-it-is-to-hack-a-computer?utm_source=vicefbus	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">Aeon - Banyan Knowledge Tree	</td><td class="dataPATH"><a href="	https://aeon.co/ideas/the-tree-of-knowledge-is-not-an-apple-or-an-oak-but-a-banyan	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">Death as Part of Natural Selection	</td><td class="dataPATH"><a href="	http://www.necsi.edu/research/evoeco/programmed.pdf	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">Death as Part of Natural Selection 2	</td><td class="dataPATH"><a href="	http://www.necsi.edu/research/evoeco/programmeddeath.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">Death as Part of Natural Selection 3	</td><td class="dataPATH"><a href="	http://www.necsi.edu/research/evoeco/longevityPR.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">Visualization of Algorithms	</td><td class="dataPATH"><a href="	https://www.fastcodesign.com/3032536/what-do-algorithms-look-like	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">Can we hear shapes?	</td><td class="dataPATH"><a href="	http://www.uh.edu/engines/epi2613.htm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">Data	</td><td class="dataPATH"><a href="	https://arxiv.org	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">Useless hacks	</td><td class="dataPATH"><a href="	http://www.stupidhackathon.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">Spinoza matters	</td><td class="dataPATH"><a href="	https://aeon.co/essays/at-a-time-of-zealotry-spinoza-matters-more-than-ever	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">justdeleteme</td><td class="dataPATH"><a href="http://backgroundchecks.org/justdeleteme/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">circuitology</td><td class="dataPATH"><a href="http://blog.dragonsector.pl/2017/10/pwn2win-2017-shift-register.html" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">darknet markets</td><td class="dataPATH"><a href="https://www.reddit.com/r/DarkNetMarkets/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">aeon - memory from physical rooms	</td><td class="dataPATH"><a href="	https://aeon.co/ideas/this-ancient-mnemonic-technique-builds-a-palace-of-memory	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">aeon - evolution of the self	</td><td class="dataPATH"><a href="	https://aeon.co/essays/to-be-true-to-ones-self-means-changing-to-become-that-self	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">coulter smith forum	</td><td class="dataPATH"><a href="	http://www.coultersmithing.com/forums/viewforum.php?f=2&sid=d83dd0008b23afcc8154aa4086d6b625	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">wiki - Constrained writing	</td><td class="dataPATH"><a href="	https://en.wikipedia.org/wiki/Constrained_writing	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">Ctenophore to Intelligence	</td><td class="dataPATH"><a href="	https://aeon.co/amp/essays/what-the-ctenophore-says-about-the-evolution-of-intelligence	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	idea	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            <tr><td class="dataTITLE">farm drones</td><td class="dataPATH"><a href="http://www.asme.org/engineering-topics/articles/robotics/drone-on-the-farm" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT"></td></tr>
+            <tr><td class="dataTITLE">personal ipo</td><td class="dataPATH"><a href="kmikeym.com" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT">as metaphor for corporate responsibility</td></tr>
+            <tr><td class="dataTITLE">fusiform face area</td><td class="dataPATH"><a href="https://en.wikipedia.org/wiki/Fusiform_face_area#Function_and_controversy" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT"></td></tr>
+            <tr><td class="dataTITLE">temporal aspects of cyber operations</td><td class="dataPATH"><a href="https://www.recordedfuture.com/cyber-operations-time/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT"></td></tr>
+            <tr><td class="dataTITLE">custom time format</td><td class="dataPATH"><a href="http://wiki.xxiivv.com/Desamber" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT"></td></tr>
+            <tr><td class="dataTITLE">apophenia</td><td class="dataPATH"><a href="https://en.wikipedia.org/wiki/Apophenia" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT"></td></tr>
+            <tr><td class="dataTITLEhot">academic strength open source license</td><td class="dataPATH"><a href="http://matt.might.net/articles/crapl/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT"></td></tr>
+            <tr><td class="dataTITLEhot">artificial intelligence, a modern approach</td><td class="dataPATH"><a href="http://aima.cs.berkeley.edu" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT"></td></tr>
+            <tr><td class="dataTITLEhot">open knowledge practices</td><td class="dataPATH"><a href="http://xolotl.org/okp/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT"></td></tr>
+            <tr><td class="dataTITLE">maggie nelson bluets</td><td class="dataPATH"><a href="http://thecheapestuniversity.org/wp-content/themes/TCU/j/pdfjs/web/viewer.html" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">idea</td><td class="dataCOMMENT"></td></tr>
           </tbody>
-      </table>
-    </div>
+          </table>
+        </div>
+        <div id="draggable5">
+          <table id="topictableBlog" class="topicCALM">
+            <caption onclick="toggleTABLES5();">blog</caption>
+            <thead>
+              <tr><th onclick="sortTableBlog(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableBlog(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">climate change denial skepticism	</td><td class="dataPATH"><a href="	https://www.skepticalscience.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">yale climate connection	</td><td class="dataPATH"><a href="	http://www.yaleclimateconnections.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">quanturb publications	</td><td class="dataPATH"><a href="	http://www.quanturb.com/publications.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">nature and forest medicine articles	</td><td class="dataPATH"><a href="	http://infom.org/paperandbooks/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">ecoterrorism	</td><td class="dataPATH"><a href="	http://earthfirstjournal.org/newswire/2012/12/28/happy-birthday-panagioti-stay-wild-stay-weird/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">aeon ecology and environmental sciences	</td><td class="dataPATH"><a href="	https://aeon.co/science/ecology-environmental-sciences#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">mycology resources	</td><td class="dataPATH"><a href="	http://mycology.cornell.edu/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">nyt environment	</td><td class="dataPATH"><a href="	http://www.nytimes.com/section/science/earth#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">watershed coalition	</td><td class="dataPATH"><a href="	http://www.wwals.net/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">florida clean water network	</td><td class="dataPATH"><a href="	http://floridacleanwaternetwork.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fusion articles	</td><td class="dataPATH"><a href="	http://fusionanomaly.net/WordsNode.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">polygraph visual articles	</td><td class="dataPATH"><a href="	http://poly-graph.co/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">free republic global warming search	</td><td class="dataPATH"><a href="	http://www.freerepublic.com/focus/search?q=quick&m=all&o=time&s=global+warming&find=Find#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">craig pittman	</td><td class="dataPATH"><a href="	http://www.tampabay.com/writers/craig-pittman#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">one hundred percent	</td><td class="dataPATH"><a href="	http://boards.4chan.org/pol/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">unpublished notebooks	</td><td class="dataPATH"><a href="	https://jmkorhonen.net/category/energy/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">green wire	</td><td class="dataPATH"><a href="	https://www.eenews.net/gw#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">the knowledge	</td><td class="dataPATH"><a href="	http://the-knowledge.org/en-gb/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">huff - seth abramson	</td><td class="dataPATH"><a href="	http://www.huffingtonpost.com/author/sethabramson3-455#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">blog daring fireball	</td><td class="dataPATH"><a href="	http://daringfireball.net/linked/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">blog aesops anthropology	</td><td class="dataPATH"><a href="	http://www.aesopsanthropology.com/blog#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">reddit out of the loop	</td><td class="dataPATH"><a href="	https://www.reddit.com/r/OutOfTheLoop#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">creative nonfiction	</td><td class="dataPATH"><a href="	https://www.creativenonfiction.org/issue/61#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">personal story peter von	</td><td class="dataPATH"><a href="	https://preservethebeartoothfront.com/2014/06/18/a-personal-story-peter-von-tiesenhausen-demmitt-alberta#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">boredom, a creative space	</td><td class="dataPATH"><a href="	http://fallowmedia.com/2016/jun/boredom/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">a jaw, ajar, a creative space	</td><td class="dataPATH"><a href="	http://fallowmedia.com/2016/apr/ajawajar/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">yoursri hannah and julie	</td><td class="dataPATH"><a href="	https://yoursri.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">blog - hannah and julie	</td><td class="dataPATH"><a href="	http://www.hannahandjulie.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">sustainable sunrise	</td><td class="dataPATH"><a href="	http://sustainablesunrise.blogspot.com/?expref=next-blog#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">applied mythology	</td><td class="dataPATH"><a href="	http://appliedmythology.blogspot.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">raul pacheco acwri blog	</td><td class="dataPATH"><a href="	http://www.raulpacheco.org/resources/academic-writing-acwri#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">climate desk	</td><td class="dataPATH"><a href="	http://www.climatedesk.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - climate hawk	</td><td class="dataPATH"><a href="	https://twitter.com/climatehawk1/status/860289515990208512	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">bret stephens comment column	</td><td class="dataPATH"><a href="	https://www.nytimes.com/2017/05/01/opinion/answering-your-climate-questions.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - mostly mammoths	</td><td class="dataPATH"><a href="	https://twitter.com/MostlyMammoths/status/762730442428678144	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - khanoisseur	</td><td class="dataPATH"><a href="	https://twitter.com/Khanoisseur/status/780863455549018112	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - sifill_LDF	</td><td class="dataPATH"><a href="	https://twitter.com/Sifill_LDF/status/819010992923430912	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - denormalize	</td><td class="dataPATH"><a href="	https://twitter.com/denormalize/status/831581871230193664	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - denormalize 2	</td><td class="dataPATH"><a href="	https://twitter.com/denormalize/status/831615938243895296	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - ed hawkins	</td><td class="dataPATH"><a href="	https://twitter.com/ed_hawkins/status/832215899432169472	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - climate of gavin	</td><td class="dataPATH"><a href="	https://twitter.com/ClimateOfGavin/status/852841621326516225	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - blkahn	</td><td class="dataPATH"><a href="	https://twitter.com/blkahn/status/834436594148990976	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - blkahn 2	</td><td class="dataPATH"><a href="	https://twitter.com/blkahn/status/838819952337506305	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - planet3org	</td><td class="dataPATH"><a href="	https://twitter.com/planet3org/status/832365020545691649	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - ungagged EPA	</td><td class="dataPATH"><a href="	https://twitter.com/ungaggedEPA/status/832380497439363073	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - wyoweed	</td><td class="dataPATH"><a href="	https://twitter.com/WyoWeeds/status/840334547904520192	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - ungagged EPA 2	</td><td class="dataPATH"><a href="	https://twitter.com/ungaggedEPA/status/867723684638863360	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - jmkorhonen	</td><td class="dataPATH"><a href="	https://twitter.com/jmkorhonen/status/841701767763120128	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - social brains	</td><td class="dataPATH"><a href="	https://twitter.com/social_brains/status/842238631683096576	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - jmkorhonen 2	</td><td class="dataPATH"><a href="	https://twitter.com/jmkorhonen/status/844819198308069377	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - gavin bade	</td><td class="dataPATH"><a href="	https://twitter.com/GavinBade/status/846798134084878337	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - john dp morgan	</td><td class="dataPATH"><a href="	https://twitter.com/JohnDPMorgan/status/848653128098381824	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - write that phd	</td><td class="dataPATH"><a href="	https://twitter.com/WriteThatPhD/status/847016458718793728	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - write that phd 2	</td><td class="dataPATH"><a href="	https://twitter.com/WriteThatPhD/status/848859929498841088	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - write that phd 3	</td><td class="dataPATH"><a href="	https://twitter.com/WriteThatPhD/status/848923050041016322	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - ronald vanloon	</td><td class="dataPATH"><a href="	https://twitter.com/Ronald_vanLoon/status/852059236125343744	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - neelaeast	</td><td class="dataPATH"><a href="	https://twitter.com/neelaeast/status/857291520105467912	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">twitter - stevebrown	</td><td class="dataPATH"><a href="	https://twitter.com/SteveBrownBC/status/858331547539263488	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">tumblr - quantum displacement	</td><td class="dataPATH"><a href="	http://quantum-displacement.tumblr.com/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">vanishing earth	</td><td class="dataPATH"><a href="	https://vanishingearth.org	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">climate interactive	</td><td class="dataPATH"><a href="	https://www.climateinteractive.org/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">desmog blog	</td><td class="dataPATH"><a href="	https://www.desmogblog.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">google environment	</td><td class="dataPATH"><a href="	https://environment.google/?ddlx=1	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">data Scientist Blog	</td><td class="dataPATH"><a href="	http://www.randalolson.com/blog/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">proScience Blog	</td><td class="dataPATH"><a href="	http://www.crediblehulk.org	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">seinfeld scripts	</td><td class="dataPATH"><a href="	http://www.seinfeldscripts.com/ThePoolGuy.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	blog	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">cool reddit user</td><td class="dataPATH"><a href="https://www.reddit.com/user/zero404cool" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">blog</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">hacker news</td><td class="dataPATH"><a href="https://www.2600.com" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">blog</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">separating art from the artist</td><td class="dataPATH"><a href="https://medium.com/@dyske/louis-c-k-and-the-debate-over-art-and-artist-3d0348cb7879" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">blog</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">darkweb nyt</td><td class="dataPATH"><a href="https://twitter.com/x0rz/status/924221316642869248" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">blog</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">virtual journal hundred rabbits</td><td class="dataPATH"><a href="http://100r.co/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">blog</td><td class="dataCOMMENT"></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable6">
+          <table id="topictableEcological" class="topicCALM">
+            <caption onclick="toggleTABLES6();">ecological literacy</caption>
+            <thead>
+              <tr><th onclick="sortTableEcological(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableEcological(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr>	<td class="dataTITLE">	talk to a scientist	</td><td class="dataPATH"><a href="	http://backreaction.blogspot.com.au/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ecological literacy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="square">colors here</div>
+        <div id="dynamic"><div id="colorChartHeading"></div><div style="padding: 2px; background:#000000;"><span class="light">#000000</span></div><div style="padding: 2px; background:#6d6383;"><span class="light">#6d6383</span></div><div style="padding: 2px; background:#7f7b81;"><span class="light">#7f7b81</span></div>
+        <div style="padding: 2px; background:#848699;"><span class="dark">#848699</span></div><div style="padding: 2px; background:#969696;"><span class="dark">#969696</span></div><div style="padding: 2px; background:#bb7711;"><span class="dark">#bb7711</span></div><div style="padding: 2px; background:#a0a0a0;"><span class="dark">#a0a0a0</span></div>
+        <div style="padding: 2px; background:#a2a2a3;"><span class="dark">#a2a2a3</span></div><div style="padding: 2px; background:#bb7711;"><span class="dark">#bb7711</span></div><div style="padding: 2px; background:#cacadd;"><span class="dark">#cacadd</span></div><div style="padding: 2px; background:#cccccc;"><span class="dark">#cccccc</span></div>
+        <div style="padding: 2px; background:#d0d0d0;"><span class="dark">#d0d0d0</span></div><div style="padding: 2px; background:#d0d0e1;"><span class="dark">#d0d0e1</span></div><div style="padding: 2px; background:#d6cbd3;"><span class="dark">#d6cbd3</span></div><div style="padding: 2px; background:#e4a1b3;"><span class="dark">#e4a1b3</span></div>
+        <div style="padding: 2px; background:#f4e1d2;"><span class="dark">#f4e1d2</span></div><div style="padding: 2px; background:#ffbb11;"><span class="dark">#ffbb11</span></div><div style="padding: 2px; background:#ffffff;"><span class="dark">#ffffff</span></div><div style="padding: 2px; background:#000000;"><span class="light">#000000</span></div>
+        <div style="padding: 2px; background:#808080;"><span class="light">#808080</span></div><div style="padding: 2px; background:#daa520;"><span class="dark">#daa520</span></div><div style="padding: 2px; background:#e7d1e0;"><span class="dark">#e7d1e0</span></div><div style="padding: 2px; background:#ffffff;"><span class="dark">#ffffff</span></div>
+        </div>
 
 
-<div id="footer" class="headerSUB">
-  <table>
-   <tr>
-     <td style="width:50%;">
-      <a href="https://www.twitter.com/repneuable" target="_blank"><img title="Twitter" alt="Twitter" src="../../resources/icons/twitter-icon.png" width="15" height="15" /></a>
-      <a href="https://www.instagram.com/khitt7/" target="_blank"><img title="Instagram" alt="Instagram" src="../../resources/icons/instagram-icon.png" width="15" height="15" /></a>
-      <a href="https://www.facebook.com/kevin.hitt.98" target="_blank"><img title="Facebook" alt="Facebook" src="../../resources/icons/facebook-icon.png" width="15" height="15" /></a>
-      <a href="https://www.linkedin.com/in/kevin-hitt-7aa93ab8/" target="_blank"><img title="LinkedIn" alt="LinkedIn" src="../../resources/icons/linkedin-icon.png" width="15" height="15" /></a>
-      <a href="https://www.reddit.com/user/hittww/" target="_blank"><img title="Reddit" alt="Reddit" src="../../resources/icons/reddit-icon.png" width="15" height="15" /></a>
-      <a href="https://www.soundcloud.com/repneuable" target="_blank"><img title="Soundcloud" alt="Soundcloud" src="../../resources/icons/soundcloud-icon.png" width="15" height="15"/></a>
-      <a href="https://github.com/repneuable" target="_blank"><img title="GitHub" alt="GitHub" src="../../resources/icons/github-icon.png" width="15" height="15" /></a>
-   </td>
-      <td>
-          <div style="float:left; margin-left: 10px;">
-
-          <a href="../comments.html"><img title="Comments" alt="Comments" src="../../resources/icons/comment-icon.png" width="17" height="17" /></a>
-          <a href="../resume.html"><img title="Resume" alt="Resume" src="../../resources/icons/resume-icon.png" width="17" height="17" /></a>
-          <a href="../file_listing.html"><img title="Files" alt="Files" src="../../resources/icons/file-icon.png" width="17" height="17" /></a>
-          <a href="../../index.html"><img title="Site Index" alt="Site Index" src="../../resources/icons/tree-icon.png" width="17" height="17" /></a>
-
-          </div><div style="float:right; margin-right: 10px;" id="expandFOOTER">
-            <a><img onclick="expandFOOTER()" src="../../resources/icons/expand-icon.png" width="20" height="20" id="expandICON"/></a></div>
-      </td>
-    </tr>
-  </table>
-    </div>
-    </div> <!--close container-->
-  </div> <!--close section-->
-</body>
-
+        <div id="footer" class="headerSUB">
+          <table>
+            <tr>
+              <td style="width:50%;">
+                <a href="https://www.twitter.com/repneuable" target="_blank"><img title="Twitter" alt="Twitter" src="../../resources/icons/twitter-icon.png" width="15" height="15" /></a>
+                <a href="https://www.instagram.com/khitt7/" target="_blank"><img title="Instagram" alt="Instagram" src="../../resources/icons/instagram-icon.png" width="15" height="15" /></a>
+                <a href="https://www.facebook.com/kevin.hitt.98" target="_blank"><img title="Facebook" alt="Facebook" src="../../resources/icons/facebook-icon.png" width="15" height="15" /></a>
+                <a href="https://www.linkedin.com/in/kevin-hitt-7aa93ab8/" target="_blank"><img title="LinkedIn" alt="LinkedIn" src="../../resources/icons/linkedin-icon.png" width="15" height="15" /></a>
+                <a href="https://www.reddit.com/user/hittww/" target="_blank"><img title="Reddit" alt="Reddit" src="../../resources/icons/reddit-icon.png" width="15" height="15" /></a>
+                <a href="https://www.soundcloud.com/repneuable" target="_blank"><img title="Soundcloud" alt="Soundcloud" src="../../resources/icons/soundcloud-icon.png" width="15" height="15"/></a>
+                <a href="https://github.com/repneuable/water/blob/master/HTM7/topics/calm.html" target="_blank"><img title="GitHub" alt="GitHub" src="../../resources/icons/github-icon.png" width="15" height="15" /></a>
+              </td>
+              <td>
+                <div style="float:left; margin-left: 10px;">
+                <a href="../comments.html"><img title="Comments" alt="Comments" src="../../resources/icons/comment-icon.png" width="17" height="17" /></a>
+                <a href="../resume.html"><img title="Resume" alt="Resume" src="../../resources/icons/resume-icon.png" width="17" height="17" /></a>
+                <a href="../file_listing.html"><img title="Files" alt="Files" src="../../resources/icons/file-icon.png" width="17" height="17" /></a>
+                <a href="../../index.html"><img title="Site Index" alt="Site Index" src="../../resources/icons/tree-icon.png" width="17" height="17" /></a>
+                </div><div style="float:right; margin-right: 10px;" id="expandFOOTER">
+                <a><img onclick="expandFOOTER()" src="../../resources/icons/expand-icon.png" width="20" height="20" id="expandICON"/></a></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div> <!--close container-->
+    </div> <!--close section-->
+  </body>
 </html>
