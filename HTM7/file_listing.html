@@ -1,446 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!--*
-    *
-    * Author: Kevin Hitt
-    *
-    *-->
-
-    <head>
-
+  <head>
     <!-- 01. Meta Tags -->
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <meta name="keywords" content="html, table, sortable">
-      <meta name="description" content="An expirement in sortable tables">
-      <meta name="author" content="Kevin Hitt">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="keywords" content="html, table, sortable"/>
+    <meta name="description" content="An open-source collection of research for the enrichment of thought, organization of ideas, and recording of progress."/>
+    <meta name="author" content="Kevin Hitt"/>
+    <link rel="author" href="https://plus.google.com/u/0/103231175529072372519"/>
+    <meta name="keywords" content="research, open knowledge, environmental, explicit knowledge, information, sustainability, open content, redistribute, informal network, repository, dissemination"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="revisit-after" content="7 days"/>
 
-    <!-- 02. Title -->
-      <title>kevinh.work | Files</title>
+    <title>kevinh.work | Comments</title>
+
+    <!-- Media Share Tages -->
+    <meta property="og:title" content="Open Research and Data"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:image" content="https://github.com/repneuable/water/blob/master/resources/icons/background3.jpg"/>
+    <meta property="og:url" content="https://kevinh.work"/>
+    <meta property="og:description" content="Explore these sortable tables and stay for a while. Please submit a comment, question, or suggestion at kevinh.work/HTM7/comments.html"/>
+    <meta property="fb:admins" content="100000138827986"/>
+    <meta name="twitter:url" content="https://kevinh.work"/>
+    <meta name="twitter:title" content="A collection of sortable tables. Topic subpage of kevinh.work"/>
+    <meta name="twitter:description" content="An open-source collection of research for the enrichment of thought, organization of ideas, and recording of progress. Submit a suggestion!"/>
+    <meta name="twitter:image" content="https://github.com/repneuable/water/blob/master/resources/icons/background3.jpg"/>
 
     <!-- 03. Favicon -->
-      <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="shortcut icon" href="../favicon.ico">
 
     <!-- 04. Cascading Style Sheets -->
-      <link type="text/css" rel="stylesheet" href="../C55/website-responsive.css">
-      <link type="text/css" rel="stylesheet" href="../C55/home.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../C55/home.css">
+    <link type="text/css" rel="stylesheet" href="../C55/website.css">
 
     <!-- 05. Javascript -->
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-       <script type="text/javascript" src="../J5/home.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../J5/home.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109143936-1"></script>
-   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-109143936-1');
-   </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109143936-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-109143936-1');
+    </script>
 
- <!--HEADER-->
- <div id="header" class="headerSUB">
-   <table width ="100%" style="margin: 0px;">
-     <tbody>
-       <tr>
-         <td>
-           <a href="home.html"><img title="Home" alt="Home" src="../resources/icons/home-icon.svg" width="10" height="10" />  kevinh.work</a>
-           <a href="https://keybase.io/repneuable" target="_blank"><img title="Keybase" alt="Keybase" src="../resources/icons/keybase-icon.png" width="15" height="15" /></a>
-         </td>
-         <td>
-
-           <a href="../HTM7/topics/calm.html" >CALM |</a>
-           <a href="../HTM7/topics/eco.html" >ECO |</a>
-           <a href="../HTM7/topics/action.html" >ACTION |</a>
-           <a href="../HTM7/topics/study.html" >STUDY |</a>
-           <a href="../HTM7/topics/gen.html" >GEN |</a>
-           <a href="../index.html" >INDEX</a>
-
-           <input type="search" class="searchBOX" placeholder="coming soon..." onkeyup="myFunction0()" id="search0">
-           <img title="Source Code" alt="Source Code" src="../resources/icons/source-icon.png" width="15" height="15" onclick="viewSource()"/>
-         </td>
-       </tr>
-
-     </tbody>
-   </table>
- </div>
-
-    </head>
-
-<body>
-  <div id="table" class="section">
-    <div class="container">
-      <table class="" align="left">
-        <thead><th>File name</th></thead>
+    <!--HEADER-->
+    <div id="header" class="headerSUB">
+      <table width ="100%" style="margin: 0px;">
         <tbody>
-          <tr>	<td><a href="https://drive.google.com/open?id=0B43pG43VU8jdVkZVeGJwWW5TZk0" target="_blank">	Aquatic Preserve Mgt. Plan 2016.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Bee vs Butterfly Pollination.pdf	" target="_blank">	Bee vs Butterfly Pollination.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Bipolar fog abatement.pdf	" target="_blank">	Bipolar fog abatement.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Brownfield nomination of Sunset Park.pdf	" target="_blank">	Brownfield nomination of Sunset Park.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Causal Structure.pdf	" target="_blank">	Causal Structure.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Citizen science/Existing manuals.pdf	" target="_blank">	Existing manuals.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Citizen science/Guide to growing vol.pdf	" target="_blank">	Guide to growing vol.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Citizen science/Invasive species monitoring.pdf	" target="_blank">	Invasive species monitoring.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Citizen science/Monitoring uses of wetlands.pdf	" target="_blank">	Monitoring uses of wetlands.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Citizen science/Stream monitoring GA.pdf	" target="_blank">	Stream monitoring GA.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Citizen science/Tracking error from volunteers.pdf	" target="_blank">	Tracking error from volunteers.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Citizen science/Volunteer biomonitoring.pdf	" target="_blank">	Volunteer biomonitoring.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Citizen science/Volunteer estuary monitoring.pdf	" target="_blank">	Volunteer estuary monitoring.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Citizen science/Volunteer monitoring intro.pdf	" target="_blank">	Volunteer monitoring intro.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Citizen science/Volunteer stream manual.pdf	" target="_blank">	Volunteer stream manual.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Citizen science/Water quality monitoring.pdf	" target="_blank">	Water quality monitoring.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Citizen science/Wetland buffers.pdf	" target="_blank">	Wetland buffers.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Constituents of life.pdf	" target="_blank">	Constituents of life.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Conversating with Trees.pdf	" target="_blank">	Conversating with Trees.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Corporate commitments.pdf	" target="_blank">	Corporate commitments.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Deep Decarb of Electric Sector.pdf	" target="_blank">	Deep Decarb of Electric Sector.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Directional horizontal drilling.pdf	" target="_blank">	Directional horizontal drilling.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Drinking water/UV water disinfection.pdf	" target="_blank">	UV water disinfection.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Drinking water/Water shortage watchlist.pdf	" target="_blank">	Water shortage watchlist.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Ecology and the environment.pdf	" target="_blank">	Ecology and the environment.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Eflows for policy.pdf	" target="_blank">	Eflows for policy.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/ERCIM environmental modelling magazine.pdf	" target="_blank">	ERCIM environmental modelling magazine.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Exhibitor Map.pdf	" target="_blank">	Exhibitor Map.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/ExhibitorList.pdf	" target="_blank">	ExhibitorList.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/FD 9000-34 Stream Habitat Assessment training checklist and event log 3-1-14.doc	" target="_blank">	FD 9000-34 Stream Habitat Assessment training checklist and event log 3-1-14.doc	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/FDEP complaint.pdf	" target="_blank">	FDEP complaint.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Feasibility of All Renewable.pdf	" target="_blank">	Feasibility of All Renewable.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Fire and fragmentation.pdf	" target="_blank">	Fire and fragmentation.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Fixed-Site Monitoring Factsheet NWQMC.pdf	" target="_blank">	Fixed-Site Monitoring Factsheet NWQMC.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Forest clearing and mineral soil.pdf	" target="_blank">	Forest clearing and mineral soil.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Cobbuilding.pdf	" target="_blank">	Cobbuilding.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Comfort in any climate.pdf	" target="_blank">	Comfort in any climate.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Concrete work (operation 2).pdf	" target="_blank">	Concrete work (operation 2).pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Earthbag building 2.pdf	" target="_blank">	Earthbag building 2.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Earthbag building.pdf	" target="_blank">	Earthbag building.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Earthship-1.pdf	" target="_blank">	Earthship-1.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/EarthShip-2.pdf	" target="_blank">	EarthShip-2.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/EarthShip-3.pdf	" target="_blank">	EarthShip-3.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Geodome.pdf	" target="_blank">	Geodome.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Hut Model/A-1 floor plan sized copy.jpg	" target="_blank">	Hut Model	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Hut Model/A-2 overall section.jpg	" target="_blank">	A-1 floor plan sized copy.jpg	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Hut Model/A-3 section detail.jpg	" target="_blank">	A-2 overall section.jpg	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Hut Model/haiti waterflow2.jpg	" target="_blank">	A-3 section detail.jpg	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Hut Model/M-1 mechanical send.jpg	" target="_blank">	haiti waterflow2.jpg	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Lone tree plans.pdf	" target="_blank">	M-1 mechanical send.jpg	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/.DS_Store	" target="_blank">	Lone tree plans.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/Grow basics.pdf	" target="_blank">	marijuana	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/Grow bible.pdf	" target="_blank">	Grow basics	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/Hemp conspiracy.pdf	" target="_blank">	Grow bible.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/List of Studies on Marijuana.pdf	" target="_blank">	Hemp conspiracy.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/Marijuana botany.pdf	" target="_blank">	List of Studies on Marijuana.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/Rosentahl - Big Book of Buds.pdf	" target="_blank">	Marijuana botany.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/the-growroom-master/.DS_Store	" target="_blank">	Rosentahl - Big Book of Buds.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/the-growroom-master/.gitignore	" target="_blank">	the-growroom-master	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/the-growroom-master/CNC_OpenSource_Growroom_1.0.stp	" target="_blank">	CNC_OpenSource_Growroom_1.0.stp	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/the-growroom-master/CNC_OpenSource_Growroom_1.dxf	" target="_blank">	CNC_OpenSource_Growroom_1.dxf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/the-growroom-master/growroom.png	" target="_blank">	growroom.png	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/the-growroom-master/Manual_TheGrowroom_SPACE10.pdf	" target="_blank">	Manual_TheGrowroom_SPACE10.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/the-growroom-master/README.pdf	" target="_blank">	README	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Materials engineering.pdf	" target="_blank">	Materials engineering.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Outlaw septic.pdf	" target="_blank">	Outlaw septic.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Planter cell.pdf	" target="_blank">	Planter cell.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Survival model.pdf	" target="_blank">	Survival model.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Tire wall.pdf	" target="_blank">	Tire wall.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Tire work (operation 1).pdf	" target="_blank">	Tire work (operation 1).pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Vaulted global plans.pdf	" target="_blank">	Vaulted global plans.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Geotechnical engineering/Water from the sky.pdf	" target="_blank">	Water from the sky.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Green new deal.pdf	" target="_blank">	Green new deal.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Hazardous materials/Environmentally sensitive industries.pdf	" target="_blank">	Environmentally sensitive industries.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Hazardous materials/fb - cremation.png	" target="_blank">	fb - cremation.png	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Hazardous materials/Handling of viral human remains.docx	" target="_blank">	Handling of viral human remains.docx	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Hensley and Cohen_2017_flow reversals.pdf	" target="_blank">	Hensley and Cohen_2017_flow reversals.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/ICC1 - Italian Sustainability.pdf	" target="_blank">	ICC1 - Italian Sustainability.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/ICC2 - Club of Rome.pdf	" target="_blank">	ICC2 - Club of Rome.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Life cycle assessment.pdf	" target="_blank">	Life cycle assessment.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Limits to growth.pdf	" target="_blank">	Limits to growth.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Mathematical Modeling of Environmental Science Problems.pdf	" target="_blank">	Mathematical Modeling of Environmental Science Problems.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Miami sea level.pdf	" target="_blank">	Miami sea level.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Model of Resource Exploitation.pdf	" target="_blank">	Model of Resource Exploitation.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/NABCEP energy practicioner certifications.pdf	" target="_blank">	NABCEP energy practicioner certifications.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/NABCEP PV sales description.pdf	" target="_blank">	NABCEP PV sales description.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Nervous system manipulation.pdf	" target="_blank">	Nervous system manipulation.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Pasco vascular plant inventory.pdf	" target="_blank">	Pasco vascular plant inventory.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Pinellas myakka.pdf	" target="_blank">	Pinellas myakka.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Pinellas SPC soil map.pdf	" target="_blank">	Pinellas SPC soil map.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Pollution/Marine plastic debris and microplastics.pdf	" target="_blank">	Marine plastic debris and microplastics.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Post release.pdf	" target="_blank">	Post release.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Potential impacts.pdf	" target="_blank">	Potential impacts.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/PowerSuite.xlsx	" target="_blank">	PowerSuite.xlsx	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Private procurement public benefit.pdf	" target="_blank">	Private procurement public benefit.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Recycling/Availability study.pdf	" target="_blank">	Availability study.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Recycling/Biofuels and bioproducts from waste.pdf	" target="_blank">	Biofuels and bioproducts from waste	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Recycling/FL Tires 2010.pdf	" target="_blank">	FL Tires 2010.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Recycling/PE biodegradation.pdf	" target="_blank">	PE biodegradation.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Recycling/Recycling smart in NYC.pdf	" target="_blank">	Recycling smart in NYC.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Recycling/State of curbside report.pdf	" target="_blank">	State of curbside report.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Recycling/walmart innovation.png	" target="_blank">	walmart innovation	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Recycling/Waste to energy facility directory.pdf	" target="_blank">	Waste to energy facility directory.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Ref table 1.pdf	" target="_blank">	Ref table 1.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Ref table 2.pdf	" target="_blank">	Ref table 2.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Rise to Power of the Congressional Anti-parks Caucus.pdf	" target="_blank">	Rise to Power of the Congressional Anti-parks Caucus.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Salinity preference.pdf	" target="_blank">	Salinity preference.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/SameStats-DifferentGraphs.pdf	" target="_blank">	SameStats-DifferentGraphs.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Satellite solar.pdf	" target="_blank">	Satellite solar.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Seagrass recovery.pdf	" target="_blank">	Seagrass recovery.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Spectra environmental analysis.pdf	" target="_blank">	Spectra environmental analysis	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Spectra federal eis letter.pdf	" target="_blank">	Spectra federal eis letter.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Spectra pathos.png	" target="_blank">	Spectra pathos.png	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Statistical ecology.pdf	" target="_blank">	Statistical ecology.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Statistical Survey Factsheet NWQMC.pdf	" target="_blank">	Statistical Survey Factsheet NWQMC.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Status and trend monitoring networks.pdf	" target="_blank">	Status and trend monitoring networks.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Street patterns.pdf	" target="_blank">	Street patterns.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Sustainability report for Air Products.pdf	" target="_blank">	Sustainability report for Air Products.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/swfwmd strategic plan.pdf	" target="_blank">	swfwmd strategic plan.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/swfwmd supply strategies.pdf	" target="_blank">	swfwmd supply strategies.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/swim act brochure.pdf	" target="_blank">	swim act brochure.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Systems/Calculating environmental benefit in compliance cases.pdf	" target="_blank">	Calculating environmental benefit in compliance cases.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Systems/EPA Links.rtf	" target="_blank">	EPA Links.rtf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Systems/Lean methods for EPA.pdf	" target="_blank">	Lean methods for EPA.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Systems/NPDES compliance inspection manual.pdf	" target="_blank">	NPDES compliance inspection manual.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Systems/Pilot sustainability program for Burlington.pdf	" target="_blank">	Pilot sustainability program for Burlington.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Systems/Stormwater TMDL implementation manual.pdf	" target="_blank">	Stormwater TMDL implementation manual.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Teleological organisation.pdf	" target="_blank">	Teleological organisation.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/The_Fractal_Geometry_of_Nature.pdf	" target="_blank">	The_Fractal_Geometry_of_Nature.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Thinking like a mountain.pdf	" target="_blank">	Thinking like a mountain.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Three design alternatives.pdf	" target="_blank">	Three design alternatives.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Tropospheric Warming.pdf	" target="_blank">	Tropospheric Warming.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Utilities and energy management/Advanced Energy Network report.pdf	" target="_blank">	Advanced Energy Network report.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Utilities and energy management/Dist energy rate design and compensation.pdf	" target="_blank">	Dist energy rate design and compensation.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Utilities and energy management/Electric utilities under Trump.pdf	" target="_blank">	Electric utilities under Trump.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Utilities and energy management/Energy utility customer content.pdf	" target="_blank">	Energy utility customer content.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Utilities and energy management/fb spectra.png	" target="_blank">	fb spectra.png	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Utilities and energy management/FPL 10 yr.pdf	" target="_blank">	FPL 10 yr.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Utilities and energy management/NY celan energy standard.pdf	" target="_blank">	NY celan energy standard.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Utilities and energy management/Solutionary rail.pdf	" target="_blank">	Solutionary rail.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Utilities and energy management/Utility adaptation strategy guide.pdf	" target="_blank">	Utility adaptation strategy guide.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/UV radiation.pdf	" target="_blank">	UV radiation.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/visual display systems.pdf	" target="_blank">	visual display systems.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wastewater/Reusing WW.pdf	" target="_blank">	Reusing WW.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Water clarity changes in TB.pdf	" target="_blank">	Water clarity changes in TB.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Water sampling/Water sampling and field measurement.pdf	" target="_blank">	Water sampling and field measurement.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Water sampling/Water sampling catalog Wildco.pdf	" target="_blank">	Water sampling catalog Wildco.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Sediment and pollutant sources.pdf	" target="_blank">	Sediment and pollutant sources.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wet(5tEdi.pdf	" target="_blank">	Wet(5tEdi.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland and stream delineation.doc	" target="_blank">	Wetland and stream delineation.doc	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland condition assessment.pdf	" target="_blank">	Wetland condition assessment.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Acknowledgments.pdf	" target="_blank">	Acknowledgments.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Competition.pdf	" target="_blank">	Competition.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Conservation_and_management.pdf	" target="_blank">	Conservation_and_management.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Contents.pdf	" target="_blank">	Contents.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Disturbance.pdf	" target="_blank">	Disturbance.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Diversity.pdf	" target="_blank">	Diversity.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Fertility.pdf	" target="_blank">	Fertility.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Flooding.pdf	" target="_blank">	Flooding.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Frontmatter.pdf	" target="_blank">	Frontmatter.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Index.pdf	" target="_blank">	Index.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Other_factors.pdf	" target="_blank">	Other_factors.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Plate_section.pdf	" target="_blank">	Plate_section.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Preface_to_the_first_edition.pdf	" target="_blank">	Preface_to_the_first_edition.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Preface_to_the_second_edition.pdf	" target="_blank">	Preface_to_the_second_edition.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/References.pdf	" target="_blank">	References.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Research_paths_forward.pdf	" target="_blank">	Research_paths_forward.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Resortation.pdf	" target="_blank">	Resortation.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Services_and_functions.pdf	" target="_blank">	Services_and_functions.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Wetlands_an_overview.pdf	" target="_blank">	Wetlands_an_overview.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Zonation_shorelines_as_a_prism.pdf	" target="_blank">	Zonation_shorelines_as_a_prism.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland handbook.pdf	" target="_blank">	Wetland handbook.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland management.pdf	" target="_blank">	Wetland management.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland training manual.pdf	" target="_blank">	Wetland training manual.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wetlands/Wetland walk manual.pdf	" target="_blank">	Wetland walk manual.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wildlife guides/Envirothon forestry.pdf	" target="_blank">	Envirothon forestry.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wildlife guides/Envirothon wildlife.pdf	" target="_blank">	Envirothon wildlife.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wildlife guides/Guide to FL natural communities.pdf	" target="_blank">	Guide to FL natural communities.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wildlife guides/Landscaping in FL.pdf	" target="_blank">	Landscaping in FL.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//environment/Wildlife guides/Wild foods and useful plants.pdf	" target="_blank">	Wild foods and useful plants.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//org charts/Assignment Planning Gantt Chart.xlsx	" target="_blank">	Assignment Planning Gantt Chart.xlsx	</a></td>	</tr>
-          <tr>	<td><a href="	../research//org charts/CE Lists/'10 Book of Lists.xls	" target="_blank">	'10 Book of Lists.xls	</a></td>	</tr>
-          <tr>	<td><a href="	../research//org charts/CE Lists/'10 PWD Mailing List.xlsx	" target="_blank">	'10 PWD Mailing List.xlsx	</a></td>	</tr>
-          <tr>	<td><a href="	../research//org charts/coggles.docx	" target="_blank">	coggles.docx	</a></td>	</tr>
-          <tr>	<td><a href="	../research//org charts/Copy of Gantt Chart Template.xlsx	" target="_blank">	Copy of Gantt Chart Template.xlsx	</a></td>	</tr>
-          <tr>	<td><a href="	../research//org charts/Copy of Major Project - Gantt Chart v1.xlsx	" target="_blank">	Copy of Major Project - Gantt Chart v1.xlsx	</a></td>	</tr>
-
-          <tr>	<td><a href="	../research//thoughts/20s.png	" target="_blank">	20s.png	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/22all.pdf	" target="_blank">	22all.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Alan watts.pdf	" target="_blank">	Alan watts.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Basic study manual.pdf	" target="_blank">	Basic study manual.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Brain emulation.pdf	" target="_blank">	Brain emulation.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Descartes error.pdf	" target="_blank">	Descartes error.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Discovering the Witness.pdf	" target="_blank">	Discovering the Witness.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Employment and computerization.pdf	" target="_blank">	Employment and computerization.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Encounter with the self.pdf	" target="_blank">	Encounter with the self.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Flow.pdf	" target="_blank">	Flow.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/focus.pdf	" target="_blank">	focus.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Frank Ocean Boys Dont Cry .pdf	" target="_blank">	Frank Ocean Boys Dont Cry .pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Game of life.pdf	" target="_blank">	Game of life.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Genuine fake.pdf	" target="_blank">	Genuine fake.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Grizzly steppe.pdf	" target="_blank">	Grizzly steppe.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/I am loving awareness.pdf	" target="_blank">	I am loving awareness.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/icanhazpdf.pdf	" target="_blank">	icanhazpdf.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Italian graffiti.pdf	" target="_blank">	Italian graffiti.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Kyudo dmoch.pdf	" target="_blank">	Kyudo dmoch.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Kyudo.pdf	" target="_blank">	Kyudo.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Love serve remember.pdf	" target="_blank">	Love serve remember.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Martial arts.pdf	" target="_blank">	Martial arts.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Measurement of impulsive thrust.pdf	" target="_blank">	Measurement of impulsive thrust.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Media Waste in Common Orbit.pdf	" target="_blank">	Media Waste in Common Orbit.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Microsoft Word - HillaryRodhamThesis.doc.pdf	" target="_blank">	Microsoft Word - HillaryRodhamThesis.doc.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/noumena.pdf	" target="_blank">	noumena.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/One Pointed Awareness.pdf	" target="_blank">	One Pointed Awareness.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Philosophy of strategy.pdf	" target="_blank">	Philosophy of strategy.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Physiological meditation.pdf	" target="_blank">	Physiological meditation.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Quantum Dots.pdf	" target="_blank">	Quantum Dots.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Ram Dass/.DS_Store	" target="_blank">	Ram Dass	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Ram Dass/Be Here Now.epub	" target="_blank">	Be Here Now.epub	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Ram Dass/Journey of Awakening.epub	" target="_blank">	Journey of Awakening.epub	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Ram Dass/Paths to God.epub	" target="_blank">	Paths to God.epub	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Ram Dass/Polishing the Mirror.epub	" target="_blank">	Polishing the Mirror.epub	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Rhythms of life.pdf	" target="_blank">	Rhythms of life.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/RR-MFL-0217.png	" target="_blank">	RR-MFL-0217.png	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Seinfeld twin towers.pdf	" target="_blank">	Seinfeld twin towers.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Shaviro innovation.pdf	" target="_blank">	Shaviro innovation.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Simulation.pdf	" target="_blank">	Simulation.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Status quo.pdf	" target="_blank">	Status quo.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Taboo.pdf	" target="_blank">	Taboo	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Tai Chi Qi Gong.pdf	" target="_blank">	Tai Chi Qi Gong.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Tai Pai as Expirement.pdf	" target="_blank">	Tai Pai as Expirement.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Tao of Pooh.pdf	" target="_blank">	Tao of Pooh.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Tao of Rza.pdf	" target="_blank">	Tao of Rza.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Tao Te Ching.pdf	" target="_blank">	Tao Te Ching.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Towads Entropy.pdf	" target="_blank">	Towads Entropy.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Trump Oppo.pdf	" target="_blank">	Trump Oppo.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Unpleasant Design.pdf	" target="_blank">	Unpleasant Design.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/what its like to be a bat.pdf	" target="_blank">	what its like to be a bat.pdf	</a></td>	</tr>
-          <tr>	<td><a href="	../research//thoughts/Your Brain on Music.pdf	" target="_blank">	Your Brain on Music.pdf	</a></td>	</tr>
-
-
-        </tbody>
-      </table>
-      <table class="templateTable" align="right">
-        <thead><th>File to be added name</th></thead>
-        <tbody>
-          <tr>	<td><a href="	../research/files to be added/A Short History of Nearly Everything.pdf	" target="_blank">	A Short History of Nearly Everything	</a></td>	</tr>
-          <tr>	<td><a href="	../research/files to be added/Climate Skeptic Debate Points.pdf	" target="_blank">	Climate Skeptic Debate Points	</a></td>	</tr>
-          <tr>	<td><a href="	../research/files to be added/Deep ecology movement.pdf	" target="_blank">	Deep ecology movement	</a></td>	</tr>
-          <tr>	<td><a href="	../research/files to be added/Direct action manual.pdf	" target="_blank">	Direct action manual	</a></td>	</tr>
-          <tr>	<td><a href="	../research/files to be added/Largo Wastewater Key.pdf	" target="_blank">	Largo Wastewater Key	</a></td>	</tr>
-          <tr>	<td><a href="	../research/files to be added/My Kindle Clippings.txt	" target="_blank">	My Kindle Clippings	</a></td>	</tr>
-          <tr>	<td><a href="	../research/files to be added/Programming skills.pdf	" target="_blank">	Programming skills	</a></td>	</tr>
-          <tr>	<td><a href="	../research/files to be added/SkyVector- Flight Planning - Aeronautical Charts.webloc	" target="_blank">	SkyVector- Flight Planning - Aeronautical Charts.webloc	</a></td>	</tr>
-          <tr>	<td><a href="	../research/files to be added/UK - Artificial Light in the Environment.pdf	" target="_blank">	UK - Artificial Light in the Environment	</a></td>	</tr>
-          <tr>	<td><a href="	../research/files to be added/UK - Urban Environment.pdf	" target="_blank">	UK - Urban Environment	</a></td>	</tr>
-          <tr>	<td><a href="	../research/files to be added/Water Exploration_ Remote Sensi - Steve Drury.epub	" target="_blank">	Water Exploration_ Remote Sensi - Steve Drury.epub	</a></td>	</tr>
-          <tr>	<td><a href="	../research/files to be added/Wherefore and whither the naturalist.pdf	" target="_blank">	Wherefore and whither the naturalist	</a></td>	</tr>
-          <tr>	<td><a href="	../research/files to be added/env monitoring with arduino.pdf	" target="_blank">	env monitoring with arduino	</a></td>	</tr>
-          <tr>	<td><a href="	../research/files to be added/project management for environmental.pdf	" target="_blank">	project management for environmental	</a></td>	</tr>
-        </tbody>
-      </table>
-      <table class="templateTable" align="right">
-        <thead><th>journal entries</th></thead>
-        <tbody>
-            <tr>	<td><a href="	../research//journal entries.txt	" target="_blank">	journal entries	</a></td>	</tr>
-        </tbody>
-      </table>
-
-
-
-      <table class="templateTable" align="right">
-        <thead><th>wmnf</th></thead>
-        <tbody>
-          <tr>	<td><a href="	../research//WMNF/chris blm 885.mp3	" target="_blank">	chris blm 88.5	</a></td>	</tr>
-          <tr>	<td><a href="	../research//WMNF/wmnf_160311_120618_12newsF1_424.MP3	" target="_blank">	wmnf news 120618	</a></td>	</tr>
-          <tr>	<td><a href="	../research//WMNF/wmnf_160315_110617_radioactivityT1_187.MP3	" target="_blank">	wmnf radioactivity 110617	</a></td>	</tr>
-        </tbody>
-      </table>
-
-      <table class="templateTable" align="right">
-        <thead><th>referrals</th></thead>
-        <tbody>
-          <tr>	<td><a href="	../research//referrals/blog.txt	" target="_blank">	blog.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/calm.txt	" target="_blank">	calm.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/certs.txt	" target="_blank">	certs.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/chemistry.txt	" target="_blank">	chemistry.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/climatology.txt	" target="_blank">	climatology.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/compliance.txt	" target="_blank">	compliance.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/conservation.txt	" target="_blank">	conservation.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/deep ecology.txt	" target="_blank">	deep ecology.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/design.txt	" target="_blank">	design.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/ecological humanities.txt	" target="_blank">	ecological humanities.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/ecological literacy.txt	" target="_blank">	ecological literacy.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/ecology.txt	" target="_blank">	ecology.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/economics.txt	" target="_blank">	economics.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/education.txt	" target="_blank">	education.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/effects on physiology.txt	" target="_blank">	effects on physiology.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/energy and environment.txt	" target="_blank">	energy and environment.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/epa.txt	" target="_blank">	epa.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/ethics.txt	" target="_blank">	ethics.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/fdep.txt	" target="_blank">	fdep.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/fl.txt	" target="_blank">	fl.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/games.txt	" target="_blank">	games.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/geography.txt	" target="_blank">	geography.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/geomatics.txt	" target="_blank">	geomatics.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/history.txt	" target="_blank">	history.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/hydrology.txt	" target="_blank">	hydrology.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/idea.txt	" target="_blank">	idea.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/impact assessment.txt	" target="_blank">	impact assessment.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/jobs.txt	" target="_blank">	jobs.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/justice.txt	" target="_blank">	justice.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/law.txt	" target="_blank">	law.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/management.txt	" target="_blank">	management.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/MISC.txt	" target="_blank">	MISC.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/natural resource management.txt	" target="_blank">	natural resource management.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/policy.txt	" target="_blank">	policy.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/pollution control.txt	" target="_blank">	pollution control.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/psychology.txt	" target="_blank">	psychology.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/receipts.txt	" target="_blank">	receipts.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/research.txt	" target="_blank">	research.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/science.txt	" target="_blank">	science.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/sociology.txt	" target="_blank">	sociology.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/soundscape ecology.txt	" target="_blank">	soundscape ecology.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/studio.txt	" target="_blank">	studio.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/subtle energies.txt	" target="_blank">	subtle energies.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/sustinability.txt	" target="_blank">	sustinability.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/technology.txt	" target="_blank">	technology.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/toxicology.txt	" target="_blank">	toxicology.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/traditional environmental knowledge.txt	" target="_blank">	traditional environmental knowledge.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/veganism.txt	" target="_blank">	veganism.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/visual.txt	" target="_blank">	visual.txt	</a></td>	</tr>
-          <tr>	<td><a href="	../research//referrals/volunteering.txt	" target="_blank">	volunteering.txt	</a></td>	</tr>
-        </tbody>
-      </table>
-
-      <div id="footer" class="header">
-        <table>
-         <tr>
-           <td style="width:50%;">
-            <a href="https://www.twitter.com/repneuable" target="_blank"><img title="Twitter" alt="Twitter" src="../resources/icons/twitter-icon.png" width="15" height="15" /></a>
-            <a href="https://www.instagram.com/khitt7/" target="_blank"><img title="Instagram" alt="Instagram" src="../resources/icons/instagram-icon.png" width="15" height="15" /></a>
-            <a href="https://www.facebook.com/kevin.hitt.98" target="_blank"><img title="Facebook" alt="Facebook" src="../resources/icons/facebook-icon.png" width="15" height="15" /></a>
-            <a href="https://www.linkedin.com/in/kevin-hitt-7aa93ab8/" target="_blank"><img title="LinkedIn" alt="LinkedIn" src="../resources/icons/linkedin-icon.png" width="15" height="15" /></a>
-            <a href="https://www.reddit.com/user/hittww/" target="_blank"><img title="Reddit" alt="Reddit" src="../resources/icons/reddit-icon.png" width="15" height="15" /></a>
-            <a href="https://www.soundcloud.com/repneuable" target="_blank"><img title="Soundcloud" alt="Soundcloud" src="../resources/icons/soundcloud-icon.png" width="15" height="15"/></a>
-            <a href="https://github.com/repneuable" target="_blank"><img title="GitHub" alt="GitHub" src="../resources/icons/github-icon.png" width="15" height="15" /></a>
-         </td>
+          <tr>
             <td>
-                <div style="float:left; margin-left: 10px;">
-
-                <a href="comments.html"><img title="Comments" alt="Comments" src="../resources/icons/comment-icon.png" width="17" height="17" /></a>
-                <a href="resume.html"><img title="Resume" alt="Resume" src="../resources/icons/resume-icon.png" width="17" height="17" /></a>
-                <a href="file_listing.html"><img title="Files" alt="Files" src="../resources/icons/file-icon.png" width="17" height="17" /></a>
-                <a href="../index.html"><img title="Site Index" alt="Site Index" src="../resources/icons/tree-icon.png" width="17" height="17" /></a>
-
-                </div><div style="float:right; margin-right: 10px;" id="expandFOOTER">
-                  <a><img onclick="expandFOOTER()" src="../resources/icons/expand-icon.png" width="20" height="20" id="expandICON"/></a></div>
+              <a href="home.html"><img title="Home" alt="Home" src="../resources/icons/home-icon.svg" width="10" height="10" />  kevinh.work</a>
+              <a href="https://keybase.io/repneuable" target="_blank"><img title="Keybase" alt="Keybase" src="../resources/icons/keybase-icon.png" width="15" height="15" /></a>
+            </td>
+            <td>
+              <a href="../HTM7/topics/calm.html" >CALM |</a>
+              <a href="../HTM7/topics/eco.html" >ECO |</a>
+              <a href="../HTM7/topics/action.html" >ACTION |</a>
+              <a href="../HTM7/topics/study.html" >STUDY |</a>
+              <a href="../HTM7/topics/gen.html" >GEN |</a>
+              <a href="../index.html" >INDEX</a>
+              <input type="search" class="searchBOX" placeholder="coming soon..." onkeyup="myFunction0()" id="search0">
+              <img title="Source Code" alt="Source Code" src="../resources/icons/source-icon.png" width="15" height="15" onclick="viewSource()"/>
             </td>
           </tr>
-        </table>
-      </div>
-    </div> <!--close container-->
-  </div> <!--close section-->
-</body>
+          </tbody>
+      </table>
+    </div>
+  </head>
 
+  <body>
+    <div id="section" class="sectionSUB">
+      <div style="padding-left: 5%;" class="draggableALTContainer">
+        <div id="draggable1-alt" class="draggableALT" style="display:none"><table><caption onclick="toggleTABLE()">RESUME</caption></table></div>
+      </div>
+      <div id="container" class="container">
+        <table>
+          <thead><th>File name</th></thead>
+          <tbody>
+            <tr>	<td><a href="https://drive.google.com/open?id=0B43pG43VU8jdVkZVeGJwWW5TZk0" target="_blank">	Aquatic Preserve Mgt. Plan 2016.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Bee vs Butterfly Pollination.pdf	" target="_blank">	Bee vs Butterfly Pollination.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Bipolar fog abatement.pdf	" target="_blank">	Bipolar fog abatement.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Brownfield nomination of Sunset Park.pdf	" target="_blank">	Brownfield nomination of Sunset Park.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Causal Structure.pdf	" target="_blank">	Causal Structure.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Citizen science/Existing manuals.pdf	" target="_blank">	Existing manuals.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Citizen science/Guide to growing vol.pdf	" target="_blank">	Guide to growing vol.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Citizen science/Invasive species monitoring.pdf	" target="_blank">	Invasive species monitoring.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Citizen science/Monitoring uses of wetlands.pdf	" target="_blank">	Monitoring uses of wetlands.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Citizen science/Stream monitoring GA.pdf	" target="_blank">	Stream monitoring GA.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Citizen science/Tracking error from volunteers.pdf	" target="_blank">	Tracking error from volunteers.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Citizen science/Volunteer biomonitoring.pdf	" target="_blank">	Volunteer biomonitoring.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Citizen science/Volunteer estuary monitoring.pdf	" target="_blank">	Volunteer estuary monitoring.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Citizen science/Volunteer monitoring intro.pdf	" target="_blank">	Volunteer monitoring intro.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Citizen science/Volunteer stream manual.pdf	" target="_blank">	Volunteer stream manual.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Citizen science/Water quality monitoring.pdf	" target="_blank">	Water quality monitoring.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Citizen science/Wetland buffers.pdf	" target="_blank">	Wetland buffers.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Constituents of life.pdf	" target="_blank">	Constituents of life.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Conversating with Trees.pdf	" target="_blank">	Conversating with Trees.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Corporate commitments.pdf	" target="_blank">	Corporate commitments.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Deep Decarb of Electric Sector.pdf	" target="_blank">	Deep Decarb of Electric Sector.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Directional horizontal drilling.pdf	" target="_blank">	Directional horizontal drilling.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Drinking water/UV water disinfection.pdf	" target="_blank">	UV water disinfection.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Drinking water/Water shortage watchlist.pdf	" target="_blank">	Water shortage watchlist.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Ecology and the environment.pdf	" target="_blank">	Ecology and the environment.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Eflows for policy.pdf	" target="_blank">	Eflows for policy.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/ERCIM environmental modelling magazine.pdf	" target="_blank">	ERCIM environmental modelling magazine.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Exhibitor Map.pdf	" target="_blank">	Exhibitor Map.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/ExhibitorList.pdf	" target="_blank">	ExhibitorList.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/FD 9000-34 Stream Habitat Assessment training checklist and event log 3-1-14.doc	" target="_blank">	FD 9000-34 Stream Habitat Assessment training checklist and event log 3-1-14.doc	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/FDEP complaint.pdf	" target="_blank">	FDEP complaint.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Feasibility of All Renewable.pdf	" target="_blank">	Feasibility of All Renewable.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Fire and fragmentation.pdf	" target="_blank">	Fire and fragmentation.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Fixed-Site Monitoring Factsheet NWQMC.pdf	" target="_blank">	Fixed-Site Monitoring Factsheet NWQMC.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Forest clearing and mineral soil.pdf	" target="_blank">	Forest clearing and mineral soil.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Cobbuilding.pdf	" target="_blank">	Cobbuilding.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Comfort in any climate.pdf	" target="_blank">	Comfort in any climate.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Concrete work (operation 2).pdf	" target="_blank">	Concrete work (operation 2).pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Earthbag building 2.pdf	" target="_blank">	Earthbag building 2.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Earthbag building.pdf	" target="_blank">	Earthbag building.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Earthship-1.pdf	" target="_blank">	Earthship-1.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/EarthShip-2.pdf	" target="_blank">	EarthShip-2.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/EarthShip-3.pdf	" target="_blank">	EarthShip-3.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Geodome.pdf	" target="_blank">	Geodome.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Hut Model/A-1 floor plan sized copy.jpg	" target="_blank">	Hut Model	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Hut Model/A-2 overall section.jpg	" target="_blank">	A-1 floor plan sized copy.jpg	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Hut Model/A-3 section detail.jpg	" target="_blank">	A-2 overall section.jpg	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Hut Model/haiti waterflow2.jpg	" target="_blank">	A-3 section detail.jpg	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Hut Model/M-1 mechanical send.jpg	" target="_blank">	haiti waterflow2.jpg	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Lone tree plans.pdf	" target="_blank">	M-1 mechanical send.jpg	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/.DS_Store	" target="_blank">	Lone tree plans.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/Grow basics.pdf	" target="_blank">	marijuana	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/Grow bible.pdf	" target="_blank">	Grow basics	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/Hemp conspiracy.pdf	" target="_blank">	Grow bible.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/List of Studies on Marijuana.pdf	" target="_blank">	Hemp conspiracy.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/Marijuana botany.pdf	" target="_blank">	List of Studies on Marijuana.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/Rosentahl - Big Book of Buds.pdf	" target="_blank">	Marijuana botany.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/the-growroom-master/.DS_Store	" target="_blank">	Rosentahl - Big Book of Buds.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/the-growroom-master/.gitignore	" target="_blank">	the-growroom-master	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/the-growroom-master/CNC_OpenSource_Growroom_1.0.stp	" target="_blank">	CNC_OpenSource_Growroom_1.0.stp	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/the-growroom-master/CNC_OpenSource_Growroom_1.dxf	" target="_blank">	CNC_OpenSource_Growroom_1.dxf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/the-growroom-master/growroom.png	" target="_blank">	growroom.png	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/the-growroom-master/Manual_TheGrowroom_SPACE10.pdf	" target="_blank">	Manual_TheGrowroom_SPACE10.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/marijuana/the-growroom-master/README.pdf	" target="_blank">	README	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Materials engineering.pdf	" target="_blank">	Materials engineering.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Outlaw septic.pdf	" target="_blank">	Outlaw septic.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Planter cell.pdf	" target="_blank">	Planter cell.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Survival model.pdf	" target="_blank">	Survival model.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Tire wall.pdf	" target="_blank">	Tire wall.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Tire work (operation 1).pdf	" target="_blank">	Tire work (operation 1).pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Vaulted global plans.pdf	" target="_blank">	Vaulted global plans.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Geotechnical engineering/Water from the sky.pdf	" target="_blank">	Water from the sky.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Green new deal.pdf	" target="_blank">	Green new deal.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Hazardous materials/Environmentally sensitive industries.pdf	" target="_blank">	Environmentally sensitive industries.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Hazardous materials/fb - cremation.png	" target="_blank">	fb - cremation.png	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Hazardous materials/Handling of viral human remains.docx	" target="_blank">	Handling of viral human remains.docx	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Hensley and Cohen_2017_flow reversals.pdf	" target="_blank">	Hensley and Cohen_2017_flow reversals.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/ICC1 - Italian Sustainability.pdf	" target="_blank">	ICC1 - Italian Sustainability.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/ICC2 - Club of Rome.pdf	" target="_blank">	ICC2 - Club of Rome.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Life cycle assessment.pdf	" target="_blank">	Life cycle assessment.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Limits to growth.pdf	" target="_blank">	Limits to growth.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Mathematical Modeling of Environmental Science Problems.pdf	" target="_blank">	Mathematical Modeling of Environmental Science Problems.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Miami sea level.pdf	" target="_blank">	Miami sea level.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Model of Resource Exploitation.pdf	" target="_blank">	Model of Resource Exploitation.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/NABCEP energy practicioner certifications.pdf	" target="_blank">	NABCEP energy practicioner certifications.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/NABCEP PV sales description.pdf	" target="_blank">	NABCEP PV sales description.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Nervous system manipulation.pdf	" target="_blank">	Nervous system manipulation.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Pasco vascular plant inventory.pdf	" target="_blank">	Pasco vascular plant inventory.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Pinellas myakka.pdf	" target="_blank">	Pinellas myakka.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Pinellas SPC soil map.pdf	" target="_blank">	Pinellas SPC soil map.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Pollution/Marine plastic debris and microplastics.pdf	" target="_blank">	Marine plastic debris and microplastics.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Post release.pdf	" target="_blank">	Post release.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Potential impacts.pdf	" target="_blank">	Potential impacts.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/PowerSuite.xlsx	" target="_blank">	PowerSuite.xlsx	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Private procurement public benefit.pdf	" target="_blank">	Private procurement public benefit.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Recycling/Availability study.pdf	" target="_blank">	Availability study.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Recycling/Biofuels and bioproducts from waste.pdf	" target="_blank">	Biofuels and bioproducts from waste	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Recycling/FL Tires 2010.pdf	" target="_blank">	FL Tires 2010.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Recycling/PE biodegradation.pdf	" target="_blank">	PE biodegradation.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Recycling/Recycling smart in NYC.pdf	" target="_blank">	Recycling smart in NYC.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Recycling/State of curbside report.pdf	" target="_blank">	State of curbside report.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Recycling/walmart innovation.png	" target="_blank">	walmart innovation	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Recycling/Waste to energy facility directory.pdf	" target="_blank">	Waste to energy facility directory.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Ref table 1.pdf	" target="_blank">	Ref table 1.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Ref table 2.pdf	" target="_blank">	Ref table 2.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Rise to Power of the Congressional Anti-parks Caucus.pdf	" target="_blank">	Rise to Power of the Congressional Anti-parks Caucus.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Salinity preference.pdf	" target="_blank">	Salinity preference.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/SameStats-DifferentGraphs.pdf	" target="_blank">	SameStats-DifferentGraphs.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Satellite solar.pdf	" target="_blank">	Satellite solar.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Seagrass recovery.pdf	" target="_blank">	Seagrass recovery.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Spectra environmental analysis.pdf	" target="_blank">	Spectra environmental analysis	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Spectra federal eis letter.pdf	" target="_blank">	Spectra federal eis letter.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Spectra pathos.png	" target="_blank">	Spectra pathos.png	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Statistical ecology.pdf	" target="_blank">	Statistical ecology.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Statistical Survey Factsheet NWQMC.pdf	" target="_blank">	Statistical Survey Factsheet NWQMC.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Status and trend monitoring networks.pdf	" target="_blank">	Status and trend monitoring networks.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Street patterns.pdf	" target="_blank">	Street patterns.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Sustainability report for Air Products.pdf	" target="_blank">	Sustainability report for Air Products.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/swfwmd strategic plan.pdf	" target="_blank">	swfwmd strategic plan.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/swfwmd supply strategies.pdf	" target="_blank">	swfwmd supply strategies.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/swim act brochure.pdf	" target="_blank">	swim act brochure.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Systems/Calculating environmental benefit in compliance cases.pdf	" target="_blank">	Calculating environmental benefit in compliance cases.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Systems/EPA Links.rtf	" target="_blank">	EPA Links.rtf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Systems/Lean methods for EPA.pdf	" target="_blank">	Lean methods for EPA.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Systems/NPDES compliance inspection manual.pdf	" target="_blank">	NPDES compliance inspection manual.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Systems/Pilot sustainability program for Burlington.pdf	" target="_blank">	Pilot sustainability program for Burlington.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Systems/Stormwater TMDL implementation manual.pdf	" target="_blank">	Stormwater TMDL implementation manual.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Teleological organisation.pdf	" target="_blank">	Teleological organisation.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/The_Fractal_Geometry_of_Nature.pdf	" target="_blank">	The_Fractal_Geometry_of_Nature.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Thinking like a mountain.pdf	" target="_blank">	Thinking like a mountain.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Three design alternatives.pdf	" target="_blank">	Three design alternatives.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Tropospheric Warming.pdf	" target="_blank">	Tropospheric Warming.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Utilities and energy management/Advanced Energy Network report.pdf	" target="_blank">	Advanced Energy Network report.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Utilities and energy management/Dist energy rate design and compensation.pdf	" target="_blank">	Dist energy rate design and compensation.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Utilities and energy management/Electric utilities under Trump.pdf	" target="_blank">	Electric utilities under Trump.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Utilities and energy management/Energy utility customer content.pdf	" target="_blank">	Energy utility customer content.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Utilities and energy management/fb spectra.png	" target="_blank">	fb spectra.png	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Utilities and energy management/FPL 10 yr.pdf	" target="_blank">	FPL 10 yr.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Utilities and energy management/NY celan energy standard.pdf	" target="_blank">	NY celan energy standard.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Utilities and energy management/Solutionary rail.pdf	" target="_blank">	Solutionary rail.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Utilities and energy management/Utility adaptation strategy guide.pdf	" target="_blank">	Utility adaptation strategy guide.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/UV radiation.pdf	" target="_blank">	UV radiation.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/visual display systems.pdf	" target="_blank">	visual display systems.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wastewater/Reusing WW.pdf	" target="_blank">	Reusing WW.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Water clarity changes in TB.pdf	" target="_blank">	Water clarity changes in TB.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Water sampling/Water sampling and field measurement.pdf	" target="_blank">	Water sampling and field measurement.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Water sampling/Water sampling catalog Wildco.pdf	" target="_blank">	Water sampling catalog Wildco.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Sediment and pollutant sources.pdf	" target="_blank">	Sediment and pollutant sources.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wet(5tEdi.pdf	" target="_blank">	Wet(5tEdi.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland and stream delineation.doc	" target="_blank">	Wetland and stream delineation.doc	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland condition assessment.pdf	" target="_blank">	Wetland condition assessment.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Acknowledgments.pdf	" target="_blank">	Acknowledgments.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Competition.pdf	" target="_blank">	Competition.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Conservation_and_management.pdf	" target="_blank">	Conservation_and_management.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Contents.pdf	" target="_blank">	Contents.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Disturbance.pdf	" target="_blank">	Disturbance.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Diversity.pdf	" target="_blank">	Diversity.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Fertility.pdf	" target="_blank">	Fertility.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Flooding.pdf	" target="_blank">	Flooding.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Frontmatter.pdf	" target="_blank">	Frontmatter.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Index.pdf	" target="_blank">	Index.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Other_factors.pdf	" target="_blank">	Other_factors.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Plate_section.pdf	" target="_blank">	Plate_section.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Preface_to_the_first_edition.pdf	" target="_blank">	Preface_to_the_first_edition.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Preface_to_the_second_edition.pdf	" target="_blank">	Preface_to_the_second_edition.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/References.pdf	" target="_blank">	References.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Research_paths_forward.pdf	" target="_blank">	Research_paths_forward.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Resortation.pdf	" target="_blank">	Resortation.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Services_and_functions.pdf	" target="_blank">	Services_and_functions.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Wetlands_an_overview.pdf	" target="_blank">	Wetlands_an_overview.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland Ecology/Zonation_shorelines_as_a_prism.pdf	" target="_blank">	Zonation_shorelines_as_a_prism.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland handbook.pdf	" target="_blank">	Wetland handbook.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland management.pdf	" target="_blank">	Wetland management.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland training manual.pdf	" target="_blank">	Wetland training manual.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wetlands/Wetland walk manual.pdf	" target="_blank">	Wetland walk manual.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wildlife guides/Envirothon forestry.pdf	" target="_blank">	Envirothon forestry.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wildlife guides/Envirothon wildlife.pdf	" target="_blank">	Envirothon wildlife.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wildlife guides/Guide to FL natural communities.pdf	" target="_blank">	Guide to FL natural communities.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wildlife guides/Landscaping in FL.pdf	" target="_blank">	Landscaping in FL.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//environment/Wildlife guides/Wild foods and useful plants.pdf	" target="_blank">	Wild foods and useful plants.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//org charts/Assignment Planning Gantt Chart.xlsx	" target="_blank">	Assignment Planning Gantt Chart.xlsx	</a></td>	</tr>
+            <tr>	<td><a href="	../research//org charts/CE Lists/'10 Book of Lists.xls	" target="_blank">	'10 Book of Lists.xls	</a></td>	</tr>
+            <tr>	<td><a href="	../research//org charts/CE Lists/'10 PWD Mailing List.xlsx	" target="_blank">	'10 PWD Mailing List.xlsx	</a></td>	</tr>
+            <tr>	<td><a href="	../research//org charts/coggles.docx	" target="_blank">	coggles.docx	</a></td>	</tr>
+            <tr>	<td><a href="	../research//org charts/Copy of Gantt Chart Template.xlsx	" target="_blank">	Copy of Gantt Chart Template.xlsx	</a></td>	</tr>
+            <tr>	<td><a href="	../research//org charts/Copy of Major Project - Gantt Chart v1.xlsx	" target="_blank">	Copy of Major Project - Gantt Chart v1.xlsx	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/20s.png	" target="_blank">	20s.png	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/22all.pdf	" target="_blank">	22all.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Alan watts.pdf	" target="_blank">	Alan watts.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Basic study manual.pdf	" target="_blank">	Basic study manual.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Brain emulation.pdf	" target="_blank">	Brain emulation.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Descartes error.pdf	" target="_blank">	Descartes error.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Discovering the Witness.pdf	" target="_blank">	Discovering the Witness.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Employment and computerization.pdf	" target="_blank">	Employment and computerization.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Encounter with the self.pdf	" target="_blank">	Encounter with the self.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Flow.pdf	" target="_blank">	Flow.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/focus.pdf	" target="_blank">	focus.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Frank Ocean Boys Dont Cry .pdf	" target="_blank">	Frank Ocean Boys Dont Cry .pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Game of life.pdf	" target="_blank">	Game of life.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Genuine fake.pdf	" target="_blank">	Genuine fake.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Grizzly steppe.pdf	" target="_blank">	Grizzly steppe.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/I am loving awareness.pdf	" target="_blank">	I am loving awareness.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/icanhazpdf.pdf	" target="_blank">	icanhazpdf.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Italian graffiti.pdf	" target="_blank">	Italian graffiti.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Kyudo dmoch.pdf	" target="_blank">	Kyudo dmoch.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Kyudo.pdf	" target="_blank">	Kyudo.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Love serve remember.pdf	" target="_blank">	Love serve remember.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Martial arts.pdf	" target="_blank">	Martial arts.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Measurement of impulsive thrust.pdf	" target="_blank">	Measurement of impulsive thrust.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Media Waste in Common Orbit.pdf	" target="_blank">	Media Waste in Common Orbit.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Microsoft Word - HillaryRodhamThesis.doc.pdf	" target="_blank">	Microsoft Word - HillaryRodhamThesis.doc.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/noumena.pdf	" target="_blank">	noumena.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/One Pointed Awareness.pdf	" target="_blank">	One Pointed Awareness.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Philosophy of strategy.pdf	" target="_blank">	Philosophy of strategy.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Physiological meditation.pdf	" target="_blank">	Physiological meditation.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Quantum Dots.pdf	" target="_blank">	Quantum Dots.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Ram Dass/.DS_Store	" target="_blank">	Ram Dass	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Ram Dass/Be Here Now.epub	" target="_blank">	Be Here Now.epub	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Ram Dass/Journey of Awakening.epub	" target="_blank">	Journey of Awakening.epub	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Ram Dass/Paths to God.epub	" target="_blank">	Paths to God.epub	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Ram Dass/Polishing the Mirror.epub	" target="_blank">	Polishing the Mirror.epub	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Rhythms of life.pdf	" target="_blank">	Rhythms of life.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/RR-MFL-0217.png	" target="_blank">	RR-MFL-0217.png	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Seinfeld twin towers.pdf	" target="_blank">	Seinfeld twin towers.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Shaviro innovation.pdf	" target="_blank">	Shaviro innovation.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Simulation.pdf	" target="_blank">	Simulation.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Status quo.pdf	" target="_blank">	Status quo.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Taboo.pdf	" target="_blank">	Taboo	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Tai Chi Qi Gong.pdf	" target="_blank">	Tai Chi Qi Gong.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Tai Pai as Expirement.pdf	" target="_blank">	Tai Pai as Expirement.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Tao of Pooh.pdf	" target="_blank">	Tao of Pooh.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Tao of Rza.pdf	" target="_blank">	Tao of Rza.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Tao Te Ching.pdf	" target="_blank">	Tao Te Ching.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Towads Entropy.pdf	" target="_blank">	Towads Entropy.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Trump Oppo.pdf	" target="_blank">	Trump Oppo.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Unpleasant Design.pdf	" target="_blank">	Unpleasant Design.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/what its like to be a bat.pdf	" target="_blank">	what its like to be a bat.pdf	</a></td>	</tr>
+            <tr>	<td><a href="	../research//thoughts/Your Brain on Music.pdf	" target="_blank">	Your Brain on Music.pdf	</a></td>	</tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead><th>File to be added name</th></thead>
+          <tbody>
+            <tr>	<td><a href="	../research/files to be added/A Short History of Nearly Everything.pdf	" target="_blank">	A Short History of Nearly Everything	</a></td>	</tr>
+            <tr>	<td><a href="	../research/files to be added/Climate Skeptic Debate Points.pdf	" target="_blank">	Climate Skeptic Debate Points	</a></td>	</tr>
+            <tr>	<td><a href="	../research/files to be added/Deep ecology movement.pdf	" target="_blank">	Deep ecology movement	</a></td>	</tr>
+            <tr>	<td><a href="	../research/files to be added/Direct action manual.pdf	" target="_blank">	Direct action manual	</a></td>	</tr>
+            <tr>	<td><a href="	../research/files to be added/Largo Wastewater Key.pdf	" target="_blank">	Largo Wastewater Key	</a></td>	</tr>
+            <tr>	<td><a href="	../research/files to be added/My Kindle Clippings.txt	" target="_blank">	My Kindle Clippings	</a></td>	</tr>
+            <tr>	<td><a href="	../research/files to be added/Programming skills.pdf	" target="_blank">	Programming skills	</a></td>	</tr>
+            <tr>	<td><a href="	../research/files to be added/SkyVector- Flight Planning - Aeronautical Charts.webloc	" target="_blank">	SkyVector- Flight Planning - Aeronautical Charts.webloc	</a></td>	</tr>
+            <tr>	<td><a href="	../research/files to be added/UK - Artificial Light in the Environment.pdf	" target="_blank">	UK - Artificial Light in the Environment	</a></td>	</tr>
+            <tr>	<td><a href="	../research/files to be added/UK - Urban Environment.pdf	" target="_blank">	UK - Urban Environment	</a></td>	</tr>
+            <tr>	<td><a href="	../research/files to be added/Water Exploration_ Remote Sensi - Steve Drury.epub	" target="_blank">	Water Exploration_ Remote Sensi - Steve Drury.epub	</a></td>	</tr>
+            <tr>	<td><a href="	../research/files to be added/Wherefore and whither the naturalist.pdf	" target="_blank">	Wherefore and whither the naturalist	</a></td>	</tr>
+            <tr>	<td><a href="	../research/files to be added/env monitoring with arduino.pdf	" target="_blank">	env monitoring with arduino	</a></td>	</tr>
+            <tr>	<td><a href="	../research/files to be added/project management for environmental.pdf	" target="_blank">	project management for environmental	</a></td>	</tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead><th>journal entries</th></thead>
+          <tbody>
+            <tr>	<td><a href="	../research//journal entries.txt	" target="_blank">	journal entries	</a></td>	</tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead><th>wmnf</th></thead>
+          <tbody>
+            <tr>	<td><a href="	../research//WMNF/chris blm 885.mp3	" target="_blank">	chris blm 88.5	</a></td>	</tr>
+            <tr>	<td><a href="	../research//WMNF/wmnf_160311_120618_12newsF1_424.MP3	" target="_blank">	wmnf news 120618	</a></td>	</tr>
+            <tr>	<td><a href="	../research//WMNF/wmnf_160315_110617_radioactivityT1_187.MP3	" target="_blank">	wmnf radioactivity 110617	</a></td>	</tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead><th>referrals</th></thead>
+          <tbody>
+            <tr>	<td><a href="	../research//referrals/blog.txt	" target="_blank">	blog.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/calm.txt	" target="_blank">	calm.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/certs.txt	" target="_blank">	certs.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/chemistry.txt	" target="_blank">	chemistry.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/climatology.txt	" target="_blank">	climatology.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/compliance.txt	" target="_blank">	compliance.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/conservation.txt	" target="_blank">	conservation.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/deep ecology.txt	" target="_blank">	deep ecology.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/design.txt	" target="_blank">	design.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/ecological humanities.txt	" target="_blank">	ecological humanities.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/ecological literacy.txt	" target="_blank">	ecological literacy.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/ecology.txt	" target="_blank">	ecology.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/economics.txt	" target="_blank">	economics.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/education.txt	" target="_blank">	education.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/effects on physiology.txt	" target="_blank">	effects on physiology.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/energy and environment.txt	" target="_blank">	energy and environment.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/epa.txt	" target="_blank">	epa.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/ethics.txt	" target="_blank">	ethics.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/fdep.txt	" target="_blank">	fdep.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/fl.txt	" target="_blank">	fl.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/games.txt	" target="_blank">	games.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/geography.txt	" target="_blank">	geography.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/geomatics.txt	" target="_blank">	geomatics.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/history.txt	" target="_blank">	history.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/hydrology.txt	" target="_blank">	hydrology.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/idea.txt	" target="_blank">	idea.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/impact assessment.txt	" target="_blank">	impact assessment.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/jobs.txt	" target="_blank">	jobs.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/justice.txt	" target="_blank">	justice.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/law.txt	" target="_blank">	law.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/management.txt	" target="_blank">	management.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/MISC.txt	" target="_blank">	MISC.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/natural resource management.txt	" target="_blank">	natural resource management.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/policy.txt	" target="_blank">	policy.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/pollution control.txt	" target="_blank">	pollution control.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/psychology.txt	" target="_blank">	psychology.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/receipts.txt	" target="_blank">	receipts.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/research.txt	" target="_blank">	research.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/science.txt	" target="_blank">	science.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/sociology.txt	" target="_blank">	sociology.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/soundscape ecology.txt	" target="_blank">	soundscape ecology.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/studio.txt	" target="_blank">	studio.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/subtle energies.txt	" target="_blank">	subtle energies.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/sustinability.txt	" target="_blank">	sustinability.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/technology.txt	" target="_blank">	technology.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/toxicology.txt	" target="_blank">	toxicology.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/traditional environmental knowledge.txt	" target="_blank">	traditional environmental knowledge.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/veganism.txt	" target="_blank">	veganism.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/visual.txt	" target="_blank">	visual.txt	</a></td>	</tr>
+            <tr>	<td><a href="	../research//referrals/volunteering.txt	" target="_blank">	volunteering.txt	</a></td>	</tr>
+          </tbody>
+        </table>
+      </div> <!--close container-->
+    </div> <!--close section-->
+  </body>
 </html>
