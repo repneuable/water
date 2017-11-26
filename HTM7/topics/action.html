@@ -1,542 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--*
-    * Author: Kevin Hitt
-    *
-    *-->
+  <head>
+    <!-- 01. Meta Tags -->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="keywords" content="html, table, sortable"/>
+    <meta name="description" content="An open-source collection of research for the enrichment of thought, organization of ideas, and recording of progress."/>
+    <meta name="author" content="Kevin Hitt"/>
+    <link rel="author" href="https://plus.google.com/u/0/103231175529072372519"/>
+    <meta name="keywords" content="research, open knowledge, environmental, explicit knowledge, information, sustainability, open content, redistribute, informal network, repository, dissemination"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="revisit-after" content="7 days"/>
 
-<head>
-<!-- 01. Meta Tags -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="html, table, sortable">
-  <meta name="description" content="An expirement in sortable tables">
-  <meta name="author" content="Kevin Hitt">
+    <title>kevinh.work | Action</title>
 
-<!-- 02. Title -->
-  <title>kevinh.work | Action</title>
+    <!-- Media Share Tages -->
+    <meta property="og:title" content="Open Research and Data"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:image" content="https://github.com/repneuable/water/blob/master/resources/icons/background3.jpg"/>
+    <meta property="og:url" content="https://kevinh.work"/>
+    <meta property="og:description" content="Explore these sortable tables and stay for a while. Please submit a comment, question, or suggestion at kevinh.work/HTM7/comments.html"/>
+    <meta property="fb:admins" content="100000138827986"/>
+    <meta name="twitter:url" content="https://kevinh.work"/>
+    <meta name="twitter:title" content="A collection of sortable tables. Topic subpage of kevinh.work"/>
+    <meta name="twitter:description" content="An open-source collection of research for the enrichment of thought, organization of ideas, and recording of progress. Submit a suggestion!"/>
+    <meta name="twitter:image" content="https://github.com/repneuable/water/blob/master/resources/icons/background3.jpg"/>
 
-<!-- 03. Favicon -->
-  <link rel="shortcut icon" href="../../favicon.ico">
+    <!-- 03. Favicon -->
+    <link rel="shortcut icon" href="../../favicon.ico">
 
-<!-- 04. Cascading Style Sheets -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link type="text/css" rel="stylesheet" href="../../C55/home.css">
-  <link type="text/css" rel="stylesheet" href="../../C55/website.css">
+    <!-- 04. Cascading Style Sheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../../C55/home.css">
+    <link type="text/css" rel="stylesheet" href="../../C55/website.css">
 
 
-<!-- 05. Javascript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../../J5/home.js"></script>
+    <!-- 05. Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../J5/home.js"></script>
 
- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
- <script>
- $( function() {
-   $( "#draggable1" ).draggable();
-   $( "#draggable2" ).draggable();
-   $( "#draggable3" ).draggable();
-   $( "#draggable4" ).draggable();
-   $( "#draggable5" ).draggable();
-   $( "#draggable6" ).draggable();
-   $( "#draggable7" ).draggable();
-   $( "#draggable8" ).draggable();
-   $( "#draggable9" ).draggable();
-   $( "#draggable10" ).draggable();
-   $( "#draggable11" ).draggable();
-   $( "#draggable12" ).draggable();
-   $( "#draggable13" ).draggable();
- } );
- </script>
- <script src="../../J5/tsorter.min.js" type="text/javascript"></script>
- <script>
- function init()
- {
-     var sorter1 = tsorter.create('topictableCerts');
-     var sorter2 = tsorter.create('topictableJobs');
-     var sorter3 = tsorter.create('topictableVolunteering');
-     var sorter4 = tsorter.create('topictableReceipts');
-     var sorter5 = tsorter.create('topictableHistory');
-     var sorter6 = tsorter.create('topictableJustice');
-     var sorter7 = tsorter.create('topictableHumanities');
-     var sorter8 = tsorter.create('topictableEthics');
-     var sorter9 = tsorter.create('topictableLaw');
-     var sorter10 = tsorter.create('topictablePolicy');
-     var sorter11 = tsorter.create('topictableEconomics');
-     var sorter12 = tsorter.create('topictableCompliance');
+    <script>
+      $( function() {
+      $( "#draggable1" ).draggable();
+      $( "#draggable2" ).draggable();
+      $( "#draggable3" ).draggable();
+      $( "#draggable4" ).draggable();
+      $( "#draggable5" ).draggable();
+      $( "#draggable6" ).draggable();
+      $( "#draggable7" ).draggable();
+      $( "#draggable8" ).draggable();
+      $( "#draggable9" ).draggable();
+      $( "#draggable10" ).draggable();
+      $( "#draggable11" ).draggable();
+      $( "#draggable12" ).draggable();
+      $( "#draggable13" ).draggable();
+      } );
+    </script>
+    <script src="../../J5/tsorter.min.js" type="text/javascript"></script>
+    <script>
+    function init()
+      {
+      var sorter1 = tsorter.create('topictableCerts');
+      var sorter2 = tsorter.create('topictableJobs');
+      var sorter3 = tsorter.create('topictableVolunteering');
+      var sorter4 = tsorter.create('topictableReceipts');
+      var sorter5 = tsorter.create('topictableHistory');
+      var sorter6 = tsorter.create('topictableJustice');
+      var sorter7 = tsorter.create('topictableHumanities');
+      var sorter8 = tsorter.create('topictableEthics');
+      var sorter9 = tsorter.create('topictableLaw');
+      var sorter10 = tsorter.create('topictablePolicy');
+      var sorter11 = tsorter.create('topictableEconomics');
+      var sorter12 = tsorter.create('topictableCompliance');
+      }
+      window.onload = init;
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109143936-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-109143936-1');
+    </script>
 
- }
-
- window.onload = init;
- </script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109143936-1"></script>
-<script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
- gtag('config', 'UA-109143936-1');
-</script>
-
-  <!--HEADER-->
-  <div id="header" class="header">
-    <table width ="100%" style="margin: 0px;">
-      <tbody>
-        <tr>
-          <td>
-            <a href="../home.html"><img title="Home" alt="Home" src="../../resources/icons/home-icon.svg" width="10" height="10" />  kevinh.work</a>
-            <a href="https://keybase.io/repneuable" target="_blank"><img title="Keybase" alt="Keybase" src="../../resources/icons/keybase-icon.png" width="15" height="15" /></a>
-          </td>
-          <td>
-
-            <a href="calm.html" >CALM |</a>
-            <a href="eco.html" >ECO |</a>
-            <a href="action.html" >ACTION |</a>
-            <a href="study.html" >STUDY |</a>
-            <a href="gen.html" >GEN |</a>
-            <a href="../../index.html" >INDEX</a>
-
-            <input type="search" class="searchBOX" placeholder="coming soon..." onkeyup="myFunction0()" id="search0">
-            <img title="Source Code" alt="Source Code" src="../../resources/icons/source-icon.png" width="15" height="15" onclick="viewSource()"/>
-          </td>
-        </tr>
-
-      </tbody>
-    </table>
-  </div>
+    <!--HEADER-->
+    <div id="header" class="header">
+      <table width ="100%" style="margin: 0px;">
+        <tbody>
+          <tr>
+            <td>
+              <a href="../home.html"><img title="Home" alt="Home" src="../../resources/icons/home-icon.svg" width="10" height="10" />  kevinh.work</a>
+              <a href="https://keybase.io/repneuable" target="_blank"><img title="Keybase" alt="Keybase" src="../../resources/icons/keybase-icon.png" width="15" height="15" /></a>
+            </td>
+            <td>
+              <a href="calm.html" >CALM |</a>
+              <a href="eco.html" >ECO |</a>
+              <a href="action.html" >ACTION |</a>
+              <a href="study.html" >STUDY |</a>
+              <a href="gen.html" >GEN |</a>
+              <a href="../../index.html" >INDEX</a>
+              <input type="search" class="searchBOX" placeholder="coming soon..." onkeyup="myFunction0()" id="search0">
+              <img title="Source Code" alt="Source Code" src="../../resources/icons/source-icon.png" width="15" height="15" onclick="viewSource()"/>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </head>
 
-<body>
-  <div id="section" class="sectionSUB">
-
-    <div style="padding-left: 5%;" class="draggableALTContainer"> <!--open toggles-->
-<div id="draggable0-alt" class="draggableALT"><table><caption onclick="toggleOFF()">0/0</caption></table></div>
-  <div id="draggable10-alt" class="draggableALT"><table><caption onclick="toggleTABLES10()">CERTS</caption></table></div>
-  <div id="draggable11-alt" class="draggableALT"><table><caption onclick="toggleTABLES11()">JOBS</caption></table></div>
-  <div id="draggable12-alt" class="draggableALT"><table><caption onclick="toggleTABLES12()">VOLUNTEERING</caption></table></div>
-  <div id="draggable1-alt" class="draggableALT"><table><caption onclick="toggleTABLES1()">RECEIPTS</caption></table></div>
-  <div id="draggable9-alt" class="draggableALT"><table><caption onclick="toggleTABLES9()">HISTORY</caption></table></div>
-  <div id="draggable2-alt" class="draggableALT"><table><caption onclick="toggleTABLES2()">JUSTICE</caption></table></div>
-  <div id="draggable3-alt" class="draggableALT"><table><caption onclick="toggleTABLES3()">ECO HUMANITIES</caption></table></div>
-  <div id="draggable4-alt" class="draggableALT"><table><caption onclick="toggleTABLES4()">ETHICS</caption></table></div>
-  <div id="draggable5-alt" class="draggableALT"><table><caption onclick="toggleTABLES5()">LAW</caption></table></div>
-  <div id="draggable6-alt" class="draggableALT"><table><caption onclick="toggleTABLES6()">POLICY</caption></table></div>
-  <div id="draggable7-alt" class="draggableALT"><table><caption onclick="toggleTABLES7()">ECONOMICS</caption></table></div>
-  <div id="draggable8-alt" class="draggableALT"><table><caption onclick="toggleTABLES8()">COMPLIANCE</caption></table></div>
-
-
-      </div> <!--close toggles-->
-
-<div id="container" class="container">
-  <div id="draggable10">
-     <table id="topictableCerts" class="topicACTION">
-           <caption onclick="toggleTABLES10();">
-              certs
-           </caption>
-           <thead>
-             <tr><th onclick="sortTableCerts(0)">TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th onclick="sortTableCerts(1)">  COMMENT</th></tr>
-           </thead>
-            <tbody>
-              <tr>	<td class="dataTITLE">	laboratory certification	</td><td class="dataPATH"><a href="	http://www.floridahealth.gov/licensing-and-regulation/environmental-laboratories/environmental-laboratory-certification/index.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	certs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	uf certificates and extension	</td><td class="dataPATH"><a href="	http://sfrc.ufl.edu/distance/onlinecourses#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	certs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	nelac institute	</td><td class="dataPATH"><a href="	http://www.nelac-institute.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	certs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	ifas - fl master naturalist program	</td><td class="dataPATH"><a href="	http://www.masternaturalist.ifas.ufl.edu/participating_organizations/po_region.aspx?region=CW#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	certs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	ed2go energy	</td><td class="dataPATH"><a href="	http://www.ed2go.com/career/search-results?term=energy&ac=false#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	certs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	stanford professional development	</td><td class="dataPATH"><a href="	http://scpd.stanford.edu/free-stuff/free-stuff#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	certs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            </tbody>
-        </table>
+  <body>
+      <div id="section" class="sectionSUB">
+      <div style="padding-left: 5%;" class="draggableALTContainer">
+        <div id="draggable0-alt" class="draggableALT"><table><caption onclick="toggleOFF()">0/0</caption></table></div>
+        <div id="draggable10-alt" class="draggableALT"><table><caption onclick="toggleTABLES10()">CERTS</caption></table></div>
+        <div id="draggable11-alt" class="draggableALT"><table><caption onclick="toggleTABLES11()">JOBS</caption></table></div>
+        <div id="draggable12-alt" class="draggableALT"><table><caption onclick="toggleTABLES12()">VOLUNTEERING</caption></table></div>
+        <div id="draggable1-alt" class="draggableALT"><table><caption onclick="toggleTABLES1()">RECEIPTS</caption></table></div>
+        <div id="draggable9-alt" class="draggableALT"><table><caption onclick="toggleTABLES9()">HISTORY</caption></table></div>
+        <div id="draggable2-alt" class="draggableALT"><table><caption onclick="toggleTABLES2()">JUSTICE</caption></table></div>
+        <div id="draggable3-alt" class="draggableALT"><table><caption onclick="toggleTABLES3()">ECO HUMANITIES</caption></table></div>
+        <div id="draggable4-alt" class="draggableALT"><table><caption onclick="toggleTABLES4()">ETHICS</caption></table></div>
+        <div id="draggable5-alt" class="draggableALT"><table><caption onclick="toggleTABLES5()">LAW</caption></table></div>
+        <div id="draggable6-alt" class="draggableALT"><table><caption onclick="toggleTABLES6()">POLICY</caption></table></div>
+        <div id="draggable7-alt" class="draggableALT"><table><caption onclick="toggleTABLES7()">ECONOMICS</caption></table></div>
+        <div id="draggable8-alt" class="draggableALT"><table><caption onclick="toggleTABLES8()">COMPLIANCE</caption></table></div>
       </div>
-  <div id="draggable11">
-     <table id="topictableJobs" class="topicACTION">
-           <caption onclick="toggleTABLES11();">
-              jobs
-           </caption>
-           <thead>
+
+      <div id="container" class="container">
+        <div id="draggable10">
+          <table id="topictableCerts" class="topicACTION">
+            <caption onclick="toggleTABLES10();">certs</caption>
+            <thead>
+              <tr><th onclick="sortTableCerts(0)">TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th onclick="sortTableCerts(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">laboratory certification	</td><td class="dataPATH"><a href="	http://www.floridahealth.gov/licensing-and-regulation/environmental-laboratories/environmental-laboratory-certification/index.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	certs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">uf certificates and extension	</td><td class="dataPATH"><a href="	http://sfrc.ufl.edu/distance/onlinecourses#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	certs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">nelac institute	</td><td class="dataPATH"><a href="	http://www.nelac-institute.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	certs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">ifas - fl master naturalist program	</td><td class="dataPATH"><a href="	http://www.masternaturalist.ifas.ufl.edu/participating_organizations/po_region.aspx?region=CW#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	certs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">ed2go energy	</td><td class="dataPATH"><a href="	http://www.ed2go.com/career/search-results?term=energy&ac=false#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	certs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">stanford professional development	</td><td class="dataPATH"><a href="	http://scpd.stanford.edu/free-stuff/free-stuff#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	certs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            </tbody>
+          </table>
+        </div>
+          <div id="draggable11">
+          <table id="topictableJobs" class="topicACTION">
+            <caption onclick="toggleTABLES11();">jobs</caption>
+            <thead>
               <tr><th onclick="sortTableJobs(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableJobs(1)">  COMMENT</th></tr>
             </thead>
             <tbody>
-              <tr>	<td class="dataTITLE">	examples of cv	</td><td class="dataPATH"><a href="	https://www.visualcv.com/resume-samples?locale=en&ref=producthunt#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	fdep internships	</td><td class="dataPATH"><a href="	http://www.dep.state.fl.us/southwest/intern/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	fl water pollution control listing	</td><td class="dataPATH"><a href="	http://www.fwpcoa.org/content.aspx?page_id=1417&club_id=859275#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	hillsborough civil service board	</td><td class="dataPATH"><a href="	https://www.jobaps.com/Hillsborough/jobs/csb/default.asp#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	hillsborough job board	</td><td class="dataPATH"><a href="	https://www.jobaps.com/hillsborough/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	ihire environmental	</td><td class="dataPATH"><a href="	https://www.ihireenvironmental.com/jobs#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	swfwmd field technician	</td><td class="dataPATH"><a href="	https://www.governmentjobs.com/careers/swfwmd/jobs/1463108/field-technician#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	swfwmd water resources	</td><td class="dataPATH"><a href="	https://www.governmentjobs.com/careers/swfwmd/jobs/1509769/student-internship-water-resources#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	work for water careers	</td><td class="dataPATH"><a href="	http://workforwater.org/page.aspx?id=280#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	golder careers	</td><td class="dataPATH"><a href="	http://careers.golder.com/mobile/search/?q=Tampa#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	atc careers	</td><td class="dataPATH"><a href="	https://www.appone.com/MainInfoReq.asp?R_ID=1414749&B_ID=44&fid=12&Adid=&SearchScreenID=3958&sst=Map%20(Loc%20Driven)#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	yale environmental job sites	</td><td class="dataPATH"><a href="	https://environment.yale.edu/careers/resources/jobs-sites/#economicspolicy-job-sites	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	fdep emergency response contractors, approved discharge cleanups	</td><td class="dataPATH"><a href="	http://www.dep.state.fl.us/oer/contractors.htm#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	epchc superfund	</td><td class="dataPATH"><a href="	http://www.epchc.org/index.aspx?NID=189#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	city of seminole	</td><td class="dataPATH"><a href="	https://cityofseminole.has-jobs.com/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	grist 50	</td><td class="dataPATH"><a href="	https://grist.org/grist-50/2017/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	enviro-net	</td><td class="dataPATH"><a href="	http://www.enviro-net.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	fwpcoa	</td><td class="dataPATH"><a href="	http://www.fwpcoa.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	fsawwa	</td><td class="dataPATH"><a href="	http://www.fsawwa.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	seia	</td><td class="dataPATH"><a href="	http://www.seia.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	leef fl	</td><td class="dataPATH"><a href="	http://leef-florida.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	fl floods	</td><td class="dataPATH"><a href="	http://www.flfloods.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	ieca	</td><td class="dataPATH"><a href="	https://www.ieca.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	first responder training	</td><td class="dataPATH"><a href="	https://www.firstrespondertraining.gov/content.do#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	usfa fema	</td><td class="dataPATH"><a href="	http://www.usfa.fema.gov/nfa/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	fema training	</td><td class="dataPATH"><a href="	http://training.fema.gov/emi#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	cdp dhs	</td><td class="dataPATH"><a href="	http://cdp.dhs.gov/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	hdr inc portfolio	</td><td class="dataPATH"><a href="	http://www.hdrinc.com/services/environmental/portfolio#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	pinellas utilies	</td><td class="dataPATH"><a href="	http://www.pinellascounty.org/utilities/default.htm#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	green strategies inc	</td><td class="dataPATH"><a href="	https://distributediteration.com/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	kelman duran cv	</td><td class="dataPATH"><a href="	http://cargocollective.com/kelmanduran/CV	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	ultipro job details	</td><td class="dataPATH"><a href="	https://rew12.ultipro.com/GOP1000/JobBoard/JobDetails.aspx?__ID=*8AE2EB6BC05FCA39	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	TBEP mini grants	</td><td class="dataPATH"><a href="	http://www.tbep.org/bay_mini-grants-recipients_2016-2017.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	tampabay intern	</td><td class="dataPATH"><a href="	https://tampabayintern.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	postmates fleet	</td><td class="dataPATH"><a href="	https://fleet.postmates.com/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	fiverr	</td><td class="dataPATH"><a href="	fiverr.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	my fwc intern volunteers	</td><td class="dataPATH"><a href="	http://myfwc.com/research/about/careers/internships-volunteers/cwrp/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	tetratech jobs	</td><td class="dataPATH"><a href="	https://tetratech.taleo.net/careersection/2/jobdetail.ftl	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	epchc	</td><td class="dataPATH"><a href="	http://www.epchc.org/index.aspx?nid=196	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	quantum spatial	</td><td class="dataPATH"><a href="	https://workforcenow.adp.com/jobs/apply/posting.html?client=quantuminc&jobId=137219	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	city of tampa	</td><td class="dataPATH"><a href="	https://www.jobaps.com/Tampa/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	state of florida	</td><td class="dataPATH"><a href="	https://jobs.myflorida.com/search/?q=&q2=&locationsearch=&geolocation=&searchby=location&d=10&lat=&lon=&title=&location=Tampa&date=&department=	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	flera committees	</td><td class="dataPATH"><a href="	http://www.flera.org/committees/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	fdep jobs	</td><td class="dataPATH"><a href="	https://jobs.myflorida.com/go/Department-of-Environmental-Protection/2815300/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	terracon careers	</td><td class="dataPATH"><a href="	http://m.careers.terracon.com/index.php?numrecs=15&req_id=&keyword=&location=Tampa&search=Search#jobs-top	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	city of pinellas park	</td><td class="dataPATH"><a href="	https://selfservice.pinellas-park.com/MSS/employmentopportunities/default.aspx	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	USF jobs @ Indeed	</td><td class="dataPATH"><a href="	http://www.indeed.com/cmp/University-of-South-Florida/jobs	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	CareerOneStop Search	</td><td class="dataPATH"><a href="	https://www.careeronestop.org/Toolkit/Jobs/find-jobs.aspx?newsearch=true	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	Employ FL	</td><td class="dataPATH"><a href="	https://www.employflorida.com/vosnet/Default.aspx	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	County of Pinellas Jobs	</td><td class="dataPATH"><a href="	https://chc.tbe.taleo.net/chc01/ats/careers/searchResults.jsp?org=PCG&cws=1	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	Tampa Jobs @ Craigslist	</td><td class="dataPATH"><a href="	https://tampa.craigslist.org/hil/sci/6207387941.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	American Water Search	</td><td class="dataPATH"><a href="	https://career4.successfactors.com/portalcareer?company=amwater&navBarLevel=JOB_SEARCH&_s.crb=AjsLiMk4%2fK%2f6QJoHMIxktFtjz1A%3d	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	GIS Clearinghouse Jobs	</td><td class="dataPATH"><a href="	http://www.gjc.org/cgi-bin/listjobs.pl	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	Atkins Contracting Search	</td><td class="dataPATH"><a href="	https://careers.atkinsglobal.com/jobs/?pagesize=12&q=Tampa&sortdir=desc&opt=1535&sortby=Rank	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	HAZWOPER @ USF	</td><td class="dataPATH"><a href="	https://secure.touchnet.com/C20235_ustores/web/product_detail.jsp?PRODUCTID=6085	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	Eco employ	</td><td class="dataPATH"><a href="	http://www.ecoemploy.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	Federal jobs	</td><td class="dataPATH"><a href="	http://www.federaljobs.net/federal.htm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	Jobs federal	</td><td class="dataPATH"><a href="	http://www.jobsfed.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	State jobs	</td><td class="dataPATH"><a href="	http://www.state.gov/careers/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	Local FL jobs	</td><td class="dataPATH"><a href="	http://www.statelocalgov.net/local-fl.cfm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	State FL jobs	</td><td class="dataPATH"><a href="	http://www.statelocalgov.net/state-fl.cfm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	USA jobs	</td><td class="dataPATH"><a href="	https://www.usajobs.gov/Help/working-in-government/unique-hiring-paths/students/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	S FL Help Wanted	</td><td class="dataPATH"><a href="	SouthFloridaHelpWanted.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	SW FL Help Wanted	</td><td class="dataPATH"><a href="	SouthwestFloridaHelpWanted.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>  <td class="dataTITLE">academy board of certified env professionals</td><td class="dataPATH"><a href="http://www.abcep.org/certification/cep" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">jobs</td><td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>  <td class="dataTITLE">all appropriate inquiries</td><td class="dataPATH"><a href="https://www.epa.gov/sites/production/files/2017-07/documents/aai_factsheet_final_rule_epa_560_f_17_195_508.pdf" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">jobs</td><td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>  <td class="dataTITLE">ASTM E1527-13.pdf</td><td class="dataPATH"><a href="https://elibrary.gsfc.nasa.gov/_assets/doclibBidder/tech_docs/ASTM%20E1527-13.pdf" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">jobs</td><td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>  <td class="dataTITLE">ASTM E2247-16.pdf</td><td class="dataPATH"><a href="ftp://185.72.26.245/Astm/2/01/Section%2011/ASTM1105/PDF/E2247.pdf" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">jobs</td><td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>  <td class="dataTITLE">green carpet events*</td><td class="dataPATH"><a href="https://fcc.ticketleap.com/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">jobs</td><td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>  <td class="dataTITLE">county of pasco jobs</td><td class="dataPATH"><a href="http://www.pascocountyfl.net/index.aspx?NID=1211&pk_campaign=Pasco%20County%20Home%20Graphic%20Buttons&pk_kwd=Job%20Openings" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">jobs</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">examples of cv	</td><td class="dataPATH"><a href="	https://www.visualcv.com/resume-samples?locale=en&ref=producthunt#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fdep internships	</td><td class="dataPATH"><a href="	http://www.dep.state.fl.us/southwest/intern/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fl water pollution control listing	</td><td class="dataPATH"><a href="	http://www.fwpcoa.org/content.aspx?page_id=1417&club_id=859275#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">hillsborough civil service board	</td><td class="dataPATH"><a href="	https://www.jobaps.com/Hillsborough/jobs/csb/default.asp#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">hillsborough job board	</td><td class="dataPATH"><a href="	https://www.jobaps.com/hillsborough/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">ihire environmental	</td><td class="dataPATH"><a href="	https://www.ihireenvironmental.com/jobs#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">swfwmd field technician	</td><td class="dataPATH"><a href="	https://www.governmentjobs.com/careers/swfwmd/jobs/1463108/field-technician#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">swfwmd water resources	</td><td class="dataPATH"><a href="	https://www.governmentjobs.com/careers/swfwmd/jobs/1509769/student-internship-water-resources#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">work for water careers	</td><td class="dataPATH"><a href="	http://workforwater.org/page.aspx?id=280#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">golder careers	</td><td class="dataPATH"><a href="	http://careers.golder.com/mobile/search/?q=Tampa#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">atc careers	</td><td class="dataPATH"><a href="	https://www.appone.com/MainInfoReq.asp?R_ID=1414749&B_ID=44&fid=12&Adid=&SearchScreenID=3958&sst=Map%20(Loc%20Driven)#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">yale environmental job sites	</td><td class="dataPATH"><a href="	https://environment.yale.edu/careers/resources/jobs-sites/#economicspolicy-job-sites	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fdep emergency response contractors, approved discharge cleanups	</td><td class="dataPATH"><a href="	http://www.dep.state.fl.us/oer/contractors.htm#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">epchc superfund	</td><td class="dataPATH"><a href="	http://www.epchc.org/index.aspx?NID=189#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">city of seminole	</td><td class="dataPATH"><a href="	https://cityofseminole.has-jobs.com/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">grist 50	</td><td class="dataPATH"><a href="	https://grist.org/grist-50/2017/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">enviro-net	</td><td class="dataPATH"><a href="	http://www.enviro-net.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fwpcoa	</td><td class="dataPATH"><a href="	http://www.fwpcoa.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fsawwa	</td><td class="dataPATH"><a href="	http://www.fsawwa.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">seia	</td><td class="dataPATH"><a href="	http://www.seia.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">leef fl	</td><td class="dataPATH"><a href="	http://leef-florida.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fl floods	</td><td class="dataPATH"><a href="	http://www.flfloods.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">ieca	</td><td class="dataPATH"><a href="	https://www.ieca.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">first responder training	</td><td class="dataPATH"><a href="	https://www.firstrespondertraining.gov/content.do#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">usfa fema	</td><td class="dataPATH"><a href="	http://www.usfa.fema.gov/nfa/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fema training	</td><td class="dataPATH"><a href="	http://training.fema.gov/emi#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">cdp dhs	</td><td class="dataPATH"><a href="	http://cdp.dhs.gov/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">hdr inc portfolio	</td><td class="dataPATH"><a href="	http://www.hdrinc.com/services/environmental/portfolio#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">pinellas utilies	</td><td class="dataPATH"><a href="	http://www.pinellascounty.org/utilities/default.htm#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">green strategies inc	</td><td class="dataPATH"><a href="	https://distributediteration.com/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">kelman duran cv	</td><td class="dataPATH"><a href="	http://cargocollective.com/kelmanduran/CV	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">ultipro job details	</td><td class="dataPATH"><a href="	https://rew12.ultipro.com/GOP1000/JobBoard/JobDetails.aspx?__ID=*8AE2EB6BC05FCA39	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">tbep mini grants	</td><td class="dataPATH"><a href="	http://www.tbep.org/bay_mini-grants-recipients_2016-2017.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">tampabay intern	</td><td class="dataPATH"><a href="	https://tampabayintern.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">postmates fleet	</td><td class="dataPATH"><a href="	https://fleet.postmates.com/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fiverr	</td><td class="dataPATH"><a href="	fiverr.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">my fwc intern volunteers	</td><td class="dataPATH"><a href="	http://myfwc.com/research/about/careers/internships-volunteers/cwrp/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">tetratech jobs	</td><td class="dataPATH"><a href="	https://tetratech.taleo.net/careersection/2/jobdetail.ftl	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">epchc	</td><td class="dataPATH"><a href="	http://www.epchc.org/index.aspx?nid=196	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">quantum spatial	</td><td class="dataPATH"><a href="	https://workforcenow.adp.com/jobs/apply/posting.html?client=quantuminc&jobId=137219	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">city of tampa	</td><td class="dataPATH"><a href="	https://www.jobaps.com/Tampa/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">state of florida	</td><td class="dataPATH"><a href="	https://jobs.myflorida.com/search/?q=&q2=&locationsearch=&geolocation=&searchby=location&d=10&lat=&lon=&title=&location=Tampa&date=&department=	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">flera committees	</td><td class="dataPATH"><a href="	http://www.flera.org/committees/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fdep jobs	</td><td class="dataPATH"><a href="	https://jobs.myflorida.com/go/Department-of-Environmental-Protection/2815300/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">terracon careers	</td><td class="dataPATH"><a href="	http://m.careers.terracon.com/index.php?numrecs=15&req_id=&keyword=&location=Tampa&search=Search#jobs-top	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">city of pinellas park	</td><td class="dataPATH"><a href="	https://selfservice.pinellas-park.com/MSS/employmentopportunities/default.aspx	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">usf jobs @ Indeed	</td><td class="dataPATH"><a href="	http://www.indeed.com/cmp/University-of-South-Florida/jobs	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">careerOneStop Search	</td><td class="dataPATH"><a href="	https://www.careeronestop.org/Toolkit/Jobs/find-jobs.aspx?newsearch=true	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">employe FL	</td><td class="dataPATH"><a href="	https://www.employflorida.com/vosnet/Default.aspx	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">county of Pinellas Jobs	</td><td class="dataPATH"><a href="	https://chc.tbe.taleo.net/chc01/ats/careers/searchResults.jsp?org=PCG&cws=1	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">tampa Jobs @ Craigslist	</td><td class="dataPATH"><a href="	https://tampa.craigslist.org/hil/sci/6207387941.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">american Water Search	</td><td class="dataPATH"><a href="	https://career4.successfactors.com/portalcareer?company=amwater&navBarLevel=JOB_SEARCH&_s.crb=AjsLiMk4%2fK%2f6QJoHMIxktFtjz1A%3d	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">gis Clearinghouse Jobs	</td><td class="dataPATH"><a href="	http://www.gjc.org/cgi-bin/listjobs.pl	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">atkins Contracting Search	</td><td class="dataPATH"><a href="	https://careers.atkinsglobal.com/jobs/?pagesize=12&q=Tampa&sortdir=desc&opt=1535&sortby=Rank	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">hazwoper @ USF	</td><td class="dataPATH"><a href="	https://secure.touchnet.com/C20235_ustores/web/product_detail.jsp?PRODUCTID=6085	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">eco employ	</td><td class="dataPATH"><a href="	http://www.ecoemploy.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">federal jobs	</td><td class="dataPATH"><a href="	http://www.federaljobs.net/federal.htm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">jobs federal	</td><td class="dataPATH"><a href="	http://www.jobsfed.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">state jobs	</td><td class="dataPATH"><a href="	http://www.state.gov/careers/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">local fl jobs	</td><td class="dataPATH"><a href="	http://www.statelocalgov.net/local-fl.cfm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">state fl jobs	</td><td class="dataPATH"><a href="	http://www.statelocalgov.net/state-fl.cfm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">usa jobs	</td><td class="dataPATH"><a href="	https://www.usajobs.gov/Help/working-in-government/unique-hiring-paths/students/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">s FL Help Wanted	</td><td class="dataPATH"><a href="	SouthFloridaHelpWanted.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">sw FL Help Wanted	</td><td class="dataPATH"><a href="	SouthwestFloridaHelpWanted.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	jobs	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">academy board of certified env professionals</td><td class="dataPATH"><a href="http://www.abcep.org/certification/cep" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">jobs</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">all appropriate inquiries</td><td class="dataPATH"><a href="https://www.epa.gov/sites/production/files/2017-07/documents/aai_factsheet_final_rule_epa_560_f_17_195_508.pdf" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">jobs</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">astm E1527-13.pdf</td><td class="dataPATH"><a href="https://elibrary.gsfc.nasa.gov/_assets/doclibBidder/tech_docs/ASTM%20E1527-13.pdf" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">jobs</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">astm E2247-16.pdf</td><td class="dataPATH"><a href="ftp://185.72.26.245/Astm/2/01/Section%2011/ASTM1105/PDF/E2247.pdf" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">jobs</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">green carpet events*</td><td class="dataPATH"><a href="https://fcc.ticketleap.com/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">jobs</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">county of pasco jobs</td><td class="dataPATH"><a href="http://www.pascocountyfl.net/index.aspx?NID=1211&pk_campaign=Pasco%20County%20Home%20Graphic%20Buttons&pk_kwd=Job%20Openings" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">jobs</td><td class="dataCOMMENT">	none	</td>	</tr>
               <tr><td class="dataTITLEhot">surterra director of cultivation</td><td class="dataPATH"><a href="https://www.agcareers.com/surterra-wellness/director-of-cultivation-job-622886.cfm" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">jobs</td><td class="dataCOMMENT"></td></tr>
               <tr><td class="dataTITLE">surterra jobs</td><td class="dataPATH"><a href="https://www.ziprecruiter.com/c/Surterra-wellness" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">jobs</td><td class="dataCOMMENT"></td></tr>
               <tr><td class="dataTITLE">stanford comp sci lecturer</td><td class="dataPATH"><a href="http://stanford.edu/~cpiech/bio/index.html" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">jobs</td><td class="dataCOMMENT"></td></tr>
               <tr><td class="dataTITLE">universal env solutions tampa</td><td class="dataPATH"><a href="http://uestampa.com/project/field-services/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">jobs</td><td class="dataCOMMENT"></td></tr>
-        </tbody>
-        </table>
-      </div>
-  <div id="draggable12">
-     <table id="topictableVolunteering" class="topicACTION">
-           <caption onclick="toggleTABLES12();">
-              volunteering
-           </caption>
-           <thead>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable12">
+          <table id="topictableVolunteering" class="topicACTION">
+            <caption onclick="toggleTABLES12();">volunteering</caption>
+            <thead>
               <tr><th onclick="sortTableVolunteering(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableVolunteering(1)">  COMMENT</th></tr>
             </thead>
             <tbody>
-              <tr>	<td class="dataTITLE">	tampa bay watch	</td><td class="dataPATH"><a href="	https://app.etapestry.com/cart/TampaBayWatch/default/category.php?ref=253.0.8784952#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	volunteering	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	phenology notebook	</td><td class="dataPATH"><a href="	https://www.usanpn.org/natures_notebook#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	volunteering	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	fl epa volunteering	</td><td class="dataPATH"><a href="	https://yosemite.epa.gov/water/volmon.nsf/VST!OpenView&Start=1&Count=30&Expand=10#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	volunteering	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	hillsborough adopt a pond	</td><td class="dataPATH"><a href="	http://www.hch2o.org/adopt-a-pond#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	volunteering	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	pinellas adopt a pond	</td><td class="dataPATH"><a href="	http://www.pinellascounty.org/environment/watershed/adopt-a-pond.htm#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	volunteering	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	tbep tech water assessment	</td><td class="dataPATH"><a href="	https://tbeptech.org/TBEP_TECH_PUBS/2016/TBEP_01_16_2015_Decision_Matrix_Results_Update.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	volunteering	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr>	<td class="dataTITLE">	keep tb beautiful	</td><td class="dataPATH"><a href="	https://keeptampabaybeautiful.org/environment.php#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	volunteering	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            </tbody>
-        </table>
-      </div>
-<div id="draggable1">
-         <table id="topictableReceipts" class="topicACTION">
-              <caption onclick="toggleTABLES1();">
-                receipts
-              </caption>
-               <thead>
-                  <tr><th onclick="sortTableReceipts(0)">TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th onclick="sortTableReceipts(1)">  COMMENT</th></tr>
-                </thead>
-                <tbody>
-                  <tr>	<td class="dataTITLE">	1968 warning to fossil fuels	</td><td class="dataPATH"><a href="	https://www.smokeandfumes.org/documents/document16#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	1969 carbon dioxide effects global ecology	</td><td class="dataPATH"><a href="	https://www.smokeandfumes.org/documents/document32#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	dead trees in california	</td><td class="dataPATH"><a href="	https://www.wired.com/2016/06/californias-dying-forests-mean-humans/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	us bee decline	</td><td class="dataPATH"><a href="	http://www.theverge.com/2016/5/10/11652246/honeybee-loss-44-percent-colonies-us-2015-2016#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	la coast receding	</td><td class="dataPATH"><a href="	http://projects.propublica.org/louisiana/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	disappearing groundwater	</td><td class="dataPATH"><a href="	http://hosting.soundslides.com/rh3kr/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	rick scott blind trust	</td><td class="dataPATH"><a href="	http://www.miamiherald.com/news/state/article1976380.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	swfwmd seagrasses	</td><td class="dataPATH"><a href="	http://swfwmd.maps.arcgis.com/apps/StorytellingSwipe/index.html?appid=90c22bc49561431bbf1eb4e2ae7f1796#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	exxon knew	</td><td class="dataPATH"><a href="	http://exxonknew.org/?utm_medium=email#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	in favor of simulation modeling	</td><td class="dataPATH"><a href="	http://www.sciencedirect.com/science/article/pii/S0169534704002162#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	everglade mangrove worth	</td><td class="dataPATH"><a href="	http://communitynewspapers.com/florida-international-university/everglades-mangroves-worth-billions-fight-climate-change/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	radicalization of atmosphere and climate change	</td><td class="dataPATH"><a href="	https://www.theguardian.com/environment/climate-consensus-97-per-cent/2016/oct/24/the-atmosphere-is-being-radicalized-by-climate-change#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	preferring microplastics	</td><td class="dataPATH"><a href="	http://www.telegraph.co.uk/news/2016/06/02/dangerous-microplastics-in-oceans-stunt-the-growth-of-fish/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	leaked solar amendment audio	</td><td class="dataPATH"><a href="	http://www.exposedbycmd.org/Florida-Solar-Amendment1-Audio#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	how south florida ends	</td><td class="dataPATH"><a href="	http://www.gizmodo.com.au/2016/08/this-is-how-south-florida-ends/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	birds need native trees	</td><td class="dataPATH"><a href="	https://www.nwf.org/News-and-Magazines/National-Wildlife/Birds/Archives/2015/Chickadees-And-Native-Trees.aspx#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	1879 chart tampa	</td><td class="dataPATH"><a href="	http://www.tampabay.wateratlas.usf.edu/upload/documents/129_1879chart_tampa.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	hillsborough river wiki	</td><td class="dataPATH"><a href="	https://en.wikipedia.org/wiki/Hillsborough_River_(Florida)#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	hillsborough breach	</td><td class="dataPATH"><a href="	http://www.hillsboroughwaterworks.com/water-wars/0401.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	helpful hank reddit	</td><td class="dataPATH"><a href="	https://www.reddit.com/user/helpful_hank#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	panama papers	</td><td class="dataPATH"><a href="	http://panamapapers.sueddeutsche.de/articles/56febff0a1bb8d3c3495adf4/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	follow the money	</td><td class="dataPATH"><a href="	https://www.followthemoney.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	80 percent of roofs good for solar	</td><td class="dataPATH"><a href="	https://www.technologyreview.com/s/603866/googles-new-tool-says-nearly-80-percent-of-roofs-are-sunny-enough-for-solar-panels/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	denier logic breakdown	</td><td class="dataPATH"><a href="	https://thelogicofscience.com/2017/05/23/anti-vaccers-climate-change-deniers-and-anti-gmo-activists-are-all-the-same/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	denial site	</td><td class="dataPATH"><a href="	http://www.co2science.org/about/position/globalwarming.php	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Climate data from satellites corrected	</td><td class="dataPATH"><a href="	https://www.ecowatch.com/data-correction-climate-change-2450843224.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Sabal HDD Site Spill	</td><td class="dataPATH"><a href="	https://www.youtube.com/watch?v=13nDVT4GCps	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Sabal HDD Site Spill Coverage	</td><td class="dataPATH"><a href="	https://truthagainstthemachine.com/exclusive-sabal-trail-pipeline-spills-covered-up-by-federal-agency-pipeline-company/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Climate Science Report hidden @ White House	</td><td class="dataPATH"><a href="	https://apps.washingtonpost.com/g/documents/national/third-draft-of-the-climate-science-special-report/2521/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>	<td class="dataTITLE">	Climate Timeline Display and Predictions	</td><td class="dataPATH"><a href="	http://wxshift.com/climate-change/climate-indicators/us-wildfires	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr><td class="dataTITLE"> fake climate science</td><td class="dataPATH"><a href="https://realclimatescience.com" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">receipts</td><td class="dataCOMMENT">	none	</td>	</tr>
-                  <tr>  <td class="dataTITLE"> rollbacks of env legislation</td><td class="dataPATH"><a href="https://www.nytimes.com/interactive/2017/10/05/climate/trump-environment-rules-reversed.html?_r=0" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">receipts</td><td class="dataCOMMENT">see Drive for unordered list</td></tr>
-                  <tr>	<td class="dataTITLE">	skeptical science new research	</td><td class="dataPATH"><a href="	https://www.skepticalscience.com/new_research_20170904.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-
+              <tr><td class="dataTITLE">tampa bay watch	</td><td class="dataPATH"><a href="	https://app.etapestry.com/cart/TampaBayWatch/default/category.php?ref=253.0.8784952#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	volunteering	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">phenology notebook	</td><td class="dataPATH"><a href="	https://www.usanpn.org/natures_notebook#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	volunteering	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fl epa volunteering	</td><td class="dataPATH"><a href="	https://yosemite.epa.gov/water/volmon.nsf/VST!OpenView&Start=1&Count=30&Expand=10#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	volunteering	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">hillsborough adopt a pond	</td><td class="dataPATH"><a href="	http://www.hch2o.org/adopt-a-pond#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	volunteering	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">pinellas adopt a pond	</td><td class="dataPATH"><a href="	http://www.pinellascounty.org/environment/watershed/adopt-a-pond.htm#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	volunteering	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">tbep tech water assessment	</td><td class="dataPATH"><a href="	https://tbeptech.org/TBEP_TECH_PUBS/2016/TBEP_01_16_2015_Decision_Matrix_Results_Update.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	volunteering	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">keep tb beautiful	</td><td class="dataPATH"><a href="	https://keeptampabaybeautiful.org/environment.php#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	volunteering	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
             </tbody>
           </table>
-</div>
+        </div>
+        <div id="draggable1">
+          <table id="topictableReceipts" class="topicACTION">
+            <caption onclick="toggleTABLES1();">receipts</caption>
+            <thead>
+              <tr><th onclick="sortTableReceipts(0)">TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th onclick="sortTableReceipts(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">1968 warning to fossil fuels	</td><td class="dataPATH"><a href="	https://www.smokeandfumes.org/documents/document16#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">1969 carbon dioxide effects global ecology	</td><td class="dataPATH"><a href="	https://www.smokeandfumes.org/documents/document32#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">dead trees in california	</td><td class="dataPATH"><a href="	https://www.wired.com/2016/06/californias-dying-forests-mean-humans/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">us bee decline	</td><td class="dataPATH"><a href="	http://www.theverge.com/2016/5/10/11652246/honeybee-loss-44-percent-colonies-us-2015-2016#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">la coast receding	</td><td class="dataPATH"><a href="	http://projects.propublica.org/louisiana/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">disappearing groundwater	</td><td class="dataPATH"><a href="	http://hosting.soundslides.com/rh3kr/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">rick scott blind trust	</td><td class="dataPATH"><a href="	http://www.miamiherald.com/news/state/article1976380.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">swfwmd seagrasses	</td><td class="dataPATH"><a href="	http://swfwmd.maps.arcgis.com/apps/StorytellingSwipe/index.html?appid=90c22bc49561431bbf1eb4e2ae7f1796#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">exxon knew	</td><td class="dataPATH"><a href="	http://exxonknew.org/?utm_medium=email#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">in favor of simulation modeling	</td><td class="dataPATH"><a href="	http://www.sciencedirect.com/science/article/pii/S0169534704002162#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">everglade mangrove worth	</td><td class="dataPATH"><a href="	http://communitynewspapers.com/florida-international-university/everglades-mangroves-worth-billions-fight-climate-change/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">radicalization of atmosphere and climate change	</td><td class="dataPATH"><a href="	https://www.theguardian.com/environment/climate-consensus-97-per-cent/2016/oct/24/the-atmosphere-is-being-radicalized-by-climate-change#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">preferring microplastics	</td><td class="dataPATH"><a href="	http://www.telegraph.co.uk/news/2016/06/02/dangerous-microplastics-in-oceans-stunt-the-growth-of-fish/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">leaked solar amendment audio	</td><td class="dataPATH"><a href="	http://www.exposedbycmd.org/Florida-Solar-Amendment1-Audio#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">how south florida ends	</td><td class="dataPATH"><a href="	http://www.gizmodo.com.au/2016/08/this-is-how-south-florida-ends/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">birds need native trees	</td><td class="dataPATH"><a href="	https://www.nwf.org/News-and-Magazines/National-Wildlife/Birds/Archives/2015/Chickadees-And-Native-Trees.aspx#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">1879 chart tampa	</td><td class="dataPATH"><a href="	http://www.tampabay.wateratlas.usf.edu/upload/documents/129_1879chart_tampa.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">hillsborough river wiki	</td><td class="dataPATH"><a href="	https://en.wikipedia.org/wiki/Hillsborough_River_(Florida)#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">hillsborough breach	</td><td class="dataPATH"><a href="	http://www.hillsboroughwaterworks.com/water-wars/0401.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">helpful hank reddit	</td><td class="dataPATH"><a href="	https://www.reddit.com/user/helpful_hank#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">panama papers	</td><td class="dataPATH"><a href="	http://panamapapers.sueddeutsche.de/articles/56febff0a1bb8d3c3495adf4/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">follow the money	</td><td class="dataPATH"><a href="	https://www.followthemoney.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">80 percent of roofs good for solar	</td><td class="dataPATH"><a href="	https://www.technologyreview.com/s/603866/googles-new-tool-says-nearly-80-percent-of-roofs-are-sunny-enough-for-solar-panels/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">denier logic breakdown	</td><td class="dataPATH"><a href="	https://thelogicofscience.com/2017/05/23/anti-vaccers-climate-change-deniers-and-anti-gmo-activists-are-all-the-same/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">denial site	</td><td class="dataPATH"><a href="	http://www.co2science.org/about/position/globalwarming.php	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">climate data from satellites corrected	</td><td class="dataPATH"><a href="	https://www.ecowatch.com/data-correction-climate-change-2450843224.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">sabal HDD Site Spill	</td><td class="dataPATH"><a href="	https://www.youtube.com/watch?v=13nDVT4GCps	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">sabal HDD Site Spill Coverage	</td><td class="dataPATH"><a href="	https://truthagainstthemachine.com/exclusive-sabal-trail-pipeline-spills-covered-up-by-federal-agency-pipeline-company/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">climate Science Report hidden @ White House	</td><td class="dataPATH"><a href="	https://apps.washingtonpost.com/g/documents/national/third-draft-of-the-climate-science-special-report/2521/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">climate Timeline Display and Predictions	</td><td class="dataPATH"><a href="	http://wxshift.com/climate-change/climate-indicators/us-wildfires	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fake climate science</td><td class="dataPATH"><a href="https://realclimatescience.com" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">receipts</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">rollbacks of env legislation</td><td class="dataPATH"><a href="https://www.nytimes.com/interactive/2017/10/05/climate/trump-environment-rules-reversed.html?_r=0" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">receipts</td><td class="dataCOMMENT">see Drive for unordered list</td></tr>
+              <tr><td class="dataTITLE">skeptical science new research	</td><td class="dataPATH"><a href="	https://www.skepticalscience.com/new_research_20170904.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	receipts	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            </tbody>
+          </table>
+        </div>
 
-<div id="draggable9">
- <table id="topictableHistory" class="topicACTION">
-       <caption onclick="toggleTABLES9();">
-          history
-       </caption>
-       <thead>
-          <tr><th onclick="sortTableHistory(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableHistory(1)">  COMMENT</th></tr>
-        </thead>
-        <tbody>
-                <tr>	<td class="dataTITLE">	ten people who mattered to nature	</td><td class="dataPATH"><a href="	http://www.nature.com/news/nature-s-10-1.21157#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	history	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                <tr>	<td class="dataTITLE">	voyage of the hms challenger	</td><td class="dataPATH"><a href="	http://life.bio.sunysb.edu/marinebio/challenger.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	history	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                <tr>	<td class="dataTITLE">	10 women shaped science	</td><td class="dataPATH"><a href="	https://www.interestingshit.com/science/10-women-shaped-science-know/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	history	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                <tr>	<td class="dataTITLE">	portland flag history archive	</td><td class="dataPATH"><a href="	http://efiles.portlandoregon.gov/Record/6965043/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	history	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-                <tr>	<td class="dataTITLE">	nasa history	</td><td class="dataPATH"><a href="	https://history.nasa.gov/SP-4206/ch5.htm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	history	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-        </tbody>
-  </table>
-</div>
-<div id="draggable2">
-   <table id="topictableJustice" class="topicACTION">
-         <caption onclick="toggleTABLES2();">
-            justice
-         </caption>
-         <thead>
-            <tr><th onclick="sortTableJustice(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableJustice(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-            <tr>	<td class="dataTITLE">	congress to federal energy regulatory commissioners	</td><td class="dataPATH"><a href="	https://bishop.house.gov/sites/bishop.house.gov/files/SabalTrailEnvironmentalJusticeLetter102315.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	congressman yoho press statement	</td><td class="dataPATH"><a href="	https://yoho.house.gov/media-center/press-releases/yoho-statement-on-proposed-sabal-trail-pipeline#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	environmental inequality syllabus	</td><td class="dataPATH"><a href="	https://tracyperkins.org/2016/12/26/teaching-environmental-inequality-2016-syllabus/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	environmental justice forum on climate change	</td><td class="dataPATH"><a href="	http://www.weact.org/environmental_justice_leadership_forum_on_climate_change#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	yale systems on flint water crisis	</td><td class="dataPATH"><a href="	http://environment.yale.edu/news/article/Yale-students-apply-systems-thinking-to-Flint-water-contamination-case#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	wiki leaks losing high ground	</td><td class="dataPATH"><a href="	https://www.wired.com/2016/07/wikileaks-officially-lost-moral-high-ground#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	redefin citizenship in anthropocene	</td><td class="dataPATH"><a href="	https://discardstudies.com/2017/03/15/we-need-to-think-about-redefining-citizenship-in-the-anthropocene/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	wind farm protest group	</td><td class="dataPATH"><a href="	https://stopthesethings.com/2017/05/10/vermonters-vent-fury-at-the-wind-industrys-constant-stream-of-lies/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	enacting environmental data justice	</td><td class="dataPATH"><a href="	https://discardstudies.com/2017/05/01/call-for-participation-enacting-environmental-data-justice/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	foia the dead	</td><td class="dataPATH"><a href="	https://foiathedead.org/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	counterterrorism at DAPL	</td><td class="dataPATH"><a href="	https://theintercept.com/2017/05/27/leaked-documents-reveal-security-firms-counterterrorism-tactics-at-standing-rock-to-defeat-pipeline-insurgencies/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	boa environmental financing	</td><td class="dataPATH"><a href="	https://www.environmentalleader.com/2017/09/bofa-details-funding-environmental-initiatives-economic-benefits/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	air potato citizen science	</td><td class="dataPATH"><a href="	https://airpotatobeetle.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>  <td class="dataTITLE"> nyc dna software</td><td class="dataPATH"><a href="https://github.com/propublica/nyc-dna-software " target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">justice</td><td class="dataCOMMENT">	none	</td>	</tr>
-            <tr><td class="dataTITLE">no criminal charges sewage spill</td><td class="dataPATH"><a href="http://www.tampabay.com/news/localgovernment/no-criminal-charges-to-follow-massive-st-pete-sewage-spills/2342594" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">justice</td><td class="dataCOMMENT"></td></tr>
-      </tbody>
-      </table>
-    </div>
-<div id="draggable3">
-   <table id="topictableHumanities" class="topicACTION">
-         <caption onclick="toggleTABLES3();">
-            ecological humanities
-         </caption>
-         <thead>
-            <tr><th onclick="sortTableHumanities(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableHumanities(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-            <tr>	<td class="dataTITLE">	slum health	</td><td class="dataPATH"><a href="	http://www.thelancet.com/series/slum-health#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ecological humanities	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	nature - changing the world	</td><td class="dataPATH"><a href="	http://www.nature.com/news/so-you-want-to-change-the-world-1.21188#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ecological humanities	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	as you sow	</td><td class="dataPATH"><a href="	http://www.asyousow.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ecological humanities	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	beads bodies and trash	</td><td class="dataPATH"><a href="	http://beadsbodiesandtrash.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ecological humanities	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	epa environmental justice	</td><td class="dataPATH"><a href="	https://blog.epa.gov/blog/category/environmental_justice/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ecological humanities	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-
-      </tbody>
-      </table>
-    </div>
-<div id="draggable4">
-   <table id="topictableEthics" class="topicACTION">
-         <caption onclick="toggleTABLES4();">
-            ethics
-         </caption>
-         <thead>
-             <tr><th onclick="sortTableEthics(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableEthics(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-            <tr>	<td class="dataTITLE">	vegan kit	</td><td class="dataPATH"><a href="	http://vegankit.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ethics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	vegan honey debate	</td><td class="dataPATH"><a href="	https://www.vegansociety.com/go-vegan/why-honey-not-vegan#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ethics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	vegan oyster debate	</td><td class="dataPATH"><a href="	https://www.psychologytoday.com/blog/animal-emotions/201006/vegans-and-oysters-if-you-eat-oysters-youre-not-vegan-so-why-the#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ethics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	free speech no-platforming	</td><td class="dataPATH"><a href="	http://freespeechdebate.com/en/discuss/ten-arguments-for-and-against-no-platforming/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ethics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	free speech reply eight	</td><td class="dataPATH"><a href="	http://www.eurozine.com/articles/2014-04-09-heinze-en.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ethics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-          </tbody>
-      </table>
-    </div>
-<div id="draggable5">
-   <table id="topictableLaw" class="topicACTION">
-         <caption onclick="toggleTABLES5();">
-            law
-         </caption>
-         <thead>
-           <tr><th onclick="sortTableLaw(0)">TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th onclick="sortTableLaw(1)">  COMMENT</th></tr>
-         </thead>
-          <tbody>
-            <tr>	<td class="dataTITLE">	final ghg guidance for NEPA reviews	</td><td class="dataPATH"><a href="	http://www.klgates.com/ceq-issues-final-greenhouse-gas-guidance-directing-federal-agencies-to-consider-climate-change-in-their-nepa-reviews-08-04-2016#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	managing change in compliance	</td><td class="dataPATH"><a href="	http://www.environmentalleader.com/2016/11/managing-change-in-environmental-reporting-and-compliance/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	obama harvard law	</td><td class="dataPATH"><a href="	http://harvardlawreview.org/2017/01/the-presidents-role-in-advancing-criminal-justice-reform/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	scalia inspired regulation	</td><td class="dataPATH"><a href="	https://www.eenews.net/stories/1060053351#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	tracking trump	</td><td class="dataPATH"><a href="	https://news.vice.com/story/trump-signed-most-executive-orders-since-wwii#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	trump on earth	</td><td class="dataPATH"><a href="	https://trumponearth.org/episodes/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	isp privacy fire sale	</td><td class="dataPATH"><a href="	http://www.theverge.com/2017/3/29/15100620/congress-fcc-isp-web-browsing-privacy-fire-sale#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	fbi spying on journalists	</td><td class="dataPATH"><a href="	https://theintercept.com/2017/01/31/secret-rules-make-it-pretty-easy-for-the-fbi-to-spy-on-journalists-2/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	protecting your freedoms	</td><td class="dataPATH"><a href="	https://freedom.press/news/11-tips-protecting-your-privacy-and-digital-security-age-trump/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	pending epa regulations	</td><td class="dataPATH"><a href="	http://www.naco.org/resources/status-pending-epa-regulations-interest-counties-1#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	final epa regulations	</td><td class="dataPATH"><a href="	http://www.naco.org/sites/default/files/documents/EPA Regs June 2016_FINAL.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	osha fatalities and catastrophes	</td><td class="dataPATH"><a href="	https://www.osha.gov/dep/fatcat/fy13_federal-state_summaries.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	list of federal statutes	</td><td class="dataPATH"><a href="	https://en.wikipedia.org/wiki/List_of_United_States_federal_environmental_statutes	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	FAC	</td><td class="dataPATH"><a href="	https://www.flrules.org/gateway/Browse.asp?toType=&Sort=ID%20	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	Wiki - Alexander v. Sandoval	</td><td class="dataPATH"><a href="	https://en.wikipedia.org/wiki/Alexander_v._Sandoval	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	CA Environmental Legislation	</td><td class="dataPATH"><a href="	http://envirolaws.org	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	OMB Federal Rule Changes	</td><td class="dataPATH"><a href="	https://www.reginfo.gov/public/do/eAgendaMain?operation=OPERATION_GET_AGENCY_RULE_LIST&currentPub=true&agencyCode=&showStage=active&agencyCd=2000&Image58.x=30&Image58.y=14&Image58=Submit	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>  <td class="dataTITLE">soverign citizens</td><td class="dataPATH"><a href="https://www.reddit.com/r/amibeingdetained/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">law</td><td class="dataCOMMENT">	none	</td>	</tr>
-      </tbody>
-      </table>
-    </div>
-<div id="draggable6">
-   <table id="topictablePolicy" class="topicACTION">
-         <caption onclick="toggleTABLES6();">
-            policy
-         </caption>
-         <thead>
-           <tr><th onclick="sortTablePolicy(0)">TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th onclick="sortTablePolicy(1)">  COMMENT</th></tr>
-          </thead>
-          <tbody>
-            <tr>	<td class="dataTITLE">	presidential record of epa use	</td><td class="dataPATH"><a href="	http://www.powermag.com/big-picture-presidents-power/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	45's connection map	</td><td class="dataPATH"><a href="	http://trump.kimalbrecht.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	right to repair	</td><td class="dataPATH"><a href="	https://motherboard.vice.com/en_us/article/five-states-are-considering-bills-to-legalize-the-right-to-repair-electronics#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	obama clean energy	</td><td class="dataPATH"><a href="	http://science.sciencemag.org/content/early/2017/01/06/science.aam6284.full#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	obama renewable projects	</td><td class="dataPATH"><a href="	http://energy.gov/articles/obama-administration-announces-new-financing-renewable-energy-projects-and-actions-spur-0#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	midwest infrastructure easement decision statement	</td><td class="dataPATH"><a href="	http://mwalliancenow.org/blog/statement-dakota-access-easement-decision#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	epa w water barons	</td><td class="dataPATH"><a href="	http://grist.org/business-technology/why-is-epa-chief-gina-mccarthy-speaking-at-a-conference-full-of-private-water-company-execs/?#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	nyt - myron ebell as epa	</td><td class="dataPATH"><a href="	http://www.nytimes.com/2016/11/12/science/myron-ebell-trump-epa.html?_r=2#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	license to paddle boats	</td><td class="dataPATH"><a href="	http://www.orlandosentinel.com/news/politics/os-paddling-boats-licensing-controversy-20170127-story.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	biosphere 2.0	</td><td class="dataPATH"><a href="	https://motherboard.vice.com/blog/biosphere-2-how-a-sci-fi-stunt-turned-into-the-worlds-biggest-earth-science-lab#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	water rights in ca	</td><td class="dataPATH"><a href="	http://aic.ucdavis.edu/events/outlook05/Sawyer_primer.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	volvo environmental policy	</td><td class="dataPATH"><a href="	https://www.volvoce.com/-/media/volvoce/global/global-site/this-is-volvo-ce/brochures/policy_environment_volvo_eng.pdf?v=yaoxPw#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	beyer house gov doc	</td><td class="dataPATH"><a href="	http://beyer.house.gov/news/documentsingle.aspx?DocumentID=552#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	osha stops reporting	</td><td class="dataPATH"><a href="	https://www.dcreport.org/2017/04/05/no-shame-no-blame-why-youre-not-hearing-about-workers-dying-on-their-jobs/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	electome	</td><td class="dataPATH"><a href="	http://www.electome.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	top political fighters	</td><td class="dataPATH"><a href="	https://www.climaterealityproject.org/blog/three-top-world-leaders-fighting-climate-change#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	walmart cutting emissions	</td><td class="dataPATH"><a href="	https://www.environmentalleader.com/2017/02/walmarts-strong-business-case-cutting-emissions/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	climate change org statements	</td><td class="dataPATH"><a href="	http://scienceblogs.com/significantfigures/index.php/2017/01/07/statements-on-climate-change-from-major-scientific-academies-societies-and-associations-january-2017-update/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	hip hop caucas mustafa ali	</td><td class="dataPATH"><a href="	http://www.hiphopcaucus.org/231-mustafa-ali#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	ewg planet trump	</td><td class="dataPATH"><a href="	http://www.ewg.org/planet-trump#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	trump on clean power plan	</td><td class="dataPATH"><a href="	https://insideclimatenews.org/news/25042017/donald-trump-climate-change-clean-power-plan-paris-agreement	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	pope Frances encyclical	</td><td class="dataPATH"><a href="	http://w2.vatican.va/content/francesco/en/encyclicals/documents/papa-francesco_20150524_enciclica-laudato-si.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	Plastic bottles in national parks	</td><td class="dataPATH"><a href="	https://www.nps.gov/orgs/1207/08-16-2017-water-bottles.htm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	Seattle Bans Straws	</td><td class="dataPATH"><a href="	http://www.wastedive.com/news/seattle-businesses-forgo-plastic-flatware-straws-before-ban-takes-effect/504639/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	nyc foam ban under lawsuit	</td><td class="dataPATH"><a href="	http://www.wastedive.com/news/nyc-foam-policy-faces-lawsuit-from-packaging-restaurant-industries/504873	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	seattle bans plastic cutlery	</td><td class="dataPATH"><a href="	http://www.wastedive.com/news/seattle-businesses-forgo-plastic-flatware-straws-before-ban-takes-effect/504639	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	no paper recycling to protest china ban	</td><td class="dataPATH"><a href="	http://www.ejinsight.com/20170915-group-suspends-waste-paper-recycling-to-protest-china-ban/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	time running out for smooth transition from scrap ban	</td><td class="dataPATH"><a href="	http://www.wastedive.com/news/industry-panel-time-is-running-out-for-a-smooth-transition-on-china-scrap/505334/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	chinese recycling ban affecting US	</td><td class="dataPATH"><a href="	http://www.wastedive.com/news/recyclers-limit-accepted-materials-in-face-of-chinese-import-ban/505466/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	yale carbon fee	</td><td class="dataPATH"><a href="	https://news.yale.edu/2017/09/11/yale-launches-carbon-charge-campus-buildings-and-departments	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	imported solar soon under tariff from China	</td><td class="dataPATH"><a href="	http://www.utilitydive.com/news/itc-finds-injury-to-us-solar-manufacturers-sending-tariff-decision-to-trum/505602/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr><td class="dataTITLE">utility payment assistance in philadelphia</td><td class="dataPATH"><a href="http://www.circleofblue.org/2017/world/philadelphia-water-rate-experiment-aims-help-struggling-residents-pay-bills/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">policy</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLEhot">hillsborough voting</td><td class="dataPATH"><a href="https://www.votehillsborough.org/About-Voting/Election-dates-and-deadlines" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">policy</td><td class="dataCOMMENT"></td></tr>
-      </tbody>
-      </table>
-    </div>
-<div id="draggable7">
-   <table id="topictableEconomics" class="topicACTION">
-         <caption onclick="toggleTABLES7();">
-            economics
-         </caption>
-         <thead>
-           <tr><th onclick="sortTableEconomics(0)">TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th onclick="sortTableEconomics(1)">  COMMENT</th></tr>
-        </thead>
-          <tbody>
-            <tr>	<td class="dataTITLE">	carbon tax	</td><td class="dataPATH"><a href="	https://www.c2es.org/publications/carbon-tax-broader-us-fiscal-reform-design-distributional-issues#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	doe web based financing	</td><td class="dataPATH"><a href="	https://dailyenergyinsider.com/news/2914-doe-introduces-new-web-based-financing-tool-energy-efficiency-projects/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	national renewable energy laboratory renewable	</td><td class="dataPATH"><a href="	http://www.nrel.gov/news/press/2016/39763#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	energy predictions	</td><td class="dataPATH"><a href="	http://www.nrel.gov/news/press/2016/39763#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	udive - gas will beat coal this year	</td><td class="dataPATH"><a href="	http://www.utilitydive.com/news/eia-gas-will-top-coal-for-power-generation-this-year/415371#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	udive - solar and wind under trump	</td><td class="dataPATH"><a href="	http://www.utilitydive.com/news/how-wind-and-solar-plan-to-thrive-during-the-trump-presidency/430313#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	bloomberg new energy finance	</td><td class="dataPATH"><a href="	https://about.bnef.com/blog/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	energy efficiency marketing report	</td><td class="dataPATH"><a href="	http://www.iea.org/EEMR16/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	wind beats hydroelectric	</td><td class="dataPATH"><a href="	https://www.nytimes.com/2017/02/09/business/energy-environment/wind-energy-renewable.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	bloomberg trumps budget	</td><td class="dataPATH"><a href="	https://www.bloomberg.com/graphics/2017-trump-budget/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	quotes on us trade policy	</td><td class="dataPATH"><a href="	http://www.wastedive.com/news/talkin-trash-quotes-on-us-trade-policy-preventable-fatalities-and-more/441988/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	bitcoin blockchain	</td><td class="dataPATH"><a href="	https://www.blocktrail.com/BTC 	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr><td class="dataTITLE">NPS budget justification</td><td class="dataPATH"><a href="https://www.nps.gov/aboutus/upload/FY-2018-NPS-Greenbook.pdf" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">coinbase faq</td><td class="dataPATH"><a href="https://support.coinbase.com/customer/en/portal/topics/744950-bitcoin-basics/articles" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">state of blockchain 2017</td><td class="dataPATH"><a href="https://media.coindesk.com/uploads/2017/09/State-of-Blockchain-Q2-2017-.pdf" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">ibm blockchain</td><td class="dataPATH"><a href="https://www.ibm.com/blockchain/what-is-blockchain.html" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">live bitcoin stats</td><td class="dataPATH"><a href="https://cash.coin.dance" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">redit</td><td class="dataPATH"><a href="www.reddit.com/r/btc" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLEhot">get bitcoin now</td><td class="dataPATH"><a href="https://twitter.com/officialmcafee/status/887024683379544065" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">why bitcoin is better</td><td class="dataPATH"><a href="https://hackernoon.com/money-is-a-social-construct-and-thats-why-you-should-run-a-bitcoin-full-node-ea0330cb69a5" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLE">google alphabet growing</td><td class="dataPATH"><a href="https://www.theatlantic.com/business/archive/2017/10/google-cannot-be-stopped/544202/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
-            <tr><td class="dataTITLEhot">100 cryptocurrencies in 4 words or less</td><td class="dataPATH"><a href="https://refind.com/link/9302540" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
-          </tbody>
-      </table>
-    </div>
-<div id="draggable8">
-      <table id="topictableCompliance" class="topicACTION">
-         <caption onclick="toggleTABLES8();">
-            compliance
-         </caption>
-         <thead>
-           <tr><th onclick="sortTableCompliance(0)">TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th onclick="sortTableCompliance(1)">  COMMENT</th></tr>
-         </thead>
-          <tbody>
-            <tr>	<td class="dataTITLE">	fl water star manual	</td><td class="dataPATH"><a href="	http://floridawaterstar.com/technicalmanual/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	compliance	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	fl hunting regulations	</td><td class="dataPATH"><a href="	http://myfwc.com/hunting/regulations/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	compliance	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	fl erc	</td><td class="dataPATH"><a href="	https://www.flsenate.gov/PublishedContent/Session/2012/InterimReports/2012-120ep.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	compliance	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	state resource locator	</td><td class="dataPATH"><a href="	http://www.envcap.org/statetools/index.cfm#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	compliance	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	FAC 62 780	</td><td class="dataPATH"><a href="	https://www.flrules.org/gateway/ChapterHome.asp?Chapter=62-780	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	compliance	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-            <tr>	<td class="dataTITLE">	SWFWMD Violations	</td><td class="dataPATH"><a href="	http://www.swfwmd.state.fl.us/conservation/restrictions/water-violations/comments.php	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	compliance	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-         </tbody>
-      </table>
-    </div>
+        <div id="draggable9">
+          <table id="topictableHistory" class="topicACTION">
+            <caption onclick="toggleTABLES9();">history</caption>
+            <thead>
+              <tr><th onclick="sortTableHistory(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableHistory(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">ten people who mattered to nature	</td><td class="dataPATH"><a href="	http://www.nature.com/news/nature-s-10-1.21157#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	history	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">voyage of the hms challenger	</td><td class="dataPATH"><a href="	http://life.bio.sunysb.edu/marinebio/challenger.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	history	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">10 women shaped science	</td><td class="dataPATH"><a href="	https://www.interestingshit.com/science/10-women-shaped-science-know/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	history	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">portland flag history archive	</td><td class="dataPATH"><a href="	http://efiles.portlandoregon.gov/Record/6965043/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	history	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">nasa history	</td><td class="dataPATH"><a href="	https://history.nasa.gov/SP-4206/ch5.htm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	history	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable2">
+          <table id="topictableJustice" class="topicACTION">
+            <caption onclick="toggleTABLES2();">justice</caption>
+            <thead>
+              <tr><th onclick="sortTableJustice(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableJustice(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">congress to federal energy regulatory commissioners	</td><td class="dataPATH"><a href="	https://bishop.house.gov/sites/bishop.house.gov/files/SabalTrailEnvironmentalJusticeLetter102315.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">congressman yoho press statement	</td><td class="dataPATH"><a href="	https://yoho.house.gov/media-center/press-releases/yoho-statement-on-proposed-sabal-trail-pipeline#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">environmental inequality syllabus	</td><td class="dataPATH"><a href="	https://tracyperkins.org/2016/12/26/teaching-environmental-inequality-2016-syllabus/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">environmental justice forum on climate change	</td><td class="dataPATH"><a href="	http://www.weact.org/environmental_justice_leadership_forum_on_climate_change#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">yale systems on flint water crisis	</td><td class="dataPATH"><a href="	http://environment.yale.edu/news/article/Yale-students-apply-systems-thinking-to-Flint-water-contamination-case#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">wiki leaks losing high ground	</td><td class="dataPATH"><a href="	https://www.wired.com/2016/07/wikileaks-officially-lost-moral-high-ground#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">redefining citizenship in anthropocene	</td><td class="dataPATH"><a href="	https://discardstudies.com/2017/03/15/we-need-to-think-about-redefining-citizenship-in-the-anthropocene/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">wind farm protest group	</td><td class="dataPATH"><a href="	https://stopthesethings.com/2017/05/10/vermonters-vent-fury-at-the-wind-industrys-constant-stream-of-lies/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">enacting environmental data justice	</td><td class="dataPATH"><a href="	https://discardstudies.com/2017/05/01/call-for-participation-enacting-environmental-data-justice/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">foia the dead	</td><td class="dataPATH"><a href="	https://foiathedead.org/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">counterterrorism at DAPL	</td><td class="dataPATH"><a href="	https://theintercept.com/2017/05/27/leaked-documents-reveal-security-firms-counterterrorism-tactics-at-standing-rock-to-defeat-pipeline-insurgencies/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">boa environmental financing	</td><td class="dataPATH"><a href="	https://www.environmentalleader.com/2017/09/bofa-details-funding-environmental-initiatives-economic-benefits/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">air potato citizen science	</td><td class="dataPATH"><a href="	https://airpotatobeetle.com	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	justice	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr> <td class="dataTITLE">nyc dna software</td><td class="dataPATH"><a href="https://github.com/propublica/nyc-dna-software " target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">justice</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">no criminal charges sewage spill</td><td class="dataPATH"><a href="http://www.tampabay.com/news/localgovernment/no-criminal-charges-to-follow-massive-st-pete-sewage-spills/2342594" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">justice</td><td class="dataCOMMENT"></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable3">
+          <table id="topictableHumanities" class="topicACTION">
+            <caption onclick="toggleTABLES3();">ecological humanities</caption>
+            <thead>
+              <tr><th onclick="sortTableHumanities(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableHumanities(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">slum health	</td><td class="dataPATH"><a href="	http://www.thelancet.com/series/slum-health#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ecological humanities	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">nature - changing the world	</td><td class="dataPATH"><a href="	http://www.nature.com/news/so-you-want-to-change-the-world-1.21188#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ecological humanities	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">as you sow	</td><td class="dataPATH"><a href="	http://www.asyousow.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ecological humanities	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">beads bodies and trash	</td><td class="dataPATH"><a href="	http://beadsbodiesandtrash.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ecological humanities	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">epa environmental justice	</td><td class="dataPATH"><a href="	https://blog.epa.gov/blog/category/environmental_justice/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ecological humanities	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable4">
+          <table id="topictableEthics" class="topicACTION">
+            <caption onclick="toggleTABLES4();">ethics</caption>
+            <thead>
+              <tr><th onclick="sortTableEthics(0)">   TITLE</th><th>  </th><th>DATE</th><th>TOPIC</th><th onclick="sortTableEthics(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">vegan kit	</td><td class="dataPATH"><a href="	http://vegankit.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ethics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">vegan honey debate	</td><td class="dataPATH"><a href="	https://www.vegansociety.com/go-vegan/why-honey-not-vegan#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ethics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">vegan oyster debate	</td><td class="dataPATH"><a href="	https://www.psychologytoday.com/blog/animal-emotions/201006/vegans-and-oysters-if-you-eat-oysters-youre-not-vegan-so-why-the#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ethics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">free speech no-platforming	</td><td class="dataPATH"><a href="	http://freespeechdebate.com/en/discuss/ten-arguments-for-and-against-no-platforming/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ethics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">free speech reply eight	</td><td class="dataPATH"><a href="	http://www.eurozine.com/articles/2014-04-09-heinze-en.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	ethics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable5">
+          <table id="topictableLaw" class="topicACTION">
+            <caption onclick="toggleTABLES5();">law</caption>
+            <thead>
+              <tr><th onclick="sortTableLaw(0)">TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th onclick="sortTableLaw(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">final ghg guidance for NEPA reviews	</td><td class="dataPATH"><a href="	http://www.klgates.com/ceq-issues-final-greenhouse-gas-guidance-directing-federal-agencies-to-consider-climate-change-in-their-nepa-reviews-08-04-2016#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">managing change in compliance	</td><td class="dataPATH"><a href="	http://www.environmentalleader.com/2016/11/managing-change-in-environmental-reporting-and-compliance/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">obama harvard law	</td><td class="dataPATH"><a href="	http://harvardlawreview.org/2017/01/the-presidents-role-in-advancing-criminal-justice-reform/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">scalia inspired regulation	</td><td class="dataPATH"><a href="	https://www.eenews.net/stories/1060053351#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">tracking trump	</td><td class="dataPATH"><a href="	https://news.vice.com/story/trump-signed-most-executive-orders-since-wwii#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">trump on earth	</td><td class="dataPATH"><a href="	https://trumponearth.org/episodes/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">isp privacy fire sale	</td><td class="dataPATH"><a href="	http://www.theverge.com/2017/3/29/15100620/congress-fcc-isp-web-browsing-privacy-fire-sale#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fbi spying on journalists	</td><td class="dataPATH"><a href="	https://theintercept.com/2017/01/31/secret-rules-make-it-pretty-easy-for-the-fbi-to-spy-on-journalists-2/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">protecting your freedoms	</td><td class="dataPATH"><a href="	https://freedom.press/news/11-tips-protecting-your-privacy-and-digital-security-age-trump/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">pending epa regulations	</td><td class="dataPATH"><a href="	http://www.naco.org/resources/status-pending-epa-regulations-interest-counties-1#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">final epa regulations	</td><td class="dataPATH"><a href="	http://www.naco.org/sites/default/files/documents/EPA Regs June 2016_FINAL.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">osha fatalities and catastrophes	</td><td class="dataPATH"><a href="	https://www.osha.gov/dep/fatcat/fy13_federal-state_summaries.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">list of federal statutes	</td><td class="dataPATH"><a href="	https://en.wikipedia.org/wiki/List_of_United_States_federal_environmental_statutes	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fl admnistrative code</td><td class="dataPATH"><a href="	https://www.flrules.org/gateway/Browse.asp?toType=&Sort=ID%20	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">alexander v. Sandoval	</td><td class="dataPATH"><a href="	https://en.wikipedia.org/wiki/Alexander_v._Sandoval	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">ca Environmental Legislation	</td><td class="dataPATH"><a href="	http://envirolaws.org	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">omb Federal Rule Changes	</td><td class="dataPATH"><a href="	https://www.reginfo.gov/public/do/eAgendaMain?operation=OPERATION_GET_AGENCY_RULE_LIST&currentPub=true&agencyCode=&showStage=active&agencyCd=2000&Image58.x=30&Image58.y=14&Image58=Submit	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	law	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr> <td class="dataTITLE">soverign citizens</td><td class="dataPATH"><a href="https://www.reddit.com/r/amibeingdetained/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">law</td><td class="dataCOMMENT">	none	</td>	</tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable6">
+          <table id="topictablePolicy" class="topicACTION">
+            <caption onclick="toggleTABLES6();">policy</caption>
+            <thead>
+              <tr><th onclick="sortTablePolicy(0)">TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th onclick="sortTablePolicy(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">presidential record of epa use	</td><td class="dataPATH"><a href="	http://www.powermag.com/big-picture-presidents-power/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLEhot">45's connection map	</td><td class="dataPATH"><a href="	http://trump.kimalbrecht.com/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">right to repair	</td><td class="dataPATH"><a href="	https://motherboard.vice.com/en_us/article/five-states-are-considering-bills-to-legalize-the-right-to-repair-electronics#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">obama clean energy	</td><td class="dataPATH"><a href="	http://science.sciencemag.org/content/early/2017/01/06/science.aam6284.full#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">obama renewable projects	</td><td class="dataPATH"><a href="	http://energy.gov/articles/obama-administration-announces-new-financing-renewable-energy-projects-and-actions-spur-0#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">midwest infrastructure easement decision statement	</td><td class="dataPATH"><a href="	http://mwalliancenow.org/blog/statement-dakota-access-easement-decision#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">epa w water barons	</td><td class="dataPATH"><a href="	http://grist.org/business-technology/why-is-epa-chief-gina-mccarthy-speaking-at-a-conference-full-of-private-water-company-execs/?#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">nyt - myron ebell as epa	</td><td class="dataPATH"><a href="	http://www.nytimes.com/2016/11/12/science/myron-ebell-trump-epa.html?_r=2#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">license to paddle boats	</td><td class="dataPATH"><a href="	http://www.orlandosentinel.com/news/politics/os-paddling-boats-licensing-controversy-20170127-story.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">biosphere 2.0	</td><td class="dataPATH"><a href="	https://motherboard.vice.com/blog/biosphere-2-how-a-sci-fi-stunt-turned-into-the-worlds-biggest-earth-science-lab#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">water rights in ca	</td><td class="dataPATH"><a href="	http://aic.ucdavis.edu/events/outlook05/Sawyer_primer.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">volvo environmental policy	</td><td class="dataPATH"><a href="	https://www.volvoce.com/-/media/volvoce/global/global-site/this-is-volvo-ce/brochures/policy_environment_volvo_eng.pdf?v=yaoxPw#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">beyer house gov doc	</td><td class="dataPATH"><a href="	http://beyer.house.gov/news/documentsingle.aspx?DocumentID=552#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">osha stops reporting	</td><td class="dataPATH"><a href="	https://www.dcreport.org/2017/04/05/no-shame-no-blame-why-youre-not-hearing-about-workers-dying-on-their-jobs/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">electome	</td><td class="dataPATH"><a href="	http://www.electome.org/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">top political fighters	</td><td class="dataPATH"><a href="	https://www.climaterealityproject.org/blog/three-top-world-leaders-fighting-climate-change#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">walmart cutting emissions	</td><td class="dataPATH"><a href="	https://www.environmentalleader.com/2017/02/walmarts-strong-business-case-cutting-emissions/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">climate change org statements	</td><td class="dataPATH"><a href="	http://scienceblogs.com/significantfigures/index.php/2017/01/07/statements-on-climate-change-from-major-scientific-academies-societies-and-associations-january-2017-update/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">hip hop caucas mustafa ali	</td><td class="dataPATH"><a href="	http://www.hiphopcaucus.org/231-mustafa-ali#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">ewg planet trump	</td><td class="dataPATH"><a href="	http://www.ewg.org/planet-trump#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">trump on clean power plan	</td><td class="dataPATH"><a href="	https://insideclimatenews.org/news/25042017/donald-trump-climate-change-clean-power-plan-paris-agreement	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">pope Frances encyclical	</td><td class="dataPATH"><a href="	http://w2.vatican.va/content/francesco/en/encyclicals/documents/papa-francesco_20150524_enciclica-laudato-si.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">plastic bottles in national parks	</td><td class="dataPATH"><a href="	https://www.nps.gov/orgs/1207/08-16-2017-water-bottles.htm	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">seattle Bans Straws	</td><td class="dataPATH"><a href="	http://www.wastedive.com/news/seattle-businesses-forgo-plastic-flatware-straws-before-ban-takes-effect/504639/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">nyc foam ban under lawsuit	</td><td class="dataPATH"><a href="	http://www.wastedive.com/news/nyc-foam-policy-faces-lawsuit-from-packaging-restaurant-industries/504873	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">seattle bans plastic cutlery	</td><td class="dataPATH"><a href="	http://www.wastedive.com/news/seattle-businesses-forgo-plastic-flatware-straws-before-ban-takes-effect/504639	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">no paper recycling to protest china ban	</td><td class="dataPATH"><a href="	http://www.ejinsight.com/20170915-group-suspends-waste-paper-recycling-to-protest-china-ban/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">time running out for smooth transition from scrap ban	</td><td class="dataPATH"><a href="	http://www.wastedive.com/news/industry-panel-time-is-running-out-for-a-smooth-transition-on-china-scrap/505334/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">chinese recycling ban affecting US	</td><td class="dataPATH"><a href="	http://www.wastedive.com/news/recyclers-limit-accepted-materials-in-face-of-chinese-import-ban/505466/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">yale carbon fee	</td><td class="dataPATH"><a href="	https://news.yale.edu/2017/09/11/yale-launches-carbon-charge-campus-buildings-and-departments	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">imported solar soon under tariff from China	</td><td class="dataPATH"><a href="	http://www.utilitydive.com/news/itc-finds-injury-to-us-solar-manufacturers-sending-tariff-decision-to-trum/505602/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	policy	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">utility payment assistance in philadelphia</td><td class="dataPATH"><a href="http://www.circleofblue.org/2017/world/philadelphia-water-rate-experiment-aims-help-struggling-residents-pay-bills/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">policy</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLEhot">hillsborough voting</td><td class="dataPATH"><a href="https://www.votehillsborough.org/About-Voting/Election-dates-and-deadlines" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">policy</td><td class="dataCOMMENT"></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable7">
+          <table id="topictableEconomics" class="topicACTION">
+            <caption onclick="toggleTABLES7();">economics</caption>
+            <thead>
+              <tr><th onclick="sortTableEconomics(0)">TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th onclick="sortTableEconomics(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">carbon tax	</td><td class="dataPATH"><a href="	https://www.c2es.org/publications/carbon-tax-broader-us-fiscal-reform-design-distributional-issues#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">doe web based financing	</td><td class="dataPATH"><a href="	https://dailyenergyinsider.com/news/2914-doe-introduces-new-web-based-financing-tool-energy-efficiency-projects/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">national renewable energy laboratory renewable	</td><td class="dataPATH"><a href="	http://www.nrel.gov/news/press/2016/39763#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">energy predictions	</td><td class="dataPATH"><a href="	http://www.nrel.gov/news/press/2016/39763#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">udive - gas will beat coal this year	</td><td class="dataPATH"><a href="	http://www.utilitydive.com/news/eia-gas-will-top-coal-for-power-generation-this-year/415371#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">udive - solar and wind under trump	</td><td class="dataPATH"><a href="	http://www.utilitydive.com/news/how-wind-and-solar-plan-to-thrive-during-the-trump-presidency/430313#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">bloomberg new energy finance	</td><td class="dataPATH"><a href="	https://about.bnef.com/blog/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">energy efficiency marketing report	</td><td class="dataPATH"><a href="	http://www.iea.org/EEMR16/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">wind beats hydroelectric	</td><td class="dataPATH"><a href="	https://www.nytimes.com/2017/02/09/business/energy-environment/wind-energy-renewable.html#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">bloomberg trumps budget	</td><td class="dataPATH"><a href="	https://www.bloomberg.com/graphics/2017-trump-budget/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">quotes on us trade policy	</td><td class="dataPATH"><a href="	http://www.wastedive.com/news/talkin-trash-quotes-on-us-trade-policy-preventable-fatalities-and-more/441988/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">bitcoin blockchain	</td><td class="dataPATH"><a href="	https://www.blocktrail.com/BTC 	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	economics	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">nps budget justification</td><td class="dataPATH"><a href="https://www.nps.gov/aboutus/upload/FY-2018-NPS-Greenbook.pdf" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">coinbase faq</td><td class="dataPATH"><a href="https://support.coinbase.com/customer/en/portal/topics/744950-bitcoin-basics/articles" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">state of blockchain 2017</td><td class="dataPATH"><a href="https://media.coindesk.com/uploads/2017/09/State-of-Blockchain-Q2-2017-.pdf" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">ibm blockchain</td><td class="dataPATH"><a href="https://www.ibm.com/blockchain/what-is-blockchain.html" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">live bitcoin stats</td><td class="dataPATH"><a href="https://cash.coin.dance" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">reddit bitcoin</td><td class="dataPATH"><a href="www.reddit.com/r/btc" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLEhot">get bitcoin now</td><td class="dataPATH"><a href="https://twitter.com/officialmcafee/status/887024683379544065" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">why bitcoin is better</td><td class="dataPATH"><a href="https://hackernoon.com/money-is-a-social-construct-and-thats-why-you-should-run-a-bitcoin-full-node-ea0330cb69a5" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLE">google alphabet growing</td><td class="dataPATH"><a href="https://www.theatlantic.com/business/archive/2017/10/google-cannot-be-stopped/544202/" target="_blank">↗︎</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
+              <tr><td class="dataTITLEhot">100 cryptocurrencies in 4 words or less</td><td class="dataPATH"><a href="https://refind.com/link/9302540" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">economics</td><td class="dataCOMMENT"></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="draggable8">
+          <table id="topictableCompliance" class="topicACTION">
+            <caption onclick="toggleTABLES8();">compliance</caption>
+            <thead>
+              <tr><th onclick="sortTableCompliance(0)">TITLE</th><th></th><th>DATE</th><th>TOPIC</th><th onclick="sortTableCompliance(1)">  COMMENT</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="dataTITLE">fl water star manual	</td><td class="dataPATH"><a href="	http://floridawaterstar.com/technicalmanual/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	compliance	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fl hunting regulations	</td><td class="dataPATH"><a href="	http://myfwc.com/hunting/regulations/#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	compliance	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fl erc	</td><td class="dataPATH"><a href="	https://www.flsenate.gov/PublishedContent/Session/2012/InterimReports/2012-120ep.pdf#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	compliance	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">state resource locator	</td><td class="dataPATH"><a href="	http://www.envcap.org/statetools/index.cfm#	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	compliance	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">fac 62 780	</td><td class="dataPATH"><a href="	https://www.flrules.org/gateway/ChapterHome.asp?Chapter=62-780	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	compliance	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE">swfwmd violations	</td><td class="dataPATH"><a href="	http://www.swfwmd.state.fl.us/conservation/restrictions/water-violations/comments.php	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	compliance	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
+            </tbody>
+          </table>
+        </div>
 
 
-    <div id="footer" class="headerSUB">
-      <table>
-       <tr>
-         <td style="width:50%;">
-          <a href="https://www.twitter.com/repneuable" target="_blank"><img title="Twitter" alt="Twitter" src="../../resources/icons/twitter-icon.png" width="15" height="15" /></a>
-          <a href="https://www.instagram.com/khitt7/" target="_blank"><img title="Instagram" alt="Instagram" src="../../resources/icons/instagram-icon.png" width="15" height="15" /></a>
-          <a href="https://www.facebook.com/kevin.hitt.98" target="_blank"><img title="Facebook" alt="Facebook" src="../../resources/icons/facebook-icon.png" width="15" height="15" /></a>
-          <a href="https://www.linkedin.com/in/kevin-hitt-7aa93ab8/" target="_blank"><img title="LinkedIn" alt="LinkedIn" src="../../resources/icons/linkedin-icon.png" width="15" height="15" /></a>
-          <a href="https://www.reddit.com/user/hittww/" target="_blank"><img title="Reddit" alt="Reddit" src="../../resources/icons/reddit-icon.png" width="15" height="15" /></a>
-          <a href="https://www.soundcloud.com/repneuable" target="_blank"><img title="Soundcloud" alt="Soundcloud" src="../../resources/icons/soundcloud-icon.png" width="15" height="15"/></a>
-          <a href="https://github.com/repneuable" target="_blank"><img title="GitHub" alt="GitHub" src="../../resources/icons/github-icon.png" width="15" height="15" /></a>
-       </td>
-          <td>
-              <div style="float:left; margin-left: 10px;">
-
-              <a href="../comments.html"><img title="Comments" alt="Comments" src="../../resources/icons/comment-icon.png" width="17" height="17" /></a>
-              <a href="../resume.html"><img title="Resume" alt="Resume" src="../../resources/icons/resume-icon.png" width="17" height="17" /></a>
-              <a href="../file_listing.html"><img title="Files" alt="Files" src="../../resources/icons/file-icon.png" width="17" height="17" /></a>
-              <a href="../../index.html"><img title="Site Index" alt="Site Index" src="../../resources/icons/tree-icon.png" width="17" height="17" /></a>
-
-              </div><div style="float:right; margin-right: 10px;" id="expandFOOTER">
-                <a><img onclick="expandFOOTER()" src="../../resources/icons/expand-icon.png" width="20" height="20" id="expandICON"/></a></div>
-          </td>
-        </tr>
-      </table>
-    </div>
-    </div> <!--close container-->
-  </div> <!--close section-->
-</body>
-
+        <div id="footer" class="headerSUB">
+          <table>
+            <tr>
+              <td style="width:50%;">
+                <a href="https://www.twitter.com/repneuable" target="_blank"><img title="Twitter" alt="Twitter" src="../../resources/icons/twitter-icon.png" width="15" height="15" /></a>
+                <a href="https://www.instagram.com/khitt7/" target="_blank"><img title="Instagram" alt="Instagram" src="../../resources/icons/instagram-icon.png" width="15" height="15" /></a>
+                <a href="https://www.facebook.com/kevin.hitt.98" target="_blank"><img title="Facebook" alt="Facebook" src="../../resources/icons/facebook-icon.png" width="15" height="15" /></a>
+                <a href="https://www.linkedin.com/in/kevin-hitt-7aa93ab8/" target="_blank"><img title="LinkedIn" alt="LinkedIn" src="../../resources/icons/linkedin-icon.png" width="15" height="15" /></a>
+                <a href="https://www.reddit.com/user/hittww/" target="_blank"><img title="Reddit" alt="Reddit" src="../../resources/icons/reddit-icon.png" width="15" height="15" /></a>
+                <a href="https://www.soundcloud.com/repneuable" target="_blank"><img title="Soundcloud" alt="Soundcloud" src="../../resources/icons/soundcloud-icon.png" width="15" height="15"/></a>
+                <a href="https://github.com/repneuable/water/blob/master/HTM7/topics/action.html" target="_blank"><img title="GitHub" alt="GitHub" src="../../resources/icons/github-icon.png" width="15" height="15" /></a>
+              </td>
+              <td>
+                <div style="float:left; margin-left: 10px;">
+                <a href="../comments.html"><img title="Comments" alt="Comments" src="../../resources/icons/comment-icon.png" width="17" height="17" /></a>
+                <a href="../resume.html"><img title="Resume" alt="Resume" src="../../resources/icons/resume-icon.png" width="17" height="17" /></a>
+                <a href="../file_listing.html"><img title="Files" alt="Files" src="../../resources/icons/file-icon.png" width="17" height="17" /></a>
+                <a href="../../index.html"><img title="Site Index" alt="Site Index" src="../../resources/icons/tree-icon.png" width="17" height="17" /></a>
+                </div>
+                <div style="float:right; margin-right: 10px;" id="expandFOOTER">
+                  <a><img onclick="expandFOOTER()" src="../../resources/icons/expand-icon.png" width="20" height="20" id="expandICON"/></a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div> <!--close container-->
+    </div> <!--close section-->
+  </body>
 </html>
