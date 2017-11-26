@@ -58,6 +58,8 @@ function toggleCONVERTER() {
     document.getElementById("draggable1-alt").style.display = "inline-table";
     document.getElementById("draggable2-alt").style.display = "inline-table";
     document.getElementById("draggable3-alt").style.display = "table-row";
+    document.getElementById("draggable4-alt").style.display = "inline-table";
+    document.getElementById("draggable1").style.display = "none";
 }
 
 
