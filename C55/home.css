@@ -12,6 +12,7 @@
 *******************************/
 
 
+
 html, body {
  width: 100%;
  height: 100%;
@@ -22,6 +23,7 @@ html, body {
  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
  -webkit-font-smoothing: antialiased;
 }
+
 
 form {
   display: inline-block;
@@ -574,10 +576,13 @@ MOBILE
 
 @media only screen and (max-device-width: 480px){
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
 
       html, body{
         font: bold 300 1em/1.5em "Helvetica Neue", "Raleway", Arial, sans-serif;
-        -webkit-font-smoothing: antialiased; }
+        -webkit-font-smoothing: antialiased;
+        font-family: 'Roboto Slab', serif !important;
+        }
       form { display: inline-block;
               margin-left: 2%;
             }
