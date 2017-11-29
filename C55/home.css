@@ -791,7 +791,7 @@ MOBILE
       }
           .topicCALM td {
             text-align: left;
-            font-size: 12px;
+            font-size: 6px;
 
           }
           .topicCALM td:first-child {
@@ -818,7 +818,7 @@ MOBILE
 
       .topicECO td {
         text-align: left;
-        font-size: 12px;
+        font-size: 6px;
       }
       .topicECO td:first-child {
         min-width: 134px !important;
@@ -841,7 +841,7 @@ MOBILE
 
       .topicACTION td {
         text-align: left;
-        font-size: 12px;
+        font-size: 6px;
       }
       .topicACTION td:first-child {
         min-width: 134px !important;
@@ -863,7 +863,7 @@ MOBILE
 
       .topicSTUDY td {
         text-align: left;
-        font-size: 12px;
+        font-size: 6px;
       }
       .topicSTUDY td:first-child {
         min-width: 134px !important;
@@ -885,7 +885,7 @@ MOBILE
 
       .topicGEN td {
         text-align: left;
-        font-size: 12px;
+        font-size: 6px;
          width: 1%;
       }
       .topicGEN td:first-child {
