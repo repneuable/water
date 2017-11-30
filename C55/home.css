@@ -910,6 +910,7 @@ MOBILE
       /*REST*/
       .dataTITLE{
         white-space: nowrap;
+        font-size: 6px;
       }
       .dataPATH {
        text-align: center;
