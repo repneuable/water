@@ -919,10 +919,10 @@ MOBILE
       .dataDATE {
         width: 1px;
         white-space: nowrap;
-        display: none;
+        display: none !important;
       }
       .dataDATE th{
-        display: none;
+        display: none !important;
       }
 
       .dataCAT{
