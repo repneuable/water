@@ -807,7 +807,7 @@ MOBILE
             min-width: 134px !important;
             word-break: break-word;
             white-space: normal;
-            font-size: 0.78em !important;
+            font-size: 0.58em !important;
           }
           .topicCALM td:nth-child(4){
             width: 1%;
@@ -832,7 +832,7 @@ MOBILE
         min-width: 134px !important;
         word-break: break-word;
         white-space: normal;
-        font-size: 0.78em !important;
+        font-size: 0.58em !important;
       }
       .topicECO td:nth-child(4){
         width: 1%;
@@ -854,7 +854,7 @@ MOBILE
         min-width: 134px !important;
         word-break: break-word;
         white-space: normal;
-        font-size: 0.78em !important;
+        font-size: 0.58em !important;
       }
       .topicACTION td:nth-child(4){
         width: 1%;
@@ -875,7 +875,7 @@ MOBILE
         min-width: 134px !important;
         word-break: break-word;
         white-space: normal;
-        font-size: 0.78em !important;
+        font-size: 0.58em !important;
       }
       .topicSTUDY td:nth-child(4){
         width: 1%;
@@ -897,7 +897,7 @@ MOBILE
         min-width: 134px !important;
         word-break: break-word;
         white-space: normal;
-        font-size: 0.78em !important;
+        font-size: 0.58em !important;
       }
       .topicGEN td:nth-child(4){
         width: 1%;
@@ -921,7 +921,7 @@ MOBILE
         white-space: nowrap;
         display: none;
       }
-      thead:nth-child(2){
+      tr:nth-child(3){
         display: none;
       }
       .dataCAT{
