@@ -921,9 +921,7 @@ MOBILE
         white-space: nowrap;
         display: none;
       }
-        tr td:nth-child(3) {
-        display: none;
-      }
+      
       .dataCAT{
        white-space: nowrap;
       }
