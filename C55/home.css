@@ -379,7 +379,7 @@ button {
   text-align: left;
 }
 .topicCALM td:first-child {
-  font-style: italic;
+  font-style: normal;
   font-weight: 310;
   border-color: gray;
 }
@@ -398,7 +398,7 @@ button {
   text-align: left;
 }
 .topicECO td:first-child{
-  font-style: italic;
+  font-style: normal;
   font-weight: 310;
   border-color: gray;
 }
@@ -413,7 +413,7 @@ button {
   text-align: left;
 }
 .topicACTION td:first-child{
-  font-style: italic;
+  font-style: normal;
   font-weight: 310;
   border-color: gray;
 }
@@ -428,7 +428,7 @@ button {
   text-align: left;
 }
 .topicSTUDY td:first-child{
-  font-style: italic;
+  font-style: normal;
   font-weight: 310;
   border-color: gray;
 }
@@ -443,7 +443,7 @@ button {
   text-align: left;
 }
 .topicGEN td:first-child{
-  font-style: italic;
+  font-style: normal;
   font-weight: 310;
   border-color: gray;
 }
@@ -921,7 +921,7 @@ MOBILE
         white-space: nowrap;
         display: none;
       }
-        table#container tr:nth-child(4) {
+        tr td:nth-child(3) {
         display: none;
       }
       .dataCAT{
