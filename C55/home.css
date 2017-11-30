@@ -801,14 +801,13 @@ MOBILE
       }
           .topicCALM td {
             text-align: left;
-            font-size: 6px;
 
           }
           .topicCALM td:first-child {
             min-width: 134px !important;
             word-break: break-word;
             white-space: normal;
-            font-size: 0.68em !important;
+            font-size: 0.18em !important;
           }
           .topicCALM td:nth-child(4){
             width: 1%;
@@ -828,13 +827,12 @@ MOBILE
 
       .topicECO td {
         text-align: left;
-        font-size: 6px;
       }
       .topicECO td:first-child {
         min-width: 134px !important;
         word-break: break-word;
         white-space: normal;
-        font-size: 0.68em !important;
+        font-size: 0.18em !important;
       }
       .topicECO td:nth-child(4){
         width: 1%;
@@ -851,13 +849,12 @@ MOBILE
 
       .topicACTION td {
         text-align: left;
-        font-size: 6px;
       }
       .topicACTION td:first-child {
         min-width: 134px !important;
         word-break: break-word;
         white-space: normal;
-        font-size: 0.68em !important;
+        font-size: 0.18em !important;
       }
       .topicACTION td:nth-child(4){
         width: 1%;
@@ -873,13 +870,12 @@ MOBILE
 
       .topicSTUDY td {
         text-align: left;
-        font-size: 6px;
       }
       .topicSTUDY td:first-child {
         min-width: 134px !important;
         word-break: break-word;
         white-space: normal;
-        font-size: 0.68em !important;
+        font-size: 0.18em !important;
       }
       .topicSTUDY td:nth-child(4){
         width: 1%;
@@ -895,14 +891,13 @@ MOBILE
 
       .topicGEN td {
         text-align: left;
-        font-size: 6px;
          width: 1%;
       }
       .topicGEN td:first-child {
         min-width: 134px !important;
         word-break: break-word;
         white-space: normal;
-        font-size: 0.68em !important;
+        font-size: 0.18em !important;
       }
       .topicGEN td:nth-child(4){
         width: 1%;
@@ -915,11 +910,10 @@ MOBILE
       /*REST*/
       .dataTITLE{
         white-space: nowrap;
-        font-size: 8px;
       }
       .dataPATH {
        text-align: center;
-       font-size: 10px;
+       font-size: 10px !important;
       }
 
       .dataDATE {
