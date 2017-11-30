@@ -68,6 +68,8 @@ head {
  background-color: #e4a1b3;
  background-image: url("http://www.geocraft.com/WVFossils/PageMill_Images/background3.jpg");
  background-image: url("../resources/icons/background-alt.jpg");
+ background-image: url("../resources/icons/background4.gif");
+ background-image: url("../resources/icons/background5.gif");
  height: 100%;
 
  padding-top: 7%;
@@ -80,6 +82,8 @@ head {
   background-color: #d0d0d0;
 
   background-image: url("../resources/icons/background-alt.jpg");
+  background-image: url("../resources/icons/background4.gif");
+  background-image: url("../resources/icons/background5.gif");
   padding-top: 7%;
   padding-bottom: 7.5%;
   height: 100%;
