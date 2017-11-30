@@ -921,9 +921,6 @@ MOBILE
         white-space: nowrap;
         display: none !important;
       }
-      th.dataDATE {
-        display: none !important;
-      }
 
       .dataCAT{
        white-space: nowrap;
