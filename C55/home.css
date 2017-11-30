@@ -549,7 +549,7 @@ input[type=text]{
   text-transform: uppercase;
   display: table-cell;
   padding-left: 2px;
-  padding-right: 2px;
+  padding-right: 4px;
 }
 
 .submitFORM {
