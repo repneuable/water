@@ -921,7 +921,7 @@ MOBILE
         white-space: nowrap;
         display: none !important;
       }
-      .dataDATE th{
+      th.dataDATE {
         display: none !important;
       }
 
