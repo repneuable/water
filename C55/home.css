@@ -689,7 +689,7 @@ MOBILE
 
       .section, .sectionSUB {
          background-image: url("../resources/icons/background-alt.jpg");
-         background-image: url("../resources/icons/background4.jpg");
+         background-image: url("../resources/icons/background4.gif");
          z-index: 99;
          height: 100%;
          overflow:auto;
