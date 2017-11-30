@@ -921,7 +921,10 @@ MOBILE
         white-space: nowrap;
         display: none;
       }
-      
+      .dataDATE th{
+        display: none;
+      }
+
       .dataCAT{
        white-space: nowrap;
       }
