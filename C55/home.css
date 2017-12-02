@@ -573,7 +573,7 @@ input[type=text]{
 /*GOOGLE Searcher*/
 
 #___gcse_0 {
-
+  margin: 0;
   position: relative;
   left: 70%;
 }
@@ -1015,6 +1015,27 @@ MOBILE
         text-transform: uppercase;
         display: table-cell;
        font-color: black;
+      }
+      /*Google Custome Search*/
+      #___gcse_0 {
+        margin: 0;
+        position: relative;
+        left: 5%;
+      }
+      #___gcse_0 td{
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+      #___gcse_0 input{
+        width: 50px;
+      }
+      #___gcse_0 table{
+        width: 20px;
+      }
+      .gsc-clear-button {
+        display: none;
       }
  }
 
