@@ -51,6 +51,18 @@
       gtag('js', new Date());
       gtag('config', 'UA-109143936-1');
     </script>
+    <!-- Google Custome Search Engine-->
+    <script>
+      (function() {
+        var cx = '014020040966764114550:fhtm23p706g';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 
     <!--HEADER-->
     <div id="header" class="headerSUB">
@@ -68,7 +80,7 @@
               <a href="../HTM7/topics/study.html" >STUDY |</a>
               <a href="../HTM7/topics/gen.html" >GEN |</a>
               <a href="../index.html" >INDEX</a>
-              <input type="search" class="searchBOX" placeholder="coming soon..." onkeyup="myFunction0()" id="search0">
+              <!--<input type="search" class="searchBOX" placeholder="coming soon..." onkeyup="myFunction0()" id="search0">-->
               <img title="Source Code" alt="Source Code" src="../resources/icons/source-icon.png" width="15" height="15" onclick="viewSource()"/>
             </td>
           </tr>
@@ -88,6 +100,7 @@
   <body>
     <div id="section" class="sectionSUB">
       <div style="padding-left: 5%;" class="draggableALTContainer">
+        <gcse:searchbox-only></gcse:searchbox-only>
         <div id="draggable1-alt" class="draggableALT" style="display:none"><table><caption onclick="toggleTABLE()">RESUME</caption></table></div>
       </div>
       <div id="container" class="container">
