@@ -21,7 +21,7 @@ html, body {
  background: #a0a0a0;
  font: bold 300 1em/1.5em "Helvetica Neue", "Raleway", Arial, sans-serif;
  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
- font-family: 'Roboto Slab', serif !important;
+ font-family: 'Roboto Slab', serif;
  -webkit-font-smoothing: antialiased;
 }
 
@@ -568,6 +568,29 @@ input[type=text]{
   height: 6.500em;
   background-color: black;
   color: #cacadd;
+}
+
+/*GOOGLE Searcher*/
+
+#___gcse_0 {
+
+  position: relative;
+  left: 70%;
+}
+#___gcse_0 td{
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+#___gcse_0 input{
+  width: 50px;
+}
+#___gcse_0 table{
+  width: 20px;
+}
+.gsc-clear-button {
+  display: none;
 }
 /**************************
 **************************
