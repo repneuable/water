@@ -1038,10 +1038,10 @@ MOBILE
       }
       #___gcse_0 {
         margin: 0;
-        position: relative;
+        position: absolute;
         margin-top: 10px;
-        left: 40%;
-        top: 10%;
+        top: 5%;
+        left: 5%;
       }
 
 
