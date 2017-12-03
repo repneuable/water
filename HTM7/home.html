@@ -72,17 +72,17 @@
       })();
     </script>
     <!-- Google Custome Search Engine-->
-    <script>
-      (function() {
-        var cx = '014020040966764114550:fhtm23p706g';
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gcse, s);
-      })();
+    <script language="JavaScript">
+      function loadSearchHighlight()
+      {
+        SearchHighlight();
+        document.searchhi.h.value = searchhi_string;
+        if( location.hash.length > 1 ) location.hash = location.hash;
+      }
     </script>
+    <style>
+      SPAN.searchword { background-color:yellow; }
+    </style>
 
     <div id="header" class="header">
       <table width ="100%" style="margin: 0px;">
@@ -99,7 +99,10 @@
               <a href="../HTM7/topics/study.html" >STUDY |</a>
               <a href="../HTM7/topics/gen.html" >GEN |</a>
               <a href="../index.html" >INDEX</a>
-              <!--<input type="search" class="searchBOX" placeholder="coming soon..." onkeyup="myFunction0()" id="search0">-->
+              <form method="get" name="searchhi">
+                <input type="text" name="h" class="localSEARCHbar"/>
+                <input type="submit" value="&#9906;" class="localSEARCHbutton" />
+              </form>
               <img title="Source Code" alt="Source Code" src="../resources/icons/source-icon.png" width="15" height="15" onclick="viewSource()"/>
             </td>
           </tr>
@@ -110,14 +113,13 @@
   </head>
   <!--END HEADER-->
   <!--BEGIN BODY-->
-  <body>
+  <body onload="JavaScript:loadSearchHighlight();">
     <div class="section">
       <div style="padding-left: 5%;" class="draggableALTContainer">
         <div id="draggable1-alt" class="draggableALT" style="display:none"><table><caption onclick="toggleTABLEShome()">HOME</caption></table></div>
         <div id="draggable2-alt" class="draggableALT" style="display:none"><table><caption onclick="toggleTABLESconverter()">CONVERTER</caption></table></div>
       </div>
       <div class="containerHOME">
-        <gcse:searchbox-only></gcse:searchbox-only>
         <div id="draggable1" class="tableHOME">
           <!--TABLEHOME-->
           <table id="topicHOME">
