@@ -64,6 +64,17 @@
         s.parentNode.insertBefore(gcse, s);
       })();
     </script>
+    <script language="JavaScript">
+      function loadSearchHighlight()
+      {
+        SearchHighlight();
+        document.searchhi.h.value = searchhi_string;
+        if( location.hash.length > 1 ) location.hash = location.hash;
+      }
+    </script>
+    <style>
+      SPAN.searchword { background-color:yellow; }
+    </style>
 
     <div id="header" class="header">
       <table width ="100%" style="margin: 0px;">
@@ -80,7 +91,10 @@
               <a href="HTM7/topics/study.html" >STUDY |</a>
               <a href="HTM7/topics/gen.html" >GEN |</a>
               <a href="index.html" >INDEX</a>
-              <!--<input type="search" class="searchBOX" placeholder="coming soon..." onkeyup="myFunction0()" id="search0">-->
+              <form method="get" name="searchhi">
+                <input type="text" name="h" class="localSEARCHbar"/>
+                <input type="submit" value="&#9906;" class="localSEARCHbutton" />
+              </form>
               <img title="Source Code" alt="Source Code" src="resources/icons/source-icon.png" width="15" height="15" onclick="viewSource()"/>
             </td>
           </tr>
@@ -88,13 +102,12 @@
       </table>
     </div>
   </head>
-  <body>
+  <body onload="JavaScript:loadSearchHighlight();">
     <div id="section" class="sectionSUB">
       <div style="padding-left: 5%;" class="draggableALTContainer">
         <div id="draggable1-alt" class="draggableALT" style="display:none"><table><caption onclick="toggleTABLE()">RESUME</caption></table></div>
       </div>
       <div class="containerINDEX">
-        <gcse:searchbox-only></gcse:searchbox-only>
         <table>
           <tr><td><button style="background: linear-gradient(90deg, #f4e1d2, #d6cbd3, #d0d0d0);"><a href="http://kevinh.work/resources/resume.pdf"><b><i>View Resume</i></b></a></button></td></tr>
           <tr><td>
@@ -117,6 +130,9 @@
           <a href="HTM7/file_listing.html"><img title="/HTM7/file listing" alt="/HTM7/file listing" src="resources/icons/file-icon.png" width="25" height="25" /></a>
           </td></tr><tr><td>
           <a href="index.html"><img title="Site Index" alt="index" src="resources/icons/tree-icon.png" width="25" height="25" /></a>
+          </td></tr>
+          <tr><td>
+            <gcse:searchbox-only></gcse:searchbox-only>
           </td></tr>
         </table>
       </div>
