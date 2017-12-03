@@ -611,6 +611,7 @@ input[type=text]{
   border-style: dotted;
   margin-bottom: 0;
 }
+
 /**************************
 **************************
 **************************
@@ -1034,6 +1035,13 @@ MOBILE
         text-transform: uppercase;
         display: table-cell;
        font-color: black;
+      }
+
+      .localSEARCHbar {
+        display: none;
+      }
+      .localSEARCHbutton {
+        display: none;
       }
  }
 
