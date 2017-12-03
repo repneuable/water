@@ -1036,6 +1036,14 @@ MOBILE
         display: table-cell;
        font-color: black;
       }
+      #___gcse_0 {
+        margin: 0;
+        position: relative;
+        margin-top: 10px;
+        left: 70%;
+        top: 80%;
+      }
+
 
       .localSEARCHbar {
         display: none;
