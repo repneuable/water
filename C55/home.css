@@ -833,7 +833,7 @@ MOBILE
        }
 
       /**TOPIC TABLES**/
-      topicCALM {
+        .topicCALM {
         border-collapse: collapse;
         background-color: #e4a1b3;
         width: 1px;
@@ -847,8 +847,8 @@ MOBILE
 
           }
           .topicCALM td:first-child {
-            min-width: 134px !important;
-            word-break: break-word;
+            /*min-width: 134px !important;
+            word-break: break-word;*/
             white-space: normal;
             font-size: 0.98em !important;
           }
@@ -872,8 +872,8 @@ MOBILE
         text-align: left;
       }
       .topicECO td:first-child {
-        min-width: 134px !important;
-        word-break: break-word;
+        /*min-width: 134px !important;
+        word-break: break-word;*/
         white-space: normal;
         font-size: 0.98em !important;
       }
@@ -894,8 +894,8 @@ MOBILE
         text-align: left;
       }
       .topicACTION td:first-child {
-        min-width: 134px !important;
-        word-break: break-word;
+        /*min-width: 134px !important;
+        word-break: break-word;*/
         white-space: normal;
         font-size: 0.98em !important;
       }
@@ -915,8 +915,8 @@ MOBILE
         text-align: left;
       }
       .topicSTUDY td:first-child {
-        min-width: 134px !important;
-        word-break: break-word;
+        /*min-width: 134px !important;
+        word-break: break-word;*/
         white-space: normal;
         font-size: 0.98em !important;
       }
@@ -937,8 +937,8 @@ MOBILE
          width: 1%;
       }
       .topicGEN td:first-child {
-        min-width: 134px !important;
-        word-break: break-word;
+        /*min-width: 134px !important;
+        word-break: break-word;*/
         white-space: normal;
         font-size: 0.98em !important;
       }
