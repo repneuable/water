@@ -837,7 +837,7 @@ MOBILE
         .topicCALM {
         border-collapse: collapse;
         background-color: #e4a1b3;
-        /*width: 1px;*/
+        width: 1px;
          display: inline-table;
         margin-bottom: 10px;
          white-space: nowrap;
@@ -848,9 +848,9 @@ MOBILE
 
           }
           .topicCALM td:first-child {
-            /*min-width: 134px !important;
+            min-width: 134px !important;
             word-break: break-word;
-            white-space: normal;*/
+            white-space: normal;
             font-size: 0.98em !important;
           }
           .topicCALM td:nth-child(4){
@@ -863,7 +863,7 @@ MOBILE
           }
 
       .topicECO {
-        /*width: 1px;*/
+        width: 1px;
         white-space: nowrap;
          display: inline-table;
          margin-bottom: 10px;
@@ -873,8 +873,8 @@ MOBILE
         text-align: left;
       }
       .topicECO td:first-child {
-        /*min-width: 134px !important;
-        word-break: break-word;*/
+        min-width: 134px !important;
+        word-break: break-word;
         white-space: normal;
         font-size: 0.98em !important;
       }
@@ -885,7 +885,7 @@ MOBILE
       }
 
       .topicACTION {
-        /*width: 1px;*/
+        width: 1px;
         white-space: nowrap;
          display: inline-table;
          margin-bottom: 10px;
@@ -895,8 +895,8 @@ MOBILE
         text-align: left;
       }
       .topicACTION td:first-child {
-        /*min-width: 134px !important;
-        word-break: break-word;*/
+        min-width: 134px !important;
+        word-break: break-word;
         white-space: normal;
         font-size: 0.98em !important;
       }
@@ -906,7 +906,7 @@ MOBILE
         white-space: nowrap;
       }
       .topicSTUDY {
-        /*width: 1px;*/
+        width: 1px;
         white-space: nowrap;
          display: inline-table;
          margin-bottom: 10px;
@@ -916,7 +916,7 @@ MOBILE
         text-align: left;
       }
       .topicSTUDY td:first-child {
-        /*min-width: 134px !important;
+        min-width: 134px !important;
         word-break: break-word;*/
         white-space: normal;
         font-size: 0.98em !important;
@@ -927,7 +927,7 @@ MOBILE
         white-space: nowrap;
       }
       .topicGEN {
-        /*width: 1px;*/
+        width: 1px;
         white-space: nowrap;
          display: inline-table;
          margin-bottom: 10px;
@@ -938,8 +938,8 @@ MOBILE
         width: 1%;
       }
       .topicGEN td:first-child {
-        /*min-width: 134px !important;
-        word-break: break-word;*/
+        min-width: 134px !important;
+        word-break: break-word;
         white-space: normal;
         font-size: 0.98em !important;
       }
@@ -953,7 +953,7 @@ MOBILE
       /*REST*/
       /*REST*/
       .dataTITLE{
-        /*white-space: nowrap;*/
+        white-space: nowrap;
         word-wrap: nowrap;
       }
       .dataPATH {
