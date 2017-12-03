@@ -952,7 +952,8 @@ MOBILE
       /*REST*/
       /*REST*/
       .dataTITLE{
-        white-space: nowrap;
+        /*white-space: nowrap;*/
+        word-wrap: nowrap;
       }
       .dataPATH {
        text-align: center;
