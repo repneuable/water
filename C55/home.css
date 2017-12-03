@@ -832,14 +832,15 @@ MOBILE
           margin-top: 10px;
        }
 
-      /**TOPIC TABLES**/
+      /**TOPIC
+                                                                      TABLES**/
         .topicCALM {
         border-collapse: collapse;
         background-color: #e4a1b3;
-        width: 1px;
+        /*width: 1px;*/
          display: inline-table;
         margin-bottom: 10px;
-       table-layout: fixed;
+         white-space: nowrap;
 
       }
           .topicCALM td {
@@ -848,12 +849,12 @@ MOBILE
           }
           .topicCALM td:first-child {
             /*min-width: 134px !important;
-            word-break: break-word;*/
-            white-space: normal;
+            word-break: break-word;
+            white-space: normal;*/
             font-size: 0.98em !important;
           }
           .topicCALM td:nth-child(4){
-            width: 1%;
+            width: 1px;
             word-break: break-word;
             white-space: nowrap;
           }
@@ -862,7 +863,7 @@ MOBILE
           }
 
       .topicECO {
-        width: 1px;
+        /*width: 1px;*/
         white-space: nowrap;
          display: inline-table;
          margin-bottom: 10px;
@@ -878,13 +879,13 @@ MOBILE
         font-size: 0.98em !important;
       }
       .topicECO td:nth-child(4){
-        width: 1%;
+        width: 1px;
         word-break: break-word;
         white-space: nowrap;
       }
 
       .topicACTION {
-        width: 1px;
+        /*width: 1px;*/
         white-space: nowrap;
          display: inline-table;
          margin-bottom: 10px;
@@ -900,12 +901,12 @@ MOBILE
         font-size: 0.98em !important;
       }
       .topicACTION td:nth-child(4){
-        width: 1%;
+        width: 1px;
         word-break: break-word;
         white-space: nowrap;
       }
       .topicSTUDY {
-        width: 1px;
+        /*width: 1px;*/
         white-space: nowrap;
          display: inline-table;
          margin-bottom: 10px;
@@ -921,12 +922,12 @@ MOBILE
         font-size: 0.98em !important;
       }
       .topicSTUDY td:nth-child(4){
-        width: 1%;
+        width: 1px;
         word-break: break-word;
         white-space: nowrap;
       }
       .topicGEN {
-        width: 1px;
+        /*width: 1px;*/
         white-space: nowrap;
          display: inline-table;
          margin-bottom: 10px;
@@ -934,7 +935,7 @@ MOBILE
 
       .topicGEN td {
         text-align: left;
-         width: 1%;
+        width: 1%;
       }
       .topicGEN td:first-child {
         /*min-width: 134px !important;
@@ -943,10 +944,10 @@ MOBILE
         font-size: 0.98em !important;
       }
       .topicGEN td:nth-child(4){
-        width: 1%;
+        width: 1px;
         word-break: break-word;
         white-space: nowrap;
-      }
+
       /*REST*/
       /*REST*/
       /*REST*/
