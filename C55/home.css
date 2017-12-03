@@ -1,165 +1,1048 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- 01. Meta Tags -->
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <meta name="keywords" content="html, table, sortable"/>
-    <meta name="description" content="An open-source collection of research for the enrichment of thought, organization of ideas, and recording of progress."/>
-    <meta name="author" content="Kevin Hitt"/>
-    <link rel="author" href="https://plus.google.com/u/0/103231175529072372519"/>
-    <meta name="keywords" content="research, open knowledge, environmental, explicit knowledge, information, sustainability, open content, redistribute, informal network, repository, dissemination"/>
-    <meta name="robots" content="index, follow"/>
-    <meta name="revisit-after" content="7 days"/>
+/**
+ * Author: Kevin Hitt
+ * Date: April 2017
+ * Purpose:
+ *
+ *
+ *
+ */
 
-    <title>kevinh.work | Index</title>
+/******************************
+00. Elements
+*******************************/
 
-    <!-- Media Share Tages -->
-    <meta property="og:title" content="Open Research and Data"/>
-    <meta property="og:type" content="blog"/>
-    <meta property="og:image" content="https://github.com/repneuable/water/blob/master/resources/icons/background3.jpg"/>
-    <meta property="og:url" content="https://kevinh.work"/>
-    <meta property="og:description" content="Explore these sortable tables and stay for a while. Please submit a comment, question, or suggestion at kevinh.work/HTM7/comments.html"/>
-    <meta property="fb:admins" content="100000138827986"/>
-    <meta name="twitter:url" content="https://kevinh.work"/>
-    <meta name="twitter:title" content="A collection of sortable tables. Topic subpage of kevinh.work"/>
-    <meta name="twitter:description" content="An open-source collection of research for the enrichment of thought, organization of ideas, and recording of progress. Submit a suggestion!"/>
-    <meta name="twitter:image" content="https://github.com/repneuable/water/blob/master/resources/icons/background3.jpg"/>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
 
-    <!-- Cascading Style Sheets -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="C55/website-responsive.css">
-    <link type="text/css" rel="stylesheet" href="C55/home.css">
+html, body {
+ width: 100%;
+ height: 100%;
+ margin: 0 0 0 0;
+ color: #000000;
+ background: #a0a0a0;
+ font: bold 300 1em/1.5em "Helvetica Neue", "Raleway", Arial, sans-serif;
+ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+ font-family: 'Roboto Slab', serif;
+ -webkit-font-smoothing: antialiased;
+}
 
-    <!-- Javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="J5/home.js"></script>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+form {
+  display: inline-block;
+}
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109143936-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-109143936-1');
-    </script>
-    <!-- Google Custome Search Engine-->
-    <script>
-      (function() {
-        var cx = '014020040966764114550:fhtm23p706g';
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gcse, s);
-      })();
-    </script>
-    <script language="JavaScript">
-      function loadSearchHighlight()
-      {
-        SearchHighlight();
-        document.searchhi.h.value = searchhi_string;
-        if( location.hash.length > 1 ) location.hash = location.hash;
+iframe{
+  background-color: #e4a1b3;
+  right: 10%;
+  height: 100%;
+  width: 97.5%;
+}
+
+
+head {
+  display: block;
+}
+
+ object {
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 135%;
+   overflow: scroll;
+ }
+ .intrinsic-container {
+   overflow: scroll;
+   height: 90%;
+   width: 100%;
+ }
+
+
+ .intrinsic-container iframe {
+ }
+
+/******************************
+01. Helper Classes
+*******************************/
+
+.section {
+
+ background-color: #e4a1b3;
+ background-image: url("http://www.geocraft.com/WVFossils/PageMill_Images/background3.jpg");
+ background-image: url("../resources/icons/background-alt.jpg");
+ background-image: url("../resources/icons/background4.gif");
+ background-image: url("../resources/icons/background5.gif");
+ height: 100%;
+
+ padding-top: 7%;
+ padding-bottom: 7.5%;
+ z-index: 99;
+ box-shadow: inset 0 0 5em 0em #f4e1d2;
+}
+
+.sectionSUB{
+  background-color: #d0d0d0;
+
+  background-image: url("../resources/icons/background-alt.jpg");
+  background-image: url("../resources/icons/background4.gif");
+  background-image: url("../resources/icons/background5.gif");
+  padding-top: 7%;
+  padding-bottom: 7.5%;
+  height: 100%;
+
+  z-index: 99;
+  box-shadow: inset 0 0 5em 0em #f4e1d2;
+}
+
+.container, .containerHOME {
+ overflow: auto;
+ padding-top: 2.5%;
+
+  margin-bottom: 30px;
+
+ background-color: #e4a1b3;
+ background: radial-gradient(circle, #f4e1d2, #d6cbd3, #d0d0d0);
+
+ border-collapse: separate;
+ border-style: dotted;
+ border-width: 1px;
+ border-color: black;
+ height: 94%;
+ z-index: 98;
+ box-shadow: inset 0 0 5em 0em #848699;
+}
+
+.containerHOME {
+background:
+radial-gradient(circle farthest-side at 0% 50%,#f4e1d2 23.5%,rgba(231,209,224,0) 0)21px 30px,
+radial-gradient(circle farthest-side at 0% 50%,#848699 28.6%,rgba(231,209,224,0) 0)19px 30px,
+linear-gradient(#f4e1d2 19%,rgba(231,209,224,0) 0, rgba(231,209,224,0) 85%,#f4e1d2 0)0 0,
+linear-gradient(150deg,#f4e1d2 22.5%,#848699 0,#848699 26.5%,rgba(231,209,224,0) 0,rgba(231,209,224,0) 74%,#d6cbd3 0,#848699 76%,#f4e1d2 0)0 0,
+linear-gradient(30deg,#f4e1d2 24%,#848699 0,#848699 26%,#f4e1d2 0,#f4e1d2 74%,#848699 0,#848699 76%,#f4e1d2 0)0 0,
+linear-gradient(90deg,#B71 2%,#f4e1d2 0,#f4e1d2 98%,#b71 0%)0 0 #fb1;
+
+background-size:20px 60px;
+/**Adjust background size for variations**/
+box-shadow: inset 0 0 5em 0em #848699;
+
+}
+
+.containerINDEX {
+  margin-left:47%;
+  margin-top: 8%;
+}
+
+#header {
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: 100;
+ padding: 2px 8px 2px 8px;
+}
+
+
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2px 8px 2px 8px;
+
+
+}
+
+#footer table {
+  width: 100%;
+}
+
+#footer img {
+  height: 25px;
+  width: 25px;
+}
+
+#header, #headerSUB a {
+  font-size: 14.5px;
+}
+
+#header, #headerSUB td {
+  white-space: nowrap;
+}
+
+#header, #headerSUB table {
+  padding: 2px 8px 2px 8px;
+}
+
+#headerSUB {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: 100;
+ padding: 2px 8px 2px 8px;
+}
+
+#dragHome {
+
+}
+
+#draggable0 {
+ margin-left: 2%;
+ margin-right: 2%;
+ height: 95%;
+ width: inherit;
+ padding-right: 4.5%;
+ display: inline-block;
+}
+
+#draggable1 {
+  z-index: 0;
+  display: inline-block;
+
+}
+
+#draggable2 {
+ display: inline-block;
+}
+#draggable3 {display: inline-block;}
+#draggable4 {display: inline-block;}
+#draggable5 {display: inline-block;}
+#draggable6 {display: inline-block;}
+#draggable7 {display: inline-block;}
+#draggable8 {display: inline-block;}
+#draggable9 {display: inline-block;}
+#draggable10 {display: inline-block;}
+#draggable11 {display: inline-block;}
+#draggable12 {display: inline-block;}
+#draggable13 {display: inline-block;}
+#draggable14 {display: inline-block;}
+#draggable15 {display: inline-block;}
+#draggable16 {display: inline-block;}
+#draggable17 {display: inline-block;}
+#draggable18 {display: inline-block;}
+#draggable19 {display: inline-block;}
+#draggable20 {display: inline-block;}
+
+#dragTemplate {
+ left: 25%;
+ top: 170.594px;
+}
+
+
+.rowDRAG {
+ border: none;
+ height: 20px;
+ background-color: #e4a1b3;
+}
+
+a {
+  color: #7f7b81;
+}
+
+a img {
+  text-decoration: none;
+}
+
+a:link {
+ color: #7f7b81;
+}
+a:visited {
+   color: #6d6383;
+}
+a:hover {
+   color: #848699;
+   text-decoration: overline;
+}
+a:hover img{
+  text-decoration: none;
+}
+a:focus {
+   color: #ffffff;
+}
+a:active {
+   color: #a2a2a3;
+}
+
+
+/******************************
+02. Global Table Properties
+*******************************/
+
+table, th, td {
+   border: 1px solid gray;
+   border-collapse: collapse;
+}
+
+table{
+}
+
+th {
+   padding: 1px 5px 0.5px 5px;
+   text-align: center;
+   background-color: #d0d0d0;
+   border-top: hidden;
+   font-size: 11px;
+}
+
+td {
+ padding: 2px 8px 2px 8px;
+ background-color: #d0d0e1;
+ text-align: center;
+
+}
+
+caption {
+  padding: 3px 0 1px 0;
+  text-align: center;
+  background-color: #cacadd;
+  border-style: solid;
+  border-bottom: thick dotted;
+  border-width: 1px;
+  border-collapse: collapse;
+  border-color: gray;
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.topictableSWITCH {
+
+}
+
+
+button {
+  font-size: 10px;
+  border-style: collapse;
+  border-color: gray;
+  border-width: 1px;
+  margin-bottom: 5px;
+}
+
+/******************************
+  ANIMATIONS
+*******************************/
+
+.square {
+  height: 12%;
+  width: 12%;
+  background-color: #e7d1e0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  color: black;
+  padding: 8px;
+
+  margin-bottom: 50px;
+  margin-left: 8px;
+  animation: polaroidShaker 3s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes polaroidShaker {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(20px, 50px) skew(-20deg);
+  }
+}
+
+/******************************
+03. Individual Table Properties
+*******************************/
+
+ .searchBOX {
+   font-size: 9px;
+   margin-bottom: 2px;
+ }
+
+.dropDOWN{
+ width: 150px;
+}
+
+
+.tableHOME {
+   left:40%;
+}
+.topicCALM {
+  border-collapse: collapse;
+  background-color: #e4a1b3;
+  width: 1px;
+  white-space: nowrap;
+   display: inline-table;
+  margin-bottom: 10px;
+
+}
+
+.topicCALM td {
+  text-align: left;
+}
+.topicCALM td:first-child {
+  font-style: normal;
+  font-weight: 310;
+  border-color: gray;
+}
+.topicCALM th {
+  padding: 1px 5px 1px 3px;
+}
+
+.topicECO {
+  width: 1px;
+  white-space: nowrap;
+   display: inline-table;
+   margin-bottom: 10px;
+}
+
+.topicECO td {
+  text-align: left;
+}
+.topicECO td:first-child{
+  font-style: normal;
+  font-weight: 310;
+  border-color: gray;
+}
+.topicACTION {
+  width: 1px;
+  white-space: nowrap;
+   display: inline-table;
+   margin-bottom: 10px;
+}
+
+.topicACTION td {
+  text-align: left;
+}
+.topicACTION td:first-child{
+  font-style: normal;
+  font-weight: 310;
+  border-color: gray;
+}
+.topicSTUDY {
+  width: 1px;
+  white-space: nowrap;
+   display: inline-table;
+   margin-bottom: 10px;
+}
+
+.topicSTUDY td {
+  text-align: left;
+}
+.topicSTUDY td:first-child{
+  font-style: normal;
+  font-weight: 310;
+  border-color: gray;
+}
+.topicGEN {
+  width: 1px;
+  white-space: nowrap;
+   display: inline-table;
+   margin-bottom: 10px;
+}
+
+.topicGEN td {
+  text-align: left;
+}
+.topicGEN td:first-child{
+  font-style: normal;
+  font-weight: 310;
+  border-color: gray;
+}
+
+
+
+/**************************
+04. Topic Data
+**************************/
+
+
+.dataTITLE{
+ padding: 1px 5px 1px 5px;
+}
+.dataTITLEhot{
+  background-color: rgb(218,165,32);
+}
+.dataPATH {
+ padding: 1px 5px 1px 5px;
+ text-align: center;
+}
+.dataDATE {
+  width: 1px;
+  white-space: nowrap;
+}
+.dataCAT{
+ padding: 2px 8px 2px 8px;
+ font-size: 10px;
+ width: 10%;
+}
+.dataCOMMENT {
+padding: 1px 5px 1px 5px;
+font-size: 10px;
+white-space: normal;
+}
+
+
+/************************
+Converter
+***********************/
+
+/* Full-width input fields */
+input[type=text]{
+    width: 80%;
+    border: 1px solid #ccc;
+    margin: 5px 5px 5px 5px;
+}
+
+#converter, #converterSUB {
+    display: inline-block;
+    font-size: 11px;
+
+}
+
+#converter td{
+  background-color: #9eadd6 !important;
+}
+
+#convertPATH {
+  display: inline-block;
+  top: 25%;
+}
+
+.converter table {
+  position: relative;
+}
+
+.converter td{
+  text-align: left;
+  font-size: 8px;
+}
+
+
+/**************************
+0. Minimized Tablets
+**************************/
+
+.draggableALTContainer {
+  border: solid 1px #969696;
+  background: linear-gradient(90deg, #f4e1d2, #d6cbd3, #d0d0d0);
+  margin-bottom: 5px;
+  min-height: 5%;
+  font-weight: bold;
+}
+
+.draggableALT {
+  font-size: 4px;
+  display: inline-table;
+  padding-bottom: 5px;
+  padding-top: 5px;
+
+}
+
+.draggableALT table {
+
+}
+
+.draggableALT caption {
+  background-color: #cacadd;
+  border-style: solid;
+  border-bottom: thick dotted;
+  border-width: 1px;
+  border-collapse: collapse;
+  border-color: gray;
+  font-size: 12px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  display: table-cell;
+  padding-left: 2px;
+  padding-right: 4px;
+}
+
+.submitFORM {
+  top: 50%;
+  left: 30%;
+}
+.submitBUTTON {
+  border-radius: 50%;
+  border: 1px grey;
+  height: 100%;
+  width: 6.500em;
+  height: 6.500em;
+  background-color: black;
+  color: #cacadd;
+}
+
+/*GOOGLE Searcher*/
+
+#___gcse_0 {
+  margin: 0;
+  position: relative;
+  margin-top: 10px;
+}
+#___gcse_0 td{
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+#___gcse_0 input{
+  width: 50px;
+}
+#___gcse_0 table{
+  width: 20px;
+}
+.gsc-clear-button {
+  display: none;
+}
+
+.localSEARCHbar {
+  height: 20px !important;
+  width: 8.2em !important;
+  font-size: 14px;
+  margin-right: 2px !important;
+  margin-top: 3px !important;
+}
+.localSEARCHbutton {
+  height: 22px;
+  font-size: 12px;
+  font-variant: small-caps;
+  margin-right: 8px;
+  background: radial-gradient(circle, #f4e1d2, #d6cbd3, #d0d0d0);
+  border: 1px black;
+  border-collapse: collapse;
+  border-style: dotted;
+  margin-bottom: 0;
+}
+
+/**************************
+**************************
+**************************
+**************************
+MOBILE
+**************************
+**************************
+**************************
+**************************/
+
+@media only screen and (max-device-width: 480px){
+
+
+      html, body{
+        font: bold 300 1em/1.5em "Helvetica Neue", "Raleway", Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-family: 'Roboto Slab', serif !important;
+        }
+      form { display: inline-block;
+              margin-left: 2%;
+            }
+      iframe {
+          background-color: #e4a1b3;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          display: block;
       }
-    </script>
-    <style>
-      SPAN.searchword { background-color:yellow; }
-    </style>
+      /*********Hide Home Icon***********/
+      [title^='Home'], [title*=' Home']{
+          display: none;
+      }
 
-    <div id="header" class="header">
-      <table width ="100%" style="margin: 0px;">
-        <tbody>
-          <tr>
-            <td>
-              <a href="HTM7/home.html"><img title="Home" alt="Home" src="resources/icons/home-icon.svg" width="10" height="10" />  kevinh.work</a>
-              <a href="https://keybase.io/repneuable" target="_blank"><img title="Keybase" alt="Keybase" src="resources/icons/keybase-icon.png" width="15" height="15" /></a>
-            </td>
-            <td>
-              <a href="HTM7/topics/calm.html" >CALM |</a>
-              <a href="HTM7/topics/eco.html" >ECO |</a>
-              <a href="HTM7/topics/action.html" >ACTION |</a>
-              <a href="HTM7/topics/study.html" >STUDY |</a>
-              <a href="HTM7/topics/gen.html" >GEN |</a>
-              <a href="index.html" >INDEX</a>
-              <form method="get" name="searchhi">
-                <input type="text" name="h" class="localSEARCHbar"/>
-                <input type="submit" value="&#9906;" class="localSEARCHbutton" />
-              </form>
-              <img title="Source Code" alt="Source Code" src="resources/icons/source-icon.png" width="15" height="15" onclick="viewSource()"/>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </head>
-  <body onload="JavaScript:loadSearchHighlight();">
-    <div id="section" class="sectionSUB">
-      <div style="padding-left: 5%;" class="draggableALTContainer">
-        <div id="draggable1-alt" class="draggableALT" style="display:none"><table><caption onclick="toggleTABLE()">RESUME</caption></table></div>
-      </div>
-      <div class="containerINDEX">
-        <table>
-          <tr><td><button style="background: linear-gradient(90deg, #f4e1d2, #d6cbd3, #d0d0d0);"><a href="http://kevinh.work/resources/resume.pdf"><b><i>View Resume</i></b></a></button></td></tr>
-          <tr><td>
-          <a href="HTM7/home.html"><img title="/HTM7/home" alt="/HTM7/home" src="resources/icons/home-icon.svg" width="32" height="32" /> </a>
-          </td></tr><tr><td>
-          <a href="HTM7/comments.html"><img title="/HTM7/comments" alt="/HTM7/comments" src="resources/icons/comment-icon.png" width="30" height="30" /> </a>
-          </td></tr><tr><td>
-          <a href="HTM7/resume.html"><img title="resources/resume.pdf" alt="resources/resume.pdf" src="resources/icons/resume-icon.png" width="30" height="30" /></a>
-          </td></tr><tr><td>
-          <a href="HTM7/topics/action.html">action</a>
-          </td></tr><tr><td>
-          <a href="HTM7/topics/calm.html">calm</a>
-          </td></tr><tr><td>
-          <a href="HTM7/topics/eco.html">eco</a>
-          </td></tr><tr><td>
-          <a href="HTM7/topics/gen.html">general</a>
-          </td></tr><tr><td>
-          <a href="HTM7/topics/study.html">study</a>
-          </td></tr><tr><td>
-          <a href="HTM7/file_listing.html"><img title="/HTM7/file listing" alt="/HTM7/file listing" src="resources/icons/file-icon.png" width="25" height="25" /></a>
-          </td></tr><tr><td>
-          <a href="index.html"><img title="Site Index" alt="index" src="resources/icons/tree-icon.png" width="25" height="25" /></a>
-          </td></tr>
-        </table>
-        <gcse:searchbox-only></gcse:searchbox-only>
-      </div>
-      <div id="footer" class="header">
-        <table>
-          <tr>
-            <td style="width:50%;">
-              <a href="https://www.twitter.com/repneuable" target="_blank"><img title="Twitter" alt="Twitter" src="resources/icons/twitter-icon.png" width="15" height="15" /></a>
-              <a href="https://www.instagram.com/khitt7/" target="_blank"><img title="Instagram" alt="Instagram" src="resources/icons/instagram-icon.png" width="15" height="15" /></a>
-              <a href="https://www.facebook.com/kevin.hitt.98" target="_blank"><img title="Facebook" alt="Facebook" src="resources/icons/facebook-icon.png" width="15" height="15" /></a>
-              <a href="https://www.linkedin.com/in/kevin-hitt-7aa93ab8/" target="_blank"><img title="LinkedIn" alt="LinkedIn" src="resources/icons/linkedin-icon.png" width="15" height="15" /></a>
-              <a href="https://www.reddit.com/user/hittww/" target="_blank"><img title="Reddit" alt="Reddit" src="resources/icons/reddit-icon.png" width="15" height="15" /></a>
-              <a href="https://www.soundcloud.com/repneuable" target="_blank"><img title="Soundcloud" alt="Soundcloud" src="resources/icons/soundcloud-icon.png" width="15" height="15"/></a>
-              <a href="https://github.com/repneuable/water/blob/master/index.html" target="_blank"><img title="GitHub" alt="GitHub" src="resources/icons/github-icon.png" width="15" height="15" /></a>
-            </td>
-            <td>
-              <div style="float:left; margin-left: 10px;">
-              <a href="HTM7/comments.html"><img title="Comments" alt="Comments" src="resources/icons/comment-icon.png" width="17" height="17" /></a>
-              <a href="HTM7/resume.html"><img title="Resume" alt="Resume" src="resources/icons/resume-icon.png" width="17" height="17" /></a>
-              <a href="HTM7/file_listing.html"><img title="Files" alt="Files" src="resources/icons/file-icon.png" width="17" height="17" /></a>
-              <a href="index.html"><img title="Site Index" alt="Site Index" src="resources/icons/tree-icon.png" width="17" height="17" /></a>
-              </div>
-              <div style="float:right; margin-right: 10px;" id="expandFOOTER">
-                <a><img onclick="expandFOOTER()" src="resources/icons/expand-icon.png" width="20" height="20" id="expandICON"/></a>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </body>
-</html>
+ object {
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 135%;
+   overflow: scroll;
+   z-index: 100;
+ }
+
+          .intrinsic-container {
+            position: relative;
+            height: 0;
+            overflow: scroll;
+            padding-bottom: 100%;
+          }
+
+
+          .intrinsic-container iframe {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+
+      head { display: block; }
+
+       a { color: #7f7b81; }
+
+       a img { text-decoration: none; }
+
+       a:link {
+        color: #7f7b81;
+       }
+       a:visited {
+          color: #6d6383;
+       }
+       a:hover {
+          color: #848699;
+          text-decoration: overline;
+       }
+       a:hover img{
+         text-decoration: none;
+       }
+       a:focus {
+          color: #ffffff;
+       }
+       a:active {
+          color: #a2a2a3;}
+
+                 table, th, td {
+                    border: 1px solid gray;
+                    border-collapse: collapse;
+                 }
+                 table{
+                 }
+                 th {
+                    padding: 1px 5px 0.5px 5px;
+                    text-align: center;
+                    background-color: #d0d0d0;
+                    border-top: hidden;
+                 }
+                 td {
+                  background-color: #d0d0e1;
+                  text-align: center;
+                  white-space: normal;
+                 }
+                 caption {
+                   text-align: center;
+                   background-color: #cacadd;
+                   border-style: solid;
+                   border-bottom: thick dotted;
+                   border-width: 1px;
+                   border-collapse: collapse;
+                   border-color: gray;
+                   font-style: italic;
+                   letter-spacing: 3px;
+                   text-transform: lowercase;
+                 }
+
+      .section, .sectionSUB {
+         background-image: url("../resources/icons/background-alt.jpg");
+         background-image: url("../resources/icons/background5.gif");
+         z-index: 99;
+         height: 100%;
+         overflow:auto;
+      }
+      .container, .containerHOME {
+       overflow: auto;
+       background: radial-gradient(circle, #f4e1d2, #d6cbd3, #d0d0d0);
+       border-collapse: separate;
+       border-style: dotted;
+       border-width: 1px;
+       border-color: black;
+       z-index: 98;
+       margin-left: 5%;
+       margin-right: 5%;
+       margin-bottom: 10%;
+       height: 70%;
+       padding-left: 8px;
+      }
+      .containerHOME {
+        background:
+        radial-gradient(circle farthest-side at 0% 50%,#f4e1d2 23.5%,rgba(231,209,224,0) 0)21px 30px,
+        radial-gradient(circle farthest-side at 0% 50%,#848699 28.6%,rgba(231,209,224,0) 0)19px 30px,
+        linear-gradient(#f4e1d2 19%,rgba(231,209,224,0) 0, rgba(231,209,224,0) 85%,#f4e1d2 0)0 0,
+        linear-gradient(150deg,#f4e1d2 22.5%,#848699 0,#848699 26.5%,rgba(231,209,224,0) 0,rgba(231,209,224,0) 74%,#d6cbd3 0,#848699 76%,#f4e1d2 0)0 0,
+        linear-gradient(30deg,#f4e1d2 24%,#848699 0,#848699 26%,#f4e1d2 0,#f4e1d2 74%,#848699 0,#848699 76%,#f4e1d2 0)0 0,
+        linear-gradient(90deg,#B71 2%,#f4e1d2 0,#f4e1d2 98%,#b71 0%)0 0 #fb1;
+
+        background-size:20px 60px;
+        /**Adjust background size for variations**/
+        box-shadow: inset 0 0 5em 0em #848699;
+      }
+      .containerINDEX {
+        margin-left:34.8%;
+        margin-top: 2%;
+        height: 70%;
+      }
+      #header, #headerSUB {
+       position: fixed;
+       top: 0;
+       left: 0;
+       right: 0;
+       z-index: 100;
+       white-space: normal;
+       font-size: 12px;
+       }
+       #footer {
+         position: fixed;
+         bottom: 0;
+         left: 0;
+         right: 0;
+       }
+       #footer img {
+       }
+       #footer table{ width: 100%; }
+       #draggable0 {
+
+        margin-right: 5%;
+        display: inline-block;
+
+        position: relative;
+        height: 80%;
+
+
+       }
+       #draggable1 {
+         z-index: 0;
+         display: inline-block;
+       }
+       #draggable2 {display: inline-block;}
+       #draggable3 {display: inline-block;}
+       #draggable4 {display: inline-block;}
+       #draggable5 {display: inline-block;}
+       #draggable6 {display: inline-block;}
+       #draggable7 {display: inline-block;}
+       #draggable8 {display: inline-block;}
+       #draggable9 {display: inline-block;}
+       #draggable10 {display: inline-block;}
+       #draggable11 {display: inline-block;}
+       #draggable12 {display: inline-block;}
+       #draggable13 {display: inline-block;}
+       #draggable14 {display: inline-block;}
+       #draggable15 {display: inline-block;}
+       #draggable16 {display: inline-block;}
+       #draggable17 {display: inline-block;}
+       #draggable18 {display: inline-block;}
+       #draggable19 {display: inline-block;}
+       #draggable20 {display: inline-block;}
+       #draggableR {margin-left: 20px; margin-top: 20px;}
+
+       .rowDRAG {
+        border: none;
+        background-color: #e4a1b3;
+       }
+
+       .tableHOME {
+          left:17%;
+          margin-top: 10px;
+       }
+
+      /**TOPIC TABLES**/
+      topicCALM {
+        border-collapse: collapse;
+        background-color: #e4a1b3;
+        width: 1px;
+         display: inline-table;
+        margin-bottom: 10px;
+       table-layout: fixed;
+
+      }
+          .topicCALM td {
+            text-align: left;
+
+          }
+          .topicCALM td:first-child {
+            min-width: 134px !important;
+            word-break: break-word;
+            white-space: normal;
+            font-size: 0.98em !important;
+          }
+          .topicCALM td:nth-child(4){
+            width: 1%;
+            word-break: break-word;
+            white-space: nowrap;
+          }
+          .topicCALM th {
+            padding: 1px 5px 1px 3px;
+          }
+
+      .topicECO {
+        width: 1px;
+        white-space: nowrap;
+         display: inline-table;
+         margin-bottom: 10px;
+      }
+
+      .topicECO td {
+        text-align: left;
+      }
+      .topicECO td:first-child {
+        min-width: 134px !important;
+        word-break: break-word;
+        white-space: normal;
+        font-size: 0.98em !important;
+      }
+      .topicECO td:nth-child(4){
+        width: 1%;
+        word-break: break-word;
+        white-space: nowrap;
+      }
+
+      .topicACTION {
+        width: 1px;
+        white-space: nowrap;
+         display: inline-table;
+         margin-bottom: 10px;
+      }
+
+      .topicACTION td {
+        text-align: left;
+      }
+      .topicACTION td:first-child {
+        min-width: 134px !important;
+        word-break: break-word;
+        white-space: normal;
+        font-size: 0.98em !important;
+      }
+      .topicACTION td:nth-child(4){
+        width: 1%;
+        word-break: break-word;
+        white-space: nowrap;
+      }
+      .topicSTUDY {
+        width: 1px;
+        white-space: nowrap;
+         display: inline-table;
+         margin-bottom: 10px;
+      }
+
+      .topicSTUDY td {
+        text-align: left;
+      }
+      .topicSTUDY td:first-child {
+        min-width: 134px !important;
+        word-break: break-word;
+        white-space: normal;
+        font-size: 0.98em !important;
+      }
+      .topicSTUDY td:nth-child(4){
+        width: 1%;
+        word-break: break-word;
+        white-space: nowrap;
+      }
+      .topicGEN {
+        width: 1px;
+        white-space: nowrap;
+         display: inline-table;
+         margin-bottom: 10px;
+      }
+
+      .topicGEN td {
+        text-align: left;
+         width: 1%;
+      }
+      .topicGEN td:first-child {
+        min-width: 134px !important;
+        word-break: break-word;
+        white-space: normal;
+        font-size: 0.98em !important;
+      }
+      .topicGEN td:nth-child(4){
+        width: 1%;
+        word-break: break-word;
+        white-space: nowrap;
+      }
+      /*REST*/
+      /*REST*/
+      /*REST*/
+      /*REST*/
+      .dataTITLE{
+        white-space: nowrap;
+      }
+      .dataPATH {
+       text-align: center;
+       font-size: 10px !important;
+      }
+
+      .dataDATE {
+        width: 1px;
+        white-space: nowrap;
+        display: none !important;
+      }
+
+      .dataCAT{
+       white-space: nowrap;
+      }
+      .dataCOMMENT {
+      white-space: normal;
+      }
+      .searchBOX {
+        display: none;
+      }
+
+
+      #converter {
+          display: inline-block;
+          background-color:
+
+      }
+
+      #convertPATH {
+        display: inline-block;
+      }
+      .converter table {
+        position: relative;
+      }
+
+      .converter td{
+        text-align: left;
+      }
+
+
+
+
+
+      /**************************
+      0. Minimized Tablets
+      **************************/
+
+      .draggableALTContainer {
+        border: solid 1px #969696;
+        background: linear-gradient(90deg, #f4e1d2, #d6cbd3, #d0d0d0);
+        margin-bottom: 5px;
+        margin-top: 24px;
+        font-size: 10px;
+        max-height: 12%;;
+        overflow: scroll;
+        font-weight: normal;
+      }
+
+      .draggableALT {
+        font-size: 5px;
+        display: inline-table;
+        padding-bottom: 2px;
+        padding-top: 2px;
+      }
+
+      .draggableALT table {
+
+      }
+
+      .draggableALT caption {
+        background-color: #cacadd;
+        border-style: solid;
+        border-bottom: thick dotted;
+        border-width: 1px;
+        border-collapse: collapse;
+        border-color: gray;
+        font-size: 11px;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        display: table-cell;
+       font-color: black;
+      }
+
+      .localSEARCHbar {
+        display: none;
+      }
+      .localSEARCHbutton {
+        display: none;
+      }
+ }
+
+}
