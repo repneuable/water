@@ -84,17 +84,17 @@
       gtag('config', 'UA-109143936-1');
     </script>
     <!-- Google Custome Search Engine-->
-    <script>
-      (function() {
-        var cx = '014020040966764114550:fhtm23p706g';
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gcse, s);
-      })();
+    <script language="JavaScript">
+      function loadSearchHighlight()
+      {
+        SearchHighlight();
+        document.searchhi.h.value = searchhi_string;
+        if( location.hash.length > 1 ) location.hash = location.hash;
+      }
     </script>
+    <style>
+      SPAN.searchword { background-color:yellow; }
+    </style>
 
     <!--HEADER-->
     <div id="header" class="header">
@@ -112,7 +112,10 @@
               <a href="study.html" >STUDY |</a>
               <a href="gen.html" >GEN |</a>
               <a href="../../index.html" >INDEX</a>
-              <!--<input type="search" class="searchBOX" placeholder="coming soon..." onkeyup="myFunction0()" id="search0">-->
+              <form method="get" name="searchhi">
+                <input type="text" name="h" class="localSEARCHbar"/>
+                <input type="submit" value="&#9906;" class="localSEARCHbutton" />
+              </form>
               <img title="Source Code" alt="Source Code" src="../../resources/icons/source-icon.png" width="15" height="15" onclick="viewSource()"/>
             </td>
           </tr>
@@ -121,7 +124,7 @@
     </div>
   </head>
 
-  <body>
+  <body onload="JavaScript:loadSearchHighlight();">
     <div id="section" class="sectionSUB">
       <div style="padding-left: 5%;" class="draggableALTContainer">
         <div id="draggable0-alt" class="draggableALT"><table><caption onclick="toggleOFF()">0/0</caption></table></div>
@@ -133,7 +136,6 @@
         <div id="draggable6-alt" class="draggableALT"><table><caption onclick="toggleTABLES6()">ECO LITERACY</caption></table></div>
       </div>
       <div id="container" class="container">
-        <gcse:searchbox-only></gcse:searchbox-only>
         <div id="draggable1">
           <table id="topictableCalm" class="topicCALM">
             <caption onclick="toggleTABLES1();">CALM</caption>
