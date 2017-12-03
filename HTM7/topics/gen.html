@@ -85,17 +85,17 @@
       gtag('config', 'UA-109143936-1');
     </script>
     <!-- Google Custome Search Engine-->
-    <script>
-      (function() {
-        var cx = '014020040966764114550:fhtm23p706g';
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gcse, s);
-      })();
+    <script language="JavaScript">
+      function loadSearchHighlight()
+      {
+        SearchHighlight();
+        document.searchhi.h.value = searchhi_string;
+        if( location.hash.length > 1 ) location.hash = location.hash;
+      }
     </script>
+    <style>
+      SPAN.searchword { background-color:yellow; }
+    </style>
 
     <!--HEADER-->
     <div id="header" class="header">
@@ -113,7 +113,10 @@
               <a href="study.html" >STUDY |</a>
               <a href="gen.html" >GEN |</a>
               <a href="../../index.html" >INDEX</a>
-              <!--<input type="search" class="searchBOX" placeholder="coming soon..." onkeyup="myFunction0()" id="search0">-->
+              <form method="get" name="searchhi">
+                <input type="text" name="h" class="localSEARCHbar"/>
+                <input type="submit" value="&#9906;" class="localSEARCHbutton" />
+              </form>
               <img title="Source Code" alt="Source Code" src="../../resources/icons/source-icon.png" width="15" height="15" onclick="viewSource()"/>
             </td>
           </tr>
@@ -122,7 +125,7 @@
     </div>
   </head>
 
-  <body>
+  <body onload="JavaScript:loadSearchHighlight();">
     <div id="section" class="sectionSUB">
 
       <div style="padding-left: 5%;" class="draggableALTContainer">
@@ -142,7 +145,6 @@
       </div>
 
       <div id="container" class="container">
-        <gcse:searchbox-only></gcse:searchbox-only>
         <div id="draggable1">
           <table id="topictableStudio" class="topicGEN">
             <caption onclick="toggleTABLES1();">studio</caption>
@@ -165,7 +167,7 @@
               <tr><td class="dataTITLE">q tip sampling	</td><td class="dataPATH"><a href="	https://www.facebook.com/FACTmagazine/videos/10155181644179687/	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
               <tr><td class="dataTITLE">frank ocean interviews	</td><td class="dataPATH"><a href="	http://pigeonsandplanes.com/in-depth/2016/08/revisiting-frank-ocean-interviews-boys-dont-cry/the-guardian-the-most-talked-about-man-in-music	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
               <tr><td class="dataTITLE">wiki - Golden vinyl in space	</td><td class="dataPATH"><a href="	https://en.wikipedia.org/wiki/Voyager_Golden_Record	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
-              <tr> <td class="dataTITLE"> eq cheat sheet</td><td class="dataPATH"><a href="https://www.cheatography.com/fredv/cheat-sheets/eq-tips/pdf/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">studio</td><td class="dataCOMMENT">	none	</td>	</tr>
+              <tr><td class="dataTITLE"> eq cheat sheet</td><td class="dataPATH"><a href="https://www.cheatography.com/fredv/cheat-sheets/eq-tips/pdf/" target="_blank">&#8599;&#xFE0E;</a></td><td class="dataDATE"></td><td class="dataCAT">studio</td><td class="dataCOMMENT">	none	</td>	</tr>
               <tr><td class="dataTITLE">diy ejuice	</td><td class="dataPATH"><a href="	https://www.reddit.com/r/DIY_eJuice/comments/3njw3u/diy_like_you_mean_it_a_beginners_guide_to/?st=J7ZLTUQ5&sh=c50c9284	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
               <tr><td class="dataTITLE">frank Ocean	</td><td class="dataPATH"><a href="	https://blonded.co	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
               <tr><td class="dataTITLE">uncle nearest whiskey	</td><td class="dataPATH"><a href="	https://unclenearest.passionspirits.com/unclenearest/premium-aged-whiskey.html	" target="_blank">	&#8599;&#xFE0E; 	</a> </td>	<td class="dataDATE">		</td>	<td class="dataCAT">	studio	</td>	<td class="dataCOMMENT">	none	</td>	</tr>
