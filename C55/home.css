@@ -832,9 +832,8 @@ MOBILE
           margin-top: 10px;
        }
 
-      /**TOPIC
-                                                                      TABLES**/
-        .topicCALM {
+      /**TOPIC TABLES**/
+        topicCALM {
         border-collapse: collapse;
         background-color: #e4a1b3;
         width: 1px;
@@ -947,14 +946,13 @@ MOBILE
         width: 1px;
         word-break: break-word;
         white-space: nowrap;
-
+      }
       /*REST*/
       /*REST*/
       /*REST*/
       /*REST*/
-      .dataTITLE{
+      .dataTITLE {
         white-space: nowrap;
-        word-wrap: nowrap;
       }
       .dataPATH {
        text-align: center;
