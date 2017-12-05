@@ -734,7 +734,7 @@ MOBILE
 
 /***********INDIVIDUAL TABLE PROPERTIES**************/
   .topicCALM td:first-child, .topicECO td:first-child, .topicACTION td:first-child, .topicSTUDY td:first-child, .topicGEN td:first-child {
-    min-width: 154px !important;
+    min-width: 160px !important;
     /*word-break: break-word;*/
     white-space: normal;
     font-size: 0.98em !important;
