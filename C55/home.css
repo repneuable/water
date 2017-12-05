@@ -529,6 +529,9 @@ MOBILE
   .dataDATE {
     display: none !important;
   }
+  .dataCAT{
+    display: none !important;
+  }
   .searchBOX {
     display: none;
   }
@@ -746,9 +749,6 @@ MOBILE
     padding: 1px 5px 1px 3px;
   }
 
-  .dataCAT{
-    white-space: nowrap;
-  }
   .dataCOMMENT {
     white-space: normal;
   }
@@ -769,7 +769,9 @@ MOBILE
     -moz-border-radius: 0px 46px 46px 46px;
     -webkit-border-radius: 0px 46px 46px 46px;
     border: 1px double #d6cbd3;
-
+  }
+  .dataCOMMENTlongWRAPPER:hover{
+    left: 5%;
   }
 
   .converter td{
