@@ -773,6 +773,7 @@ MOBILE
   .dataCOMMENTlongWRAPPER:hover{
     position: absolute;
     left: 5%;
+    top: 5%;
   }
 
   .converter td{
