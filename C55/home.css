@@ -736,7 +736,7 @@ MOBILE
   .topicCALM td:first-child, .topicECO td:first-child, .topicACTION td:first-child, .topicSTUDY td:first-child, .topicGEN td:first-child {
     min-width: 134px !important;
     /*word-break: break-word;*/
-    white-space: nowrap;
+    white-space: normal;
     font-size: 0.98em !important;
   }
   .topicCALM td:nth-child(4), .topicECO td:nth-child(4), .topicACTION td:nth-child(4), .topicSTUDY td:nth-child(4), .topicGEN td:nth-child(4) {
@@ -771,6 +771,7 @@ MOBILE
     border: 1px double #d6cbd3;
   }
   .dataCOMMENTlongWRAPPER:hover{
+    position: absolute;
     left: 5%;
   }
 
