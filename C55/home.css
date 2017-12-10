@@ -408,6 +408,19 @@ Comments Page
   color: #cacadd;
 }
 
+/***********************
+Reference Citation Tiles
+*************************/
+.referenceTILE {
+
+}
+
+.referenceTILE p:first-letter {
+  margin-left: -20px;
+}
+.referenceTILE p {
+  padding-left: 20px;
+}
 /************************
 Converter and hidden Job Descriptions
 ***********************/
