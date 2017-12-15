@@ -828,8 +828,21 @@ MOBILE
   }
 /*********END MOBILE************/
   @media print {
-   a[href]:after {
-     content: none !important;
-   }
-}
+
+     a[href]:after {
+       content: none !important;
+     }
+
+    @page {
+      size: 8.5in 11.5in;
+    }
+    @page :left {
+      margin-left: 1.5cm;
+    }
+    @page :right {
+      margin-left: 0.5cm;
+    }
+
+
+  }
 }
