@@ -644,6 +644,9 @@ MOBILE
     letter-spacing: 3px;
     text-transform: lowercase;
   }
+  select {
+    width: 15px;
+  }
 
   .section, .sectionSUB {
     background-image: url("../resources/icons/background-alt.jpg");
