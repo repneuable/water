@@ -28,6 +28,13 @@ input[type=text]{
   margin: 5px 5px 5px 5px;
 }
 
+.commentMessageINPUT {
+  box-shadow: 5px 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
 iframe{
   background-color: #e4a1b3;
   right: 10%;
@@ -404,7 +411,8 @@ Comments Page
   height: 100%;
   width: 6.500em;
   height: 6.500em;
-  background-color: #504B4E;
+  font-weight: 800;
+  background-color: black;
   color: #cacadd;
 }
 
@@ -479,6 +487,7 @@ Converter and hidden Job Descriptions
   border-style: dotted;
   margin-bottom: 0;
 }
+
 
 /******************************
 ANIMATIONS
@@ -643,9 +652,6 @@ MOBILE
     font-style: italic;
     letter-spacing: 3px;
     text-transform: lowercase;
-  }
-  select {
-    width: 15px;
   }
 
   .section, .sectionSUB {
