@@ -64,17 +64,6 @@
         s.parentNode.insertBefore(gcse, s);
       })();
     </script>
-    <script language="JavaScript">
-      function loadSearchHighlight()
-      {
-        SearchHighlight();
-        document.searchhi.h.value = searchhi_string;
-        if( location.hash.length > 1 ) location.hash = location.hash;
-      }
-    </script>
-    <style>
-      SPAN.searchword { background-color:yellow; }
-    </style>
 
     <div id="header" class="header">
       <table width ="100%" style="margin: 0px;">
@@ -85,16 +74,12 @@
               <a href="https://keybase.io/repneuable" target="_blank"><img title="Keybase" alt="Keybase" src="resources/icons/keybase-icon.png" width="15" height="15" /></a>
             </td>
             <td>
-              <a href="HTM7/topics/calm.html" ><img title="calm" alt="calm" src="../resources/icons/calm.png" width="17" height="17" /></a>
-              <a href="HTM7/topics/water.html" ><img title="water" alt="water" src="../resources/icons/water.png" width="17" height="17" /></a>
-              <a href="HTM7/topics/eco.html" ><img title="eco" alt="eco" src="../resources/icons/eco.png" width="17" height="17" /></a>
-              <a href="HTM7/topics/action.html" ><img title="action" alt="action" src="../resources/icons/action.png" width="17" height="17" /></a>
-              <a href="HTM7/topics/gen.html" ><img title="general" alt="general" src="../resources/icons/gen.png" width="17" height="17" /></a>
-              <a href="index.html" ><img title="index" alt="index" src="../resources/icons/index.png" width="17" height="17" /></a>
-              <form method="get" name="searchhi">
-                <input type="text" name="h" class="localSEARCHbar"/>
-                <input type="submit" value="&#9906;" class="localSEARCHbutton" />
-              </form>
+              <a href="HTM7/topics/calm.html" ><img title="calm" alt="calm" src="../resources/icons/calm.png" class="headerPATHICONS"/></a>
+              <a href="HTM7/topics/water.html" ><img title="water" alt="water" src="../resources/icons/water.png" class="headerPATHICONS"/></a>
+              <a href="HTM7/topics/eco.html" ><img title="eco" alt="eco" src="../resources/icons/eco.png" class="headerPATHICONS"/></a>
+              <a href="HTM7/topics/action.html" ><img title="action" alt="action" src="../resources/icons/action.png" class="headerPATHICONS"/></a>
+              <a href="HTM7/topics/gen.html" ><img title="general" alt="general" src="../resources/icons/gen.png" class="headerPATHICONS"/></a>
+              <a href="index.html" ><img title="index" alt="index" src="../resources/icons/tree-icon.png" class="headerPATHICONS"/></a>
               <img title="Source Code" alt="Source Code" src="resources/icons/source-icon.png" width="15" height="15" onclick="viewSource()"/>
             </td>
           </tr>
@@ -102,7 +87,7 @@
       </table>
     </div>
   </head>
-  <body onload="JavaScript:loadSearchHighlight();">
+  <body>
     <div id="section" class="sectionSUB">
       <div style="padding-left: 5%;" class="draggableALTContainer">
         <div id="draggable1-alt" class="draggableALT" style="display:none"><table><caption onclick="toggleTABLE()">RESUME</caption></table></div>
