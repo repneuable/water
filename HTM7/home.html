@@ -44,6 +44,12 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+    <script type="text/javascript" src="../J5/dist/mark.es6.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../J5/dist/mark.es6.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../J5/dist/mark.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../J5/dist/mark.min.js" charset="UTF-8"></script>
+
+
     <script>
       $( function() {
       $( "#draggable1" ).draggable();
@@ -59,30 +65,6 @@
       gtag('js', new Date());
       gtag('config', 'UA-109143936-1');
     </script>
-    <!-- Google Custome Search Engine-->
-    <script>
-      (function() {
-        var cx = '014020040966764114550:fhtm23p706g';
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gcse, s);
-      })();
-    </script>
-    <!-- Google Custome Search Engine-->
-    <script language="JavaScript">
-      function loadSearchHighlight()
-      {
-        SearchHighlight();
-        document.searchhi.h.value = searchhi_string;
-        if( location.hash.length > 1 ) location.hash = location.hash;
-      }
-    </script>
-    <style>
-      SPAN.searchword { background-color:yellow; }
-    </style>
 
     <div id="header" class="header">
       <table width ="100%" style="margin: 0px;">
@@ -99,9 +81,9 @@
               <a href="topics/action.html" ><img title="action" alt="action" src="../resources/icons/action.png" width="17" height="17" /></a>
               <a href="topics/gen.html" ><img title="general" alt="general" src="../resources/icons/gen.png" width="17" height="17" /></a>
               <a href="../index.html" ><img title="index" alt="index" src="../resources/icons/index.png" width="17" height="17" /></a>
-              <form method="get" name="searchhi">
-                <input type="text" name="h" class="localSEARCHbar"/>
-                <input type="submit" value="&#9906;" class="localSEARCHbutton" />
+              <form method="post" name="searcherFORM" onsubmit="searchPage(document.getElementById('incomingSTRING').value); return false;">
+                <input type="text" class="localSEARCHbar" id="incomingSTRING" name="incomingSTRING"/>
+                <input type="submit" value="&#9906;" class="localSEARCHbutton"/>
               </form>
               <img title="Source Code" alt="Source Code" src="../resources/icons/source-icon.png" width="15" height="15" onclick="viewSource()"/>
             </td>
