@@ -68,6 +68,10 @@
               <a href="topics/eco.html" ><img title="eco" alt="eco" src="../resources/icons/eco.png" class="headerPATHICONS"/></a>
               <a href="topics/action.html" ><img title="action" alt="action" src="../resources/icons/action.png" class="headerPATHICONS"/></a>
               <a href="topics/gen.html" ><img title="general" alt="general" src="../resources/icons/gen.png" class="headerPATHICONS"/></a>
+              <form method="post" name="searcherFORM" onsubmit="searchPage(document.getElementById('incomingSTRING').value); return false;">
+                <input type="text" class="localSEARCHbar" id="incomingSTRING" name="incomingSTRING"/>
+                <input type="submit" value="&#9906;" class="localSEARCHbutton"/>
+              </form>
               <a href="../index.html" ><img title="index" alt="index" src="../resources/icons/tree-icon.png" class="headerPATHICONS"/></a>
               <img title="Source Code" alt="Source Code" src="../resources/icons/source-icon.png" width="15" height="15" onclick="viewSource()"/>
             </td>
@@ -81,7 +85,6 @@
     <div id="section" class="sectionSUB">
       <div style="padding-left: 5%;" class="draggableALTContainer"></div>
       <div id="container" class="container" >
-        <gcse:searchbox-only></gcse:searchbox-only>
         <div class="intrinsic-container" id="intrinsic-container">
 
         </div>
