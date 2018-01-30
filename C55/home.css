@@ -226,10 +226,9 @@ a:active {
 }
 
 .articleENTRYbox {
-  /*position: relative;
-  height: 0;
+  height: 80%;
   overflow: scroll;
-  padding-bottom: 100%**/
+  
 }
 
 .articleENTRYhead {
@@ -259,9 +258,22 @@ a:active {
   margin-right: 2%;
   background-color: #f7f3e8;
 
-  line-height: 30px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 }
-
+.articleENTRYcaps{
+  float:left;
+  font-size:6.2rem;
+  line-height:43px;
+  padding-top:7px;
+  padding-right:3px;
+  padding-left:2px
+}
+.articleENTRYindent{
+  padding-left: 2.6em;
+}
 
 #footer,
 #header,
