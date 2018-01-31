@@ -228,7 +228,7 @@ a:active {
 .articleENTRYbox {
   height: 80%;
   overflow: scroll;
-  
+
 }
 
 .articleENTRYhead {
@@ -275,6 +275,15 @@ a:active {
   padding-left: 2.6em;
 }
 
+.PDFpreviewBox{
+  height: 250px;
+  width: 350px;
+  padding: 20px 20px 20px 20px;
+  margin-left: 27%;
+}
+.PDFpreview {
+
+}
 #footer,
 #header,
 #headerSUB,
