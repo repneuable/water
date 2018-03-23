@@ -1,7 +1,7 @@
 # water
 stay for a while, if you'd like (<a target="_blank" href="https://repneuable.github.io/water">x</a>)
 
-author:     repneuable.water@gmail.com (child of kevinhitt22@gmail.com) </br>
+author:     @<a href="https://twitter.com/repneuable">repneuable</a></br>
 start date: April 2017  
 export in progress date: March 2018
 
